@@ -25,9 +25,20 @@ function featureBounds(f) {
 export default function App() {
   const mapRef = useRef(null);
   const dataRef = useRef(null);
+  const readyRef = useRef(false); // style + layers ready
+  const selectedRef = useRef(""); // latest selected id
   const [status, setStatus] = useState("Click the map");
   const [fuse, setFuse] = useState(null);
   const { selectedId, setSelectedId } = useStore();
+
+  // helper: safely (re)apply highlight filter
+  const applyHighlight = (id) => {
+    const map = mapRef.current;
+    if (!map || !readyRef.current) return;
+    const layerId = "bldg-hi";
+    if (!map.getLayer(layerId)) return;
+    map.setFilter(layerId, ["==", ["get", "id"], id || ""]);
+  };
 
   useEffect(() => {
     const map = new maplibregl.Map({
@@ -39,7 +50,7 @@ export default function App() {
           {
             id: "bg",
             type: "background",
-            paint: { "background-color": "#f6f7f9" },
+            paint: { "background-color": "#f0f2f5" },
           },
         ],
       },
@@ -54,6 +65,7 @@ export default function App() {
     mapRef.current = map;
 
     map.on("load", async () => {
+      // basemap (raster, no labels)
       map.addSource("basemap", {
         type: "raster",
         tiles: [
@@ -67,20 +79,13 @@ export default function App() {
       });
       map.addLayer({ id: "basemap", type: "raster", source: "basemap" });
 
-      map.addLayer(
-        {
-          id: "dim",
-          type: "background",
-          paint: { "background-color": "#000", "background-opacity": 0.05 },
-        },
-        "bldg-fill"
-      );
-
+      // campus data
       const res = await fetch("/campus.geojson");
       const data = await res.json();
       dataRef.current = data;
       map.addSource("campus", { type: "geojson", data });
 
+      // building layers
       map.addLayer({
         id: "bldg-fill",
         type: "fill",
@@ -101,6 +106,43 @@ export default function App() {
         paint: { "line-color": "#ff9f1c", "line-width": 3 },
       });
 
+      // mark ready and (re)apply any pending highlight
+      readyRef.current = true;
+      applyHighlight(selectedRef.current);
+
+      // rebuild highlight layer after any style reload (HMR/theme changes)
+      map.on("styledata", () => {
+        if (!map.getSource("campus")) return;
+        if (!map.getLayer("bldg-fill")) {
+          map.addLayer({
+            id: "bldg-fill",
+            type: "fill",
+            source: "campus",
+            paint: { "fill-color": "#6aa9ff", "fill-opacity": 0.25 },
+          });
+        }
+        if (!map.getLayer("bldg-outline")) {
+          map.addLayer({
+            id: "bldg-outline",
+            type: "line",
+            source: "campus",
+            paint: { "line-color": "#1b6ef3", "line-width": 1 },
+          });
+        }
+        if (!map.getLayer("bldg-hi")) {
+          map.addLayer({
+            id: "bldg-hi",
+            type: "line",
+            source: "campus",
+            filter: ["==", ["get", "id"], selectedRef.current || ""],
+            paint: { "line-color": "#ff9f1c", "line-width": 3 },
+          });
+        } else {
+          applyHighlight(selectedRef.current);
+        }
+      });
+
+      // Fuse index for search
       setFuse(
         new Fuse(data.features, {
           keys: ["properties.name", "properties.aliases"],
@@ -110,6 +152,7 @@ export default function App() {
         })
       );
 
+      // click selects feature
       map.on("click", "bldg-fill", (e) => {
         const f = e.features[0];
         setSelectedId(f.properties.id);
@@ -121,14 +164,25 @@ export default function App() {
     return () => map.remove();
   }, [setSelectedId]);
 
+  // react to selection changes safely
   useEffect(() => {
-    if (!mapRef.current) return;
+    selectedRef.current = selectedId || "";
+
     const map = mapRef.current;
-    map.setFilter("bldg-hi", ["==", ["get", "id"], selectedId || ""]);
+    if (!map) return;
+
+    // apply filter when ready; if not, defer until idle
+    if (readyRef.current && map.isStyleLoaded()) {
+      applyHighlight(selectedRef.current);
+    } else {
+      map.once("idle", () => applyHighlight(selectedRef.current));
+    }
+
     if (!selectedId || !dataRef.current) {
       setStatus("Click the map");
       return;
     }
+
     const f = dataRef.current.features.find(
       (x) => x.properties.id === selectedId
     );
@@ -151,7 +205,11 @@ export default function App() {
       }}
     >
       <aside
-        style={{ padding: 12, borderRight: "1px solid #e7e7e7", position: "relative" }}
+        style={{
+          padding: 12,
+          borderRight: "1px solid #e7e7e7",
+          position: "relative",
+        }}
       >
         <h3 style={{ margin: "6px 0" }}>UCLA Map Trainer</h3>
         <SearchBox fuse={fuse} />
@@ -180,4 +238,3 @@ export default function App() {
     </div>
   );
 }
-
