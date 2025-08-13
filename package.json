@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest",
     "dev": "vite"
   },
   "keywords": [],
@@ -19,6 +19,10 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5.0.0",
-    "vite": "5.4"
+    "vite": "5.4",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "jsdom": "^24.0.0",
+    "vitest": "^1.6.0"
   }
 }
