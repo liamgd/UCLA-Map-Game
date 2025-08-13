@@ -10,6 +10,13 @@ const BOUNDS = [
   [-118.433, 34.082],
 ];
 
+const LABEL_TILES = [
+  "https://a.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png",
+  "https://b.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png",
+  "https://c.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png",
+  "https://d.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png",
+];
+
 function featureBounds(f) {
   const b = new maplibregl.LngLatBounds();
   const polys =
@@ -98,6 +105,14 @@ export default function App() {
         source: "campus",
         paint: { "line-color": "#1b6ef3", "line-width": 1 },
       });
+      // street labels overlay
+      map.addSource("labels", {
+        type: "raster",
+        tiles: LABEL_TILES,
+        tileSize: 256,
+        attribution: "© OpenStreetMap contributors, © CARTO",
+      });
+      map.addLayer({ id: "labels", type: "raster", source: "labels" });
       map.addLayer({
         id: "bldg-hi",
         type: "line",
@@ -128,6 +143,21 @@ export default function App() {
             source: "campus",
             paint: { "line-color": "#1b6ef3", "line-width": 1 },
           });
+        }
+        if (!map.getSource("labels")) {
+          map.addSource("labels", {
+            type: "raster",
+            tiles: LABEL_TILES,
+            tileSize: 256,
+            attribution: "© OpenStreetMap contributors, © CARTO",
+          });
+        }
+        if (!map.getLayer("labels")) {
+          const before = map.getLayer("bldg-hi") ? "bldg-hi" : undefined;
+          map.addLayer(
+            { id: "labels", type: "raster", source: "labels" },
+            before
+          );
         }
         if (!map.getLayer("bldg-hi")) {
           map.addLayer({
