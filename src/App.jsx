@@ -233,11 +233,8 @@ export default function App() {
       (x) => x.properties.id === selectedId
     );
     if (f) {
-      map.fitBounds(featureBounds(f), {
-        padding: 80,
-        maxZoom: 18,
-        duration: 500,
-      });
+      const center = featureBounds(f).getCenter();
+      map.easeTo({ center, zoom: 18, duration: 800 });
       setStatus(`Selected: ${f.properties.name}`);
     }
   }, [selectedId]);
