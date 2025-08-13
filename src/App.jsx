@@ -6,7 +6,7 @@ import { useStore } from "./store";
 import SearchBox from "./components/SearchBox";
 
 const BOUNDS = [
-  [-118.456, 34.058],
+  [-118.46, 34.052],
   [-118.433, 34.082],
 ];
 
@@ -183,14 +183,19 @@ export default function App() {
           });
         }
         if (!map.getLayer("bldg-hover")) {
-          const before = map.getLayer("bldg-outline") ? "bldg-outline" : undefined;
-          map.addLayer({
-            id: "bldg-hover",
-            type: "fill",
-            source: "campus",
-            filter: ["==", ["get", "id"], ""],
-            paint: { "fill-color": "#ffeb3b", "fill-opacity": 0.5 },
-          }, before);
+          const before = map.getLayer("bldg-outline")
+            ? "bldg-outline"
+            : undefined;
+          map.addLayer(
+            {
+              id: "bldg-hover",
+              type: "fill",
+              source: "campus",
+              filter: ["==", ["get", "id"], ""],
+              paint: { "fill-color": "#ffeb3b", "fill-opacity": 0.5 },
+            },
+            before
+          );
         }
         if (!map.getSource("labels")) {
           map.addSource("labels", {
