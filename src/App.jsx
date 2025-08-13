@@ -63,6 +63,10 @@ export default function App() {
       pitchWithRotate: false,
     });
     mapRef.current = map;
+    const hoverPopup = new maplibregl.Popup({
+      closeButton: false,
+      closeOnClick: false,
+    });
 
     map.on("load", async () => {
       // basemap (raster, no labels)
@@ -158,10 +162,22 @@ export default function App() {
         setSelectedId(f.properties.id);
       });
 
+      map.on("mousemove", "bldg-fill", (e) => {
+        const f = e.features[0];
+        hoverPopup.setLngLat(e.lngLat).setText(f.properties.name).addTo(map);
+      });
+
+      map.on("mouseleave", "bldg-fill", () => {
+        hoverPopup.remove();
+      });
+
       map.getCanvas().style.cursor = "crosshair";
     });
 
-    return () => map.remove();
+    return () => {
+      hoverPopup.remove();
+      map.remove();
+    };
   }, [setSelectedId]);
 
   // react to selection changes safely
