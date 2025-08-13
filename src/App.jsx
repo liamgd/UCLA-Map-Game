@@ -234,7 +234,7 @@ export default function App() {
     );
     if (f) {
       const center = featureBounds(f).getCenter();
-      map.easeTo({ center, zoom: 18, duration: 800 });
+      map.easeTo({ center, zoom: 17, duration: 800 });
       setStatus(`Selected: ${f.properties.name}`);
     }
   }, [selectedId]);
