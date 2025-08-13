@@ -75,6 +75,30 @@ export default function App() {
       closeOnClick: false,
     });
 
+    const zoneColor = [
+      "match",
+      ["get", "zone"],
+      "North Campus",
+      "#6aa9ff",
+      "South Campus",
+      "#ff7f7f",
+      "The Hill",
+      "#7fff7f",
+      "Westwood",
+      "#ffcc66",
+      "#6aa9ff",
+    ];
+    const fillColor = [
+      "case",
+      ["==", ["coalesce", ["get", "name"], ""], ""],
+      "#cccccc",
+      zoneColor,
+    ];
+    const buildingFillPaint = {
+      "fill-color": fillColor,
+      "fill-opacity": 0.25,
+    };
+
     map.on("load", async () => {
       // basemap (raster, no labels)
       map.addSource("basemap", {
@@ -101,7 +125,7 @@ export default function App() {
         id: "bldg-fill",
         type: "fill",
         source: "campus",
-        paint: { "fill-color": "#6aa9ff", "fill-opacity": 0.25 },
+        paint: buildingFillPaint,
       });
       map.addLayer({
         id: "bldg-outline",
@@ -109,6 +133,16 @@ export default function App() {
         source: "campus",
         paint: { "line-color": "#1b6ef3", "line-width": 1 },
       });
+      map.addLayer(
+        {
+          id: "bldg-hover",
+          type: "fill",
+          source: "campus",
+          filter: ["==", ["get", "id"], ""],
+          paint: { "fill-color": "#ffeb3b", "fill-opacity": 0.5 },
+        },
+        "bldg-outline"
+      );
       // street labels overlay
       map.addSource("labels", {
         type: "raster",
@@ -137,7 +171,7 @@ export default function App() {
             id: "bldg-fill",
             type: "fill",
             source: "campus",
-            paint: { "fill-color": "#6aa9ff", "fill-opacity": 0.25 },
+            paint: buildingFillPaint,
           });
         }
         if (!map.getLayer("bldg-outline")) {
@@ -147,6 +181,16 @@ export default function App() {
             source: "campus",
             paint: { "line-color": "#1b6ef3", "line-width": 1 },
           });
+        }
+        if (!map.getLayer("bldg-hover")) {
+          const before = map.getLayer("bldg-outline") ? "bldg-outline" : undefined;
+          map.addLayer({
+            id: "bldg-hover",
+            type: "fill",
+            source: "campus",
+            filter: ["==", ["get", "id"], ""],
+            paint: { "fill-color": "#ffeb3b", "fill-opacity": 0.5 },
+          }, before);
         }
         if (!map.getSource("labels")) {
           map.addSource("labels", {
@@ -195,10 +239,12 @@ export default function App() {
       map.on("mousemove", "bldg-fill", (e) => {
         const f = e.features[0];
         hoverPopup.setLngLat(e.lngLat).setText(f.properties.name).addTo(map);
+        map.setFilter("bldg-hover", ["==", ["get", "id"], f.properties.id]);
       });
 
       map.on("mouseleave", "bldg-fill", () => {
         hoverPopup.remove();
+        map.setFilter("bldg-hover", ["==", ["get", "id"], ""]);
       });
 
       map.getCanvas().style.cursor = "crosshair";
