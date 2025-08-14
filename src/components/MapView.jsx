@@ -389,11 +389,7 @@ export default function MapView({
         map.setFilter("bldg-label", withBase(base, hasName));
 
         // Keep hover/highlight in sync with the same base
-        const withBase = (b, extra) => [
-          "all",
-          ...(b ? [b] : []),
-          ...(extra ? [extra] : []),
-        ];
+        // Reuse top-level withBase helper instead of redeclaring
         map.setFilter(
           "bldg-hover",
           withBase(base, ["==", ["get", "id"], hoverRef.current])
