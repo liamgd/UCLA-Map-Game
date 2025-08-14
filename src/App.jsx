@@ -193,16 +193,13 @@ export default function App() {
         source: "campus",
         paint: { "line-color": "#1b6ef3", "line-width": 1 },
       });
-      map.addLayer(
-        {
-          id: "bldg-hover",
-          type: "fill",
-          source: "campus",
-          filter: ["==", ["get", "id"], ""],
-          paint: { "fill-color": "#ffeb3b", "fill-opacity": 0.5 },
-        },
-        "bldg-outline"
-      );
+      map.addLayer({
+        id: "bldg-hover",
+        type: "line",
+        source: "campus",
+        filter: ["==", ["get", "id"], ""],
+        paint: { "line-color": "#ffeb3b", "line-width": 3 },
+      });
       // street labels overlay
       map.addSource("labels", {
         type: "raster",
@@ -248,10 +245,10 @@ export default function App() {
         if (!map.getLayer("bldg-hover")) {
           map.addLayer({
             id: "bldg-hover",
-            type: "fill",
+            type: "line",
             source: "campus",
             filter: ["==", ["get", "id"], ""],
-            paint: { "fill-color": "#ffeb3b", "fill-opacity": 0.5 },
+            paint: { "line-color": "#ffeb3b", "line-width": 3 },
           });
         }
         if (!map.getLayer("bldg-hi")) {
