@@ -227,6 +227,7 @@ IMPORTANT_OFF_CAMPUS = {
 
 BLACKLIST = {
     r"\bAxiom Apartments\b",
+    r"\bMurdock Plaza\b",
 }
 
 
