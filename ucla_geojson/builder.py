@@ -1,8 +1,9 @@
 import re
 from datetime import datetime, timezone
 
-from shapely.geometry import MultiPolygon, Polygon, mapping
+from shapely.geometry import MultiPolygon, Polygon, mapping, shape
 from shapely.geometry.polygon import orient
+from shapely.ops import transform, unary_union
 
 from .classification import determine_category, determine_zone
 from .constants import (
@@ -11,10 +12,62 @@ from .constants import (
     MIN_AREA_EXCLUDE,
     MIN_AREA_UNNAMED,
     SINGLE_TOLERANCE_M,
+    _TO_M,
 )
 from .geometry import area_m2, build_geometries, simplify_geom_m
 from .utils import hash_centroid, slugify
 
+
+# Minimum child area to consider for subset detection (m²)
+MIN_CHILD_AREA = 20
+SUBSET_BUFFER_M = 0.25
+OVERLAP_THRESHOLD = 0.60
+
+
+def _outer_shell(geom):
+    if isinstance(geom, Polygon):
+        return Polygon(geom.exterior)
+    if isinstance(geom, MultiPolygon):
+        return unary_union([Polygon(p.exterior) for p in geom.geoms])
+    return geom
+
+
+def assign_parent_child(features):
+    geoms_m = [transform(_TO_M, shape(f["geometry"])) for f in features]
+    areas = [g.area for g in geoms_m]
+    centroids = [g.centroid for g in geoms_m]
+    names = [f["properties"]["name"] for f in features]
+    outer_shells = [_outer_shell(g) for g in geoms_m]
+
+    for i, (geom_a, area_a) in enumerate(zip(geoms_m, areas)):
+        if area_a < MIN_CHILD_AREA:
+            continue
+        candidates = []
+        for j, (outer_b, area_b, name_b) in enumerate(zip(outer_shells, areas, names)):
+            if i == j or name_b.startswith("Unnamed "):
+                continue
+            inter = geom_a.intersection(outer_b)
+            overlap_area = inter.area
+            if overlap_area == 0:
+                inter = geom_a.buffer(SUBSET_BUFFER_M).intersection(outer_b)
+                overlap_area = inter.area
+            if overlap_area == 0:
+                continue
+            ratio = overlap_area / area_a
+            if ratio >= OVERLAP_THRESHOLD:
+                dist = centroids[i].distance(centroids[j])
+                pid = features[j]["properties"]["id"]
+                candidates.append((area_b, dist, pid, j, ratio))
+        if candidates:
+            candidates.sort(key=lambda x: (-x[0], x[1], x[2]))
+            _, _, pid, parent_idx, ratio = candidates[0]
+            child_props = features[i]["properties"]
+            child_props["parent_id"] = pid
+            child_props["area_ratio"] = round(ratio, 3)
+            child_props["is_subset"] = True
+            child_props["is_label_primary"] = False
+            parent_props = features[parent_idx]["properties"]
+            parent_props["is_label_primary"] = True
 
 def process_features(osm_data):
     print("Processing features...")
@@ -152,5 +205,6 @@ def process_features(osm_data):
 
     print(f"Removed {removed_dupes} duplicate feature(s) by centroid")
     features = list(deduped.values())
+    assign_parent_child(features)
     print(f"Generated {len(features)} features")
     return features
