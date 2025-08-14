@@ -18,7 +18,7 @@
         "osm_ids": [
           "way/30724960"
         ],
-        "updated_at": "2025-08-14T00:52:50.996056Z"
+        "updated_at": "2025-08-14T01:04:07.276825Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -105,7 +105,7 @@
         "osm_ids": [
           "way/44631681"
         ],
-        "updated_at": "2025-08-14T00:52:50.997048Z"
+        "updated_at": "2025-08-14T01:04:07.277321Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -516,7 +516,7 @@
         "osm_ids": [
           "way/44631685"
         ],
-        "updated_at": "2025-08-14T00:52:50.997543Z"
+        "updated_at": "2025-08-14T01:04:07.278314Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -1031,7 +1031,7 @@
         "osm_ids": [
           "way/44631687"
         ],
-        "updated_at": "2025-08-14T00:52:50.998535Z"
+        "updated_at": "2025-08-14T01:04:07.279305Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -1374,7 +1374,7 @@
         "osm_ids": [
           "way/44631689"
         ],
-        "updated_at": "2025-08-14T00:52:50.999528Z"
+        "updated_at": "2025-08-14T01:04:07.281264Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -1959,7 +1959,7 @@
         "osm_ids": [
           "way/44669492"
         ],
-        "updated_at": "2025-08-14T00:52:51.000024Z"
+        "updated_at": "2025-08-14T01:04:07.282254Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -2022,7 +2022,7 @@
         "osm_ids": [
           "way/44669498"
         ],
-        "updated_at": "2025-08-14T00:52:51.000519Z"
+        "updated_at": "2025-08-14T01:04:07.283273Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -2219,7 +2219,7 @@
         "osm_ids": [
           "way/44669501"
         ],
-        "updated_at": "2025-08-14T00:52:51.001016Z"
+        "updated_at": "2025-08-14T01:04:07.283772Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -2354,7 +2354,7 @@
         "osm_ids": [
           "way/46364638"
         ],
-        "updated_at": "2025-08-14T00:52:51.001512Z"
+        "updated_at": "2025-08-14T01:04:07.284265Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -2433,7 +2433,7 @@
         "osm_ids": [
           "way/49832949"
         ],
-        "updated_at": "2025-08-14T00:52:51.002007Z"
+        "updated_at": "2025-08-14T01:04:07.284762Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -2524,7 +2524,7 @@
         "osm_ids": [
           "way/53334145"
         ],
-        "updated_at": "2025-08-14T00:52:51.002504Z"
+        "updated_at": "2025-08-14T01:04:07.284762Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -2587,7 +2587,7 @@
         "osm_ids": [
           "way/53334151"
         ],
-        "updated_at": "2025-08-14T00:52:51.002999Z"
+        "updated_at": "2025-08-14T01:04:07.285269Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -2666,7 +2666,7 @@
         "osm_ids": [
           "way/179088301"
         ],
-        "updated_at": "2025-08-14T00:52:51.004488Z"
+        "updated_at": "2025-08-14T01:04:07.285753Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -2731,7 +2731,7 @@
         "osm_ids": [
           "way/184444681"
         ],
-        "updated_at": "2025-08-14T00:52:51.005480Z"
+        "updated_at": "2025-08-14T01:04:07.286249Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -2914,7 +2914,7 @@
         "osm_ids": [
           "way/184446757"
         ],
-        "updated_at": "2025-08-14T00:52:51.005976Z"
+        "updated_at": "2025-08-14T01:04:07.286745Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -2975,7 +2975,7 @@
         "osm_ids": [
           "way/184480980"
         ],
-        "updated_at": "2025-08-14T00:52:51.006967Z"
+        "updated_at": "2025-08-14T01:04:07.287325Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3166,7 +3166,7 @@
         "osm_ids": [
           "way/184484863"
         ],
-        "updated_at": "2025-08-14T00:52:51.007960Z"
+        "updated_at": "2025-08-14T01:04:07.287711Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3285,7 +3285,7 @@
         "osm_ids": [
           "way/184488678"
         ],
-        "updated_at": "2025-08-14T00:52:51.008952Z"
+        "updated_at": "2025-08-14T01:04:07.288233Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3372,7 +3372,7 @@
         "osm_ids": [
           "way/184488681"
         ],
-        "updated_at": "2025-08-14T00:52:51.009448Z"
+        "updated_at": "2025-08-14T01:04:07.288730Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3421,7 +3421,7 @@
         "osm_ids": [
           "way/184717292"
         ],
-        "updated_at": "2025-08-14T00:52:51.009944Z"
+        "updated_at": "2025-08-14T01:04:07.289225Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3504,7 +3504,7 @@
         "osm_ids": [
           "way/184772366"
         ],
-        "updated_at": "2025-08-14T00:52:51.010936Z"
+        "updated_at": "2025-08-14T01:04:07.289721Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3556,7 +3556,7 @@
         "osm_ids": [
           "way/184954672"
         ],
-        "updated_at": "2025-08-14T00:52:51.011431Z"
+        "updated_at": "2025-08-14T01:04:07.289721Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3635,7 +3635,7 @@
         "osm_ids": [
           "way/185081403"
         ],
-        "updated_at": "2025-08-14T00:52:51.011929Z"
+        "updated_at": "2025-08-14T01:04:07.290223Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3736,7 +3736,7 @@
         "osm_ids": [
           "way/185084330"
         ],
-        "updated_at": "2025-08-14T00:52:51.012920Z"
+        "updated_at": "2025-08-14T01:04:07.290713Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3799,7 +3799,7 @@
         "osm_ids": [
           "way/188532291"
         ],
-        "updated_at": "2025-08-14T00:52:51.013416Z"
+        "updated_at": "2025-08-14T01:04:07.291209Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3902,7 +3902,7 @@
         "osm_ids": [
           "way/199954903"
         ],
-        "updated_at": "2025-08-14T00:52:51.013912Z"
+        "updated_at": "2025-08-14T01:04:07.291705Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4005,7 +4005,7 @@
         "osm_ids": [
           "way/199954904"
         ],
-        "updated_at": "2025-08-14T00:52:51.014408Z"
+        "updated_at": "2025-08-14T01:04:07.292201Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4432,7 +4432,7 @@
         "osm_ids": [
           "way/225372406"
         ],
-        "updated_at": "2025-08-14T00:52:51.014903Z"
+        "updated_at": "2025-08-14T01:04:07.292697Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4495,7 +4495,7 @@
         "osm_ids": [
           "way/225447385"
         ],
-        "updated_at": "2025-08-14T00:52:51.015400Z"
+        "updated_at": "2025-08-14T01:04:07.293193Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4582,7 +4582,7 @@
         "osm_ids": [
           "way/227712531"
         ],
-        "updated_at": "2025-08-14T00:52:51.015897Z"
+        "updated_at": "2025-08-14T01:04:07.293689Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4629,7 +4629,7 @@
         "osm_ids": [
           "way/227712539"
         ],
-        "updated_at": "2025-08-14T00:52:51.016391Z"
+        "updated_at": "2025-08-14T01:04:07.293689Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4708,7 +4708,7 @@
         "osm_ids": [
           "way/229816682"
         ],
-        "updated_at": "2025-08-14T00:52:51.016888Z"
+        "updated_at": "2025-08-14T01:04:07.294186Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4755,7 +4755,7 @@
         "osm_ids": [
           "way/229816684"
         ],
-        "updated_at": "2025-08-14T00:52:51.017383Z"
+        "updated_at": "2025-08-14T01:04:07.294681Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5042,7 +5042,7 @@
         "osm_ids": [
           "way/229816689"
         ],
-        "updated_at": "2025-08-14T00:52:51.017880Z"
+        "updated_at": "2025-08-14T01:04:07.295177Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5139,7 +5139,7 @@
         "osm_ids": [
           "way/230758451"
         ],
-        "updated_at": "2025-08-14T00:52:51.018375Z"
+        "updated_at": "2025-08-14T01:04:07.295675Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5230,7 +5230,7 @@
         "osm_ids": [
           "way/230758455"
         ],
-        "updated_at": "2025-08-14T00:52:51.018871Z"
+        "updated_at": "2025-08-14T01:04:07.296638Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5301,7 +5301,7 @@
         "osm_ids": [
           "way/232480959"
         ],
-        "updated_at": "2025-08-14T00:52:51.021848Z"
+        "updated_at": "2025-08-14T01:04:07.297631Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5384,7 +5384,7 @@
         "osm_ids": [
           "way/232683311"
         ],
-        "updated_at": "2025-08-14T00:52:51.023831Z"
+        "updated_at": "2025-08-14T01:04:07.298127Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5479,7 +5479,7 @@
         "osm_ids": [
           "way/391131941"
         ],
-        "updated_at": "2025-08-14T00:52:51.024824Z"
+        "updated_at": "2025-08-14T01:04:07.299145Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5526,7 +5526,7 @@
         "osm_ids": [
           "way/407528998"
         ],
-        "updated_at": "2025-08-14T00:52:51.025321Z"
+        "updated_at": "2025-08-14T01:04:07.299145Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5671,7 +5671,7 @@
         "osm_ids": [
           "way/422260003"
         ],
-        "updated_at": "2025-08-14T00:52:51.025818Z"
+        "updated_at": "2025-08-14T01:04:07.299641Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5758,7 +5758,7 @@
         "osm_ids": [
           "way/422876517"
         ],
-        "updated_at": "2025-08-14T00:52:51.026312Z"
+        "updated_at": "2025-08-14T01:04:07.300138Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5881,7 +5881,7 @@
         "osm_ids": [
           "way/422876518"
         ],
-        "updated_at": "2025-08-14T00:52:51.026809Z"
+        "updated_at": "2025-08-14T01:04:07.300634Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -6060,7 +6060,7 @@
         "osm_ids": [
           "way/422876520"
         ],
-        "updated_at": "2025-08-14T00:52:51.027799Z"
+        "updated_at": "2025-08-14T01:04:07.301625Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -6131,7 +6131,7 @@
         "osm_ids": [
           "way/422876521"
         ],
-        "updated_at": "2025-08-14T00:52:51.028295Z"
+        "updated_at": "2025-08-14T01:04:07.301625Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -6186,7 +6186,7 @@
         "osm_ids": [
           "way/422876522"
         ],
-        "updated_at": "2025-08-14T00:52:51.028793Z"
+        "updated_at": "2025-08-14T01:04:07.302617Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -6323,7 +6323,7 @@
         "osm_ids": [
           "way/422876523"
         ],
-        "updated_at": "2025-08-14T00:52:51.029289Z"
+        "updated_at": "2025-08-14T01:04:07.303113Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -6430,7 +6430,7 @@
         "osm_ids": [
           "way/422876524"
         ],
-        "updated_at": "2025-08-14T00:52:51.029784Z"
+        "updated_at": "2025-08-14T01:04:07.303113Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -6493,7 +6493,7 @@
         "osm_ids": [
           "way/422876525"
         ],
-        "updated_at": "2025-08-14T00:52:51.030280Z"
+        "updated_at": "2025-08-14T01:04:07.303609Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -6948,7 +6948,7 @@
         "osm_ids": [
           "way/422876526"
         ],
-        "updated_at": "2025-08-14T00:52:51.031272Z"
+        "updated_at": "2025-08-14T01:04:07.304601Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -7331,7 +7331,7 @@
         "osm_ids": [
           "way/422876529"
         ],
-        "updated_at": "2025-08-14T00:52:51.032264Z"
+        "updated_at": "2025-08-14T01:04:07.305593Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -7590,7 +7590,7 @@
         "osm_ids": [
           "way/422876531"
         ],
-        "updated_at": "2025-08-14T00:52:51.033257Z"
+        "updated_at": "2025-08-14T01:04:07.306095Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -7685,7 +7685,7 @@
         "osm_ids": [
           "way/422876532"
         ],
-        "updated_at": "2025-08-14T00:52:51.033753Z"
+        "updated_at": "2025-08-14T01:04:07.306585Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -7780,7 +7780,7 @@
         "osm_ids": [
           "way/422876533"
         ],
-        "updated_at": "2025-08-14T00:52:51.034248Z"
+        "updated_at": "2025-08-14T01:04:07.306585Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -7827,7 +7827,7 @@
         "osm_ids": [
           "way/422876534"
         ],
-        "updated_at": "2025-08-14T00:52:51.034744Z"
+        "updated_at": "2025-08-14T01:04:07.307081Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -7984,7 +7984,7 @@
         "osm_ids": [
           "way/422876535"
         ],
-        "updated_at": "2025-08-14T00:52:51.035240Z"
+        "updated_at": "2025-08-14T01:04:07.307560Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8047,7 +8047,7 @@
         "osm_ids": [
           "way/422876536"
         ],
-        "updated_at": "2025-08-14T00:52:51.035737Z"
+        "updated_at": "2025-08-14T01:04:07.308046Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8150,7 +8150,7 @@
         "osm_ids": [
           "way/422876537"
         ],
-        "updated_at": "2025-08-14T00:52:51.038216Z"
+        "updated_at": "2025-08-14T01:04:07.308542Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8327,7 +8327,7 @@
         "osm_ids": [
           "way/422876538"
         ],
-        "updated_at": "2025-08-14T00:52:51.039704Z"
+        "updated_at": "2025-08-14T01:04:07.309038Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8422,7 +8422,7 @@
         "osm_ids": [
           "way/422876539"
         ],
-        "updated_at": "2025-08-14T00:52:51.040199Z"
+        "updated_at": "2025-08-14T01:04:07.309534Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8533,7 +8533,7 @@
         "osm_ids": [
           "way/422876540"
         ],
-        "updated_at": "2025-08-14T00:52:51.041688Z"
+        "updated_at": "2025-08-14T01:04:07.310030Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8752,7 +8752,7 @@
         "osm_ids": [
           "way/422876541"
         ],
-        "updated_at": "2025-08-14T00:52:51.042185Z"
+        "updated_at": "2025-08-14T01:04:07.311050Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8859,7 +8859,7 @@
         "osm_ids": [
           "way/422876542"
         ],
-        "updated_at": "2025-08-14T00:52:51.042680Z"
+        "updated_at": "2025-08-14T01:04:07.311543Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9012,7 +9012,7 @@
         "osm_ids": [
           "way/422876543"
         ],
-        "updated_at": "2025-08-14T00:52:51.043176Z"
+        "updated_at": "2025-08-14T01:04:07.312037Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9059,7 +9059,7 @@
         "osm_ids": [
           "way/422876544"
         ],
-        "updated_at": "2025-08-14T00:52:51.043672Z"
+        "updated_at": "2025-08-14T01:04:07.312534Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9162,7 +9162,7 @@
         "osm_ids": [
           "way/422876545"
         ],
-        "updated_at": "2025-08-14T00:52:51.044167Z"
+        "updated_at": "2025-08-14T01:04:07.313006Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9357,7 +9357,7 @@
         "osm_ids": [
           "way/422876549"
         ],
-        "updated_at": "2025-08-14T00:52:51.045161Z"
+        "updated_at": "2025-08-14T01:04:07.313998Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9416,7 +9416,7 @@
         "osm_ids": [
           "way/422876552"
         ],
-        "updated_at": "2025-08-14T00:52:51.045656Z"
+        "updated_at": "2025-08-14T01:04:07.314990Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9563,7 +9563,7 @@
         "osm_ids": [
           "way/422876557"
         ],
-        "updated_at": "2025-08-14T00:52:51.046151Z"
+        "updated_at": "2025-08-14T01:04:07.315512Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9758,7 +9758,7 @@
         "osm_ids": [
           "way/422876563"
         ],
-        "updated_at": "2025-08-14T00:52:51.046648Z"
+        "updated_at": "2025-08-14T01:04:07.315982Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9893,7 +9893,7 @@
         "osm_ids": [
           "way/422876565"
         ],
-        "updated_at": "2025-08-14T00:52:51.047144Z"
+        "updated_at": "2025-08-14T01:04:07.316502Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9940,7 +9940,7 @@
         "osm_ids": [
           "way/422876566"
         ],
-        "updated_at": "2025-08-14T00:52:51.047640Z"
+        "updated_at": "2025-08-14T01:04:07.316997Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10043,7 +10043,7 @@
         "osm_ids": [
           "way/422876567"
         ],
-        "updated_at": "2025-08-14T00:52:51.048136Z"
+        "updated_at": "2025-08-14T01:04:07.317493Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10106,7 +10106,7 @@
         "osm_ids": [
           "way/422876568"
         ],
-        "updated_at": "2025-08-14T00:52:51.048632Z"
+        "updated_at": "2025-08-14T01:04:07.317967Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10211,7 +10211,7 @@
         "osm_ids": [
           "way/422876569"
         ],
-        "updated_at": "2025-08-14T00:52:51.049128Z"
+        "updated_at": "2025-08-14T01:04:07.318463Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10282,7 +10282,7 @@
         "osm_ids": [
           "way/422876570"
         ],
-        "updated_at": "2025-08-14T00:52:51.049633Z"
+        "updated_at": "2025-08-14T01:04:07.318959Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10425,7 +10425,7 @@
         "osm_ids": [
           "way/422876571"
         ],
-        "updated_at": "2025-08-14T00:52:51.050615Z"
+        "updated_at": "2025-08-14T01:04:07.319455Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10596,7 +10596,7 @@
         "osm_ids": [
           "way/422876572"
         ],
-        "updated_at": "2025-08-14T00:52:51.051112Z"
+        "updated_at": "2025-08-14T01:04:07.319951Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10795,7 +10795,7 @@
         "osm_ids": [
           "way/422876573"
         ],
-        "updated_at": "2025-08-14T00:52:51.051608Z"
+        "updated_at": "2025-08-14T01:04:07.320943Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10842,7 +10842,7 @@
         "osm_ids": [
           "way/422876574"
         ],
-        "updated_at": "2025-08-14T00:52:51.052103Z"
+        "updated_at": "2025-08-14T01:04:07.320943Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10947,7 +10947,7 @@
         "osm_ids": [
           "way/422876575"
         ],
-        "updated_at": "2025-08-14T00:52:51.054584Z"
+        "updated_at": "2025-08-14T01:04:07.321439Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -11101,7 +11101,7 @@
         "osm_ids": [
           "way/422876576"
         ],
-        "updated_at": "2025-08-14T00:52:51.055575Z"
+        "updated_at": "2025-08-14T01:04:07.322431Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -11172,7 +11172,7 @@
         "osm_ids": [
           "way/422876577"
         ],
-        "updated_at": "2025-08-14T00:52:51.057064Z"
+        "updated_at": "2025-08-14T01:04:07.322927Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -11295,7 +11295,7 @@
         "osm_ids": [
           "way/422876578"
         ],
-        "updated_at": "2025-08-14T00:52:51.058055Z"
+        "updated_at": "2025-08-14T01:04:07.323423Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -11436,7 +11436,7 @@
         "osm_ids": [
           "way/422876579"
         ],
-        "updated_at": "2025-08-14T00:52:51.058551Z"
+        "updated_at": "2025-08-14T01:04:07.323919Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -11527,7 +11527,7 @@
         "osm_ids": [
           "way/422876580"
         ],
-        "updated_at": "2025-08-14T00:52:51.059047Z"
+        "updated_at": "2025-08-14T01:04:07.324415Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -11646,7 +11646,7 @@
         "osm_ids": [
           "way/422876581"
         ],
-        "updated_at": "2025-08-14T00:52:51.059543Z"
+        "updated_at": "2025-08-14T01:04:07.324911Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -11961,7 +11961,7 @@
         "osm_ids": [
           "way/422876582"
         ],
-        "updated_at": "2025-08-14T00:52:51.060535Z"
+        "updated_at": "2025-08-14T01:04:07.325407Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -12016,7 +12016,7 @@
         "osm_ids": [
           "way/422876583"
         ],
-        "updated_at": "2025-08-14T00:52:51.061032Z"
+        "updated_at": "2025-08-14T01:04:07.325903Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -12087,7 +12087,7 @@
         "osm_ids": [
           "way/422876584"
         ],
-        "updated_at": "2025-08-14T00:52:51.061527Z"
+        "updated_at": "2025-08-14T01:04:07.326399Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -12150,7 +12150,7 @@
         "osm_ids": [
           "way/422876586"
         ],
-        "updated_at": "2025-08-14T00:52:51.062023Z"
+        "updated_at": "2025-08-14T01:04:07.326895Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -12213,7 +12213,7 @@
         "osm_ids": [
           "way/422876587"
         ],
-        "updated_at": "2025-08-14T00:52:51.062519Z"
+        "updated_at": "2025-08-14T01:04:07.327391Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -12300,7 +12300,7 @@
         "osm_ids": [
           "way/422876588"
         ],
-        "updated_at": "2025-08-14T00:52:51.063015Z"
+        "updated_at": "2025-08-14T01:04:07.327887Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -12399,7 +12399,7 @@
         "osm_ids": [
           "way/422876589"
         ],
-        "updated_at": "2025-08-14T00:52:51.063511Z"
+        "updated_at": "2025-08-14T01:04:07.328383Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -12462,7 +12462,7 @@
         "osm_ids": [
           "way/422876590"
         ],
-        "updated_at": "2025-08-14T00:52:51.064007Z"
+        "updated_at": "2025-08-14T01:04:07.328879Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -12625,7 +12625,7 @@
         "osm_ids": [
           "way/422876593"
         ],
-        "updated_at": "2025-08-14T00:52:51.064503Z"
+        "updated_at": "2025-08-14T01:04:07.329373Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -12672,7 +12672,7 @@
         "osm_ids": [
           "way/422876594"
         ],
-        "updated_at": "2025-08-14T00:52:51.064999Z"
+        "updated_at": "2025-08-14T01:04:07.330367Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -12847,7 +12847,7 @@
         "osm_ids": [
           "way/422876595"
         ],
-        "updated_at": "2025-08-14T00:52:51.065495Z"
+        "updated_at": "2025-08-14T01:04:07.330862Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -12938,7 +12938,7 @@
         "osm_ids": [
           "way/422876596"
         ],
-        "updated_at": "2025-08-14T00:52:51.066487Z"
+        "updated_at": "2025-08-14T01:04:07.331855Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -13041,7 +13041,7 @@
         "osm_ids": [
           "way/422876597"
         ],
-        "updated_at": "2025-08-14T00:52:51.066983Z"
+        "updated_at": "2025-08-14T01:04:07.332350Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -13088,7 +13088,7 @@
         "osm_ids": [
           "way/422876598"
         ],
-        "updated_at": "2025-08-14T00:52:51.067479Z"
+        "updated_at": "2025-08-14T01:04:07.332846Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -13199,7 +13199,7 @@
         "osm_ids": [
           "way/422876599"
         ],
-        "updated_at": "2025-08-14T00:52:51.067975Z"
+        "updated_at": "2025-08-14T01:04:07.333342Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -13330,7 +13330,7 @@
         "osm_ids": [
           "way/422876600"
         ],
-        "updated_at": "2025-08-14T00:52:51.068967Z"
+        "updated_at": "2025-08-14T01:04:07.333865Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -13505,7 +13505,7 @@
         "osm_ids": [
           "way/422876601"
         ],
-        "updated_at": "2025-08-14T00:52:51.069463Z"
+        "updated_at": "2025-08-14T01:04:07.334334Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -13636,7 +13636,7 @@
         "osm_ids": [
           "way/422876602"
         ],
-        "updated_at": "2025-08-14T00:52:51.071943Z"
+        "updated_at": "2025-08-14T01:04:07.334857Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -13871,7 +13871,7 @@
         "osm_ids": [
           "way/422876603"
         ],
-        "updated_at": "2025-08-14T00:52:51.072935Z"
+        "updated_at": "2025-08-14T01:04:07.335353Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -13964,7 +13964,7 @@
         "osm_ids": [
           "way/422876610"
         ],
-        "updated_at": "2025-08-14T00:52:51.073928Z"
+        "updated_at": "2025-08-14T01:04:07.335849Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -14159,7 +14159,7 @@
         "osm_ids": [
           "way/422876611"
         ],
-        "updated_at": "2025-08-14T00:52:51.074919Z"
+        "updated_at": "2025-08-14T01:04:07.336346Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -14342,7 +14342,7 @@
         "osm_ids": [
           "way/422876613"
         ],
-        "updated_at": "2025-08-14T00:52:51.075415Z"
+        "updated_at": "2025-08-14T01:04:07.336841Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -14421,7 +14421,7 @@
         "osm_ids": [
           "way/422876614"
         ],
-        "updated_at": "2025-08-14T00:52:51.075911Z"
+        "updated_at": "2025-08-14T01:04:07.337337Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -14580,7 +14580,7 @@
         "osm_ids": [
           "way/422876615"
         ],
-        "updated_at": "2025-08-14T00:52:51.076903Z"
+        "updated_at": "2025-08-14T01:04:07.337839Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -14675,7 +14675,7 @@
         "osm_ids": [
           "way/422876616"
         ],
-        "updated_at": "2025-08-14T00:52:51.077400Z"
+        "updated_at": "2025-08-14T01:04:07.338329Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -14774,7 +14774,7 @@
         "osm_ids": [
           "way/422876617"
         ],
-        "updated_at": "2025-08-14T00:52:51.077895Z"
+        "updated_at": "2025-08-14T01:04:07.338825Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -14925,7 +14925,7 @@
         "osm_ids": [
           "way/422876618"
         ],
-        "updated_at": "2025-08-14T00:52:51.078392Z"
+        "updated_at": "2025-08-14T01:04:07.339318Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15036,7 +15036,7 @@
         "osm_ids": [
           "way/422876619"
         ],
-        "updated_at": "2025-08-14T00:52:51.079384Z"
+        "updated_at": "2025-08-14T01:04:07.339817Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15123,7 +15123,7 @@
         "osm_ids": [
           "way/422876620"
         ],
-        "updated_at": "2025-08-14T00:52:51.079880Z"
+        "updated_at": "2025-08-14T01:04:07.340313Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15178,7 +15178,7 @@
         "osm_ids": [
           "way/422876621"
         ],
-        "updated_at": "2025-08-14T00:52:51.080376Z"
+        "updated_at": "2025-08-14T01:04:07.340809Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15249,7 +15249,7 @@
         "osm_ids": [
           "way/422876622"
         ],
-        "updated_at": "2025-08-14T00:52:51.080872Z"
+        "updated_at": "2025-08-14T01:04:07.341305Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15454,7 +15454,7 @@
         "osm_ids": [
           "way/422876623"
         ],
-        "updated_at": "2025-08-14T00:52:51.081368Z"
+        "updated_at": "2025-08-14T01:04:07.341802Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15652,7 +15652,7 @@
         "osm_ids": [
           "way/422876624"
         ],
-        "updated_at": "2025-08-14T00:52:51.081866Z"
+        "updated_at": "2025-08-14T01:04:07.342297Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15715,7 +15715,7 @@
         "osm_ids": [
           "way/422876625"
         ],
-        "updated_at": "2025-08-14T00:52:51.082360Z"
+        "updated_at": "2025-08-14T01:04:07.342793Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15818,7 +15818,7 @@
         "osm_ids": [
           "way/422876626"
         ],
-        "updated_at": "2025-08-14T00:52:51.082856Z"
+        "updated_at": "2025-08-14T01:04:07.342793Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15933,7 +15933,7 @@
         "osm_ids": [
           "way/422876627"
         ],
-        "updated_at": "2025-08-14T00:52:51.083848Z"
+        "updated_at": "2025-08-14T01:04:07.343291Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -16088,7 +16088,7 @@
         "osm_ids": [
           "way/422876628"
         ],
-        "updated_at": "2025-08-14T00:52:51.084344Z"
+        "updated_at": "2025-08-14T01:04:07.343786Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -16215,7 +16215,7 @@
         "osm_ids": [
           "way/422876629"
         ],
-        "updated_at": "2025-08-14T00:52:51.084840Z"
+        "updated_at": "2025-08-14T01:04:07.344285Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -16422,7 +16422,7 @@
         "osm_ids": [
           "way/422876630"
         ],
-        "updated_at": "2025-08-14T00:52:51.085336Z"
+        "updated_at": "2025-08-14T01:04:07.344777Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -16641,7 +16641,7 @@
         "osm_ids": [
           "way/422876631"
         ],
-        "updated_at": "2025-08-14T00:52:51.086825Z"
+        "updated_at": "2025-08-14T01:04:07.345273Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -16776,7 +16776,7 @@
         "osm_ids": [
           "way/422876632"
         ],
-        "updated_at": "2025-08-14T00:52:51.088807Z"
+        "updated_at": "2025-08-14T01:04:07.346239Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -17047,7 +17047,7 @@
         "osm_ids": [
           "way/422876633"
         ],
-        "updated_at": "2025-08-14T00:52:51.090296Z"
+        "updated_at": "2025-08-14T01:04:07.347727Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -17150,7 +17150,7 @@
         "osm_ids": [
           "way/422876634"
         ],
-        "updated_at": "2025-08-14T00:52:51.091288Z"
+        "updated_at": "2025-08-14T01:04:07.348719Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -17261,7 +17261,7 @@
         "osm_ids": [
           "way/422876635"
         ],
-        "updated_at": "2025-08-14T00:52:51.092281Z"
+        "updated_at": "2025-08-14T01:04:07.349215Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -17452,7 +17452,7 @@
         "osm_ids": [
           "way/422876636"
         ],
-        "updated_at": "2025-08-14T00:52:51.093272Z"
+        "updated_at": "2025-08-14T01:04:07.349710Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -17715,7 +17715,7 @@
         "osm_ids": [
           "way/422876637"
         ],
-        "updated_at": "2025-08-14T00:52:51.094759Z"
+        "updated_at": "2025-08-14T01:04:07.350235Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18026,7 +18026,7 @@
         "osm_ids": [
           "way/422876638"
         ],
-        "updated_at": "2025-08-14T00:52:51.095752Z"
+        "updated_at": "2025-08-14T01:04:07.350702Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18377,7 +18377,7 @@
         "osm_ids": [
           "way/422876640"
         ],
-        "updated_at": "2025-08-14T00:52:51.097239Z"
+        "updated_at": "2025-08-14T01:04:07.351226Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18594,7 +18594,7 @@
         "osm_ids": [
           "way/422876641"
         ],
-        "updated_at": "2025-08-14T00:52:51.098231Z"
+        "updated_at": "2025-08-14T01:04:07.351721Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18681,7 +18681,7 @@
         "osm_ids": [
           "way/422876642"
         ],
-        "updated_at": "2025-08-14T00:52:51.099719Z"
+        "updated_at": "2025-08-14T01:04:07.352217Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18792,7 +18792,7 @@
         "osm_ids": [
           "way/422876643"
         ],
-        "updated_at": "2025-08-14T00:52:51.100711Z"
+        "updated_at": "2025-08-14T01:04:07.352712Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18899,7 +18899,7 @@
         "osm_ids": [
           "way/422876644"
         ],
-        "updated_at": "2025-08-14T00:52:51.101207Z"
+        "updated_at": "2025-08-14T01:04:07.353209Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18962,7 +18962,7 @@
         "osm_ids": [
           "way/422876645"
         ],
-        "updated_at": "2025-08-14T00:52:51.101704Z"
+        "updated_at": "2025-08-14T01:04:07.353706Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -19057,7 +19057,7 @@
         "osm_ids": [
           "way/422876647"
         ],
-        "updated_at": "2025-08-14T00:52:51.102696Z"
+        "updated_at": "2025-08-14T01:04:07.354201Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -19336,7 +19336,7 @@
         "osm_ids": [
           "way/422876648"
         ],
-        "updated_at": "2025-08-14T00:52:51.105177Z"
+        "updated_at": "2025-08-14T01:04:07.354697Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -19727,7 +19727,7 @@
         "osm_ids": [
           "way/422876649"
         ],
-        "updated_at": "2025-08-14T00:52:51.106664Z"
+        "updated_at": "2025-08-14T01:04:07.355193Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -19806,7 +19806,7 @@
         "osm_ids": [
           "way/422876650"
         ],
-        "updated_at": "2025-08-14T00:52:51.107161Z"
+        "updated_at": "2025-08-14T01:04:07.355702Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -19887,7 +19887,7 @@
         "osm_ids": [
           "way/422876651"
         ],
-        "updated_at": "2025-08-14T00:52:51.108153Z"
+        "updated_at": "2025-08-14T01:04:07.356185Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -19992,7 +19992,7 @@
         "osm_ids": [
           "way/422876652"
         ],
-        "updated_at": "2025-08-14T00:52:51.109144Z"
+        "updated_at": "2025-08-14T01:04:07.356681Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -20079,7 +20079,7 @@
         "osm_ids": [
           "way/422876653"
         ],
-        "updated_at": "2025-08-14T00:52:51.109639Z"
+        "updated_at": "2025-08-14T01:04:07.357177Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -20182,7 +20182,7 @@
         "osm_ids": [
           "way/422876654"
         ],
-        "updated_at": "2025-08-14T00:52:51.110135Z"
+        "updated_at": "2025-08-14T01:04:07.357674Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -20229,7 +20229,7 @@
         "osm_ids": [
           "way/422876655"
         ],
-        "updated_at": "2025-08-14T00:52:51.110631Z"
+        "updated_at": "2025-08-14T01:04:07.357674Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -20392,7 +20392,7 @@
         "osm_ids": [
           "way/422876656"
         ],
-        "updated_at": "2025-08-14T00:52:51.111128Z"
+        "updated_at": "2025-08-14T01:04:07.358169Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -20493,7 +20493,7 @@
         "osm_ids": [
           "way/422876660"
         ],
-        "updated_at": "2025-08-14T00:52:51.111623Z"
+        "updated_at": "2025-08-14T01:04:07.358665Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -20592,7 +20592,7 @@
         "osm_ids": [
           "way/422876661"
         ],
-        "updated_at": "2025-08-14T00:52:51.112119Z"
+        "updated_at": "2025-08-14T01:04:07.359163Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -20687,7 +20687,7 @@
         "osm_ids": [
           "way/422876662"
         ],
-        "updated_at": "2025-08-14T00:52:51.112615Z"
+        "updated_at": "2025-08-14T01:04:07.359658Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -20810,7 +20810,7 @@
         "osm_ids": [
           "way/422876664"
         ],
-        "updated_at": "2025-08-14T00:52:51.113112Z"
+        "updated_at": "2025-08-14T01:04:07.360153Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -20985,7 +20985,7 @@
         "osm_ids": [
           "way/422876680"
         ],
-        "updated_at": "2025-08-14T00:52:51.114600Z"
+        "updated_at": "2025-08-14T01:04:07.362111Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21032,7 +21032,7 @@
         "osm_ids": [
           "way/422876683"
         ],
-        "updated_at": "2025-08-14T00:52:51.115592Z"
+        "updated_at": "2025-08-14T01:04:07.363600Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21079,7 +21079,7 @@
         "osm_ids": [
           "way/422876694"
         ],
-        "updated_at": "2025-08-14T00:52:51.116583Z"
+        "updated_at": "2025-08-14T01:04:07.365581Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21126,7 +21126,7 @@
         "osm_ids": [
           "way/422876709"
         ],
-        "updated_at": "2025-08-14T00:52:51.117575Z"
+        "updated_at": "2025-08-14T01:04:07.368063Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21181,7 +21181,7 @@
         "osm_ids": [
           "way/422876710"
         ],
-        "updated_at": "2025-08-14T00:52:51.118071Z"
+        "updated_at": "2025-08-14T01:04:07.368559Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21236,7 +21236,7 @@
         "osm_ids": [
           "way/422876715"
         ],
-        "updated_at": "2025-08-14T00:52:51.118567Z"
+        "updated_at": "2025-08-14T01:04:07.370073Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21339,7 +21339,7 @@
         "osm_ids": [
           "way/422876720"
         ],
-        "updated_at": "2025-08-14T00:52:51.119559Z"
+        "updated_at": "2025-08-14T01:04:07.371065Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21394,7 +21394,7 @@
         "osm_ids": [
           "way/422876723"
         ],
-        "updated_at": "2025-08-14T00:52:51.121048Z"
+        "updated_at": "2025-08-14T01:04:07.372057Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21457,7 +21457,7 @@
         "osm_ids": [
           "way/422876725"
         ],
-        "updated_at": "2025-08-14T00:52:51.122536Z"
+        "updated_at": "2025-08-14T01:04:07.372553Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21504,7 +21504,7 @@
         "osm_ids": [
           "way/422876726"
         ],
-        "updated_at": "2025-08-14T00:52:51.123031Z"
+        "updated_at": "2025-08-14T01:04:07.373022Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21567,7 +21567,7 @@
         "osm_ids": [
           "way/422876727"
         ],
-        "updated_at": "2025-08-14T00:52:51.123528Z"
+        "updated_at": "2025-08-14T01:04:07.373518Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21630,7 +21630,7 @@
         "osm_ids": [
           "way/422876728"
         ],
-        "updated_at": "2025-08-14T00:52:51.124024Z"
+        "updated_at": "2025-08-14T01:04:07.374013Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21689,7 +21689,7 @@
         "osm_ids": [
           "way/425181695"
         ],
-        "updated_at": "2025-08-14T00:52:51.125017Z"
+        "updated_at": "2025-08-14T01:04:07.374013Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21804,7 +21804,7 @@
         "osm_ids": [
           "way/425181716"
         ],
-        "updated_at": "2025-08-14T00:52:51.125512Z"
+        "updated_at": "2025-08-14T01:04:07.374510Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21859,7 +21859,7 @@
         "osm_ids": [
           "way/425246943"
         ],
-        "updated_at": "2025-08-14T00:52:51.126007Z"
+        "updated_at": "2025-08-14T01:04:07.375006Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21934,7 +21934,7 @@
         "osm_ids": [
           "way/425246945"
         ],
-        "updated_at": "2025-08-14T00:52:51.126504Z"
+        "updated_at": "2025-08-14T01:04:07.375502Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -22013,7 +22013,7 @@
         "osm_ids": [
           "way/425246946"
         ],
-        "updated_at": "2025-08-14T00:52:51.127000Z"
+        "updated_at": "2025-08-14T01:04:07.375998Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -22108,7 +22108,7 @@
         "osm_ids": [
           "way/425246947"
         ],
-        "updated_at": "2025-08-14T00:52:51.127496Z"
+        "updated_at": "2025-08-14T01:04:07.376494Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -22195,7 +22195,7 @@
         "osm_ids": [
           "way/425246948"
         ],
-        "updated_at": "2025-08-14T00:52:51.127991Z"
+        "updated_at": "2025-08-14T01:04:07.376989Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -22290,7 +22290,7 @@
         "osm_ids": [
           "way/425246949"
         ],
-        "updated_at": "2025-08-14T00:52:51.127991Z"
+        "updated_at": "2025-08-14T01:04:07.377485Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -22385,7 +22385,7 @@
         "osm_ids": [
           "way/425246956"
         ],
-        "updated_at": "2025-08-14T00:52:51.128983Z"
+        "updated_at": "2025-08-14T01:04:07.377982Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -22432,7 +22432,7 @@
         "osm_ids": [
           "way/425246961"
         ],
-        "updated_at": "2025-08-14T00:52:51.129479Z"
+        "updated_at": "2025-08-14T01:04:07.378973Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -22623,7 +22623,7 @@
         "osm_ids": [
           "way/425246966"
         ],
-        "updated_at": "2025-08-14T00:52:51.129976Z"
+        "updated_at": "2025-08-14T01:04:07.380462Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -22870,7 +22870,7 @@
         "osm_ids": [
           "way/546510989"
         ],
-        "updated_at": "2025-08-14T00:52:51.130968Z"
+        "updated_at": "2025-08-14T01:04:07.381950Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -22933,7 +22933,7 @@
         "osm_ids": [
           "way/590011366"
         ],
-        "updated_at": "2025-08-14T00:52:51.131464Z"
+        "updated_at": "2025-08-14T01:04:07.382445Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -23036,7 +23036,7 @@
         "osm_ids": [
           "way/590016591"
         ],
-        "updated_at": "2025-08-14T00:52:51.131959Z"
+        "updated_at": "2025-08-14T01:04:07.382942Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -23083,7 +23083,7 @@
         "osm_ids": [
           "way/590016847"
         ],
-        "updated_at": "2025-08-14T00:52:51.131959Z"
+        "updated_at": "2025-08-14T01:04:07.383933Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -23138,7 +23138,7 @@
         "osm_ids": [
           "way/653518771"
         ],
-        "updated_at": "2025-08-14T00:52:51.132455Z"
+        "updated_at": "2025-08-14T01:04:07.384430Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -23201,7 +23201,7 @@
         "osm_ids": [
           "way/792359253"
         ],
-        "updated_at": "2025-08-14T00:52:51.132951Z"
+        "updated_at": "2025-08-14T01:04:07.384926Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -23248,7 +23248,7 @@
         "osm_ids": [
           "way/854806689"
         ],
-        "updated_at": "2025-08-14T00:52:51.133448Z"
+        "updated_at": "2025-08-14T01:04:07.385918Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -23327,7 +23327,7 @@
         "osm_ids": [
           "way/958331363"
         ],
-        "updated_at": "2025-08-14T00:52:51.133448Z"
+        "updated_at": "2025-08-14T01:04:07.386414Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -23382,7 +23382,7 @@
         "osm_ids": [
           "way/964477264"
         ],
-        "updated_at": "2025-08-14T00:52:51.133944Z"
+        "updated_at": "2025-08-14T01:04:07.387406Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -23429,7 +23429,7 @@
         "osm_ids": [
           "way/964822668"
         ],
-        "updated_at": "2025-08-14T00:52:51.134439Z"
+        "updated_at": "2025-08-14T01:04:07.387902Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -23500,7 +23500,7 @@
         "osm_ids": [
           "way/964842613"
         ],
-        "updated_at": "2025-08-14T00:52:51.134935Z"
+        "updated_at": "2025-08-14T01:04:07.388894Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -23595,7 +23595,7 @@
         "osm_ids": [
           "way/964842615"
         ],
-        "updated_at": "2025-08-14T00:52:51.135432Z"
+        "updated_at": "2025-08-14T01:04:07.389391Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -23738,7 +23738,7 @@
         "osm_ids": [
           "way/965850072"
         ],
-        "updated_at": "2025-08-14T00:52:51.135928Z"
+        "updated_at": "2025-08-14T01:04:07.389886Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -23965,7 +23965,7 @@
         "osm_ids": [
           "way/965850073"
         ],
-        "updated_at": "2025-08-14T00:52:51.137912Z"
+        "updated_at": "2025-08-14T01:04:07.390406Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24100,7 +24100,7 @@
         "osm_ids": [
           "way/965850074"
         ],
-        "updated_at": "2025-08-14T00:52:51.139409Z"
+        "updated_at": "2025-08-14T01:04:07.390878Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24339,7 +24339,7 @@
         "osm_ids": [
           "way/986844880"
         ],
-        "updated_at": "2025-08-14T00:52:51.139897Z"
+        "updated_at": "2025-08-14T01:04:07.391401Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24386,7 +24386,7 @@
         "osm_ids": [
           "way/986844881"
         ],
-        "updated_at": "2025-08-14T00:52:51.140391Z"
+        "updated_at": "2025-08-14T01:04:07.391897Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24433,7 +24433,7 @@
         "osm_ids": [
           "way/986844882"
         ],
-        "updated_at": "2025-08-14T00:52:51.140391Z"
+        "updated_at": "2025-08-14T01:04:07.392393Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24480,7 +24480,7 @@
         "osm_ids": [
           "way/986844883"
         ],
-        "updated_at": "2025-08-14T00:52:51.140889Z"
+        "updated_at": "2025-08-14T01:04:07.392393Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24527,7 +24527,7 @@
         "osm_ids": [
           "way/1025625379"
         ],
-        "updated_at": "2025-08-14T00:52:51.141879Z"
+        "updated_at": "2025-08-14T01:04:07.392889Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24622,7 +24622,7 @@
         "osm_ids": [
           "way/1026506158"
         ],
-        "updated_at": "2025-08-14T00:52:51.142872Z"
+        "updated_at": "2025-08-14T01:04:07.393358Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24713,7 +24713,7 @@
         "osm_ids": [
           "way/1026506167"
         ],
-        "updated_at": "2025-08-14T00:52:51.143863Z"
+        "updated_at": "2025-08-14T01:04:07.393881Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24796,7 +24796,7 @@
         "osm_ids": [
           "way/1081958233"
         ],
-        "updated_at": "2025-08-14T00:52:51.144360Z"
+        "updated_at": "2025-08-14T01:04:07.394377Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24843,7 +24843,7 @@
         "osm_ids": [
           "way/1081958234"
         ],
-        "updated_at": "2025-08-14T00:52:51.145353Z"
+        "updated_at": "2025-08-14T01:04:07.394847Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24890,7 +24890,7 @@
         "osm_ids": [
           "way/1081958241"
         ],
-        "updated_at": "2025-08-14T00:52:51.145353Z"
+        "updated_at": "2025-08-14T01:04:07.395343Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24985,7 +24985,7 @@
         "osm_ids": [
           "way/1083630084"
         ],
-        "updated_at": "2025-08-14T00:52:51.145848Z"
+        "updated_at": "2025-08-14T01:04:07.396334Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -25072,7 +25072,7 @@
         "osm_ids": [
           "way/1100753653"
         ],
-        "updated_at": "2025-08-14T00:52:51.146343Z"
+        "updated_at": "2025-08-14T01:04:07.397327Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -25159,7 +25159,7 @@
         "osm_ids": [
           "way/1137977964"
         ],
-        "updated_at": "2025-08-14T00:52:51.146839Z"
+        "updated_at": "2025-08-14T01:04:07.397823Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -25208,7 +25208,7 @@
         "osm_ids": [
           "relation/331542"
         ],
-        "updated_at": "2025-08-14T00:52:51.147336Z"
+        "updated_at": "2025-08-14T01:04:07.398319Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -25423,7 +25423,7 @@
         "osm_ids": [
           "relation/2389785"
         ],
-        "updated_at": "2025-08-14T00:52:51.147833Z"
+        "updated_at": "2025-08-14T01:04:07.398816Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -25510,7 +25510,7 @@
         "osm_ids": [
           "relation/6287582"
         ],
-        "updated_at": "2025-08-14T00:52:51.148328Z"
+        "updated_at": "2025-08-14T01:04:07.399333Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -25597,7 +25597,7 @@
         "osm_ids": [
           "relation/6287583"
         ],
-        "updated_at": "2025-08-14T00:52:51.149320Z"
+        "updated_at": "2025-08-14T01:04:07.400329Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26212,7 +26212,7 @@
         "osm_ids": [
           "relation/6287584"
         ],
-        "updated_at": "2025-08-14T00:52:51.150312Z"
+        "updated_at": "2025-08-14T01:04:07.401322Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26711,7 +26711,7 @@
         "osm_ids": [
           "relation/6287585"
         ],
-        "updated_at": "2025-08-14T00:52:51.151304Z"
+        "updated_at": "2025-08-14T01:04:07.402313Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26870,7 +26870,7 @@
         "osm_ids": [
           "relation/6287586"
         ],
-        "updated_at": "2025-08-14T00:52:51.151800Z"
+        "updated_at": "2025-08-14T01:04:07.402808Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26989,7 +26989,7 @@
         "osm_ids": [
           "relation/6287587"
         ],
-        "updated_at": "2025-08-14T00:52:51.152295Z"
+        "updated_at": "2025-08-14T01:04:07.403304Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27132,7 +27132,7 @@
         "osm_ids": [
           "relation/6287588"
         ],
-        "updated_at": "2025-08-14T00:52:51.154280Z"
+        "updated_at": "2025-08-14T01:04:07.403802Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27275,7 +27275,7 @@
         "osm_ids": [
           "relation/6287589"
         ],
-        "updated_at": "2025-08-14T00:52:51.155769Z"
+        "updated_at": "2025-08-14T01:04:07.404296Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27374,7 +27374,7 @@
         "osm_ids": [
           "relation/6287590"
         ],
-        "updated_at": "2025-08-14T00:52:51.156264Z"
+        "updated_at": "2025-08-14T01:04:07.404793Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27469,7 +27469,7 @@
         "osm_ids": [
           "relation/6287591"
         ],
-        "updated_at": "2025-08-14T00:52:51.157256Z"
+        "updated_at": "2025-08-14T01:04:07.405290Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27568,7 +27568,7 @@
         "osm_ids": [
           "relation/6287592"
         ],
-        "updated_at": "2025-08-14T00:52:51.158247Z"
+        "updated_at": "2025-08-14T01:04:07.405785Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27755,7 +27755,7 @@
         "osm_ids": [
           "relation/6287595"
         ],
-        "updated_at": "2025-08-14T00:52:51.159240Z"
+        "updated_at": "2025-08-14T01:04:07.406779Z"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -27996,7 +27996,7 @@
         "osm_ids": [
           "relation/6318832"
         ],
-        "updated_at": "2025-08-14T00:52:51.160728Z"
+        "updated_at": "2025-08-14T01:04:07.407769Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -28363,7 +28363,7 @@
         "osm_ids": [
           "relation/6318834"
         ],
-        "updated_at": "2025-08-14T00:52:51.161720Z"
+        "updated_at": "2025-08-14T01:04:07.408766Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -28710,7 +28710,7 @@
         "osm_ids": [
           "relation/6318836"
         ],
-        "updated_at": "2025-08-14T00:52:51.162711Z"
+        "updated_at": "2025-08-14T01:04:07.409753Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29029,7 +29029,7 @@
         "osm_ids": [
           "relation/12967372"
         ],
-        "updated_at": "2025-08-14T00:52:51.163207Z"
+        "updated_at": "2025-08-14T01:04:07.410222Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29264,7 +29264,7 @@
         "osm_ids": [
           "relation/12967374"
         ],
-        "updated_at": "2025-08-14T00:52:51.164200Z"
+        "updated_at": "2025-08-14T01:04:07.410747Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29355,7 +29355,7 @@
         "osm_ids": [
           "relation/12978307"
         ],
-        "updated_at": "2025-08-14T00:52:51.164695Z"
+        "updated_at": "2025-08-14T01:04:07.411241Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29548,7 +29548,7 @@
         "osm_ids": [
           "relation/12996854"
         ],
-        "updated_at": "2025-08-14T00:52:51.165191Z"
+        "updated_at": "2025-08-14T01:04:07.412233Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29699,7 +29699,7 @@
         "osm_ids": [
           "relation/13007994"
         ],
-        "updated_at": "2025-08-14T00:52:51.165688Z"
+        "updated_at": "2025-08-14T01:04:07.412716Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29834,7 +29834,7 @@
         "osm_ids": [
           "way/425246936"
         ],
-        "updated_at": "2025-08-14T00:52:51.167672Z"
+        "updated_at": "2025-08-14T01:04:07.414190Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30027,692 +30027,6 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "unnamed-building-3e2b37",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "The Hill",
-        "category": "Residential",
-        "subtype": "Housing",
-        "important_off_campus": false,
-        "centroid": [
-          -118.450062,
-          34.061303
-        ],
-        "osm_ids": [
-          "way/425246940"
-        ],
-        "updated_at": "2025-08-14T00:52:51.168168Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.4501529,
-              34.061007100000005
-            ],
-            [
-              -118.45008560000001,
-              34.060932900000005
-            ],
-            [
-              -118.4500245,
-              34.060970899999994
-            ],
-            [
-              -118.4500245,
-              34.060976600000004
-            ],
-            [
-              -118.45001170000002,
-              34.060962400000015
-            ],
-            [
-              -118.44999970000002,
-              34.060969899999996
-            ],
-            [
-              -118.4500125,
-              34.06098399999996
-            ],
-            [
-              -118.4499698,
-              34.06101059999995
-            ],
-            [
-              -118.4499732,
-              34.061014199999995
-            ],
-            [
-              -118.4498616,
-              34.0610765
-            ],
-            [
-              -118.44986740000002,
-              34.06108289999998
-            ],
-            [
-              -118.4497685,
-              34.06114450000002
-            ],
-            [
-              -118.449747,
-              34.06112069999998
-            ],
-            [
-              -118.44967700000001,
-              34.0611579
-            ],
-            [
-              -118.4496865,
-              34.06116830000001
-            ],
-            [
-              -118.44965299999998,
-              34.06118910000001
-            ],
-            [
-              -118.44964270000001,
-              34.061177799999975
-            ],
-            [
-              -118.4496013,
-              34.061203600000006
-            ],
-            [
-              -118.44963019999999,
-              34.06123560000001
-            ],
-            [
-              -118.4496447,
-              34.06122650000002
-            ],
-            [
-              -118.44976159999999,
-              34.06135529999999
-            ],
-            [
-              -118.4497662,
-              34.061352400000004
-            ],
-            [
-              -118.4498532,
-              34.06144819999995
-            ],
-            [
-              -118.44984340000002,
-              34.06145440000001
-            ],
-            [
-              -118.4499333,
-              34.0615535
-            ],
-            [
-              -118.44994790000001,
-              34.06154439999994
-            ],
-            [
-              -118.449967,
-              34.06156549999999
-            ],
-            [
-              -118.44995830000002,
-              34.061570899999964
-            ],
-            [
-              -118.44998219999998,
-              34.0615973
-            ],
-            [
-              -118.4499747,
-              34.06160200000001
-            ],
-            [
-              -118.4499919,
-              34.061620999999974
-            ],
-            [
-              -118.44999800000001,
-              34.061617199999986
-            ],
-            [
-              -118.45002290000001,
-              34.0616447
-            ],
-            [
-              -118.4500525,
-              34.06162620000001
-            ],
-            [
-              -118.4500657,
-              34.061640700000005
-            ],
-            [
-              -118.4501001,
-              34.06161919999995
-            ],
-            [
-              -118.4501121,
-              34.06163239999997
-            ],
-            [
-              -118.4501982,
-              34.061578799999985
-            ],
-            [
-              -118.4502298,
-              34.06156329999999
-            ],
-            [
-              -118.4502349,
-              34.061568899999976
-            ],
-            [
-              -118.45026440000001,
-              34.06155050000005
-            ],
-            [
-              -118.45026040000002,
-              34.061546099999966
-            ],
-            [
-              -118.45028999999998,
-              34.06152770000002
-            ],
-            [
-              -118.4502844,
-              34.061521499999984
-            ],
-            [
-              -118.45033139999998,
-              34.061492299999976
-            ],
-            [
-              -118.4503411,
-              34.06150290000004
-            ],
-            [
-              -118.45042610000002,
-              34.061444999999985
-            ],
-            [
-              -118.4504361,
-              34.06145600000002
-            ],
-            [
-              -118.4504986,
-              34.06141699999999
-            ],
-            [
-              -118.45046959999999,
-              34.06138500000002
-            ],
-            [
-              -118.4504797,
-              34.061378699999985
-            ],
-            [
-              -118.4504515,
-              34.0613475
-            ],
-            [
-              -118.4504412,
-              34.06135390000002
-            ],
-            [
-              -118.45041560000001,
-              34.0613257
-            ],
-            [
-              -118.4503642,
-              34.0613577
-            ],
-            [
-              -118.4503431,
-              34.06133439999999
-            ],
-            [
-              -118.4504215,
-              34.06128560000002
-            ],
-            [
-              -118.4503737,
-              34.06123300000003
-            ],
-            [
-              -118.450362,
-              34.06124030000004
-            ],
-            [
-              -118.45034480000001,
-              34.06122129999999
-            ],
-            [
-              -118.45034120000001,
-              34.06122349999995
-            ],
-            [
-              -118.4502409,
-              34.06111290000002
-            ],
-            [
-              -118.4501973,
-              34.061140099999974
-            ],
-            [
-              -118.450191,
-              34.06113320000001
-            ],
-            [
-              -118.4502016,
-              34.061126599999945
-            ],
-            [
-              -118.45017629999998,
-              34.0610987
-            ],
-            [
-              -118.4501662,
-              34.06110500000001
-            ],
-            [
-              -118.45016059999999,
-              34.06109889999996
-            ],
-            [
-              -118.45020940000002,
-              34.061068500000005
-            ],
-            [
-              -118.45018100000001,
-              34.06103719999997
-            ],
-            [
-              -118.4501914,
-              34.06103070000001
-            ],
-            [
-              -118.4501639,
-              34.061000300000025
-            ],
-            [
-              -118.4501529,
-              34.061007100000005
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "unnamed-building-3b70c5",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "The Hill",
-        "category": "Residential",
-        "subtype": "Housing",
-        "important_off_campus": false,
-        "centroid": [
-          -118.45124,
-          34.063507
-        ],
-        "osm_ids": [
-          "way/44631684"
-        ],
-        "updated_at": "2025-08-14T00:52:51.169159Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.4513174,
-              34.0632132
-            ],
-            [
-              -118.45124900000002,
-              34.06313619999997
-            ],
-            [
-              -118.4511373,
-              34.063204799999966
-            ],
-            [
-              -118.45112120000002,
-              34.06318660000002
-            ],
-            [
-              -118.45103960000002,
-              34.063236800000006
-            ],
-            [
-              -118.45105580000002,
-              34.06325500000001
-            ],
-            [
-              -118.4510222,
-              34.06327559999994
-            ],
-            [
-              -118.4510263,
-              34.06328019999999
-            ],
-            [
-              -118.4509274,
-              34.063341
-            ],
-            [
-              -118.4509065,
-              34.06331729999997
-            ],
-            [
-              -118.450885,
-              34.06333050000001
-            ],
-            [
-              -118.4508803,
-              34.0633251
-            ],
-            [
-              -118.45083680000002,
-              34.06335180000001
-            ],
-            [
-              -118.45084550000001,
-              34.06336160000001
-            ],
-            [
-              -118.4508076,
-              34.063384899999996
-            ],
-            [
-              -118.4507976,
-              34.06337360000002
-            ],
-            [
-              -118.45075979999999,
-              34.063396800000014
-            ],
-            [
-              -118.4507867,
-              34.0634271
-            ],
-            [
-              -118.4507986,
-              34.06341979999997
-            ],
-            [
-              -118.4509177,
-              34.063549599999995
-            ],
-            [
-              -118.45100270000002,
-              34.06364540000001
-            ],
-            [
-              -118.45099199999999,
-              34.06365189999996
-            ],
-            [
-              -118.45101659999999,
-              34.063679700000016
-            ],
-            [
-              -118.45102979999999,
-              34.06367149999996
-            ],
-            [
-              -118.4510687,
-              34.06371540000001
-            ],
-            [
-              -118.4510551,
-              34.06372379999999
-            ],
-            [
-              -118.45107959999999,
-              34.063751399999994
-            ],
-            [
-              -118.4510917,
-              34.063743999999986
-            ],
-            [
-              -118.4511111,
-              34.0637659
-            ],
-            [
-              -118.45110329999999,
-              34.06377070000003
-            ],
-            [
-              -118.45112690000002,
-              34.06379730000003
-            ],
-            [
-              -118.45111890000001,
-              34.063802100000004
-            ],
-            [
-              -118.4511358,
-              34.0638212
-            ],
-            [
-              -118.45114229999999,
-              34.0638172
-            ],
-            [
-              -118.4511661,
-              34.06384399999999
-            ],
-            [
-              -118.45119590000002,
-              34.06382569999996
-            ],
-            [
-              -118.4512087,
-              34.0638403
-            ],
-            [
-              -118.45124399999999,
-              34.06381859999997
-            ],
-            [
-              -118.45125870000001,
-              34.063835299999994
-            ],
-            [
-              -118.45134510000001,
-              34.06378229999999
-            ],
-            [
-              -118.4513771,
-              34.06376719999999
-            ],
-            [
-              -118.4513833,
-              34.063774099999996
-            ],
-            [
-              -118.4514122,
-              34.06375630000004
-            ],
-            [
-              -118.45140570000001,
-              34.06374900000004
-            ],
-            [
-              -118.4514341,
-              34.063731600000025
-            ],
-            [
-              -118.45143060000001,
-              34.063727600000036
-            ],
-            [
-              -118.45144800000001,
-              34.06371699999996
-            ],
-            [
-              -118.45145310000001,
-              34.06372290000001
-            ],
-            [
-              -118.45147760000002,
-              34.0637078
-            ],
-            [
-              -118.45147290000001,
-              34.06370260000003
-            ],
-            [
-              -118.4514797,
-              34.06369840000003
-            ],
-            [
-              -118.45148850000001,
-              34.063708299999966
-            ],
-            [
-              -118.451578,
-              34.06365630000004
-            ],
-            [
-              -118.45160540000002,
-              34.0636873
-            ],
-            [
-              -118.4516431,
-              34.06366409999999
-            ],
-            [
-              -118.4516488,
-              34.063670500000036
-            ],
-            [
-              -118.4516822,
-              34.06365000000005
-            ],
-            [
-              -118.451677,
-              34.06364409999999
-            ],
-            [
-              -118.4517089,
-              34.063624400000045
-            ],
-            [
-              -118.45172619999998,
-              34.063643899999974
-            ],
-            [
-              -118.451794,
-              34.063602299999964
-            ],
-            [
-              -118.4517126,
-              34.06351049999998
-            ],
-            [
-              -118.4516656,
-              34.06353940000004
-            ],
-            [
-              -118.45165389999998,
-              34.06352619999995
-            ],
-            [
-              -118.4516405,
-              34.06353440000002
-            ],
-            [
-              -118.4516248,
-              34.06351669999999
-            ],
-            [
-              -118.45151940000001,
-              34.06358140000002
-            ],
-            [
-              -118.45150860000001,
-              34.063569199999996
-            ],
-            [
-              -118.4515181,
-              34.06356339999999
-            ],
-            [
-              -118.4514986,
-              34.06354150000003
-            ],
-            [
-              -118.45157789999999,
-              34.06349280000003
-            ],
-            [
-              -118.45152569999999,
-              34.06344049999996
-            ],
-            [
-              -118.45151550000001,
-              34.0634468
-            ],
-            [
-              -118.4514986,
-              34.06342770000003
-            ],
-            [
-              -118.4514946,
-              34.063430099999984
-            ],
-            [
-              -118.45141740000001,
-              34.06333780000003
-            ],
-            [
-              -118.45140890000002,
-              34.063343100000026
-            ],
-            [
-              -118.4513896,
-              34.063321300000034
-            ],
-            [
-              -118.4513645,
-              34.06333669999997
-            ],
-            [
-              -118.45132839999998,
-              34.06329589999999
-            ],
-            [
-              -118.45136739999998,
-              34.063272
-            ],
-            [
-              -118.45134030000001,
-              34.06324149999996
-            ],
-            [
-              -118.45135049999999,
-              34.06323530000005
-            ],
-            [
-              -118.45132620000001,
-              34.06320789999997
-            ],
-            [
-              -118.4513174,
-              34.0632132
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "unnamed-building-4c38b0",
         "name": "Unnamed Building",
         "aliases": [],
@@ -30727,7 +30041,7 @@
         "osm_ids": [
           "way/425246937"
         ],
-        "updated_at": "2025-08-14T00:52:51.171144Z"
+        "updated_at": "2025-08-14T01:04:07.415182Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30934,7 +30248,7 @@
         "osm_ids": [
           "way/425246938"
         ],
-        "updated_at": "2025-08-14T00:52:51.172633Z"
+        "updated_at": "2025-08-14T01:04:07.415678Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -31123,353 +30437,6 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "unnamed-building-14934b",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "The Hill",
-        "category": "Residential",
-        "subtype": "Housing",
-        "important_off_campus": false,
-        "centroid": [
-          -118.451992,
-          34.063315
-        ],
-        "osm_ids": [
-          "way/425246941"
-        ],
-        "updated_at": "2025-08-14T00:52:51.173127Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.45206510000001,
-              34.06301779999999
-            ],
-            [
-              -118.45199520000001,
-              34.06294420000001
-            ],
-            [
-              -118.4518775,
-              34.06302160000001
-            ],
-            [
-              -118.4518607,
-              34.06300400000003
-            ],
-            [
-              -118.45182909999998,
-              34.063023799999975
-            ],
-            [
-              -118.45179729999998,
-              34.06304570000002
-            ],
-            [
-              -118.4518136,
-              34.063062799999976
-            ],
-            [
-              -118.4517725,
-              34.06308979999998
-            ],
-            [
-              -118.45177809999998,
-              34.063095699999984
-            ],
-            [
-              -118.4516825,
-              34.063158599999994
-            ],
-            [
-              -118.451659,
-              34.06313400000001
-            ],
-            [
-              -118.4515903,
-              34.06317480000002
-            ],
-            [
-              -118.45159959999998,
-              34.06318470000001
-            ],
-            [
-              -118.4515672,
-              34.06320600000002
-            ],
-            [
-              -118.4515564,
-              34.063194600000024
-            ],
-            [
-              -118.45151780000002,
-              34.06322010000003
-            ],
-            [
-              -118.451548,
-              34.0632519
-            ],
-            [
-              -118.45156020000002,
-              34.06324400000004
-            ],
-            [
-              -118.4516804,
-              34.063370499999984
-            ],
-            [
-              -118.45168839999998,
-              34.063365300000015
-            ],
-            [
-              -118.45177719999998,
-              34.06345880000001
-            ],
-            [
-              -118.4517646,
-              34.063467099999976
-            ],
-            [
-              -118.4517898,
-              34.06349360000002
-            ],
-            [
-              -118.45180209999998,
-              34.06348550000003
-            ],
-            [
-              -118.451843,
-              34.063528599999984
-            ],
-            [
-              -118.45183020000002,
-              34.063537000000004
-            ],
-            [
-              -118.45185519999998,
-              34.06356339999999
-            ],
-            [
-              -118.4518694,
-              34.063554099999976
-            ],
-            [
-              -118.4518912,
-              34.0635771
-            ],
-            [
-              -118.45188249999998,
-              34.06358279999996
-            ],
-            [
-              -118.45190730000002,
-              34.0636089
-            ],
-            [
-              -118.45189920000001,
-              34.0636142
-            ],
-            [
-              -118.45191570000001,
-              34.06363169999997
-            ],
-            [
-              -118.45192290000001,
-              34.063627
-            ],
-            [
-              -118.4519483,
-              34.06365369999998
-            ],
-            [
-              -118.4519766,
-              34.06363510000004
-            ],
-            [
-              -118.4519899,
-              34.06364900000001
-            ],
-            [
-              -118.45202370000001,
-              34.0636268
-            ],
-            [
-              -118.45203660000001,
-              34.06364040000001
-            ],
-            [
-              -118.452121,
-              34.063584899999995
-            ],
-            [
-              -118.4521244,
-              34.06358849999999
-            ],
-            [
-              -118.45215160000001,
-              34.0635706
-            ],
-            [
-              -118.4521575,
-              34.063576799999964
-            ],
-            [
-              -118.4521892,
-              34.06355589999998
-            ],
-            [
-              -118.4521825,
-              34.06354880000001
-            ],
-            [
-              -118.4522562,
-              34.0635003
-            ],
-            [
-              -118.45226220000002,
-              34.063506599999975
-            ],
-            [
-              -118.45233939999999,
-              34.06345580000002
-            ],
-            [
-              -118.45234420000001,
-              34.06346089999999
-            ],
-            [
-              -118.45235949999999,
-              34.06345570000001
-            ],
-            [
-              -118.45242640000001,
-              34.06352619999997
-            ],
-            [
-              -118.4525111,
-              34.063470500000044
-            ],
-            [
-              -118.4524563,
-              34.06342069999998
-            ],
-            [
-              -118.45244340000002,
-              34.063429200000044
-            ],
-            [
-              -118.452425,
-              34.063409800000024
-            ],
-            [
-              -118.4524148,
-              34.06341650000004
-            ],
-            [
-              -118.45238689999998,
-              34.06338710000001
-            ],
-            [
-              -118.4523971,
-              34.063380399999986
-            ],
-            [
-              -118.4523707,
-              34.06335269999994
-            ],
-            [
-              -118.4523602,
-              34.06335960000002
-            ],
-            [
-              -118.45233130000001,
-              34.063329099999976
-            ],
-            [
-              -118.4522843,
-              34.06336009999998
-            ],
-            [
-              -118.452263,
-              34.06333770000003
-            ],
-            [
-              -118.4523426,
-              34.06328539999998
-            ],
-            [
-              -118.45232070000002,
-              34.06326239999998
-            ],
-            [
-              -118.452314,
-              34.063266900000016
-            ],
-            [
-              -118.4522852,
-              34.06323649999997
-            ],
-            [
-              -118.4522729,
-              34.063244600000004
-            ],
-            [
-              -118.45217140000001,
-              34.06313769999999
-            ],
-            [
-              -118.45216290000002,
-              34.063143399999994
-            ],
-            [
-              -118.45214280000002,
-              34.06312219999998
-            ],
-            [
-              -118.4521196,
-              34.06313749999998
-            ],
-            [
-              -118.45208970000002,
-              34.063106
-            ],
-            [
-              -118.45207800000001,
-              34.063113699999995
-            ],
-            [
-              -118.45207210000001,
-              34.063107500000044
-            ],
-            [
-              -118.4521196,
-              34.06307629999999
-            ],
-            [
-              -118.4520911,
-              34.06304630000001
-            ],
-            [
-              -118.4521019,
-              34.0630392
-            ],
-            [
-              -118.45207530000002,
-              34.06301109999996
-            ],
-            [
-              -118.45206510000001,
-              34.06301779999999
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "unnamed-building-01cda7",
         "name": "Unnamed Building",
         "aliases": [],
@@ -31484,7 +30451,7 @@
         "osm_ids": [
           "way/44669503"
         ],
-        "updated_at": "2025-08-14T00:52:51.174121Z"
+        "updated_at": "2025-08-14T01:04:07.416174Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -31541,221 +30508,6 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "unnamed-building-df95e9",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "South Campus",
-        "category": "Academic",
-        "subtype": "Academic/Research",
-        "important_off_campus": false,
-        "centroid": [
-          -118.443058,
-          34.066231
-        ],
-        "osm_ids": [
-          "way/179088304"
-        ],
-        "updated_at": "2025-08-14T00:52:51.175111Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.442073,
-              34.06597199999998
-            ],
-            [
-              -118.4423979,
-              34.06596980000002
-            ],
-            [
-              -118.44240310000002,
-              34.06650089999999
-            ],
-            [
-              -118.4422077,
-              34.066502199999995
-            ],
-            [
-              -118.44221060000001,
-              34.066808200000025
-            ],
-            [
-              -118.44263680000002,
-              34.066805300000006
-            ],
-            [
-              -118.442642,
-              34.06693420000002
-            ],
-            [
-              -118.4433243,
-              34.066926699999996
-            ],
-            [
-              -118.44332360000001,
-              34.06684220000001
-            ],
-            [
-              -118.4432838,
-              34.066842400000006
-            ],
-            [
-              -118.4432809,
-              34.066501399999986
-            ],
-            [
-              -118.4440756,
-              34.06649680000002
-            ],
-            [
-              -118.44407550000001,
-              34.0664855
-            ],
-            [
-              -118.4440867,
-              34.066485500000006
-            ],
-            [
-              -118.4440865,
-              34.06645489999995
-            ],
-            [
-              -118.4440756,
-              34.066455000000005
-            ],
-            [
-              -118.44407550000001,
-              34.066355399999985
-            ],
-            [
-              -118.4438392,
-              34.06635570000003
-            ],
-            [
-              -118.4438386,
-              34.06597380000002
-            ],
-            [
-              -118.4441092,
-              34.065973500000005
-            ],
-            [
-              -118.44410909999999,
-              34.06590880000002
-            ],
-            [
-              -118.4440816,
-              34.06590889999999
-            ],
-            [
-              -118.44408150000001,
-              34.06582269999996
-            ],
-            [
-              -118.4438375,
-              34.06582280000003
-            ],
-            [
-              -118.4438375,
-              34.06567739999998
-            ],
-            [
-              -118.44385709999999,
-              34.06567739999998
-            ],
-            [
-              -118.44385709999999,
-              34.065623099999996
-            ],
-            [
-              -118.44365939999999,
-              34.06562290000001
-            ],
-            [
-              -118.4436592,
-              34.065748
-            ],
-            [
-              -118.44355920000001,
-              34.0657479
-            ],
-            [
-              -118.4435595,
-              34.06561119999998
-            ],
-            [
-              -118.44329369999998,
-              34.06561080000001
-            ],
-            [
-              -118.4432935,
-              34.06574180000003
-            ],
-            [
-              -118.4432174,
-              34.065741700000004
-            ],
-            [
-              -118.4432176,
-              34.06562400000001
-            ],
-            [
-              -118.4431891,
-              34.06562400000001
-            ],
-            [
-              -118.4431852,
-              34.06562860000001
-            ],
-            [
-              -118.44302540000001,
-              34.0656296
-            ],
-            [
-              -118.44302720000002,
-              34.0658282
-            ],
-            [
-              -118.442562,
-              34.065830999999996
-            ],
-            [
-              -118.442559,
-              34.06549690000003
-            ],
-            [
-              -118.44238789999999,
-              34.06549790000003
-            ],
-            [
-              -118.4423909,
-              34.06583339999995
-            ],
-            [
-              -118.44229180000002,
-              34.06583400000001
-            ],
-            [
-              -118.4422822,
-              34.065827800000015
-            ],
-            [
-              -118.44207160000002,
-              34.065829200000024
-            ],
-            [
-              -118.442073,
-              34.06597199999998
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "unnamed-building-9d039f",
         "name": "Unnamed Building",
         "aliases": [],
@@ -31770,7 +30522,7 @@
         "osm_ids": [
           "way/422876490"
         ],
-        "updated_at": "2025-08-14T00:52:51.176104Z"
+        "updated_at": "2025-08-14T01:04:07.416702Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -31835,93 +30587,6 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "unnamed-building-761655",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "South Campus",
-        "category": "Academic",
-        "subtype": "Academic/Research",
-        "important_off_campus": false,
-        "centroid": [
-          -118.442997,
-          34.068876
-        ],
-        "osm_ids": [
-          "way/422876493"
-        ],
-        "updated_at": "2025-08-14T00:52:51.176599Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.4425522,
-              34.06927989999996
-            ],
-            [
-              -118.4434295,
-              34.06927539999998
-            ],
-            [
-              -118.44342869999998,
-              34.06846729999998
-            ],
-            [
-              -118.44331859999998,
-              34.068463800000025
-            ],
-            [
-              -118.44331859999998,
-              34.06845659999998
-            ],
-            [
-              -118.44328439999998,
-              34.06845450000003
-            ],
-            [
-              -118.44328340000001,
-              34.068463399999985
-            ],
-            [
-              -118.4432178,
-              34.068463800000025
-            ],
-            [
-              -118.44321770000002,
-              34.06847750000003
-            ],
-            [
-              -118.4425484,
-              34.06847889999999
-            ],
-            [
-              -118.44254930000001,
-              34.06865259999999
-            ],
-            [
-              -118.44257170000002,
-              34.068652499999985
-            ],
-            [
-              -118.44257410000002,
-              34.069107300000006
-            ],
-            [
-              -118.44255130000002,
-              34.06910740000003
-            ],
-            [
-              -118.4425522,
-              34.06927989999996
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "unnamed-building-135752",
         "name": "Unnamed Building",
         "aliases": [],
@@ -31936,7 +30601,7 @@
         "osm_ids": [
           "way/422876503"
         ],
-        "updated_at": "2025-08-14T00:52:51.177095Z"
+        "updated_at": "2025-08-14T01:04:07.417666Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -31969,264 +30634,6 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "unnamed-building-f7e6ac",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "South Campus",
-        "category": "Academic",
-        "subtype": "Academic/Research",
-        "important_off_campus": false,
-        "centroid": [
-          -118.44296,
-          34.068048
-        ],
-        "osm_ids": [
-          "way/422876530"
-        ],
-        "updated_at": "2025-08-14T00:52:51.177591Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.4433855,
-              34.06831310000004
-            ],
-            [
-              -118.44338489999998,
-              34.06772580000002
-            ],
-            [
-              -118.44334589999998,
-              34.06772579999999
-            ],
-            [
-              -118.44334589999998,
-              34.06777040000003
-            ],
-            [
-              -118.4431366,
-              34.067770599999974
-            ],
-            [
-              -118.4431366,
-              34.06772540000005
-            ],
-            [
-              -118.44278350000002,
-              34.067725699999954
-            ],
-            [
-              -118.44278360000001,
-              34.067771100000044
-            ],
-            [
-              -118.4425749,
-              34.06777129999996
-            ],
-            [
-              -118.44257479999999,
-              34.06772620000003
-            ],
-            [
-              -118.442529,
-              34.06772620000003
-            ],
-            [
-              -118.44252910000002,
-              34.06778380000002
-            ],
-            [
-              -118.4425341,
-              34.06778380000002
-            ],
-            [
-              -118.4425359,
-              34.06831470000004
-            ],
-            [
-              -118.4425299,
-              34.06831470000004
-            ],
-            [
-              -118.44253000000002,
-              34.06837270000002
-            ],
-            [
-              -118.442578,
-              34.06837259999997
-            ],
-            [
-              -118.44257780000001,
-              34.06832270000003
-            ],
-            [
-              -118.4427828,
-              34.06832230000003
-            ],
-            [
-              -118.44278299999999,
-              34.06837060000004
-            ],
-            [
-              -118.44314360000001,
-              34.06836999999999
-            ],
-            [
-              -118.44314339999998,
-              34.06831869999996
-            ],
-            [
-              -118.44334229999998,
-              34.06831840000006
-            ],
-            [
-              -118.4433424,
-              34.06837089999994
-            ],
-            [
-              -118.44339470000001,
-              34.068370800000004
-            ],
-            [
-              -118.4433946,
-              34.06831310000004
-            ],
-            [
-              -118.4433855,
-              34.06831310000004
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "unnamed-building-8c2dc1",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "South Campus",
-        "category": "Academic",
-        "subtype": "Academic/Research",
-        "important_off_campus": false,
-        "centroid": [
-          -118.441295,
-          34.068926
-        ],
-        "osm_ids": [
-          "way/826786354"
-        ],
-        "updated_at": "2025-08-14T00:52:51.178087Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.4414399,
-              34.06838290000001
-            ],
-            [
-              -118.4406931,
-              34.068716599999995
-            ],
-            [
-              -118.44069329999999,
-              34.06876839999995
-            ],
-            [
-              -118.4406557,
-              34.06876849999999
-            ],
-            [
-              -118.44065669999999,
-              34.069019600000004
-            ],
-            [
-              -118.4406943,
-              34.0690196
-            ],
-            [
-              -118.4406946,
-              34.06910230000003
-            ],
-            [
-              -118.4407157,
-              34.06910220000002
-            ],
-            [
-              -118.44071579999999,
-              34.0691206
-            ],
-            [
-              -118.44054270000001,
-              34.06912100000004
-            ],
-            [
-              -118.4405435,
-              34.06931170000001
-            ],
-            [
-              -118.4406625,
-              34.069311299999995
-            ],
-            [
-              -118.44066300000001,
-              34.06943650000002
-            ],
-            [
-              -118.4408899,
-              34.06943590000001
-            ],
-            [
-              -118.4408894,
-              34.0693022
-            ],
-            [
-              -118.4411924,
-              34.06930140000003
-            ],
-            [
-              -118.4411924,
-              34.06930900000001
-            ],
-            [
-              -118.441921,
-              34.06930780000002
-            ],
-            [
-              -118.441919,
-              34.06911460000001
-            ],
-            [
-              -118.44191329999998,
-              34.06911460000001
-            ],
-            [
-              -118.44191200000002,
-              34.06847459999999
-            ],
-            [
-              -118.44154900000001,
-              34.06847530000001
-            ],
-            [
-              -118.4415482,
-              34.06838230000004
-            ],
-            [
-              -118.4414399,
-              34.06838290000001
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "unnamed-building-bf0843",
         "name": "Unnamed Building",
         "aliases": [],
@@ -32241,7 +30648,7 @@
         "osm_ids": [
           "way/826786355"
         ],
-        "updated_at": "2025-08-14T00:52:51.178583Z"
+        "updated_at": "2025-08-14T01:04:07.417666Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32300,7 +30707,7 @@
         "osm_ids": [
           "way/51125966"
         ],
-        "updated_at": "2025-08-14T00:52:51.179079Z"
+        "updated_at": "2025-08-14T01:04:07.418184Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32333,93 +30740,6 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "unnamed-building-4b9293",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "The Hill",
-        "category": "Residential",
-        "subtype": "Housing",
-        "important_off_campus": false,
-        "centroid": [
-          -118.446331,
-          34.066459
-        ],
-        "osm_ids": [
-          "way/179074944"
-        ],
-        "updated_at": "2025-08-14T00:52:51.179575Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.4458105,
-              34.06601020000004
-            ],
-            [
-              -118.44581650000002,
-              34.0665342
-            ],
-            [
-              -118.44543349999998,
-              34.066539799999966
-            ],
-            [
-              -118.44543550000002,
-              34.066909400000014
-            ],
-            [
-              -118.44686090000002,
-              34.066904099999974
-            ],
-            [
-              -118.446852,
-              34.06659499999999
-            ],
-            [
-              -118.44685550000001,
-              34.066382600000004
-            ],
-            [
-              -118.4472535,
-              34.0663776
-            ],
-            [
-              -118.4472505,
-              34.066208500000016
-            ],
-            [
-              -118.4472355,
-              34.06615470000002
-            ],
-            [
-              -118.4472145,
-              34.0661197
-            ],
-            [
-              -118.4471635,
-              34.0660708
-            ],
-            [
-              -118.44710750000002,
-              34.06603259999999
-            ],
-            [
-              -118.4470075,
-              34.06600119999999
-            ],
-            [
-              -118.4458105,
-              34.06601020000004
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "unnamed-building-6d13c8",
         "name": "Unnamed Building",
         "aliases": [],
@@ -32434,7 +30754,7 @@
         "osm_ids": [
           "way/44669494"
         ],
-        "updated_at": "2025-08-14T00:52:51.180071Z"
+        "updated_at": "2025-08-14T01:04:07.418681Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32483,149 +30803,6 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "unnamed-building-b6991e",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "Westwood",
-        "category": "Other/Unknown",
-        "subtype": "Unknown",
-        "important_off_campus": false,
-        "centroid": [
-          -118.439917,
-          34.066905
-        ],
-        "osm_ids": [
-          "way/422876497"
-        ],
-        "updated_at": "2025-08-14T00:52:51.180567Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.4400647,
-              34.06658580000001
-            ],
-            [
-              -118.4399479,
-              34.06653760000002
-            ],
-            [
-              -118.43990150000002,
-              34.06661559999999
-            ],
-            [
-              -118.43989439999999,
-              34.06661269999998
-            ],
-            [
-              -118.4398751,
-              34.06664499999999
-            ],
-            [
-              -118.43984640000001,
-              34.0666332
-            ],
-            [
-              -118.439755,
-              34.066786899999975
-            ],
-            [
-              -118.43969330000002,
-              34.066761500000005
-            ],
-            [
-              -118.4396383,
-              34.066853899999984
-            ],
-            [
-              -118.439702,
-              34.06688020000004
-            ],
-            [
-              -118.43954790000001,
-              34.067139199999986
-            ],
-            [
-              -118.43966510000001,
-              34.0671875
-            ],
-            [
-              -118.4396698,
-              34.067179499999995
-            ],
-            [
-              -118.43970869999998,
-              34.067195600000005
-            ],
-            [
-              -118.4398088,
-              34.06702729999998
-            ],
-            [
-              -118.43993270000001,
-              34.06707829999998
-            ],
-            [
-              -118.43987540000002,
-              34.06717480000005
-            ],
-            [
-              -118.4399946,
-              34.067224199999956
-            ],
-            [
-              -118.4400597,
-              34.06711350000002
-            ],
-            [
-              -118.44007590000001,
-              34.06712020000002
-            ],
-            [
-              -118.4402017,
-              34.06690880000001
-            ],
-            [
-              -118.44019680000001,
-              34.0669068
-            ],
-            [
-              -118.4402315,
-              34.066848499999985
-            ],
-            [
-              -118.4402185,
-              34.0668431
-            ],
-            [
-              -118.44027270000001,
-              34.066752099999974
-            ],
-            [
-              -118.440157,
-              34.0667044
-            ],
-            [
-              -118.44012179999999,
-              34.06676349999998
-            ],
-            [
-              -118.4399911,
-              34.066709700000004
-            ],
-            [
-              -118.4400647,
-              34.06658580000001
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "unnamed-building-e9cba5",
         "name": "Unnamed Building",
         "aliases": [],
@@ -32640,7 +30817,7 @@
         "osm_ids": [
           "way/422876502"
         ],
-        "updated_at": "2025-08-14T00:52:51.181065Z"
+        "updated_at": "2025-08-14T01:04:07.419177Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32687,7 +30864,7 @@
         "osm_ids": [
           "way/422876512"
         ],
-        "updated_at": "2025-08-14T00:52:51.181560Z"
+        "updated_at": "2025-08-14T01:04:07.419673Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32832,294 +31009,6 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "unnamed-building-0d9756",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "South Campus",
-        "category": "Academic",
-        "subtype": "Academic/Research",
-        "important_off_campus": false,
-        "centroid": [
-          -118.442254,
-          34.064742
-        ],
-        "osm_ids": [
-          "way/810665456"
-        ],
-        "updated_at": "2025-08-14T00:52:51.182056Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.4423928,
-              34.064710399999996
-            ],
-            [
-              -118.44214870000002,
-              34.06461119999998
-            ],
-            [
-              -118.4421507,
-              34.0648318
-            ],
-            [
-              -118.4423755,
-              34.06483229999997
-            ],
-            [
-              -118.4423784,
-              34.064710399999996
-            ],
-            [
-              -118.4423928,
-              34.064710399999996
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "unnamed-building-cd13e6",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "South Campus",
-        "category": "Academic",
-        "subtype": "Academic/Research",
-        "important_off_campus": false,
-        "centroid": [
-          -118.442478,
-          34.064477
-        ],
-        "osm_ids": [
-          "way/810665457"
-        ],
-        "updated_at": "2025-08-14T00:52:51.182552Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.44256700000001,
-              34.06472270000004
-            ],
-            [
-              -118.442564,
-              34.06423009999997
-            ],
-            [
-              -118.4423899,
-              34.06423080000002
-            ],
-            [
-              -118.44239290000002,
-              34.06472339999998
-            ],
-            [
-              -118.44256700000001,
-              34.06472270000004
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "unnamed-building-8fae5a",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "South Campus",
-        "category": "Academic",
-        "subtype": "Academic/Research",
-        "important_off_campus": false,
-        "centroid": [
-          -118.442084,
-          34.064439
-        ],
-        "osm_ids": [
-          "way/810665458"
-        ],
-        "updated_at": "2025-08-14T00:52:51.183048Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.4419194,
-              34.06468580000003
-            ],
-            [
-              -118.44212540000001,
-              34.06468410000003
-            ],
-            [
-              -118.44213140000001,
-              34.06453009999996
-            ],
-            [
-              -118.44215920000002,
-              34.06452730000002
-            ],
-            [
-              -118.44215839999998,
-              34.06432740000001
-            ],
-            [
-              -118.44234040000002,
-              34.06432629999996
-            ],
-            [
-              -118.4423434,
-              34.06431759999997
-            ],
-            [
-              -118.4423904,
-              34.0643186
-            ],
-            [
-              -118.44239020000002,
-              34.06427210000001
-            ],
-            [
-              -118.4423484,
-              34.06427400000003
-            ],
-            [
-              -118.44235240000002,
-              34.06421580000001
-            ],
-            [
-              -118.44214540000002,
-              34.06421590000001
-            ],
-            [
-              -118.44215239999998,
-              34.06425860000001
-            ],
-            [
-              -118.4420184,
-              34.064258
-            ],
-            [
-              -118.44201640000001,
-              34.06434770000002
-            ],
-            [
-              -118.4420223,
-              34.06434770000002
-            ],
-            [
-              -118.442022,
-              34.06436209999997
-            ],
-            [
-              -118.4419034,
-              34.06436149999995
-            ],
-            [
-              -118.4419034,
-              34.06446139999999
-            ],
-            [
-              -118.4419164,
-              34.064461399999985
-            ],
-            [
-              -118.44191590000001,
-              34.0645063
-            ],
-            [
-              -118.44194900000001,
-              34.064508199999956
-            ],
-            [
-              -118.44194920000001,
-              34.064541100000014
-            ],
-            [
-              -118.44190420000001,
-              34.06454010000001
-            ],
-            [
-              -118.4419034,
-              34.06463800000001
-            ],
-            [
-              -118.4419184,
-              34.06463800000001
-            ],
-            [
-              -118.4419194,
-              34.06468580000003
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "unnamed-building-937473",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "South Campus",
-        "category": "Academic",
-        "subtype": "Academic/Research",
-        "important_off_campus": false,
-        "centroid": [
-          -118.442279,
-          34.064585
-        ],
-        "osm_ids": [
-          "way/964842611"
-        ],
-        "updated_at": "2025-08-14T00:52:51.184040Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.44214870000002,
-              34.06461119999998
-            ],
-            [
-              -118.4423928,
-              34.064710399999996
-            ],
-            [
-              -118.44239180000001,
-              34.06454970000001
-            ],
-            [
-              -118.44234400000002,
-              34.06455589999996
-            ],
-            [
-              -118.4423344,
-              34.064489999999985
-            ],
-            [
-              -118.4421612,
-              34.064495799999975
-            ],
-            [
-              -118.44214870000002,
-              34.06461119999998
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "unnamed-building-f7e6ac",
         "name": "Unnamed Building",
         "aliases": [],
@@ -33134,7 +31023,7 @@
         "osm_ids": [
           "way/966530271"
         ],
-        "updated_at": "2025-08-14T00:52:51.184040Z"
+        "updated_at": "2025-08-14T01:04:07.420170Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33167,145 +31056,6 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "unnamed-building-f1c2c7",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "South Campus",
-        "category": "Academic",
-        "subtype": "Academic/Research",
-        "important_off_campus": false,
-        "centroid": [
-          -118.441305,
-          34.067793
-        ],
-        "osm_ids": [
-          "way/966955543"
-        ],
-        "updated_at": "2025-08-14T00:52:51.185031Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.4411134,
-              34.06769169999996
-            ],
-            [
-              -118.44137500000001,
-              34.06798589999998
-            ],
-            [
-              -118.4413751,
-              34.06796629999999
-            ],
-            [
-              -118.44139870000001,
-              34.067966000000006
-            ],
-            [
-              -118.44139779999999,
-              34.067914799999954
-            ],
-            [
-              -118.4414119,
-              34.06791459999997
-            ],
-            [
-              -118.44141160000001,
-              34.06789740000006
-            ],
-            [
-              -118.44139569999999,
-              34.0678976
-            ],
-            [
-              -118.4413934,
-              34.06777209999996
-            ],
-            [
-              -118.4414111,
-              34.06777179999996
-            ],
-            [
-              -118.4414108,
-              34.067754400000005
-            ],
-            [
-              -118.4413985,
-              34.067754600000036
-            ],
-            [
-              -118.44139750000001,
-              34.06770280000005
-            ],
-            [
-              -118.4413742,
-              34.067702999999966
-            ],
-            [
-              -118.4413736,
-              34.06766700000001
-            ],
-            [
-              -118.4412898,
-              34.06766809999995
-            ],
-            [
-              -118.44129039999999,
-              34.06770310000001
-            ],
-            [
-              -118.44126759999999,
-              34.067702199999964
-            ],
-            [
-              -118.4412672,
-              34.06769119999998
-            ],
-            [
-              -118.44124509999999,
-              34.0676915
-            ],
-            [
-              -118.44124560000002,
-              34.06769890000004
-            ],
-            [
-              -118.44119910000002,
-              34.06769970000001
-            ],
-            [
-              -118.4411988,
-              34.067690799999994
-            ],
-            [
-              -118.441176,
-              34.06769169999996
-            ],
-            [
-              -118.4411762,
-              34.06770009999999
-            ],
-            [
-              -118.4411279,
-              34.06770099999999
-            ],
-            [
-              -118.4411273,
-              34.06769169999996
-            ],
-            [
-              -118.4411134,
-              34.06769169999996
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "unnamed-building-6c58db",
         "name": "Unnamed Building",
         "aliases": [],
@@ -33320,7 +31070,7 @@
         "osm_ids": [
           "way/422876485"
         ],
-        "updated_at": "2025-08-14T00:52:51.185527Z"
+        "updated_at": "2025-08-14T01:04:07.420665Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33389,621 +31139,6 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "unnamed-building-02b2ac",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "The Hill",
-        "category": "Residential",
-        "subtype": "Housing",
-        "important_off_campus": false,
-        "centroid": [
-          -118.450786,
-          34.073638
-        ],
-        "osm_ids": [
-          "way/422876492"
-        ],
-        "updated_at": "2025-08-14T00:52:51.187017Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.4506601,
-              34.07329030000002
-            ],
-            [
-              -118.45061780000002,
-              34.07328230000003
-            ],
-            [
-              -118.45059530000002,
-              34.07336539999998
-            ],
-            [
-              -118.45057760000002,
-              34.073374200000025
-            ],
-            [
-              -118.4505396,
-              34.073366499999985
-            ],
-            [
-              -118.45054130000001,
-              34.07336069999999
-            ],
-            [
-              -118.4505312,
-              34.073358600000006
-            ],
-            [
-              -118.4505404,
-              34.07332710000002
-            ],
-            [
-              -118.45048340000001,
-              34.07331560000003
-            ],
-            [
-              -118.4504625,
-              34.07338680000003
-            ],
-            [
-              -118.45048520000002,
-              34.073391399999984
-            ],
-            [
-              -118.45046570000001,
-              34.07345799999996
-            ],
-            [
-              -118.45047260000001,
-              34.07345870000002
-            ],
-            [
-              -118.4504717,
-              34.07346429999994
-            ],
-            [
-              -118.45045100000002,
-              34.07348559999996
-            ],
-            [
-              -118.4504566,
-              34.07351539999995
-            ],
-            [
-              -118.450455,
-              34.07352089999999
-            ],
-            [
-              -118.4504493,
-              34.073519799999964
-            ],
-            [
-              -118.45042960000002,
-              34.07358820000001
-            ],
-            [
-              -118.450488,
-              34.07359989999997
-            ],
-            [
-              -118.4504838,
-              34.073614400000004
-            ],
-            [
-              -118.4504625,
-              34.07361009999997
-            ],
-            [
-              -118.45045250000001,
-              34.073644699999996
-            ],
-            [
-              -118.45046050000002,
-              34.07364630000001
-            ],
-            [
-              -118.4504385,
-              34.073671000000004
-            ],
-            [
-              -118.45043579999998,
-              34.073683900000006
-            ],
-            [
-              -118.4504434,
-              34.07370200000001
-            ],
-            [
-              -118.4504416,
-              34.073707799999944
-            ],
-            [
-              -118.45043540000002,
-              34.073706399999985
-            ],
-            [
-              -118.45041650000002,
-              34.07377510000001
-            ],
-            [
-              -118.45049609999998,
-              34.073791099999994
-            ],
-            [
-              -118.4504886,
-              34.07381739999997
-            ],
-            [
-              -118.4504114,
-              34.073842499999955
-            ],
-            [
-              -118.4504065,
-              34.073848800000036
-            ],
-            [
-              -118.4504419,
-              34.07391099999998
-            ],
-            [
-              -118.45044890000001,
-              34.07390850000002
-            ],
-            [
-              -118.4504515,
-              34.073913400000016
-            ],
-            [
-              -118.45045450000002,
-              34.073943700000015
-            ],
-            [
-              -118.45048100000001,
-              34.073960199999995
-            ],
-            [
-              -118.4504842,
-              34.073965400000006
-            ],
-            [
-              -118.45047839999998,
-              34.07396790000002
-            ],
-            [
-              -118.45051760000001,
-              34.07403110000002
-            ],
-            [
-              -118.4506127,
-              34.0739902
-            ],
-            [
-              -118.4506036,
-              34.073975500000024
-            ],
-            [
-              -118.4506741,
-              34.07394520000002
-            ],
-            [
-              -118.4506378,
-              34.0738867
-            ],
-            [
-              -118.4506534,
-              34.07387999999996
-            ],
-            [
-              -118.4506326,
-              34.07384649999996
-            ],
-            [
-              -118.45061690000001,
-              34.073853199999974
-            ],
-            [
-              -118.4505995,
-              34.0738253
-            ],
-            [
-              -118.45058030000001,
-              34.07383349999996
-            ],
-            [
-              -118.450575,
-              34.07381929999998
-            ],
-            [
-              -118.4505786,
-              34.07380699999999
-            ],
-            [
-              -118.4505985,
-              34.07381100000001
-            ],
-            [
-              -118.4506171,
-              34.07374640000003
-            ],
-            [
-              -118.45063319999998,
-              34.07374960000004
-            ],
-            [
-              -118.45064399999998,
-              34.07371230000002
-            ],
-            [
-              -118.4506269,
-              34.073708900000014
-            ],
-            [
-              -118.4506445,
-              34.07364789999996
-            ],
-            [
-              -118.4507512,
-              34.0736692
-            ],
-            [
-              -118.4507476,
-              34.07368180000002
-            ],
-            [
-              -118.4507323,
-              34.07367870000002
-            ],
-            [
-              -118.4507215,
-              34.073716299999994
-            ],
-            [
-              -118.45073849999999,
-              34.07371970000003
-            ],
-            [
-              -118.45071980000002,
-              34.07378469999996
-            ],
-            [
-              -118.4508078,
-              34.073802299999976
-            ],
-            [
-              -118.45081,
-              34.0737948
-            ],
-            [
-              -118.45081550000002,
-              34.07379589999997
-            ],
-            [
-              -118.45079990000002,
-              34.07384999999997
-            ],
-            [
-              -118.4508601,
-              34.073862000000005
-            ],
-            [
-              -118.45085600000002,
-              34.07389140000002
-            ],
-            [
-              -118.45083600000001,
-              34.07388739999999
-            ],
-            [
-              -118.4508269,
-              34.07391880000001
-            ],
-            [
-              -118.4508117,
-              34.073915800000016
-            ],
-            [
-              -118.4508009,
-              34.073952800000015
-            ],
-            [
-              -118.4508161,
-              34.07395590000004
-            ],
-            [
-              -118.4507973,
-              34.07402100000003
-            ],
-            [
-              -118.4508755,
-              34.07403659999997
-            ],
-            [
-              -118.4508709,
-              34.074052600000016
-            ],
-            [
-              -118.4509748,
-              34.0740733
-            ],
-            [
-              -118.45099679999998,
-              34.07400500000005
-            ],
-            [
-              -118.4509905,
-              34.073997899999966
-            ],
-            [
-              -118.45100990000002,
-              34.07397750000001
-            ],
-            [
-              -118.45100480000002,
-              34.07394449999997
-            ],
-            [
-              -118.4510128,
-              34.07394159999999
-            ],
-            [
-              -118.451029,
-              34.073877300000014
-            ],
-            [
-              -118.4509867,
-              34.07386999999999
-            ],
-            [
-              -118.45100390000002,
-              34.073801399999994
-            ],
-            [
-              -118.45091190000001,
-              34.07378539999997
-            ],
-            [
-              -118.4509207,
-              34.07375060000004
-            ],
-            [
-              -118.450915,
-              34.07374969999996
-            ],
-            [
-              -118.4509325,
-              34.07373120000001
-            ],
-            [
-              -118.45093640000002,
-              34.07369759999997
-            ],
-            [
-              -118.4509288,
-              34.07368390000001
-            ],
-            [
-              -118.450885,
-              34.07367550000001
-            ],
-            [
-              -118.45089420000001,
-              34.073642100000015
-            ],
-            [
-              -118.4508363,
-              34.07363099999999
-            ],
-            [
-              -118.4508619,
-              34.073538899999996
-            ],
-            [
-              -118.4509336,
-              34.07355259999996
-            ],
-            [
-              -118.4509299,
-              34.0735658
-            ],
-            [
-              -118.4509739,
-              34.07357419999997
-            ],
-            [
-              -118.450978,
-              34.07355960000002
-            ],
-            [
-              -118.4510164,
-              34.07356699999996
-            ],
-            [
-              -118.4510283,
-              34.073524099999986
-            ],
-            [
-              -118.45105370000002,
-              34.07352580000001
-            ],
-            [
-              -118.4510802,
-              34.07355860000001
-            ],
-            [
-              -118.4510314,
-              34.0735793
-            ],
-            [
-              -118.4510672,
-              34.07363770000005
-            ],
-            [
-              -118.45105290000001,
-              34.073643800000035
-            ],
-            [
-              -118.4510737,
-              34.07367759999997
-            ],
-            [
-              -118.4510874,
-              34.073671800000014
-            ],
-            [
-              -118.45112370000001,
-              34.073730899999994
-            ],
-            [
-              -118.4511943,
-              34.073700999999986
-            ],
-            [
-              -118.451203,
-              34.073715099999966
-            ],
-            [
-              -118.4512966,
-              34.07367529999998
-            ],
-            [
-              -118.45125860000002,
-              34.07360870000001
-            ],
-            [
-              -118.45125020000002,
-              34.07357820000004
-            ],
-            [
-              -118.45123380000001,
-              34.07357000000004
-            ],
-            [
-              -118.4511907,
-              34.07349570000001
-            ],
-            [
-              -118.45125500000002,
-              34.07346979999996
-            ],
-            [
-              -118.4512345,
-              34.073434400000004
-            ],
-            [
-              -118.45124180000002,
-              34.07340849999999
-            ],
-            [
-              -118.45120379999999,
-              34.073401
-            ],
-            [
-              -118.45119230000002,
-              34.07338119999999
-            ],
-            [
-              -118.4511632,
-              34.07339290000003
-            ],
-            [
-              -118.45117340000002,
-              34.073410400000036
-            ],
-            [
-              -118.4511716,
-              34.07342379999996
-            ],
-            [
-              -118.4511404,
-              34.0734349
-            ],
-            [
-              -118.4510566,
-              34.07341480000002
-            ],
-            [
-              -118.451054,
-              34.073421999999994
-            ],
-            [
-              -118.4510476,
-              34.07342049999996
-            ],
-            [
-              -118.4510225,
-              34.07340450000002
-            ],
-            [
-              -118.4509816,
-              34.07340799999998
-            ],
-            [
-              -118.45097549999998,
-              34.07340679999996
-            ],
-            [
-              -118.4509772,
-              34.073401
-            ],
-            [
-              -118.4508992,
-              34.073385200000004
-            ],
-            [
-              -118.4508968,
-              34.0733935
-            ],
-            [
-              -118.4508816,
-              34.073390399999994
-            ],
-            [
-              -118.4508928,
-              34.07335209999993
-            ],
-            [
-              -118.4508138,
-              34.07333609999999
-            ],
-            [
-              -118.45080530000001,
-              34.07334029999996
-            ],
-            [
-              -118.45079060000002,
-              34.07332590000003
-            ],
-            [
-              -118.450777,
-              34.07332250000002
-            ],
-            [
-              -118.4507365,
-              34.07332710000002
-            ],
-            [
-              -118.4507341,
-              34.073319599999984
-            ],
-            [
-              -118.45065600000001,
-              34.073305000000026
-            ],
-            [
-              -118.4506601,
-              34.07329030000002
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "unnamed-building-9bb538",
         "name": "Unnamed Building",
         "aliases": [],
@@ -34018,7 +31153,7 @@
         "osm_ids": [
           "way/422876483"
         ],
-        "updated_at": "2025-08-14T00:52:51.189994Z"
+        "updated_at": "2025-08-14T01:04:07.421660Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34411,902 +31546,6 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "unnamed-building-21382d",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "The Hill",
-        "category": "Residential",
-        "subtype": "Housing",
-        "important_off_campus": false,
-        "centroid": [
-          -118.449854,
-          34.073664
-        ],
-        "osm_ids": [
-          "way/422876486"
-        ],
-        "updated_at": "2025-08-14T00:52:51.190985Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.44997009999999,
-              34.073285600000006
-            ],
-            [
-              -118.4499594,
-              34.073265099999986
-            ],
-            [
-              -118.4498689,
-              34.07329779999995
-            ],
-            [
-              -118.4498629,
-              34.073286399999965
-            ],
-            [
-              -118.4498196,
-              34.07330209999998
-            ],
-            [
-              -118.4498278,
-              34.07331789999997
-            ],
-            [
-              -118.4497974,
-              34.07332879999997
-            ],
-            [
-              -118.44979040000001,
-              34.07331529999998
-            ],
-            [
-              -118.4497483,
-              34.07333050000003
-            ],
-            [
-              -118.4497567,
-              34.07334649999996
-            ],
-            [
-              -118.4497223,
-              34.07335890000003
-            ],
-            [
-              -118.4497069,
-              34.07332920000003
-            ],
-            [
-              -118.4496384,
-              34.07335389999999
-            ],
-            [
-              -118.44965440000001,
-              34.07338449999998
-            ],
-            [
-              -118.4496215,
-              34.07339639999998
-            ],
-            [
-              -118.4496147,
-              34.07338329999995
-            ],
-            [
-              -118.4495712,
-              34.07339899999996
-            ],
-            [
-              -118.4495793,
-              34.07341470000001
-            ],
-            [
-              -118.4495511,
-              34.073424899999985
-            ],
-            [
-              -118.4495442,
-              34.07341180000003
-            ],
-            [
-              -118.4494995,
-              34.07342800000002
-            ],
-            [
-              -118.4495067,
-              34.07344189999996
-            ],
-            [
-              -118.44941629999998,
-              34.073474500000025
-            ],
-            [
-              -118.4494286,
-              34.07349809999998
-            ],
-            [
-              -118.4494128,
-              34.07350380000001
-            ],
-            [
-              -118.4494334,
-              34.073543299999955
-            ],
-            [
-              -118.4494518,
-              34.07353660000005
-            ],
-            [
-              -118.4494635,
-              34.07355919999995
-            ],
-            [
-              -118.44944680000002,
-              34.07356519999996
-            ],
-            [
-              -118.4494665,
-              34.07360290000002
-            ],
-            [
-              -118.44948460000002,
-              34.073596399999964
-            ],
-            [
-              -118.4494965,
-              34.07361929999999
-            ],
-            [
-              -118.44948,
-              34.07362519999997
-            ],
-            [
-              -118.4495001,
-              34.07366379999996
-            ],
-            [
-              -118.4495187,
-              34.07365710000003
-            ],
-            [
-              -118.44952510000002,
-              34.0736692
-            ],
-            [
-              -118.44952540000001,
-              34.073698099999966
-            ],
-            [
-              -118.4495483,
-              34.07370890000001
-            ],
-            [
-              -118.4495554,
-              34.073721700000036
-            ],
-            [
-              -118.44953840000001,
-              34.07372820000003
-            ],
-            [
-              -118.4495598,
-              34.07376739999998
-            ],
-            [
-              -118.4495777,
-              34.07376070000002
-            ],
-            [
-              -118.44958990000002,
-              34.0737828
-            ],
-            [
-              -118.44957370000002,
-              34.073789
-            ],
-            [
-              -118.4495943,
-              34.073826700000026
-            ],
-            [
-              -118.4496114,
-              34.073820199999986
-            ],
-            [
-              -118.44962000000001,
-              34.0738646
-            ],
-            [
-              -118.4496417,
-              34.073874000000046
-            ],
-            [
-              -118.4496477,
-              34.07388480000001
-            ],
-            [
-              -118.449631,
-              34.07389119999997
-            ],
-            [
-              -118.4496524,
-              34.07392980000003
-            ],
-            [
-              -118.44966949999998,
-              34.07392330000002
-            ],
-            [
-              -118.44968170000001,
-              34.073945299999984
-            ],
-            [
-              -118.4496655,
-              34.073951499999964
-            ],
-            [
-              -118.4496861,
-              34.07398889999998
-            ],
-            [
-              -118.4497029,
-              34.073982499999964
-            ],
-            [
-              -118.4497158,
-              34.07400569999996
-            ],
-            [
-              -118.44969940000001,
-              34.074011999999996
-            ],
-            [
-              -118.4497206,
-              34.07405049999997
-            ],
-            [
-              -118.4497376,
-              34.07404389999994
-            ],
-            [
-              -118.4497491,
-              34.07406469999999
-            ],
-            [
-              -118.4498397,
-              34.07402990000001
-            ],
-            [
-              -118.44984709999999,
-              34.07404319999995
-            ],
-            [
-              -118.44989230000002,
-              34.07402590000001
-            ],
-            [
-              -118.4498841,
-              34.07401110000002
-            ],
-            [
-              -118.44991099999999,
-              34.0740008
-            ],
-            [
-              -118.4499189,
-              34.0740151
-            ],
-            [
-              -118.44996320000001,
-              34.07399809999996
-            ],
-            [
-              -118.44995510000001,
-              34.0739835
-            ],
-            [
-              -118.4499933,
-              34.07396880000002
-            ],
-            [
-              -118.45000040000001,
-              34.07398180000003
-            ],
-            [
-              -118.4500574,
-              34.07395989999997
-            ],
-            [
-              -118.45004990000001,
-              34.073946499999984
-            ],
-            [
-              -118.4500857,
-              34.07393280000001
-            ],
-            [
-              -118.4500932,
-              34.07394639999998
-            ],
-            [
-              -118.45013900000001,
-              34.073928900000006
-            ],
-            [
-              -118.45013030000001,
-              34.073913200000014
-            ],
-            [
-              -118.45015870000002,
-              34.073902399999966
-            ],
-            [
-              -118.4501673,
-              34.07391790000001
-            ],
-            [
-              -118.45021180000002,
-              34.073900899999984
-            ],
-            [
-              -118.45020380000001,
-              34.0738863
-            ],
-            [
-              -118.4502933,
-              34.07385200000002
-            ],
-            [
-              -118.4502823,
-              34.073830699999995
-            ],
-            [
-              -118.4502975,
-              34.07382529999999
-            ],
-            [
-              -118.45027690000002,
-              34.07378539999997
-            ],
-            [
-              -118.45025680000002,
-              34.07379259999998
-            ],
-            [
-              -118.45024459999999,
-              34.07376900000001
-            ],
-            [
-              -118.4502618,
-              34.07376289999998
-            ],
-            [
-              -118.450243,
-              34.073726600000015
-            ],
-            [
-              -118.4502255,
-              34.073732899999996
-            ],
-            [
-              -118.45021319999998,
-              34.07370919999997
-            ],
-            [
-              -118.4502277,
-              34.07370399999996
-            ],
-            [
-              -118.45020820000002,
-              34.073666199999984
-            ],
-            [
-              -118.4501899,
-              34.0736727
-            ],
-            [
-              -118.45018340000001,
-              34.07366010000001
-            ],
-            [
-              -118.45018669999999,
-              34.073641100000025
-            ],
-            [
-              -118.45018160000001,
-              34.07363079999997
-            ],
-            [
-              -118.4501619,
-              34.07362149999998
-            ],
-            [
-              -118.45015459999999,
-              34.07360659999998
-            ],
-            [
-              -118.4501653,
-              34.07360299999995
-            ],
-            [
-              -118.45014710000001,
-              34.07356550000002
-            ],
-            [
-              -118.4501377,
-              34.07356869999999
-            ],
-            [
-              -118.45011460000002,
-              34.0735066
-            ],
-            [
-              -118.4500998,
-              34.07351160000003
-            ],
-            [
-              -118.45009109999998,
-              34.07347130000001
-            ],
-            [
-              -118.45006819999999,
-              34.07345770000001
-            ],
-            [
-              -118.450063,
-              34.0734407
-            ],
-            [
-              -118.4500791,
-              34.07343730000002
-            ],
-            [
-              -118.4500596,
-              34.073399899999984
-            ],
-            [
-              -118.45003969999999,
-              34.073407100000026
-            ],
-            [
-              -118.45002730000002,
-              34.07338339999994
-            ],
-            [
-              -118.450044,
-              34.07337730000005
-            ],
-            [
-              -118.45002530000001,
-              34.07334149999997
-            ],
-            [
-              -118.4500066,
-              34.07334819999999
-            ],
-            [
-              -118.44999400000002,
-              34.073324200000016
-            ],
-            [
-              -118.450011,
-              34.07331800000004
-            ],
-            [
-              -118.4499903,
-              34.0732783
-            ],
-            [
-              -118.44997009999999,
-              34.073285600000006
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "unnamed-building-5519c4",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "North Campus",
-        "category": "Academic",
-        "subtype": "Academic/Research",
-        "important_off_campus": false,
-        "centroid": [
-          -118.440219,
-          34.073354
-        ],
-        "osm_ids": [
-          "way/422876489"
-        ],
-        "updated_at": "2025-08-14T00:52:51.191975Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.4401027,
-              34.07314400000003
-            ],
-            [
-              -118.4401027,
-              34.07313589999997
-            ],
-            [
-              -118.4398277,
-              34.07313720000001
-            ],
-            [
-              -118.4398297,
-              34.073472500000015
-            ],
-            [
-              -118.4398417,
-              34.073472399999964
-            ],
-            [
-              -118.43984270000001,
-              34.07356880000002
-            ],
-            [
-              -118.4398897,
-              34.07356860000006
-            ],
-            [
-              -118.4398897,
-              34.07357449999997
-            ],
-            [
-              -118.4405537,
-              34.073571299999976
-            ],
-            [
-              -118.4405537,
-              34.073564299999994
-            ],
-            [
-              -118.44059969999999,
-              34.0735641
-            ],
-            [
-              -118.4405987,
-              34.073468900000016
-            ],
-            [
-              -118.4406107,
-              34.073468799999986
-            ],
-            [
-              -118.44060870000001,
-              34.07313319999997
-            ],
-            [
-              -118.4403347,
-              34.073135399999984
-            ],
-            [
-              -118.4403347,
-              34.073142900000015
-            ],
-            [
-              -118.4401027,
-              34.07314400000003
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "unnamed-building-9283fc",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "Westwood",
-        "category": "Other/Unknown",
-        "subtype": "Unknown",
-        "important_off_campus": false,
-        "centroid": [
-          -118.439252,
-          34.073663
-        ],
-        "osm_ids": [
-          "way/422876498"
-        ],
-        "updated_at": "2025-08-14T00:52:51.192471Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.43929319999998,
-              34.07349659999998
-            ],
-            [
-              -118.4392093,
-              34.073496499999955
-            ],
-            [
-              -118.4392093,
-              34.073532200000045
-            ],
-            [
-              -118.4391978,
-              34.07353209999995
-            ],
-            [
-              -118.4391978,
-              34.07357600000002
-            ],
-            [
-              -118.439172,
-              34.073576000000045
-            ],
-            [
-              -118.4391721,
-              34.07355780000004
-            ],
-            [
-              -118.43909170000002,
-              34.07355769999998
-            ],
-            [
-              -118.43909170000002,
-              34.073575899999966
-            ],
-            [
-              -118.4390472,
-              34.073575899999966
-            ],
-            [
-              -118.43904700000002,
-              34.07374370000002
-            ],
-            [
-              -118.43916880000002,
-              34.073742899999964
-            ],
-            [
-              -118.4391694,
-              34.073809600000025
-            ],
-            [
-              -118.4393323,
-              34.073808500000034
-            ],
-            [
-              -118.4393317,
-              34.0737447
-            ],
-            [
-              -118.43949230000001,
-              34.073743600000014
-            ],
-            [
-              -118.4394916,
-              34.07367339999997
-            ],
-            [
-              -118.4394526,
-              34.07367359999999
-            ],
-            [
-              -118.4394523,
-              34.07364090000001
-            ],
-            [
-              -118.43941339999999,
-              34.073641100000025
-            ],
-            [
-              -118.4394232,
-              34.07360380000001
-            ],
-            [
-              -118.4394124,
-              34.07358920000002
-            ],
-            [
-              -118.43940910000002,
-              34.073556499999974
-            ],
-            [
-              -118.43932979999998,
-              34.07355639999996
-            ],
-            [
-              -118.43932979999998,
-              34.073574900000025
-            ],
-            [
-              -118.43930420000001,
-              34.073574900000025
-            ],
-            [
-              -118.43930420000001,
-              34.073533999999974
-            ],
-            [
-              -118.43929310000001,
-              34.073533900000015
-            ],
-            [
-              -118.43929319999998,
-              34.07349659999998
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "unnamed-building-0b4cd6",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "Westwood",
-        "category": "Other/Unknown",
-        "subtype": "Unknown",
-        "important_off_campus": false,
-        "centroid": [
-          -118.439248,
-          34.070347
-        ],
-        "osm_ids": [
-          "way/422876499"
-        ],
-        "updated_at": "2025-08-14T00:52:51.192967Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.4393548,
-              34.06990290000003
-            ],
-            [
-              -118.4391378,
-              34.06990360000003
-            ],
-            [
-              -118.43914280000001,
-              34.070054300000024
-            ],
-            [
-              -118.43905880000001,
-              34.07005460000001
-            ],
-            [
-              -118.43905880000001,
-              34.07009900000001
-            ],
-            [
-              -118.4389968,
-              34.07009910000003
-            ],
-            [
-              -118.4389968,
-              34.070191999999956
-            ],
-            [
-              -118.43905880000001,
-              34.07019179999999
-            ],
-            [
-              -118.43905880000001,
-              34.070222300000026
-            ],
-            [
-              -118.43901530000001,
-              34.07022269999999
-            ],
-            [
-              -118.4390148,
-              34.0703892
-            ],
-            [
-              -118.4390878,
-              34.070388999999956
-            ],
-            [
-              -118.43908880000001,
-              34.07079320000003
-            ],
-            [
-              -118.43921380000002,
-              34.07079280000002
-            ],
-            [
-              -118.43921380000002,
-              34.07078630000001
-            ],
-            [
-              -118.43926580000002,
-              34.070786099999964
-            ],
-            [
-              -118.43926580000002,
-              34.07079249999997
-            ],
-            [
-              -118.43941880000001,
-              34.07079200000006
-            ],
-            [
-              -118.4394178,
-              34.070579299999984
-            ],
-            [
-              -118.4393908,
-              34.07057939999996
-            ],
-            [
-              -118.4393898,
-              34.070409900000044
-            ],
-            [
-              -118.4394948,
-              34.0704095
-            ],
-            [
-              -118.4394938,
-              34.07025730000001
-            ],
-            [
-              -118.4394238,
-              34.07025749999995
-            ],
-            [
-              -118.4394228,
-              34.0701077
-            ],
-            [
-              -118.4394658,
-              34.070107599999936
-            ],
-            [
-              -118.43946479999998,
-              34.07003000000002
-            ],
-            [
-              -118.43942179999999,
-              34.07003009999999
-            ],
-            [
-              -118.43942179999999,
-              34.0699984
-            ],
-            [
-              -118.43938580000001,
-              34.069998499999954
-            ],
-            [
-              -118.43938580000001,
-              34.0699403
-            ],
-            [
-              -118.4393548,
-              34.06994039999998
-            ],
-            [
-              -118.4393548,
-              34.06990290000003
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "unnamed-building-2db0ae",
         "name": "Unnamed Building",
         "aliases": [],
@@ -35321,7 +31560,7 @@
         "osm_ids": [
           "way/422876505"
         ],
-        "updated_at": "2025-08-14T00:52:51.193960Z"
+        "updated_at": "2025-08-14T01:04:07.422651Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35354,521 +31593,6 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "unnamed-building-cee5d8",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "North Campus",
-        "category": "Academic",
-        "subtype": "Academic/Research",
-        "important_off_campus": false,
-        "centroid": [
-          -118.440186,
-          34.074337
-        ],
-        "osm_ids": [
-          "way/422876528"
-        ],
-        "updated_at": "2025-08-14T00:52:51.194455Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.4407747,
-              34.074501999999995
-            ],
-            [
-              -118.440775,
-              34.07433519999998
-            ],
-            [
-              -118.44026990000002,
-              34.07434059999997
-            ],
-            [
-              -118.44026990000002,
-              34.07437730000004
-            ],
-            [
-              -118.44019190000002,
-              34.07437739999999
-            ],
-            [
-              -118.4401909,
-              34.07402140000003
-            ],
-            [
-              -118.4401339,
-              34.07402150000001
-            ],
-            [
-              -118.4401339,
-              34.07400209999997
-            ],
-            [
-              -118.43981790000001,
-              34.0740029
-            ],
-            [
-              -118.43981990000002,
-              34.074470299999994
-            ],
-            [
-              -118.43997390000001,
-              34.07446989999999
-            ],
-            [
-              -118.4399749,
-              34.074572399999994
-            ],
-            [
-              -118.44057389999999,
-              34.07457099999999
-            ],
-            [
-              -118.44057290000002,
-              34.07450449999999
-            ],
-            [
-              -118.4407747,
-              34.074501999999995
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "unnamed-building-d03f39",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "North Campus",
-        "category": "Academic",
-        "subtype": "Academic/Research",
-        "important_off_campus": false,
-        "centroid": [
-          -118.440904,
-          34.074419
-        ],
-        "osm_ids": [
-          "way/964467121"
-        ],
-        "updated_at": "2025-08-14T00:52:51.194978Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.440775,
-              34.07433519999998
-            ],
-            [
-              -118.4407747,
-              34.074501999999995
-            ],
-            [
-              -118.4410346,
-              34.0745026
-            ],
-            [
-              -118.4410346,
-              34.074337900000025
-            ],
-            [
-              -118.440775,
-              34.07433519999998
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "unnamed-building-5ccf24",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "North Campus",
-        "category": "Academic",
-        "subtype": "Academic/Research",
-        "important_off_campus": false,
-        "centroid": [
-          -118.4411,
-          34.075743
-        ],
-        "osm_ids": [
-          "way/184712206"
-        ],
-        "updated_at": "2025-08-14T00:52:51.195477Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.44055980000002,
-              34.07593629999999
-            ],
-            [
-              -118.44111870000002,
-              34.07610889999999
-            ],
-            [
-              -118.44125109999999,
-              34.07610610000001
-            ],
-            [
-              -118.44125140000001,
-              34.07607260000004
-            ],
-            [
-              -118.44120639999998,
-              34.07607239999995
-            ],
-            [
-              -118.4412045,
-              34.0760232
-            ],
-            [
-              -118.4412355,
-              34.07602299999997
-            ],
-            [
-              -118.4412355,
-              34.076017800000045
-            ],
-            [
-              -118.44120510000002,
-              34.076017800000045
-            ],
-            [
-              -118.441205,
-              34.07599679999998
-            ],
-            [
-              -118.4412486,
-              34.07599400000006
-            ],
-            [
-              -118.44124770000002,
-              34.075943499999966
-            ],
-            [
-              -118.44123339999999,
-              34.075944000000014
-            ],
-            [
-              -118.44123339999999,
-              34.07593719999999
-            ],
-            [
-              -118.4412045,
-              34.07593779999997
-            ],
-            [
-              -118.441207,
-              34.07590780000002
-            ],
-            [
-              -118.44131499999999,
-              34.075906900000014
-            ],
-            [
-              -118.44131200000001,
-              34.07569369999997
-            ],
-            [
-              -118.441445,
-              34.075692599999975
-            ],
-            [
-              -118.441442,
-              34.07543749999999
-            ],
-            [
-              -118.440935,
-              34.07543760000001
-            ],
-            [
-              -118.4409353,
-              34.075455299999966
-            ],
-            [
-              -118.44087880000001,
-              34.07546150000001
-            ],
-            [
-              -118.44088290000002,
-              34.07588479999998
-            ],
-            [
-              -118.4409362,
-              34.07588969999996
-            ],
-            [
-              -118.4409361,
-              34.07590429999998
-            ],
-            [
-              -118.44075910000001,
-              34.075906300000014
-            ],
-            [
-              -118.4407022,
-              34.07589969999998
-            ],
-            [
-              -118.4407086,
-              34.07590419999999
-            ],
-            [
-              -118.440685,
-              34.07591260000002
-            ],
-            [
-              -118.44068790000001,
-              34.07593629999999
-            ],
-            [
-              -118.4406356,
-              34.0759311
-            ],
-            [
-              -118.44062850000002,
-              34.07593600000002
-            ],
-            [
-              -118.44055980000002,
-              34.07593629999999
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "unnamed-building-badeab",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "North Campus",
-        "category": "Academic",
-        "subtype": "Academic/Research",
-        "important_off_campus": false,
-        "centroid": [
-          -118.443263,
-          34.075175
-        ],
-        "osm_ids": [
-          "way/422876491"
-        ],
-        "updated_at": "2025-08-14T00:52:51.195970Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.4433454,
-              34.075068299999984
-            ],
-            [
-              -118.4432604,
-              34.0750258
-            ],
-            [
-              -118.44320640000001,
-              34.0751036
-            ],
-            [
-              -118.44313739999998,
-              34.07517539999996
-            ],
-            [
-              -118.44315440000001,
-              34.0751891
-            ],
-            [
-              -118.4430964,
-              34.0752402
-            ],
-            [
-              -118.44319940000001,
-              34.07532120000002
-            ],
-            [
-              -118.4432604,
-              34.07527180000001
-            ],
-            [
-              -118.4433014,
-              34.075297499999984
-            ],
-            [
-              -118.4433894,
-              34.0752007
-            ],
-            [
-              -118.44334740000001,
-              34.07517549999998
-            ],
-            [
-              -118.44339240000001,
-              34.07511489999998
-            ],
-            [
-              -118.44336740000001,
-              34.075102399999984
-            ],
-            [
-              -118.4433754,
-              34.07509089999998
-            ],
-            [
-              -118.44339440000002,
-              34.07509819999997
-            ],
-            [
-              -118.44341940000001,
-              34.07505250000001
-            ],
-            [
-              -118.4433654,
-              34.07503180000001
-            ],
-            [
-              -118.4433454,
-              34.075068299999984
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "unnamed-building-c05403",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "North Campus",
-        "category": "Academic",
-        "subtype": "Academic/Research",
-        "important_off_campus": false,
-        "centroid": [
-          -118.443193,
-          34.072951
-        ],
-        "osm_ids": [
-          "way/422876496"
-        ],
-        "updated_at": "2025-08-14T00:52:51.196466Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.4433096,
-              34.07267029999997
-            ],
-            [
-              -118.4429013,
-              34.07267020000001
-            ],
-            [
-              -118.4429064,
-              34.0731504
-            ],
-            [
-              -118.4430446,
-              34.07315210000003
-            ],
-            [
-              -118.4430446,
-              34.0731723
-            ],
-            [
-              -118.4430316,
-              34.0731723
-            ],
-            [
-              -118.4430316,
-              34.0732367
-            ],
-            [
-              -118.44336260000001,
-              34.073239299999976
-            ],
-            [
-              -118.4433616,
-              34.07312270000001
-            ],
-            [
-              -118.44344060000002,
-              34.07312239999999
-            ],
-            [
-              -118.44344060000002,
-              34.073096400000026
-            ],
-            [
-              -118.4435626,
-              34.07309609999998
-            ],
-            [
-              -118.44356160000001,
-              34.07286699999999
-            ],
-            [
-              -118.44337760000002,
-              34.07286759999998
-            ],
-            [
-              -118.4433766,
-              34.07282910000001
-            ],
-            [
-              -118.4433846,
-              34.07282899999997
-            ],
-            [
-              -118.4433846,
-              34.07279530000002
-            ],
-            [
-              -118.44341660000002,
-              34.07279519999999
-            ],
-            [
-              -118.4434156,
-              34.072752899999955
-            ],
-            [
-              -118.44334860000001,
-              34.07275309999998
-            ],
-            [
-              -118.44334860000001,
-              34.07273400000001
-            ],
-            [
-              -118.4433096,
-              34.07273410000002
-            ],
-            [
-              -118.4433096,
-              34.07267029999997
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "unnamed-building-7b6950",
         "name": "Unnamed Building",
         "aliases": [],
@@ -35883,7 +31607,7 @@
         "osm_ids": [
           "way/422876504"
         ],
-        "updated_at": "2025-08-14T00:52:51.196965Z"
+        "updated_at": "2025-08-14T01:04:07.423118Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35908,546 +31632,6 @@
             [
               -118.4431048,
               34.07298860000004
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "unnamed-building-3d16bf",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "North Campus",
-        "category": "Academic",
-        "subtype": "Academic/Research",
-        "important_off_campus": false,
-        "centroid": [
-          -118.44392,
-          34.075183
-        ],
-        "osm_ids": [
-          "way/422876510"
-        ],
-        "updated_at": "2025-08-14T00:52:51.197459Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.44380279999999,
-              34.07473120000001
-            ],
-            [
-              -118.4436898,
-              34.07473289999999
-            ],
-            [
-              -118.4436908,
-              34.07476749999999
-            ],
-            [
-              -118.4435988,
-              34.074774700000006
-            ],
-            [
-              -118.4436088,
-              34.07486850000004
-            ],
-            [
-              -118.44369980000002,
-              34.0748615
-            ],
-            [
-              -118.44370580000002,
-              34.07491620000001
-            ],
-            [
-              -118.44361580000002,
-              34.074923200000015
-            ],
-            [
-              -118.4436258,
-              34.07501599999998
-            ],
-            [
-              -118.4437158,
-              34.075009
-            ],
-            [
-              -118.4437268,
-              34.07506549999996
-            ],
-            [
-              -118.4436128,
-              34.07507439999999
-            ],
-            [
-              -118.44357779999999,
-              34.0751362
-            ],
-            [
-              -118.4436328,
-              34.07515740000001
-            ],
-            [
-              -118.4436058,
-              34.07520619999996
-            ],
-            [
-              -118.4437648,
-              34.07526750000004
-            ],
-            [
-              -118.44374480000002,
-              34.0753036
-            ],
-            [
-              -118.44377580000001,
-              34.07531590000001
-            ],
-            [
-              -118.4437468,
-              34.07536809999999
-            ],
-            [
-              -118.4438648,
-              34.07541339999998
-            ],
-            [
-              -118.44385280000002,
-              34.07543439999999
-            ],
-            [
-              -118.4439548,
-              34.075473800000005
-            ],
-            [
-              -118.44400880000002,
-              34.075377100000004
-            ],
-            [
-              -118.44420780000002,
-              34.075453800000005
-            ],
-            [
-              -118.44418080000001,
-              34.07558329999999
-            ],
-            [
-              -118.4442908,
-              34.07559950000002
-            ],
-            [
-              -118.44437580000002,
-              34.0751991
-            ],
-            [
-              -118.44432180000001,
-              34.075191200000006
-            ],
-            [
-              -118.44428880000001,
-              34.075331700000035
-            ],
-            [
-              -118.4438608,
-              34.075166
-            ],
-            [
-              -118.4438568,
-              34.07517219999999
-            ],
-            [
-              -118.4438278,
-              34.075158400000014
-            ],
-            [
-              -118.4438378,
-              34.075104099999976
-            ],
-            [
-              -118.44383379999998,
-              34.075065000000016
-            ],
-            [
-              -118.44388980000001,
-              34.075061200000015
-            ],
-            [
-              -118.4438908,
-              34.075068700000024
-            ],
-            [
-              -118.44396780000001,
-              34.075063599999986
-            ],
-            [
-              -118.4439518,
-              34.074897299999975
-            ],
-            [
-              -118.4438158,
-              34.07490629999998
-            ],
-            [
-              -118.44380279999999,
-              34.07473120000001
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "unnamed-building-43946d",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "North Campus",
-        "category": "Academic",
-        "subtype": "Academic/Research",
-        "important_off_campus": false,
-        "centroid": [
-          -118.443793,
-          34.076397
-        ],
-        "osm_ids": [
-          "way/965836162"
-        ],
-        "updated_at": "2025-08-14T00:52:51.198423Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.4435404,
-              34.07665310000002
-            ],
-            [
-              -118.4436874,
-              34.07667490000001
-            ],
-            [
-              -118.44369060000001,
-              34.076650099999995
-            ],
-            [
-              -118.4437244,
-              34.07665530000002
-            ],
-            [
-              -118.4437708,
-              34.07646639999999
-            ],
-            [
-              -118.4438938,
-              34.07648190000001
-            ],
-            [
-              -118.4438948,
-              34.07649160000005
-            ],
-            [
-              -118.44400139999999,
-              34.07649959999999
-            ],
-            [
-              -118.44403029999998,
-              34.07638369999999
-            ],
-            [
-              -118.4440091,
-              34.07638110000001
-            ],
-            [
-              -118.44403229999999,
-              34.07625550000004
-            ],
-            [
-              -118.4438164,
-              34.07622279999999
-            ],
-            [
-              -118.4438227,
-              34.076203899999975
-            ],
-            [
-              -118.4436426,
-              34.076180399999956
-            ],
-            [
-              -118.44362900000002,
-              34.076251800000016
-            ],
-            [
-              -118.4437691,
-              34.07627250000002
-            ],
-            [
-              -118.4437582,
-              34.07632359999997
-            ],
-            [
-              -118.44361490000001,
-              34.07630299999999
-            ],
-            [
-              -118.4436009,
-              34.07637950000008
-            ],
-            [
-              -118.44374120000002,
-              34.0764002
-            ],
-            [
-              -118.4437313,
-              34.07645269999993
-            ],
-            [
-              -118.44358890000001,
-              34.07643339999997
-            ],
-            [
-              -118.44357210000001,
-              34.076506499999965
-            ],
-            [
-              -118.4437133,
-              34.07652970000004
-            ],
-            [
-              -118.44370370000001,
-              34.07654770000002
-            ],
-            [
-              -118.44371519999999,
-              34.076548199999976
-            ],
-            [
-              -118.4437146,
-              34.07656510000002
-            ],
-            [
-              -118.44370559999999,
-              34.07656510000002
-            ],
-            [
-              -118.44369660000001,
-              34.07659689999999
-            ],
-            [
-              -118.4435571,
-              34.07657420000003
-            ],
-            [
-              -118.4435404,
-              34.07665310000002
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "unnamed-building-7619f5",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "Westwood",
-        "category": "Other/Unknown",
-        "subtype": "Unknown",
-        "important_off_campus": false,
-        "centroid": [
-          -118.439839,
-          34.07585
-        ],
-        "osm_ids": [
-          "way/422876487"
-        ],
-        "updated_at": "2025-08-14T00:52:51.198946Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.4404184,
-              34.075980899999955
-            ],
-            [
-              -118.44041540000002,
-              34.075580900000006
-            ],
-            [
-              -118.43940440000002,
-              34.075585000000025
-            ],
-            [
-              -118.43940689999998,
-              34.07580390000001
-            ],
-            [
-              -118.43937650000001,
-              34.0758033
-            ],
-            [
-              -118.4393754,
-              34.07596910000002
-            ],
-            [
-              -118.4394072,
-              34.07596900000005
-            ],
-            [
-              -118.4394085,
-              34.07618800000001
-            ],
-            [
-              -118.4399934,
-              34.07618609999997
-            ],
-            [
-              -118.4399914,
-              34.07580859999999
-            ],
-            [
-              -118.4401734,
-              34.075807899999994
-            ],
-            [
-              -118.4401724,
-              34.07567309999999
-            ],
-            [
-              -118.44019640000002,
-              34.075673
-            ],
-            [
-              -118.44020010000001,
-              34.07590980000001
-            ],
-            [
-              -118.4402053,
-              34.07590969999997
-            ],
-            [
-              -118.4402054,
-              34.07597740000002
-            ],
-            [
-              -118.4401984,
-              34.07598179999998
-            ],
-            [
-              -118.4404184,
-              34.075980899999955
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "unnamed-building-d77183",
-        "name": "Unnamed Building",
-        "aliases": [],
-        "zone": "North Campus",
-        "category": "Academic",
-        "subtype": "Academic/Research",
-        "important_off_campus": false,
-        "centroid": [
-          -118.440818,
-          34.076178
-        ],
-        "osm_ids": [
-          "way/964467120"
-        ],
-        "updated_at": "2025-08-14T00:52:51.199444Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -118.44111870000002,
-              34.07610889999999
-            ],
-            [
-              -118.44055980000002,
-              34.07593629999999
-            ],
-            [
-              -118.44056019999998,
-              34.076084
-            ],
-            [
-              -118.4405306,
-              34.07608409999996
-            ],
-            [
-              -118.44053219999999,
-              34.07631449999999
-            ],
-            [
-              -118.44055869999998,
-              34.076317299999985
-            ],
-            [
-              -118.440557,
-              34.07636620000002
-            ],
-            [
-              -118.440788,
-              34.076367100000006
-            ],
-            [
-              -118.440789,
-              34.07625489999999
-            ],
-            [
-              -118.44076799999999,
-              34.07625479999999
-            ],
-            [
-              -118.440769,
-              34.076097700000034
-            ],
-            [
-              -118.440959,
-              34.07609740000004
-            ],
-            [
-              -118.44096150000001,
-              34.07636570000005
-            ],
-            [
-              -118.441028,
-              34.07636600000002
-            ],
-            [
-              -118.441028,
-              34.0763106
-            ],
-            [
-              -118.44118599999999,
-              34.07631120000003
-            ],
-            [
-              -118.44125500000001,
-              34.07614460000003
-            ],
-            [
-              -118.4411194,
-              34.076145800000006
-            ],
-            [
-              -118.44111870000002,
-              34.07610889999999
             ]
           ]
         ]

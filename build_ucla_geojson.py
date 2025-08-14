@@ -271,8 +271,7 @@ def build_geometries(osm_data):
 
     way_polys = {}
     for wid, way in ways.items():
-        coords = []
-        missing = False
+        coords, missing = [], False
         for nid in way.get("nodes", []):
             n = nodes.get(nid)
             if not n:
@@ -292,6 +291,8 @@ def build_geometries(osm_data):
         way_polys[wid] = poly
 
     rel_polys = {}
+    ways_in_building_rels = set()  # <-- NEW
+
     for rel in rels:
         if "members" not in rel:
             continue
@@ -305,8 +306,12 @@ def build_geometries(osm_data):
             role = m.get("role")
             if role == "outer":
                 outers.append(poly)
+                # mark this way as belonging to a building relation
+                if "building" in rel.get("tags", {}):
+                    ways_in_building_rels.add(m.get("ref"))  # <-- NEW
             elif role == "inner":
                 inners.append(poly)
+
         if outers:
             merged = unary_union(outers)
             if (
@@ -314,7 +319,14 @@ def build_geometries(osm_data):
                 and not merged.is_empty
             ):
                 rel_polys[rel["id"]] = merged
-    return ways, rels, way_polys, rel_polys
+
+    return (
+        ways,
+        rels,
+        way_polys,
+        rel_polys,
+        ways_in_building_rels,
+    )  # <-- return new set
 
 
 def area_m2(geom):
@@ -447,11 +459,16 @@ def determine_category(tags: dict, name: str, zone: str):
 # Processing
 # -------------------
 def process_features(osm_data):
-    ways, rels, way_polys, rel_polys = build_geometries(osm_data)
+    ways, rels, way_polys, rel_polys, ways_in_building_rels = build_geometries(
+        osm_data
+    )
     features = []
 
     for el in osm_data.get("elements", []):
         if el["type"] == "way":
+            # Skip ways that are members of a building relation; the relation carries the name/tags
+            if el["id"] in ways_in_building_rels:
+                continue
             geom = way_polys.get(el["id"])
             osm_id_str = f"way/{el['id']}"
         elif el["type"] == "relation":
@@ -459,6 +476,7 @@ def process_features(osm_data):
             osm_id_str = f"relation/{el['id']}"
         else:
             continue
+        ...
 
         if geom is None or geom.is_empty:
             continue
