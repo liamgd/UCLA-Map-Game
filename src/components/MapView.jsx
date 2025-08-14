@@ -1,7 +1,8 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import Fuse from "fuse.js";
+import "./MapView.css";
 
 const BOUNDS = [
   [-118.46, 34.052],
@@ -51,6 +52,8 @@ export default function MapView({
   const selectedRef = useRef(""); // latest selected id
   const hoverRef = useRef("");
   const filterRef = useRef(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   const hasName = ["!=", ["get", "name"], "Unnamed Building"];
   const noName = ["==", ["get", "name"], "Unnamed Building"];
@@ -206,6 +209,9 @@ export default function MapView({
       });
       map.addLayer({ id: "basemap", type: "raster", source: "basemap" });
 
+      setError(false);
+      setLoading(true);
+      try {
       // campus data
       const res = await fetch("/campus.geojson");
       const data = await res.json();
@@ -393,6 +399,12 @@ export default function MapView({
       });
 
       map.getCanvas().style.cursor = "crosshair";
+      } catch (e) {
+        console.error(e);
+        setError(true);
+      } finally {
+        setLoading(false);
+      }
     });
 
     return () => {
@@ -433,5 +445,16 @@ export default function MapView({
     }
   }, [selectedId, setStatus]);
 
-  return <div id="map" style={{ width: "100%", height: "100%" }} />;
+  return (
+    <div style={{ position: "relative", width: "100%", height: "100%" }}>
+      <div id="map" style={{ width: "100%", height: "100%" }} />
+      {loading && <div className="spinner" />}
+      {error && (
+        <div className="error-overlay">
+          failed to load GeoJSON
+          <button onClick={() => window.location.reload()}>retry</button>
+        </div>
+      )}
+    </div>
+  );
 }
