@@ -241,12 +241,7 @@ def hash_centroid(centroid):
 
 
 def fetch_osm_data():
-<<<<<<< HEAD
     query = f"""
-=======
-    print("Fetching OSM data...")
-    query = """
->>>>>>> 483acd1e27bc4f07c366caef826b16f40eb5897e
 [out:json][timeout:90];
 
 // Get UCLA campus area(s)
@@ -518,7 +513,11 @@ def determine_category(tags: dict, name: str, zone: str):
         return "Athletic/Recreational", "Outdoor", False
 
     # Parking
-    if btype == "parking" or amenity == "parking" or _hint_in(name_norm, PARKING_HINTS):
+    if (
+        btype == "parking"
+        or amenity == "parking"
+        or _hint_in(name_norm, PARKING_HINTS)
+    ):
         return "Service/Support", "Parking", False
 
     # Administrative
