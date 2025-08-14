@@ -240,15 +240,23 @@ def fetch_osm_data():
 // Get UCLA campus area(s)
 area["amenity"="university"]["name"~"^(University of California, Los Angeles|UCLA)$",i]->.ucla;
 
-// Get only buildings and stadiums inside UCLA campus
+// Get buildings, stadiums, parks and grass areas inside UCLA campus
 (
   way["building"](area.ucla);
   relation["building"](area.ucla);
   way["leisure"="stadium"](area.ucla);
   relation["leisure"="stadium"](area.ucla);
+  way["leisure"="park"](area.ucla);
+  relation["leisure"="park"](area.ucla);
+  way["leisure"="garden"](area.ucla);
+  relation["leisure"="garden"](area.ucla);
+  way["landuse"="grass"](area.ucla);
+  relation["landuse"="grass"](area.ucla);
+  way["natural"="grassland"](area.ucla);
+  relation["natural"="grassland"](area.ucla);
 )->.campus;
 
-// Also get *any* building or stadium with name/operator containing UCLA in bbox
+// Also get *any* building, stadium, park, or grass area with name/operator containing UCLA in bbox
 (
   way["building"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
   way["building"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
@@ -258,6 +266,22 @@ area["amenity"="university"]["name"~"^(University of California, Los Angeles|UCL
   way["leisure"="stadium"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
   relation["leisure"="stadium"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
   relation["leisure"="stadium"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  way["leisure"="park"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  way["leisure"="park"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  relation["leisure"="park"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  relation["leisure"="park"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  way["leisure"="garden"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  way["leisure"="garden"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  relation["leisure"="garden"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  relation["leisure"="garden"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  way["landuse"="grass"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  way["landuse"="grass"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  relation["landuse"="grass"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  relation["landuse"="grass"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  way["natural"="grassland"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  way["natural"="grassland"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  relation["natural"="grassland"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  relation["natural"="grassland"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
 )->.ucla_related;
 
 // Combine
@@ -374,6 +398,8 @@ def determine_category(tags: dict, name: str, zone: str):
     leisure = _norm(tags.get("leisure"))
     shop = _norm(tags.get("shop"))
     healthcare = _norm(tags.get("healthcare"))
+    landuse = _norm(tags.get("landuse"))
+    natural = _norm(tags.get("natural"))
     operator = _norm(tags.get("operator") or "")
 
     # Off-campus important overrides
@@ -424,6 +450,15 @@ def determine_category(tags: dict, name: str, zone: str):
         "concert_hall",
     }:
         return "Performance/Venues", "Performing Arts", zone == "Westwood"
+
+    # Parks / Grass
+    if (
+        leisure in {"park", "garden"}
+        or landuse in {"grass", "meadow"}
+        or natural in {"grassland", "meadow"}
+    ):
+        subtype = "Park" if leisure in {"park", "garden"} else "Grass"
+        return "Athletic/Recreational", subtype, False
 
     # Athletic / Recreational
     if leisure in {
@@ -499,6 +534,14 @@ def process_features(osm_data):
         A = area_m2(geom)
         tags = el.get("tags", {})
         building_type = (tags.get("building") or "").lower()
+        leisure = (tags.get("leisure") or "").lower()
+        landuse = (tags.get("landuse") or "").lower()
+        natural = (tags.get("natural") or "").lower()
+        is_green = (
+            leisure in {"park", "garden"}
+            or landuse in {"grass", "meadow"}
+            or natural in {"grassland", "meadow"}
+        )
 
         name = (
             tags.get("name")
@@ -507,8 +550,10 @@ def process_features(osm_data):
             or tags.get("loc_name")
             or tags.get("ref")
             or tags.get("operator")
-            or "Unnamed Building"
+            or (None if is_green else "Unnamed Building")
         )
+        if not name:
+            continue
 
         # Apply filters
         if name == "Unnamed Building" and A < MIN_AREA_UNNAMED:
