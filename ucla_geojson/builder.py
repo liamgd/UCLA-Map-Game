@@ -39,13 +39,18 @@ def assign_parent_child(features):
     names = [f["properties"]["name"] for f in features]
     outer_shells = [_outer_shell(g) for g in geoms_m]
 
-    for i, (geom_a, area_a) in enumerate(zip(geoms_m, areas)):
+    indices = sorted(range(len(features)), key=lambda i: areas[i], reverse=True)
+
+    for i in indices:
+        geom_a = geoms_m[i]
+        area_a = areas[i]
         if area_a < MIN_CHILD_AREA:
             continue
         candidates = []
-        for j, (outer_b, area_b, name_b) in enumerate(zip(outer_shells, areas, names)):
-            if i == j or name_b.startswith("Unnamed "):
+        for j in indices:
+            if i == j or names[j].startswith("Unnamed "):
                 continue
+            outer_b = outer_shells[j]
             inter = geom_a.intersection(outer_b)
             overlap_area = inter.area
             if overlap_area == 0:
@@ -57,13 +62,13 @@ def assign_parent_child(features):
             if ratio >= OVERLAP_THRESHOLD:
                 dist = centroids[i].distance(centroids[j])
                 pid = features[j]["properties"]["id"]
-                candidates.append((area_b, dist, pid, j, ratio))
+                area_b = areas[j]
+                candidates.append((area_b, dist, pid, j))
         if candidates:
             candidates.sort(key=lambda x: (-x[0], x[1], x[2]))
-            _, _, pid, parent_idx, ratio = candidates[0]
+            _, _, pid, parent_idx = candidates[0]
             child_props = features[i]["properties"]
             child_props["parent_id"] = pid
-            child_props["area_ratio"] = round(ratio, 3)
             child_props["is_subset"] = True
             child_props["is_label_primary"] = False
             parent_props = features[parent_idx]["properties"]
@@ -177,6 +182,7 @@ def process_features(osm_data):
             "important_off_campus": bool(important_off),
             "centroid": centroid,
             "osm_ids": [osm_id_str],
+            "area": round(A, 2),
             "updated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         }
 
