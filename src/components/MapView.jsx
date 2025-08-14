@@ -130,6 +130,14 @@ export default function MapView({
       "#ff7f0e",
       "Athletic/Recreational",
       "#2ca02c",
+      "Pool",
+      "#2ca02c",
+      "Stadium",
+      "#ff9896",
+      "Sports Court/Pitch",
+      "#c5b0d5",
+      "Sports Field",
+      "#98df8a",
       "Dining",
       "#d62728",
       "Libraries/Museums",
@@ -142,6 +150,10 @@ export default function MapView({
       "#7f7f7f",
       "Residential",
       "#bcbd22",
+      "On-Campus Housing",
+      "#bcbd22",
+      "Off-Campus Housing",
+      "#e7ba52",
       "Service/Support",
       "#17becf",
       "#6aa9ff",
@@ -197,6 +209,37 @@ export default function MapView({
       // campus data
       const res = await fetch("/campus.geojson");
       const data = await res.json();
+
+      data.features.forEach((f) => {
+        const p = f.properties;
+        const name = p.name?.toLowerCase() || "";
+        if (p.category === "Residential") {
+          p.category = p.zone === "Westwood" ? "Off-Campus Housing" : "On-Campus Housing";
+        } else if (p.category === "Athletic/Recreational") {
+          if (name.includes("pool")) {
+            p.category = "Pool";
+          } else if (name.includes("stadium") || name.includes("pavilion")) {
+            p.category = "Stadium";
+          } else if (
+            name.includes("court") ||
+            name.includes("pitch") ||
+            name.includes("tennis")
+          ) {
+            p.category = "Sports Court/Pitch";
+          } else if (
+            name.includes("field") ||
+            name.includes("track") ||
+            name.includes("intramural") ||
+            name.includes("im field") ||
+            name.includes("drake") ||
+            name.includes("spaulding")
+          ) {
+            p.category = "Sports Field";
+          } else {
+            p.category = "Sports Field";
+          }
+        }
+      });
 
       dataRef.current = data;
       map.addSource("campus", { type: "geojson", data });
