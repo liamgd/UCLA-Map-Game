@@ -7,16 +7,15 @@ from shapely.ops import transform, unary_union
 
 from .classification import determine_category, determine_zone
 from .constants import (
+    _TO_M,
     BLACKLIST,
     EXCLUDE_BUILDINGS,
     MIN_AREA_EXCLUDE,
     MIN_AREA_UNNAMED,
     SINGLE_TOLERANCE_M,
-    _TO_M,
 )
 from .geometry import area_m2, build_geometries, simplify_geom_m
 from .utils import hash_centroid, slugify
-
 
 # Minimum child area to consider for subset detection (m²)
 MIN_CHILD_AREA = 20
@@ -39,7 +38,9 @@ def assign_parent_child(features):
     names = [f["properties"]["name"] for f in features]
     outer_shells = [_outer_shell(g) for g in geoms_m]
 
-    indices = sorted(range(len(features)), key=lambda i: areas[i], reverse=True)
+    indices = sorted(
+        range(len(features)), key=lambda i: areas[i], reverse=True
+    )
 
     for i in indices:
         geom_a = geoms_m[i]
@@ -69,12 +70,16 @@ def assign_parent_child(features):
             _, _, pid, parent_idx = candidates[0]
             child_props = features[i]["properties"]
             child_props["parent_id"] = pid
+            child_props["overlap_role"] = "child"
             parent_props = features[parent_idx]["properties"]
             parent_props["overlap_role"] = "parent"
 
+
 def process_features(osm_data):
     print("Processing features...")
-    ways, rels, way_polys, rel_polys, ways_in_building_rels = build_geometries(osm_data)
+    ways, rels, way_polys, rel_polys, ways_in_building_rels = build_geometries(
+        osm_data
+    )
     features = []
 
     elements = osm_data.get("elements", [])
@@ -143,7 +148,9 @@ def process_features(osm_data):
                 or parking in {"multi-storey", "underground"}
             ):
                 ref = (tags.get("ref") or "").strip()
-                m = re.search(r"(?:^|[^0-9])([Pp]?\s*\d{1,2})(?:[^0-9]|$)", ref)
+                m = re.search(
+                    r"(?:^|[^0-9])([Pp]?\s*\d{1,2})(?:[^0-9]|$)", ref
+                )
                 if m:
                     num = re.sub(r"[^\d]", "", m.group(1))
                     name = f"Parking Structure {num}"
@@ -181,14 +188,22 @@ def process_features(osm_data):
             "osm_ids": [osm_id_str],
             "area": round(A, 2),
             "overlap_role": "solo",
-            "updated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+            "updated_at": datetime.now(timezone.utc)
+            .isoformat()
+            .replace("+00:00", "Z"),
         }
 
         g_view = simplify_geom_m(geom, SINGLE_TOLERANCE_M)
         if not g_view:
             continue
 
-        features.append({"type": "Feature", "properties": props, "geometry": mapping(g_view)})
+        features.append(
+            {
+                "type": "Feature",
+                "properties": props,
+                "geometry": mapping(g_view),
+            }
+        )
 
         if idx % 100 == 0 or idx == total:
             print(f"  processed {idx}/{total} elements")
@@ -201,7 +216,9 @@ def process_features(osm_data):
         if existing is None:
             deduped[centroid] = feat
         else:
-            existing_named = not existing["properties"]["name"].startswith("Unnamed ")
+            existing_named = not existing["properties"]["name"].startswith(
+                "Unnamed "
+            )
             new_named = not feat["properties"]["name"].startswith("Unnamed ")
             if new_named and not existing_named:
                 deduped[centroid] = feat
