@@ -241,7 +241,12 @@ def hash_centroid(centroid):
 
 
 def fetch_osm_data():
+<<<<<<< HEAD
     query = f"""
+=======
+    print("Fetching OSM data...")
+    query = """
+>>>>>>> 483acd1e27bc4f07c366caef826b16f40eb5897e
 [out:json][timeout:90];
 
 // Get UCLA campus area(s)
@@ -316,10 +321,13 @@ out body; >; out skel qt;
 """
     r = requests.get(OVERPASS_URL, params={"data": query})
     r.raise_for_status()
-    return r.json()
+    data = r.json()
+    print(f"Fetched {len(data.get('elements', []))} elements")
+    return data
 
 
 def build_geometries(osm_data):
+    print("Building geometries...")
     elements = osm_data.get("elements", [])
     nodes = {el["id"]: el for el in elements if el["type"] == "node"}
     ways = {el["id"]: el for el in elements if el["type"] == "way"}
@@ -378,6 +386,10 @@ def build_geometries(osm_data):
                 and not merged.is_empty
             ):
                 rel_polys[rel["id"]] = merged
+
+    print(
+        f"Built {len(way_polys)} way polygons and {len(rel_polys)} relation polygons"
+    )
 
     return (
         ways,
@@ -539,12 +551,15 @@ def determine_category(tags: dict, name: str, zone: str):
 # Processing
 # -------------------
 def process_features(osm_data):
+    print("Processing features...")
     ways, rels, way_polys, rel_polys, ways_in_building_rels = build_geometries(
         osm_data
     )
     features = []
 
-    for el in osm_data.get("elements", []):
+    elements = osm_data.get("elements", [])
+    total = len(elements)
+    for idx, el in enumerate(elements, 1):
         if el["type"] == "way":
             # Skip ways that are members of a building relation; the relation carries the name/tags
             if el["id"] in ways_in_building_rels:
@@ -665,10 +680,15 @@ def process_features(osm_data):
             }
         )
 
+        if idx % 100 == 0 or idx == total:
+            print(f"  processed {idx}/{total} elements")
+
+    print(f"Generated {len(features)} features")
     return features
 
 
 def write_single(features):
+    print("Writing output files...")
     os.makedirs("public", exist_ok=True)
     fc = {"type": "FeatureCollection", "features": features}
     with open("public/campus.geojson", "w", encoding="utf-8") as f:
@@ -680,9 +700,11 @@ def write_single(features):
 
 
 def main():
+    print("Starting build_ucla_geojson...")
     data = fetch_osm_data()
     features = process_features(data)
     write_single(features)
+    print(f"Done. Wrote {len(features)} features to public/campus.geojson")
     # with open("public/campus.geojson", "r", encoding="utf-8") as f:
     #     print(f.read())
 
