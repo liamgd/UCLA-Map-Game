@@ -14,6 +14,7 @@ from shapely.ops import transform, unary_union
 # Config
 # -------------------
 BBOX = (34.058, -118.456, 34.082, -118.433)  # (south, west, north, east)
+BBOX_QUERY = f"({BBOX[0]},{BBOX[1]},{BBOX[2]},{BBOX[3]})"
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 SINGLE_TOLERANCE_M = 0.4  # meters detail for BOTH draw and hit
 EXCLUDE_BUILDINGS = {"hut", "shed", "garage", "kiosk", "tent", "container"}
@@ -224,6 +225,10 @@ IMPORTANT_OFF_CAMPUS = {
     "marina aquatics center": ("Athletic/Recreational", "Boathouse"),
 }
 
+BLACKLIST = {
+    r"\bAxiom Apartments\b",
+}
+
 
 # -------------------
 # Utils
@@ -257,56 +262,56 @@ area["amenity"="university"]["name"~"^(University of California, Los Angeles|UCL
   relation["amenity"="parking"][!building](area.ucla);
   way["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court|park|garden)$"](area.ucla);
   relation["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court|park|garden)$"](area.ucla);
-  way["landuse"~"^(grass|recreation_ground)$"](area.ucla);
-  relation["landuse"~"^(grass|recreation_ground)$"](area.ucla);
-  way["natural"~"^(scrub|shrub)$"](area.ucla);
-  relation["natural"~"^(scrub|shrub)$"](area.ucla);
+  way["landuse"~"^(grass|recreation_ground|forest|meadow)$"](area.ucla);
+  relation["landuse"~"^(grass|recreation_ground|forest|meadow)$"](area.ucla);
+  way["natural"~"^(scrub|shrub|wood|grassland)$"](area.ucla);
+  relation["natural"~"^(scrub|shrub|wood|grassland)$"](area.ucla);
 )->.campus;
 
 // Also get *any* building, shop, or recreational area with name/operator containing UCLA in bbox
 (
-  way["building"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  way["building"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  relation["building"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  relation["building"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  way["shop"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  way["shop"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  relation["shop"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  relation["shop"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  way["amenity"="parking"][!building]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  way["amenity"="parking"][!building]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  relation["amenity"="parking"][!building]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  relation["amenity"="parking"][!building]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  way["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court|park|garden)$"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  way["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court|park|garden)$"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  relation["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court|park|garden)$"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  relation["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court|park|garden)$"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  way["landuse"~"^(grass|recreation_ground)$"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  way["landuse"~"^(grass|recreation_ground)$"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  relation["landuse"~"^(grass|recreation_ground)$"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  relation["landuse"~"^(grass|recreation_ground)$"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  way["natural"~"^(scrub|shrub)$"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  way["natural"~"^(scrub|shrub)$"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  relation["natural"~"^(scrub|shrub)$"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  relation["natural"~"^(scrub|shrub)$"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  way["building"]["name"~"UCLA",i]{BBOX_QUERY};
+  way["building"]["operator"~"UCLA",i]{BBOX_QUERY};
+  relation["building"]["name"~"UCLA",i]{BBOX_QUERY};
+  relation["building"]["operator"~"UCLA",i]{BBOX_QUERY};
+  way["shop"]["name"~"UCLA",i]{BBOX_QUERY};
+  way["shop"]["operator"~"UCLA",i]{BBOX_QUERY};
+  relation["shop"]["name"~"UCLA",i]{BBOX_QUERY};
+  relation["shop"]["operator"~"UCLA",i]{BBOX_QUERY};
+  way["amenity"="parking"][!building]["name"~"UCLA",i]{BBOX_QUERY};
+  way["amenity"="parking"][!building]["operator"~"UCLA",i]{BBOX_QUERY};
+  relation["amenity"="parking"][!building]["name"~"UCLA",i]{BBOX_QUERY};
+  relation["amenity"="parking"][!building]["operator"~"UCLA",i]{BBOX_QUERY};
+  way["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court|park|garden)$"]["name"~"UCLA",i]{BBOX_QUERY};
+  way["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court|park|garden)$"]["operator"~"UCLA",i]{BBOX_QUERY};
+  relation["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court|park|garden)$"]["name"~"UCLA",i]{BBOX_QUERY};
+  relation["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court|park|garden)$"]["operator"~"UCLA",i]{BBOX_QUERY};
+  way["landuse"~"^(grass|recreation_ground|forest|meadow)$"]["name"~"UCLA",i]{BBOX_QUERY};
+  way["landuse"~"^(grass|recreation_ground|forest|meadow)$"]["operator"~"UCLA",i]{BBOX_QUERY};
+  relation["landuse"~"^(grass|recreation_ground|forest|meadow)$"]["name"~"UCLA",i]{BBOX_QUERY};
+  relation["landuse"~"^(grass|recreation_ground|forest|meadow)$"]["operator"~"UCLA",i]{BBOX_QUERY};
+  way["natural"~"^(scrub|shrub|wood|grassland)$"]["name"~"UCLA",i]{BBOX_QUERY};
+  way["natural"~"^(scrub|shrub|wood|grassland)$"]["operator"~"UCLA",i]{BBOX_QUERY};
+  relation["natural"~"^(scrub|shrub|wood|grassland)$"]["name"~"UCLA",i]{BBOX_QUERY};
+  relation["natural"~"^(scrub|shrub|wood|grassland)$"]["operator"~"UCLA",i]{BBOX_QUERY};
 )->.ucla_related;
 
 // Get fraternities and sororities in the bounding box (many are just building=yes with Greek names)
 (
-  way["amenity"="fraternity"](34.058,-118.456,34.082,-118.433);
-  way["amenity"="sorority"](34.058,-118.456,34.082,-118.433);
-  way["building"="fraternity"](34.058,-118.456,34.082,-118.433);
-  way["building"="sorority"](34.058,-118.456,34.082,-118.433);
+  way["amenity"="fraternity"]{BBOX_QUERY};
+  way["amenity"="sorority"]{BBOX_QUERY};
+  way["building"="fraternity"]{BBOX_QUERY};
+  way["building"="sorority"]{BBOX_QUERY};
 
-  relation["amenity"="fraternity"](34.058,-118.456,34.082,-118.433);
-  relation["amenity"="sorority"](34.058,-118.456,34.082,-118.433);
-  relation["building"="fraternity"](34.058,-118.456,34.082,-118.433);
-  relation["building"="sorority"](34.058,-118.456,34.082,-118.433);
+  relation["amenity"="fraternity"]{BBOX_QUERY};
+  relation["amenity"="sorority"]{BBOX_QUERY};
+  relation["building"="fraternity"]{BBOX_QUERY};
+  relation["building"="sorority"]{BBOX_QUERY};
 
-  way["building"]["name"~"{GREEK_NAME_RE}",i](34.058,-118.456,34.082,-118.433);
-  way["building"]["operator"~"{GREEK_NAME_RE}",i](34.058,-118.456,34.082,-118.433);
-  relation["building"]["name"~"{GREEK_NAME_RE}",i](34.058,-118.456,34.082,-118.433);
-  relation["building"]["operator"~"{GREEK_NAME_RE}",i](34.058,-118.456,34.082,-118.433);
+  way["building"]["name"~"{GREEK_NAME_RE}",i]{BBOX_QUERY};
+  way["building"]["operator"~"{GREEK_NAME_RE}",i]{BBOX_QUERY};
+  relation["building"]["name"~"{GREEK_NAME_RE}",i]{BBOX_QUERY};
+  relation["building"]["operator"~"{GREEK_NAME_RE}",i]{BBOX_QUERY};
 )->.greek;
 
 
@@ -507,10 +512,10 @@ def determine_category(tags: dict, name: str, zone: str):
     # Parks and outdoor areas
     if (
         leisure in {"park", "garden"}
-        or landuse in {"grass", "recreation_ground"}
-        or natural in {"scrub", "shrub"}
+        or landuse in {"grass", "recreation_ground", "forest", "meadow"}
+        or natural in {"scrub", "shrub", "wood", "grassland"}
     ):
-        return "Athletic/Recreational", "Outdoor", False
+        return "Parks/Nature", "Green Space", False
 
     # Parking
     if (
@@ -601,6 +606,8 @@ def process_features(osm_data):
         if building_type in EXCLUDE_BUILDINGS and A < MIN_AREA_EXCLUDE:
             continue
         if A < MIN_AREA_EXCLUDE and name == "Unnamed Building":
+            continue
+        if any(re.search(pattern, name, re.I) for pattern in BLACKLIST):
             continue
 
         # If it's a parking structure and still unnamed, synthesize a display name
