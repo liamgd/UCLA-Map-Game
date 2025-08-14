@@ -254,8 +254,8 @@ def determine_category(tags: Dict[str, str], name: str, zone: str) -> Tuple[str,
 
     if (
         leisure in {"park", "garden"}
-        or landuse in {"grass", "recreation_ground", "forest", "meadow"}
-        or natural in {"scrub", "shrub", "wood", "grassland"}
+        or landuse in {"grass", "recreation_ground", "forest", "meadow", "shrubland"}
+        or natural in {"scrub", "shrub", "shrubland", "wood", "grassland"}
     ):
         return "Parks/Nature", "Green Space", False
 

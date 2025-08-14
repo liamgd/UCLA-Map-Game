@@ -20,10 +20,10 @@ area["amenity"="university"]["name"~"^(University of California, Los Angeles|UCL
   relation["amenity"="parking"][!building](area.ucla);
   way["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court|park|garden)$"](area.ucla);
   relation["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court|park|garden)$"](area.ucla);
-  way["landuse"~"^(grass|recreation_ground|forest|meadow)$"](area.ucla);
-  relation["landuse"~"^(grass|recreation_ground|forest|meadow)$"](area.ucla);
-  way["natural"~"^(scrub|shrub|wood|grassland)$"](area.ucla);
-  relation["natural"~"^(scrub|shrub|wood|grassland)$"](area.ucla);
+    way["landuse"~"^(grass|recreation_ground|forest|meadow|shrubland)$"](area.ucla);
+    relation["landuse"~"^(grass|recreation_ground|forest|meadow|shrubland)$"](area.ucla);
+    way["natural"~"^(scrub|shrub|shrubland|wood|grassland)$"](area.ucla);
+    relation["natural"~"^(scrub|shrub|shrubland|wood|grassland)$"](area.ucla);
 )->.campus;
 
 // Also get *any* building, shop, or recreational area with name/operator containing UCLA in bbox
@@ -44,14 +44,14 @@ area["amenity"="university"]["name"~"^(University of California, Los Angeles|UCL
   way["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court|park|garden)$"]["operator"~"UCLA",i]{BBOX_QUERY};
   relation["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court|park|garden)$"]["name"~"UCLA",i]{BBOX_QUERY};
   relation["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court|park|garden)$"]["operator"~"UCLA",i]{BBOX_QUERY};
-  way["landuse"~"^(grass|recreation_ground|forest|meadow)$"]["name"~"UCLA",i]{BBOX_QUERY};
-  way["landuse"~"^(grass|recreation_ground|forest|meadow)$"]["operator"~"UCLA",i]{BBOX_QUERY};
-  relation["landuse"~"^(grass|recreation_ground|forest|meadow)$"]["name"~"UCLA",i]{BBOX_QUERY};
-  relation["landuse"~"^(grass|recreation_ground|forest|meadow)$"]["operator"~"UCLA",i]{BBOX_QUERY};
-  way["natural"~"^(scrub|shrub|wood|grassland)$"]["name"~"UCLA",i]{BBOX_QUERY};
-  way["natural"~"^(scrub|shrub|wood|grassland)$"]["operator"~"UCLA",i]{BBOX_QUERY};
-  relation["natural"~"^(scrub|shrub|wood|grassland)$"]["name"~"UCLA",i]{BBOX_QUERY};
-  relation["natural"~"^(scrub|shrub|wood|grassland)$"]["operator"~"UCLA",i]{BBOX_QUERY};
+    way["landuse"~"^(grass|recreation_ground|forest|meadow|shrubland)$"]["name"~"UCLA",i]{BBOX_QUERY};
+    way["landuse"~"^(grass|recreation_ground|forest|meadow|shrubland)$"]["operator"~"UCLA",i]{BBOX_QUERY};
+    relation["landuse"~"^(grass|recreation_ground|forest|meadow|shrubland)$"]["name"~"UCLA",i]{BBOX_QUERY};
+    relation["landuse"~"^(grass|recreation_ground|forest|meadow|shrubland)$"]["operator"~"UCLA",i]{BBOX_QUERY};
+    way["natural"~"^(scrub|shrub|shrubland|wood|grassland)$"]["name"~"UCLA",i]{BBOX_QUERY};
+    way["natural"~"^(scrub|shrub|shrubland|wood|grassland)$"]["operator"~"UCLA",i]{BBOX_QUERY};
+    relation["natural"~"^(scrub|shrub|shrubland|wood|grassland)$"]["name"~"UCLA",i]{BBOX_QUERY};
+    relation["natural"~"^(scrub|shrub|shrubland|wood|grassland)$"]["operator"~"UCLA",i]{BBOX_QUERY};
 )->.ucla_related;
 
 // Get fraternities and sororities in the bounding box (many are just building=yes with Greek names)
