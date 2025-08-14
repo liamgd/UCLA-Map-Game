@@ -136,5 +136,21 @@ def process_features(osm_data):
         if idx % 100 == 0 or idx == total:
             print(f"  processed {idx}/{total} elements")
 
+    deduped = {}
+    removed_dupes = 0
+    for feat in features:
+        centroid = tuple(feat["properties"]["centroid"])
+        existing = deduped.get(centroid)
+        if existing is None:
+            deduped[centroid] = feat
+        else:
+            existing_named = not existing["properties"]["name"].startswith("Unnamed ")
+            new_named = not feat["properties"]["name"].startswith("Unnamed ")
+            if new_named and not existing_named:
+                deduped[centroid] = feat
+            removed_dupes += 1
+
+    print(f"Removed {removed_dupes} duplicate feature(s) by centroid")
+    features = list(deduped.values())
     print(f"Generated {len(features)} features")
     return features
