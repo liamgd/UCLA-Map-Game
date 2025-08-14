@@ -54,19 +54,30 @@ def process_features(osm_data):
             or tags.get("loc_name")
             or tags.get("ref")
             or tags.get("operator")
-            or "Unnamed Building"
         )
+        if not name:
+            feature_type = (
+                tags.get("natural")
+                or tags.get("leisure")
+                or tags.get("landuse")
+                or building_type
+                or tags.get("amenity")
+                or "feature"
+            ).lower()
+            if feature_type == "yes":
+                feature_type = "building"
+            feature_type = feature_type.replace("_", " ")
+            name = f"Unnamed {feature_type.title()}"
 
-        if name == "Unnamed Building" and A < MIN_AREA_UNNAMED:
+        if name.startswith("Unnamed ") and A < MIN_AREA_UNNAMED:
             continue
         if building_type in EXCLUDE_BUILDINGS and A < MIN_AREA_EXCLUDE:
             continue
-        if A < MIN_AREA_EXCLUDE and name == "Unnamed Building":
+        if A < MIN_AREA_EXCLUDE and name.startswith("Unnamed "):
             continue
         if any(re.search(pattern, name, re.I) for pattern in BLACKLIST):
             continue
-
-        if name == "Unnamed Building":
+        if name.startswith("Unnamed "):
             amenity = (tags.get("amenity") or "").lower()
             parking = (tags.get("parking") or "").lower()
             bldg = (tags.get("building") or "").lower()

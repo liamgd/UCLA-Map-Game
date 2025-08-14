@@ -1,4 +1,6 @@
-import requests
+import json
+import urllib.parse
+import urllib.request
 
 from .constants import BBOX_QUERY, GREEK_NAME_RE, OVERPASS_URL
 
@@ -76,8 +78,8 @@ area["amenity"="university"]["name"~"^(University of California, Los Angeles|UCL
 (.campus; .ucla_related; .greek;);
 out body; >; out skel qt;
 """
-    r = requests.get(OVERPASS_URL, params={"data": query})
-    r.raise_for_status()
-    data = r.json()
+    url = f"{OVERPASS_URL}?{urllib.parse.urlencode({'data': query})}"
+    with urllib.request.urlopen(url) as resp:
+        data = json.load(resp)
     print(f"Fetched {len(data.get('elements', []))} elements")
     return data
