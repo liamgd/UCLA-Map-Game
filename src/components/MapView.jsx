@@ -113,6 +113,7 @@ export default function MapView({
   const readyRef = useRef(false); // style + layers ready
   const selectedRef = useRef(""); // latest selected id
   const hoverRef = useRef("");
+  const hoverTimeoutRef = useRef(null);
   const filterRef = useRef(null);
   const colorByRef = useRef(colorBy);
   const queryModeRef = useRef(queryMode);
@@ -437,21 +438,37 @@ export default function MapView({
         }
       });
 
-      // hover highlights smallest feature
+      // hover quickly then refine to smallest feature after a short delay
       map.on("mousemove", "bldg-fill", (e) => {
         if (queryModeRef.current) return;
+        if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
         const features = map.queryRenderedFeatures(e.point, {
           layers: ["bldg-fill"],
         });
         if (!features.length) return;
-        const f = smallestFeature(features);
-        hoverRef.current = f.properties.id;
-        hoverPopup.setLngLat(e.lngLat).setText(f.properties.name).addTo(map);
+        const first = features[0];
+        hoverRef.current = first.properties.id;
+        hoverPopup.setLngLat(e.lngLat).setText(first.properties.name).addTo(map);
         applyHover();
+        const point = e.point;
+        const lngLat = e.lngLat;
+        hoverTimeoutRef.current = setTimeout(() => {
+          const features2 = map.queryRenderedFeatures(point, {
+            layers: ["bldg-fill"],
+          });
+          if (!features2.length) return;
+          const f = smallestFeature(features2);
+          if (f.properties.id !== hoverRef.current) {
+            hoverRef.current = f.properties.id;
+            hoverPopup.setLngLat(lngLat).setText(f.properties.name).addTo(map);
+            applyHover();
+          }
+        }, 100);
       });
 
       map.on("mouseleave", "bldg-fill", () => {
         if (queryModeRef.current) return;
+        if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
         hoverPopup.remove();
         hoverRef.current = "";
         applyHover();
@@ -461,6 +478,7 @@ export default function MapView({
     });
 
     return () => {
+      if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
       hoverPopup.remove();
       map.remove();
     };
