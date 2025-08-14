@@ -253,8 +253,14 @@ area["amenity"="university"]["name"~"^(University of California, Los Angeles|UCL
   relation["building"](area.ucla);
   way["shop"](area.ucla);
   relation["shop"](area.ucla);
-  way["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court)$"](area.ucla);
-  relation["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court)$"](area.ucla);
+  way["amenity"="parking"][!building](area.ucla);
+  relation["amenity"="parking"][!building](area.ucla);
+  way["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court|park|garden)$"](area.ucla);
+  relation["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court|park|garden)$"](area.ucla);
+  way["landuse"~"^(grass|recreation_ground)$"](area.ucla);
+  relation["landuse"~"^(grass|recreation_ground)$"](area.ucla);
+  way["natural"~"^(scrub|shrub)$"](area.ucla);
+  relation["natural"~"^(scrub|shrub)$"](area.ucla);
 )->.campus;
 
 // Also get *any* building, shop, or recreational area with name/operator containing UCLA in bbox
@@ -267,10 +273,22 @@ area["amenity"="university"]["name"~"^(University of California, Los Angeles|UCL
   way["shop"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
   relation["shop"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
   relation["shop"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  way["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court)$"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  way["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court)$"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  relation["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court)$"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  relation["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court)$"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  way["amenity"="parking"][!building]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  way["amenity"="parking"][!building]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  relation["amenity"="parking"][!building]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  relation["amenity"="parking"][!building]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  way["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court|park|garden)$"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  way["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court|park|garden)$"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  relation["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court|park|garden)$"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  relation["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court|park|garden)$"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  way["landuse"~"^(grass|recreation_ground)$"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  way["landuse"~"^(grass|recreation_ground)$"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  relation["landuse"~"^(grass|recreation_ground)$"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  relation["landuse"~"^(grass|recreation_ground)$"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  way["natural"~"^(scrub|shrub)$"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  way["natural"~"^(scrub|shrub)$"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  relation["natural"~"^(scrub|shrub)$"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  relation["natural"~"^(scrub|shrub)$"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
 )->.ucla_related;
 
 // Get fraternities and sororities in the bounding box (many are just building=yes with Greek names)
@@ -407,6 +425,8 @@ def determine_category(tags: dict, name: str, zone: str):
     shop = _norm(tags.get("shop"))
     healthcare = _norm(tags.get("healthcare"))
     operator = _norm(tags.get("operator") or "")
+    landuse = _norm(tags.get("landuse"))
+    natural = _norm(tags.get("natural"))
 
     # Off-campus important overrides
     for key, (cat, sub) in IMPORTANT_OFF_CAMPUS.items():
@@ -477,8 +497,16 @@ def determine_category(tags: dict, name: str, zone: str):
     } or _hint_in(name_norm, ATHLETIC_HINTS):
         return "Athletic/Recreational", "Athletics", False
 
+    # Parks and outdoor areas
+    if (
+        leisure in {"park", "garden"}
+        or landuse in {"grass", "recreation_ground"}
+        or natural in {"scrub", "shrub"}
+    ):
+        return "Athletic/Recreational", "Outdoor", False
+
     # Parking
-    if btype == "parking" or _hint_in(name_norm, PARKING_HINTS):
+    if btype == "parking" or amenity == "parking" or _hint_in(name_norm, PARKING_HINTS):
         return "Service/Support", "Parking", False
 
     # Administrative
