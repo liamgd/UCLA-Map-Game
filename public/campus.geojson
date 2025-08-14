@@ -18,7 +18,7 @@
         "osm_ids": [
           "way/30724960"
         ],
-        "updated_at": "2025-08-14T02:46:06.699914Z"
+        "updated_at": "2025-08-14T03:00:31.602335Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -105,7 +105,7 @@
         "osm_ids": [
           "way/44631311"
         ],
-        "updated_at": "2025-08-14T02:46:06.700411Z"
+        "updated_at": "2025-08-14T03:00:31.603328Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -172,7 +172,7 @@
         "osm_ids": [
           "way/44631340"
         ],
-        "updated_at": "2025-08-14T02:46:06.700906Z"
+        "updated_at": "2025-08-14T03:00:31.603825Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -267,7 +267,7 @@
         "osm_ids": [
           "way/44631346"
         ],
-        "updated_at": "2025-08-14T02:46:06.701402Z"
+        "updated_at": "2025-08-14T03:00:31.604319Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -400,8 +400,8 @@
         "name": "Sunset Canyon Recreation Center",
         "aliases": [],
         "zone": "The Hill",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.452179,
@@ -410,7 +410,7 @@
         "osm_ids": [
           "way/44631347"
         ],
-        "updated_at": "2025-08-14T02:46:06.702891Z"
+        "updated_at": "2025-08-14T03:00:31.604842Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -537,7 +537,7 @@
         "osm_ids": [
           "way/44631351"
         ],
-        "updated_at": "2025-08-14T02:46:06.704378Z"
+        "updated_at": "2025-08-14T03:00:31.605338Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -652,7 +652,7 @@
         "osm_ids": [
           "way/44631681"
         ],
-        "updated_at": "2025-08-14T02:46:06.705866Z"
+        "updated_at": "2025-08-14T03:00:31.606304Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -1063,7 +1063,7 @@
         "osm_ids": [
           "way/44631685"
         ],
-        "updated_at": "2025-08-14T02:46:06.707354Z"
+        "updated_at": "2025-08-14T03:00:31.606826Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -1578,7 +1578,7 @@
         "osm_ids": [
           "way/44631687"
         ],
-        "updated_at": "2025-08-14T02:46:06.708842Z"
+        "updated_at": "2025-08-14T03:00:31.607818Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -1921,7 +1921,7 @@
         "osm_ids": [
           "way/44631689"
         ],
-        "updated_at": "2025-08-14T02:46:06.710330Z"
+        "updated_at": "2025-08-14T03:00:31.608314Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -2504,7 +2504,7 @@
         "osm_ids": [
           "way/44650306"
         ],
-        "updated_at": "2025-08-14T02:46:06.711818Z"
+        "updated_at": "2025-08-14T03:00:31.609307Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -2541,8 +2541,8 @@
         "name": "Mildred E. Mathias Botanical Garden",
         "aliases": [],
         "zone": "South Campus",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.441077,
@@ -2551,7 +2551,7 @@
         "osm_ids": [
           "way/44664275"
         ],
-        "updated_at": "2025-08-14T02:46:06.712810Z"
+        "updated_at": "2025-08-14T03:00:31.609775Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -2774,7 +2774,7 @@
         "osm_ids": [
           "way/44664327"
         ],
-        "updated_at": "2025-08-14T02:46:06.713802Z"
+        "updated_at": "2025-08-14T03:00:31.610271Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -2829,7 +2829,7 @@
         "osm_ids": [
           "way/44664328"
         ],
-        "updated_at": "2025-08-14T02:46:06.714298Z"
+        "updated_at": "2025-08-14T03:00:31.610767Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -2884,7 +2884,7 @@
         "osm_ids": [
           "way/44664332"
         ],
-        "updated_at": "2025-08-14T02:46:06.715290Z"
+        "updated_at": "2025-08-14T03:00:31.611288Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -2921,8 +2921,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "The Hill",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.448305,
@@ -2931,7 +2931,7 @@
         "osm_ids": [
           "way/44664333"
         ],
-        "updated_at": "2025-08-14T02:46:06.715787Z"
+        "updated_at": "2025-08-14T03:00:31.611759Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -2968,8 +2968,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "The Hill",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.448267,
@@ -2978,7 +2978,7 @@
         "osm_ids": [
           "way/44664334"
         ],
-        "updated_at": "2025-08-14T02:46:06.716283Z"
+        "updated_at": "2025-08-14T03:00:31.611759Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3033,7 +3033,7 @@
         "osm_ids": [
           "way/44664335"
         ],
-        "updated_at": "2025-08-14T02:46:06.716779Z"
+        "updated_at": "2025-08-14T03:00:31.612255Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3080,7 +3080,7 @@
         "osm_ids": [
           "way/44664336"
         ],
-        "updated_at": "2025-08-14T02:46:06.717275Z"
+        "updated_at": "2025-08-14T03:00:31.612751Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3141,7 +3141,7 @@
         "osm_ids": [
           "way/44669492"
         ],
-        "updated_at": "2025-08-14T02:46:06.717771Z"
+        "updated_at": "2025-08-14T03:00:31.613247Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3204,7 +3204,7 @@
         "osm_ids": [
           "way/44669498"
         ],
-        "updated_at": "2025-08-14T02:46:06.718267Z"
+        "updated_at": "2025-08-14T03:00:31.613766Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3401,7 +3401,7 @@
         "osm_ids": [
           "way/44669501"
         ],
-        "updated_at": "2025-08-14T02:46:06.720252Z"
+        "updated_at": "2025-08-14T03:00:31.614265Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3536,7 +3536,7 @@
         "osm_ids": [
           "way/46364638"
         ],
-        "updated_at": "2025-08-14T02:46:06.721243Z"
+        "updated_at": "2025-08-14T03:00:31.614265Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3615,7 +3615,7 @@
         "osm_ids": [
           "way/49832949"
         ],
-        "updated_at": "2025-08-14T02:46:06.721738Z"
+        "updated_at": "2025-08-14T03:00:31.615231Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3706,7 +3706,7 @@
         "osm_ids": [
           "way/53334145"
         ],
-        "updated_at": "2025-08-14T02:46:06.722234Z"
+        "updated_at": "2025-08-14T03:00:31.615729Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3769,7 +3769,7 @@
         "osm_ids": [
           "way/53334151"
         ],
-        "updated_at": "2025-08-14T02:46:06.722730Z"
+        "updated_at": "2025-08-14T03:00:31.616719Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3848,7 +3848,7 @@
         "osm_ids": [
           "way/53334202"
         ],
-        "updated_at": "2025-08-14T02:46:06.723226Z"
+        "updated_at": "2025-08-14T03:00:31.617215Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3935,7 +3935,7 @@
         "osm_ids": [
           "way/113902574"
         ],
-        "updated_at": "2025-08-14T02:46:06.723722Z"
+        "updated_at": "2025-08-14T03:00:31.617711Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4018,7 +4018,7 @@
         "osm_ids": [
           "way/133289240"
         ],
-        "updated_at": "2025-08-14T02:46:06.723722Z"
+        "updated_at": "2025-08-14T03:00:31.618207Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4125,7 +4125,7 @@
         "osm_ids": [
           "way/179088301"
         ],
-        "updated_at": "2025-08-14T02:46:06.724218Z"
+        "updated_at": "2025-08-14T03:00:31.618730Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4188,7 +4188,7 @@
         "osm_ids": [
           "way/184443579"
         ],
-        "updated_at": "2025-08-14T02:46:06.724714Z"
+        "updated_at": "2025-08-14T03:00:31.619226Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4237,7 +4237,7 @@
         "osm_ids": [
           "way/184444681"
         ],
-        "updated_at": "2025-08-14T02:46:06.725210Z"
+        "updated_at": "2025-08-14T03:00:31.619722Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4420,7 +4420,7 @@
         "osm_ids": [
           "way/184446757"
         ],
-        "updated_at": "2025-08-14T02:46:06.725706Z"
+        "updated_at": "2025-08-14T03:00:31.620218Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4479,7 +4479,7 @@
         "osm_ids": [
           "way/184446759"
         ],
-        "updated_at": "2025-08-14T02:46:06.726699Z"
+        "updated_at": "2025-08-14T03:00:31.620714Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4526,7 +4526,7 @@
         "osm_ids": [
           "way/184446767"
         ],
-        "updated_at": "2025-08-14T02:46:06.727194Z"
+        "updated_at": "2025-08-14T03:00:31.621679Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4575,7 +4575,7 @@
         "osm_ids": [
           "way/184480980"
         ],
-        "updated_at": "2025-08-14T02:46:06.727690Z"
+        "updated_at": "2025-08-14T03:00:31.622176Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4766,7 +4766,7 @@
         "osm_ids": [
           "way/184484863"
         ],
-        "updated_at": "2025-08-14T02:46:06.728186Z"
+        "updated_at": "2025-08-14T03:00:31.622698Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4885,7 +4885,7 @@
         "osm_ids": [
           "way/184488678"
         ],
-        "updated_at": "2025-08-14T02:46:06.728682Z"
+        "updated_at": "2025-08-14T03:00:31.623194Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4972,7 +4972,7 @@
         "osm_ids": [
           "way/184488681"
         ],
-        "updated_at": "2025-08-14T02:46:06.729178Z"
+        "updated_at": "2025-08-14T03:00:31.623695Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5019,7 +5019,7 @@
         "osm_ids": [
           "way/184623337"
         ],
-        "updated_at": "2025-08-14T02:46:06.729674Z"
+        "updated_at": "2025-08-14T03:00:31.624186Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5066,7 +5066,7 @@
         "osm_ids": [
           "way/184625939"
         ],
-        "updated_at": "2025-08-14T02:46:06.730170Z"
+        "updated_at": "2025-08-14T03:00:31.624682Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5133,7 +5133,7 @@
         "osm_ids": [
           "way/184708011"
         ],
-        "updated_at": "2025-08-14T02:46:06.730666Z"
+        "updated_at": "2025-08-14T03:00:31.625178Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5182,7 +5182,7 @@
         "osm_ids": [
           "way/184717292"
         ],
-        "updated_at": "2025-08-14T02:46:06.731162Z"
+        "updated_at": "2025-08-14T03:00:31.625674Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5265,7 +5265,7 @@
         "osm_ids": [
           "way/184772355"
         ],
-        "updated_at": "2025-08-14T02:46:06.731658Z"
+        "updated_at": "2025-08-14T03:00:31.626171Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5632,7 +5632,7 @@
         "osm_ids": [
           "way/184772366"
         ],
-        "updated_at": "2025-08-14T02:46:06.732650Z"
+        "updated_at": "2025-08-14T03:00:31.627162Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5679,7 +5679,7 @@
         "osm_ids": [
           "way/184948411"
         ],
-        "updated_at": "2025-08-14T02:46:06.733146Z"
+        "updated_at": "2025-08-14T03:00:31.627633Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -6067,7 +6067,7 @@
         "osm_ids": [
           "way/184954672"
         ],
-        "updated_at": "2025-08-14T02:46:06.734138Z"
+        "updated_at": "2025-08-14T03:00:31.628655Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -6146,7 +6146,7 @@
         "osm_ids": [
           "way/185081403"
         ],
-        "updated_at": "2025-08-14T02:46:06.734634Z"
+        "updated_at": "2025-08-14T03:00:31.629146Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -6247,7 +6247,7 @@
         "osm_ids": [
           "way/185084330"
         ],
-        "updated_at": "2025-08-14T02:46:06.735130Z"
+        "updated_at": "2025-08-14T03:00:31.629642Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -6310,7 +6310,7 @@
         "osm_ids": [
           "way/185084339"
         ],
-        "updated_at": "2025-08-14T02:46:06.737114Z"
+        "updated_at": "2025-08-14T03:00:31.630140Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -6397,7 +6397,7 @@
         "osm_ids": [
           "way/188532291"
         ],
-        "updated_at": "2025-08-14T02:46:06.737610Z"
+        "updated_at": "2025-08-14T03:00:31.630635Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -6500,7 +6500,7 @@
         "osm_ids": [
           "way/194830393"
         ],
-        "updated_at": "2025-08-14T02:46:06.738108Z"
+        "updated_at": "2025-08-14T03:00:31.631130Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -6551,7 +6551,7 @@
         "osm_ids": [
           "way/199954903"
         ],
-        "updated_at": "2025-08-14T02:46:06.738603Z"
+        "updated_at": "2025-08-14T03:00:31.631626Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -6654,7 +6654,7 @@
         "osm_ids": [
           "way/199954904"
         ],
-        "updated_at": "2025-08-14T02:46:06.739098Z"
+        "updated_at": "2025-08-14T03:00:31.632591Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -7081,7 +7081,7 @@
         "osm_ids": [
           "way/225372406"
         ],
-        "updated_at": "2025-08-14T02:46:06.740090Z"
+        "updated_at": "2025-08-14T03:00:31.634080Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -7144,7 +7144,7 @@
         "osm_ids": [
           "way/225447385"
         ],
-        "updated_at": "2025-08-14T02:46:06.740586Z"
+        "updated_at": "2025-08-14T03:00:31.634577Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -7231,7 +7231,7 @@
         "osm_ids": [
           "way/227712531"
         ],
-        "updated_at": "2025-08-14T02:46:06.741082Z"
+        "updated_at": "2025-08-14T03:00:31.635568Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -7278,7 +7278,7 @@
         "osm_ids": [
           "way/227712539"
         ],
-        "updated_at": "2025-08-14T02:46:06.741578Z"
+        "updated_at": "2025-08-14T03:00:31.635568Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -7357,7 +7357,7 @@
         "osm_ids": [
           "way/229441461"
         ],
-        "updated_at": "2025-08-14T02:46:06.742075Z"
+        "updated_at": "2025-08-14T03:00:31.636063Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -7440,7 +7440,7 @@
         "osm_ids": [
           "way/229816682"
         ],
-        "updated_at": "2025-08-14T02:46:06.742570Z"
+        "updated_at": "2025-08-14T03:00:31.637082Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -7487,7 +7487,7 @@
         "osm_ids": [
           "way/229816684"
         ],
-        "updated_at": "2025-08-14T02:46:06.743066Z"
+        "updated_at": "2025-08-14T03:00:31.637578Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -7774,7 +7774,7 @@
         "osm_ids": [
           "way/229816689"
         ],
-        "updated_at": "2025-08-14T02:46:06.743562Z"
+        "updated_at": "2025-08-14T03:00:31.638074Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -7869,7 +7869,7 @@
         "osm_ids": [
           "way/230058820"
         ],
-        "updated_at": "2025-08-14T02:46:06.744059Z"
+        "updated_at": "2025-08-14T03:00:31.638570Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -7972,7 +7972,7 @@
         "osm_ids": [
           "way/230058821"
         ],
-        "updated_at": "2025-08-14T02:46:06.744059Z"
+        "updated_at": "2025-08-14T03:00:31.639066Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8079,7 +8079,7 @@
         "osm_ids": [
           "way/230058822"
         ],
-        "updated_at": "2025-08-14T02:46:06.744554Z"
+        "updated_at": "2025-08-14T03:00:31.639569Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8142,7 +8142,7 @@
         "osm_ids": [
           "way/230058825"
         ],
-        "updated_at": "2025-08-14T02:46:06.745050Z"
+        "updated_at": "2025-08-14T03:00:31.640032Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8241,7 +8241,7 @@
         "osm_ids": [
           "way/230058826"
         ],
-        "updated_at": "2025-08-14T02:46:06.745546Z"
+        "updated_at": "2025-08-14T03:00:31.640554Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8328,7 +8328,7 @@
         "osm_ids": [
           "way/230058828"
         ],
-        "updated_at": "2025-08-14T02:46:06.746042Z"
+        "updated_at": "2025-08-14T03:00:31.641050Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8375,7 +8375,7 @@
         "osm_ids": [
           "way/230372381"
         ],
-        "updated_at": "2025-08-14T02:46:06.747034Z"
+        "updated_at": "2025-08-14T03:00:31.642042Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8430,7 +8430,7 @@
         "osm_ids": [
           "way/230372383"
         ],
-        "updated_at": "2025-08-14T02:46:06.747034Z"
+        "updated_at": "2025-08-14T03:00:31.642538Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8533,7 +8533,7 @@
         "osm_ids": [
           "way/230372386"
         ],
-        "updated_at": "2025-08-14T02:46:06.747530Z"
+        "updated_at": "2025-08-14T03:00:31.643035Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8636,7 +8636,7 @@
         "osm_ids": [
           "way/230372387"
         ],
-        "updated_at": "2025-08-14T02:46:06.748026Z"
+        "updated_at": "2025-08-14T03:00:31.643530Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8747,7 +8747,7 @@
         "osm_ids": [
           "way/230372388"
         ],
-        "updated_at": "2025-08-14T02:46:06.748522Z"
+        "updated_at": "2025-08-14T03:00:31.644026Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8852,7 +8852,7 @@
         "osm_ids": [
           "way/230758444"
         ],
-        "updated_at": "2025-08-14T02:46:06.749018Z"
+        "updated_at": "2025-08-14T03:00:31.644522Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8899,7 +8899,7 @@
         "osm_ids": [
           "way/230758446"
         ],
-        "updated_at": "2025-08-14T02:46:06.749514Z"
+        "updated_at": "2025-08-14T03:00:31.645018Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9012,7 +9012,7 @@
         "osm_ids": [
           "way/230758451"
         ],
-        "updated_at": "2025-08-14T02:46:06.749514Z"
+        "updated_at": "2025-08-14T03:00:31.645514Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9103,7 +9103,7 @@
         "osm_ids": [
           "way/230758455"
         ],
-        "updated_at": "2025-08-14T02:46:06.750010Z"
+        "updated_at": "2025-08-14T03:00:31.645983Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9174,7 +9174,7 @@
         "osm_ids": [
           "way/230800856"
         ],
-        "updated_at": "2025-08-14T02:46:06.750506Z"
+        "updated_at": "2025-08-14T03:00:31.646507Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9249,7 +9249,7 @@
         "osm_ids": [
           "way/231035247"
         ],
-        "updated_at": "2025-08-14T02:46:06.751002Z"
+        "updated_at": "2025-08-14T03:00:31.647002Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9344,7 +9344,7 @@
         "osm_ids": [
           "way/231967244"
         ],
-        "updated_at": "2025-08-14T02:46:06.751498Z"
+        "updated_at": "2025-08-14T03:00:31.647002Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9407,7 +9407,7 @@
         "osm_ids": [
           "way/231967266"
         ],
-        "updated_at": "2025-08-14T02:46:06.751994Z"
+        "updated_at": "2025-08-14T03:00:31.647498Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9510,7 +9510,7 @@
         "osm_ids": [
           "way/231967283"
         ],
-        "updated_at": "2025-08-14T02:46:06.752987Z"
+        "updated_at": "2025-08-14T03:00:31.647994Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9597,7 +9597,7 @@
         "osm_ids": [
           "way/231967287"
         ],
-        "updated_at": "2025-08-14T02:46:06.753979Z"
+        "updated_at": "2025-08-14T03:00:31.649456Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9676,7 +9676,7 @@
         "osm_ids": [
           "way/231967303"
         ],
-        "updated_at": "2025-08-14T02:46:06.754475Z"
+        "updated_at": "2025-08-14T03:00:31.649952Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9795,7 +9795,7 @@
         "osm_ids": [
           "way/232480959"
         ],
-        "updated_at": "2025-08-14T02:46:06.754970Z"
+        "updated_at": "2025-08-14T03:00:31.650943Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9878,7 +9878,7 @@
         "osm_ids": [
           "way/232480963"
         ],
-        "updated_at": "2025-08-14T02:46:06.755466Z"
+        "updated_at": "2025-08-14T03:00:31.651440Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9925,7 +9925,7 @@
         "osm_ids": [
           "way/232683311"
         ],
-        "updated_at": "2025-08-14T02:46:06.755962Z"
+        "updated_at": "2025-08-14T03:00:31.651935Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10020,7 +10020,7 @@
         "osm_ids": [
           "way/232683314"
         ],
-        "updated_at": "2025-08-14T02:46:06.756458Z"
+        "updated_at": "2025-08-14T03:00:31.652927Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10067,7 +10067,7 @@
         "osm_ids": [
           "way/293613409"
         ],
-        "updated_at": "2025-08-14T02:46:06.756954Z"
+        "updated_at": "2025-08-14T03:00:31.652927Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10112,8 +10112,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "North Campus",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.443196,
@@ -10122,7 +10122,7 @@
         "osm_ids": [
           "way/293613414"
         ],
-        "updated_at": "2025-08-14T02:46:06.757450Z"
+        "updated_at": "2025-08-14T03:00:31.653450Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10267,8 +10267,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "North Campus",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.444661,
@@ -10277,7 +10277,7 @@
         "osm_ids": [
           "way/293613415"
         ],
-        "updated_at": "2025-08-14T02:46:06.757946Z"
+        "updated_at": "2025-08-14T03:00:31.653946Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10340,7 +10340,7 @@
         "osm_ids": [
           "way/309135537"
         ],
-        "updated_at": "2025-08-14T02:46:06.757946Z"
+        "updated_at": "2025-08-14T03:00:31.654442Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10391,7 +10391,7 @@
         "osm_ids": [
           "way/391131941"
         ],
-        "updated_at": "2025-08-14T02:46:06.758962Z"
+        "updated_at": "2025-08-14T03:00:31.655434Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10438,7 +10438,7 @@
         "osm_ids": [
           "way/407528998"
         ],
-        "updated_at": "2025-08-14T02:46:06.758962Z"
+        "updated_at": "2025-08-14T03:00:31.655930Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10581,7 +10581,7 @@
         "osm_ids": [
           "way/422242496"
         ],
-        "updated_at": "2025-08-14T02:46:06.759434Z"
+        "updated_at": "2025-08-14T03:00:31.656426Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10676,7 +10676,7 @@
         "osm_ids": [
           "way/422242502"
         ],
-        "updated_at": "2025-08-14T02:46:06.759956Z"
+        "updated_at": "2025-08-14T03:00:31.656922Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10771,7 +10771,7 @@
         "osm_ids": [
           "way/422245342"
         ],
-        "updated_at": "2025-08-14T02:46:06.760455Z"
+        "updated_at": "2025-08-14T03:00:31.657393Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10850,7 +10850,7 @@
         "osm_ids": [
           "way/422245375"
         ],
-        "updated_at": "2025-08-14T02:46:06.760922Z"
+        "updated_at": "2025-08-14T03:00:31.657914Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10921,7 +10921,7 @@
         "osm_ids": [
           "way/422245394"
         ],
-        "updated_at": "2025-08-14T02:46:06.761445Z"
+        "updated_at": "2025-08-14T03:00:31.658410Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -11016,7 +11016,7 @@
         "osm_ids": [
           "way/422245481"
         ],
-        "updated_at": "2025-08-14T02:46:06.761942Z"
+        "updated_at": "2025-08-14T03:00:31.658880Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -11119,7 +11119,7 @@
         "osm_ids": [
           "way/422245517"
         ],
-        "updated_at": "2025-08-14T02:46:06.762436Z"
+        "updated_at": "2025-08-14T03:00:31.659402Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -11238,7 +11238,7 @@
         "osm_ids": [
           "way/422245544"
         ],
-        "updated_at": "2025-08-14T02:46:06.762932Z"
+        "updated_at": "2025-08-14T03:00:31.659901Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -11365,7 +11365,7 @@
         "osm_ids": [
           "way/422245573"
         ],
-        "updated_at": "2025-08-14T02:46:06.763429Z"
+        "updated_at": "2025-08-14T03:00:31.660394Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -11468,7 +11468,7 @@
         "osm_ids": [
           "way/422245580"
         ],
-        "updated_at": "2025-08-14T02:46:06.763429Z"
+        "updated_at": "2025-08-14T03:00:31.660890Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -11597,7 +11597,7 @@
         "osm_ids": [
           "way/422260003"
         ],
-        "updated_at": "2025-08-14T02:46:06.763925Z"
+        "updated_at": "2025-08-14T03:00:31.661386Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -11684,7 +11684,7 @@
         "osm_ids": [
           "way/422876517"
         ],
-        "updated_at": "2025-08-14T02:46:06.764421Z"
+        "updated_at": "2025-08-14T03:00:31.661887Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -11807,7 +11807,7 @@
         "osm_ids": [
           "way/422876518"
         ],
-        "updated_at": "2025-08-14T02:46:06.764917Z"
+        "updated_at": "2025-08-14T03:00:31.662378Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -11986,7 +11986,7 @@
         "osm_ids": [
           "way/422876520"
         ],
-        "updated_at": "2025-08-14T02:46:06.765909Z"
+        "updated_at": "2025-08-14T03:00:31.663370Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -12057,7 +12057,7 @@
         "osm_ids": [
           "way/422876521"
         ],
-        "updated_at": "2025-08-14T02:46:06.765909Z"
+        "updated_at": "2025-08-14T03:00:31.663867Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -12112,7 +12112,7 @@
         "osm_ids": [
           "way/422876522"
         ],
-        "updated_at": "2025-08-14T02:46:06.766404Z"
+        "updated_at": "2025-08-14T03:00:31.664362Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -12249,7 +12249,7 @@
         "osm_ids": [
           "way/422876523"
         ],
-        "updated_at": "2025-08-14T02:46:06.766901Z"
+        "updated_at": "2025-08-14T03:00:31.664859Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -12356,7 +12356,7 @@
         "osm_ids": [
           "way/422876524"
         ],
-        "updated_at": "2025-08-14T02:46:06.767371Z"
+        "updated_at": "2025-08-14T03:00:31.665824Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -12419,7 +12419,7 @@
         "osm_ids": [
           "way/422876525"
         ],
-        "updated_at": "2025-08-14T02:46:06.767866Z"
+        "updated_at": "2025-08-14T03:00:31.666320Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -12874,7 +12874,7 @@
         "osm_ids": [
           "way/422876526"
         ],
-        "updated_at": "2025-08-14T02:46:06.770347Z"
+        "updated_at": "2025-08-14T03:00:31.667311Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -13257,7 +13257,7 @@
         "osm_ids": [
           "way/422876529"
         ],
-        "updated_at": "2025-08-14T02:46:06.771835Z"
+        "updated_at": "2025-08-14T03:00:31.668303Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -13516,7 +13516,7 @@
         "osm_ids": [
           "way/422876531"
         ],
-        "updated_at": "2025-08-14T02:46:06.772827Z"
+        "updated_at": "2025-08-14T03:00:31.669295Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -13611,7 +13611,7 @@
         "osm_ids": [
           "way/422876532"
         ],
-        "updated_at": "2025-08-14T02:46:06.773322Z"
+        "updated_at": "2025-08-14T03:00:31.669295Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -13706,7 +13706,7 @@
         "osm_ids": [
           "way/422876533"
         ],
-        "updated_at": "2025-08-14T02:46:06.773819Z"
+        "updated_at": "2025-08-14T03:00:31.669791Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -13753,7 +13753,7 @@
         "osm_ids": [
           "way/422876534"
         ],
-        "updated_at": "2025-08-14T02:46:06.774315Z"
+        "updated_at": "2025-08-14T03:00:31.670287Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -13910,7 +13910,7 @@
         "osm_ids": [
           "way/422876535"
         ],
-        "updated_at": "2025-08-14T02:46:06.774810Z"
+        "updated_at": "2025-08-14T03:00:31.670784Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -13973,7 +13973,7 @@
         "osm_ids": [
           "way/422876536"
         ],
-        "updated_at": "2025-08-14T02:46:06.775306Z"
+        "updated_at": "2025-08-14T03:00:31.671280Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -14076,7 +14076,7 @@
         "osm_ids": [
           "way/422876537"
         ],
-        "updated_at": "2025-08-14T02:46:06.776298Z"
+        "updated_at": "2025-08-14T03:00:31.671776Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -14253,7 +14253,7 @@
         "osm_ids": [
           "way/422876538"
         ],
-        "updated_at": "2025-08-14T02:46:06.776794Z"
+        "updated_at": "2025-08-14T03:00:31.672271Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -14348,7 +14348,7 @@
         "osm_ids": [
           "way/422876539"
         ],
-        "updated_at": "2025-08-14T02:46:06.777290Z"
+        "updated_at": "2025-08-14T03:00:31.672767Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -14459,7 +14459,7 @@
         "osm_ids": [
           "way/422876540"
         ],
-        "updated_at": "2025-08-14T02:46:06.777785Z"
+        "updated_at": "2025-08-14T03:00:31.673290Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -14678,7 +14678,7 @@
         "osm_ids": [
           "way/422876541"
         ],
-        "updated_at": "2025-08-14T02:46:06.778777Z"
+        "updated_at": "2025-08-14T03:00:31.673759Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -14785,7 +14785,7 @@
         "osm_ids": [
           "way/422876542"
         ],
-        "updated_at": "2025-08-14T02:46:06.779274Z"
+        "updated_at": "2025-08-14T03:00:31.674282Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -14938,7 +14938,7 @@
         "osm_ids": [
           "way/422876543"
         ],
-        "updated_at": "2025-08-14T02:46:06.779771Z"
+        "updated_at": "2025-08-14T03:00:31.674778Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -14985,7 +14985,7 @@
         "osm_ids": [
           "way/422876544"
         ],
-        "updated_at": "2025-08-14T02:46:06.780266Z"
+        "updated_at": "2025-08-14T03:00:31.675274Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15088,7 +15088,7 @@
         "osm_ids": [
           "way/422876545"
         ],
-        "updated_at": "2025-08-14T02:46:06.780762Z"
+        "updated_at": "2025-08-14T03:00:31.675770Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15283,7 +15283,7 @@
         "osm_ids": [
           "way/422876549"
         ],
-        "updated_at": "2025-08-14T02:46:06.781258Z"
+        "updated_at": "2025-08-14T03:00:31.676266Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15342,7 +15342,7 @@
         "osm_ids": [
           "way/422876552"
         ],
-        "updated_at": "2025-08-14T02:46:06.781755Z"
+        "updated_at": "2025-08-14T03:00:31.676735Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15489,7 +15489,7 @@
         "osm_ids": [
           "way/422876557"
         ],
-        "updated_at": "2025-08-14T02:46:06.782249Z"
+        "updated_at": "2025-08-14T03:00:31.677258Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15684,7 +15684,7 @@
         "osm_ids": [
           "way/422876563"
         ],
-        "updated_at": "2025-08-14T02:46:06.783242Z"
+        "updated_at": "2025-08-14T03:00:31.677756Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15819,7 +15819,7 @@
         "osm_ids": [
           "way/422876565"
         ],
-        "updated_at": "2025-08-14T02:46:06.783739Z"
+        "updated_at": "2025-08-14T03:00:31.678251Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15866,7 +15866,7 @@
         "osm_ids": [
           "way/422876566"
         ],
-        "updated_at": "2025-08-14T02:46:06.784235Z"
+        "updated_at": "2025-08-14T03:00:31.678746Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15969,7 +15969,7 @@
         "osm_ids": [
           "way/422876567"
         ],
-        "updated_at": "2025-08-14T02:46:06.784731Z"
+        "updated_at": "2025-08-14T03:00:31.678746Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -16032,7 +16032,7 @@
         "osm_ids": [
           "way/422876568"
         ],
-        "updated_at": "2025-08-14T02:46:06.785227Z"
+        "updated_at": "2025-08-14T03:00:31.679243Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -16137,7 +16137,7 @@
         "osm_ids": [
           "way/422876569"
         ],
-        "updated_at": "2025-08-14T02:46:06.788202Z"
+        "updated_at": "2025-08-14T03:00:31.679738Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -16208,7 +16208,7 @@
         "osm_ids": [
           "way/422876570"
         ],
-        "updated_at": "2025-08-14T02:46:06.788698Z"
+        "updated_at": "2025-08-14T03:00:31.680242Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -16351,7 +16351,7 @@
         "osm_ids": [
           "way/422876571"
         ],
-        "updated_at": "2025-08-14T02:46:06.789691Z"
+        "updated_at": "2025-08-14T03:00:31.680730Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -16522,7 +16522,7 @@
         "osm_ids": [
           "way/422876572"
         ],
-        "updated_at": "2025-08-14T02:46:06.790682Z"
+        "updated_at": "2025-08-14T03:00:31.681226Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -16721,7 +16721,7 @@
         "osm_ids": [
           "way/422876573"
         ],
-        "updated_at": "2025-08-14T02:46:06.792666Z"
+        "updated_at": "2025-08-14T03:00:31.682192Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -16768,7 +16768,7 @@
         "osm_ids": [
           "way/422876574"
         ],
-        "updated_at": "2025-08-14T02:46:06.793163Z"
+        "updated_at": "2025-08-14T03:00:31.684177Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -16873,7 +16873,7 @@
         "osm_ids": [
           "way/422876575"
         ],
-        "updated_at": "2025-08-14T02:46:06.794155Z"
+        "updated_at": "2025-08-14T03:00:31.684671Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -17027,7 +17027,7 @@
         "osm_ids": [
           "way/422876576"
         ],
-        "updated_at": "2025-08-14T02:46:06.874505Z"
+        "updated_at": "2025-08-14T03:00:31.685167Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -17098,7 +17098,7 @@
         "osm_ids": [
           "way/422876577"
         ],
-        "updated_at": "2025-08-14T02:46:06.875994Z"
+        "updated_at": "2025-08-14T03:00:31.685690Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -17221,7 +17221,7 @@
         "osm_ids": [
           "way/422876578"
         ],
-        "updated_at": "2025-08-14T02:46:06.876986Z"
+        "updated_at": "2025-08-14T03:00:31.686186Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -17362,7 +17362,7 @@
         "osm_ids": [
           "way/422876579"
         ],
-        "updated_at": "2025-08-14T02:46:06.877977Z"
+        "updated_at": "2025-08-14T03:00:31.687181Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -17453,7 +17453,7 @@
         "osm_ids": [
           "way/422876580"
         ],
-        "updated_at": "2025-08-14T02:46:06.878473Z"
+        "updated_at": "2025-08-14T03:00:31.687674Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -17572,7 +17572,7 @@
         "osm_ids": [
           "way/422876581"
         ],
-        "updated_at": "2025-08-14T02:46:06.879466Z"
+        "updated_at": "2025-08-14T03:00:31.688143Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -17887,7 +17887,7 @@
         "osm_ids": [
           "way/422876582"
         ],
-        "updated_at": "2025-08-14T02:46:06.880458Z"
+        "updated_at": "2025-08-14T03:00:31.688666Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -17942,7 +17942,7 @@
         "osm_ids": [
           "way/422876583"
         ],
-        "updated_at": "2025-08-14T02:46:06.880953Z"
+        "updated_at": "2025-08-14T03:00:31.689162Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18013,7 +18013,7 @@
         "osm_ids": [
           "way/422876584"
         ],
-        "updated_at": "2025-08-14T02:46:06.881946Z"
+        "updated_at": "2025-08-14T03:00:31.689662Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18076,7 +18076,7 @@
         "osm_ids": [
           "way/422876586"
         ],
-        "updated_at": "2025-08-14T02:46:06.882442Z"
+        "updated_at": "2025-08-14T03:00:31.690154Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18139,7 +18139,7 @@
         "osm_ids": [
           "way/422876587"
         ],
-        "updated_at": "2025-08-14T02:46:06.895337Z"
+        "updated_at": "2025-08-14T03:00:31.690655Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18226,7 +18226,7 @@
         "osm_ids": [
           "way/422876588"
         ],
-        "updated_at": "2025-08-14T02:46:06.897322Z"
+        "updated_at": "2025-08-14T03:00:31.691146Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18325,7 +18325,7 @@
         "osm_ids": [
           "way/422876589"
         ],
-        "updated_at": "2025-08-14T02:46:06.898314Z"
+        "updated_at": "2025-08-14T03:00:31.691642Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18388,7 +18388,7 @@
         "osm_ids": [
           "way/422876590"
         ],
-        "updated_at": "2025-08-14T02:46:06.899307Z"
+        "updated_at": "2025-08-14T03:00:31.692111Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18551,7 +18551,7 @@
         "osm_ids": [
           "way/422876593"
         ],
-        "updated_at": "2025-08-14T02:46:06.899803Z"
+        "updated_at": "2025-08-14T03:00:31.692608Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18598,7 +18598,7 @@
         "osm_ids": [
           "way/422876594"
         ],
-        "updated_at": "2025-08-14T02:46:06.900298Z"
+        "updated_at": "2025-08-14T03:00:31.693599Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18773,7 +18773,7 @@
         "osm_ids": [
           "way/422876595"
         ],
-        "updated_at": "2025-08-14T02:46:06.901289Z"
+        "updated_at": "2025-08-14T03:00:31.694095Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18864,7 +18864,7 @@
         "osm_ids": [
           "way/422876596"
         ],
-        "updated_at": "2025-08-14T02:46:06.901785Z"
+        "updated_at": "2025-08-14T03:00:31.694591Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18967,7 +18967,7 @@
         "osm_ids": [
           "way/422876597"
         ],
-        "updated_at": "2025-08-14T02:46:06.904266Z"
+        "updated_at": "2025-08-14T03:00:31.695113Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -19014,7 +19014,7 @@
         "osm_ids": [
           "way/422876598"
         ],
-        "updated_at": "2025-08-14T02:46:06.905258Z"
+        "updated_at": "2025-08-14T03:00:31.695606Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -19125,7 +19125,7 @@
         "osm_ids": [
           "way/422876599"
         ],
-        "updated_at": "2025-08-14T02:46:06.906746Z"
+        "updated_at": "2025-08-14T03:00:31.696102Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -19256,7 +19256,7 @@
         "osm_ids": [
           "way/422876600"
         ],
-        "updated_at": "2025-08-14T02:46:06.907242Z"
+        "updated_at": "2025-08-14T03:00:31.696598Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -19431,7 +19431,7 @@
         "osm_ids": [
           "way/422876601"
         ],
-        "updated_at": "2025-08-14T02:46:06.907737Z"
+        "updated_at": "2025-08-14T03:00:31.697094Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -19562,7 +19562,7 @@
         "osm_ids": [
           "way/422876602"
         ],
-        "updated_at": "2025-08-14T02:46:06.908236Z"
+        "updated_at": "2025-08-14T03:00:31.697588Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -19797,7 +19797,7 @@
         "osm_ids": [
           "way/422876603"
         ],
-        "updated_at": "2025-08-14T02:46:06.909225Z"
+        "updated_at": "2025-08-14T03:00:31.699057Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -19890,7 +19890,7 @@
         "osm_ids": [
           "way/422876610"
         ],
-        "updated_at": "2025-08-14T02:46:06.909721Z"
+        "updated_at": "2025-08-14T03:00:31.699552Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -20085,7 +20085,7 @@
         "osm_ids": [
           "way/422876611"
         ],
-        "updated_at": "2025-08-14T02:46:06.910715Z"
+        "updated_at": "2025-08-14T03:00:31.700542Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -20268,7 +20268,7 @@
         "osm_ids": [
           "way/422876613"
         ],
-        "updated_at": "2025-08-14T02:46:06.911706Z"
+        "updated_at": "2025-08-14T03:00:31.701062Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -20347,7 +20347,7 @@
         "osm_ids": [
           "way/422876614"
         ],
-        "updated_at": "2025-08-14T02:46:06.912203Z"
+        "updated_at": "2025-08-14T03:00:31.701559Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -20506,7 +20506,7 @@
         "osm_ids": [
           "way/422876615"
         ],
-        "updated_at": "2025-08-14T02:46:06.912699Z"
+        "updated_at": "2025-08-14T03:00:31.702054Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -20601,7 +20601,7 @@
         "osm_ids": [
           "way/422876616"
         ],
-        "updated_at": "2025-08-14T02:46:06.913195Z"
+        "updated_at": "2025-08-14T03:00:31.702550Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -20700,7 +20700,7 @@
         "osm_ids": [
           "way/422876617"
         ],
-        "updated_at": "2025-08-14T02:46:06.913689Z"
+        "updated_at": "2025-08-14T03:00:31.702550Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -20851,7 +20851,7 @@
         "osm_ids": [
           "way/422876618"
         ],
-        "updated_at": "2025-08-14T02:46:06.914683Z"
+        "updated_at": "2025-08-14T03:00:31.703542Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -20962,7 +20962,7 @@
         "osm_ids": [
           "way/422876619"
         ],
-        "updated_at": "2025-08-14T02:46:06.915178Z"
+        "updated_at": "2025-08-14T03:00:31.703542Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21049,7 +21049,7 @@
         "osm_ids": [
           "way/422876620"
         ],
-        "updated_at": "2025-08-14T02:46:06.915675Z"
+        "updated_at": "2025-08-14T03:00:31.704038Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21104,7 +21104,7 @@
         "osm_ids": [
           "way/422876621"
         ],
-        "updated_at": "2025-08-14T02:46:06.916170Z"
+        "updated_at": "2025-08-14T03:00:31.704537Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21175,7 +21175,7 @@
         "osm_ids": [
           "way/422876622"
         ],
-        "updated_at": "2025-08-14T02:46:06.916665Z"
+        "updated_at": "2025-08-14T03:00:31.705030Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21380,7 +21380,7 @@
         "osm_ids": [
           "way/422876623"
         ],
-        "updated_at": "2025-08-14T02:46:06.917658Z"
+        "updated_at": "2025-08-14T03:00:31.705526Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21578,7 +21578,7 @@
         "osm_ids": [
           "way/422876624"
         ],
-        "updated_at": "2025-08-14T02:46:06.918153Z"
+        "updated_at": "2025-08-14T03:00:31.705998Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21641,7 +21641,7 @@
         "osm_ids": [
           "way/422876625"
         ],
-        "updated_at": "2025-08-14T02:46:06.920634Z"
+        "updated_at": "2025-08-14T03:00:31.706518Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21744,7 +21744,7 @@
         "osm_ids": [
           "way/422876626"
         ],
-        "updated_at": "2025-08-14T02:46:06.922122Z"
+        "updated_at": "2025-08-14T03:00:31.707014Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21859,7 +21859,7 @@
         "osm_ids": [
           "way/422876627"
         ],
-        "updated_at": "2025-08-14T02:46:06.922617Z"
+        "updated_at": "2025-08-14T03:00:31.707510Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -22014,7 +22014,7 @@
         "osm_ids": [
           "way/422876628"
         ],
-        "updated_at": "2025-08-14T02:46:06.923611Z"
+        "updated_at": "2025-08-14T03:00:31.708011Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -22141,7 +22141,7 @@
         "osm_ids": [
           "way/422876629"
         ],
-        "updated_at": "2025-08-14T02:46:06.924105Z"
+        "updated_at": "2025-08-14T03:00:31.708503Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -22348,7 +22348,7 @@
         "osm_ids": [
           "way/422876630"
         ],
-        "updated_at": "2025-08-14T02:46:06.924601Z"
+        "updated_at": "2025-08-14T03:00:31.708998Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -22567,7 +22567,7 @@
         "osm_ids": [
           "way/422876631"
         ],
-        "updated_at": "2025-08-14T02:46:06.925594Z"
+        "updated_at": "2025-08-14T03:00:31.709493Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -22702,7 +22702,7 @@
         "osm_ids": [
           "way/422876632"
         ],
-        "updated_at": "2025-08-14T02:46:06.927082Z"
+        "updated_at": "2025-08-14T03:00:31.709966Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -22973,7 +22973,7 @@
         "osm_ids": [
           "way/422876633"
         ],
-        "updated_at": "2025-08-14T02:46:06.928074Z"
+        "updated_at": "2025-08-14T03:00:31.710982Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -23076,7 +23076,7 @@
         "osm_ids": [
           "way/422876634"
         ],
-        "updated_at": "2025-08-14T02:46:06.928569Z"
+        "updated_at": "2025-08-14T03:00:31.711479Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -23187,7 +23187,7 @@
         "osm_ids": [
           "way/422876635"
         ],
-        "updated_at": "2025-08-14T02:46:06.929562Z"
+        "updated_at": "2025-08-14T03:00:31.711950Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -23378,7 +23378,7 @@
         "osm_ids": [
           "way/422876636"
         ],
-        "updated_at": "2025-08-14T02:46:06.930554Z"
+        "updated_at": "2025-08-14T03:00:31.712447Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -23641,7 +23641,7 @@
         "osm_ids": [
           "way/422876637"
         ],
-        "updated_at": "2025-08-14T02:46:06.931546Z"
+        "updated_at": "2025-08-14T03:00:31.712966Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -23952,7 +23952,7 @@
         "osm_ids": [
           "way/422876638"
         ],
-        "updated_at": "2025-08-14T02:46:06.933034Z"
+        "updated_at": "2025-08-14T03:00:31.713936Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24303,7 +24303,7 @@
         "osm_ids": [
           "way/422876640"
         ],
-        "updated_at": "2025-08-14T02:46:06.934026Z"
+        "updated_at": "2025-08-14T03:00:31.714950Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24520,7 +24520,7 @@
         "osm_ids": [
           "way/422876641"
         ],
-        "updated_at": "2025-08-14T02:46:06.934521Z"
+        "updated_at": "2025-08-14T03:00:31.715920Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24607,7 +24607,7 @@
         "osm_ids": [
           "way/422876642"
         ],
-        "updated_at": "2025-08-14T02:46:06.935017Z"
+        "updated_at": "2025-08-14T03:00:31.716415Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24718,7 +24718,7 @@
         "osm_ids": [
           "way/422876643"
         ],
-        "updated_at": "2025-08-14T02:46:06.937994Z"
+        "updated_at": "2025-08-14T03:00:31.716935Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24825,7 +24825,7 @@
         "osm_ids": [
           "way/422876644"
         ],
-        "updated_at": "2025-08-14T02:46:06.938986Z"
+        "updated_at": "2025-08-14T03:00:31.717407Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24888,7 +24888,7 @@
         "osm_ids": [
           "way/422876645"
         ],
-        "updated_at": "2025-08-14T02:46:06.939482Z"
+        "updated_at": "2025-08-14T03:00:31.717927Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24983,7 +24983,7 @@
         "osm_ids": [
           "way/422876647"
         ],
-        "updated_at": "2025-08-14T02:46:06.940969Z"
+        "updated_at": "2025-08-14T03:00:31.718427Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -25262,7 +25262,7 @@
         "osm_ids": [
           "way/422876648"
         ],
-        "updated_at": "2025-08-14T02:46:06.941962Z"
+        "updated_at": "2025-08-14T03:00:31.718918Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -25653,7 +25653,7 @@
         "osm_ids": [
           "way/422876649"
         ],
-        "updated_at": "2025-08-14T02:46:06.942953Z"
+        "updated_at": "2025-08-14T03:00:31.719910Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -25732,7 +25732,7 @@
         "osm_ids": [
           "way/422876650"
         ],
-        "updated_at": "2025-08-14T02:46:06.943945Z"
+        "updated_at": "2025-08-14T03:00:31.719910Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -25813,7 +25813,7 @@
         "osm_ids": [
           "way/422876651"
         ],
-        "updated_at": "2025-08-14T02:46:06.944442Z"
+        "updated_at": "2025-08-14T03:00:31.720406Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -25918,7 +25918,7 @@
         "osm_ids": [
           "way/422876652"
         ],
-        "updated_at": "2025-08-14T02:46:06.945434Z"
+        "updated_at": "2025-08-14T03:00:31.720902Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26005,7 +26005,7 @@
         "osm_ids": [
           "way/422876653"
         ],
-        "updated_at": "2025-08-14T02:46:06.946427Z"
+        "updated_at": "2025-08-14T03:00:31.721398Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26108,7 +26108,7 @@
         "osm_ids": [
           "way/422876654"
         ],
-        "updated_at": "2025-08-14T02:46:06.946923Z"
+        "updated_at": "2025-08-14T03:00:31.721894Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26155,7 +26155,7 @@
         "osm_ids": [
           "way/422876655"
         ],
-        "updated_at": "2025-08-14T02:46:06.947914Z"
+        "updated_at": "2025-08-14T03:00:31.722392Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26318,7 +26318,7 @@
         "osm_ids": [
           "way/422876656"
         ],
-        "updated_at": "2025-08-14T02:46:06.948409Z"
+        "updated_at": "2025-08-14T03:00:31.722888Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26419,7 +26419,7 @@
         "osm_ids": [
           "way/422876660"
         ],
-        "updated_at": "2025-08-14T02:46:06.949402Z"
+        "updated_at": "2025-08-14T03:00:31.723382Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26518,7 +26518,7 @@
         "osm_ids": [
           "way/422876661"
         ],
-        "updated_at": "2025-08-14T02:46:06.949897Z"
+        "updated_at": "2025-08-14T03:00:31.723878Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26613,7 +26613,7 @@
         "osm_ids": [
           "way/422876662"
         ],
-        "updated_at": "2025-08-14T02:46:06.950394Z"
+        "updated_at": "2025-08-14T03:00:31.723878Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26736,7 +26736,7 @@
         "osm_ids": [
           "way/422876664"
         ],
-        "updated_at": "2025-08-14T02:46:06.950890Z"
+        "updated_at": "2025-08-14T03:00:31.724374Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26911,7 +26911,7 @@
         "osm_ids": [
           "way/422876680"
         ],
-        "updated_at": "2025-08-14T02:46:06.956347Z"
+        "updated_at": "2025-08-14T03:00:31.725862Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26958,7 +26958,7 @@
         "osm_ids": [
           "way/422876683"
         ],
-        "updated_at": "2025-08-14T02:46:06.957338Z"
+        "updated_at": "2025-08-14T03:00:31.726358Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27005,7 +27005,7 @@
         "osm_ids": [
           "way/422876694"
         ],
-        "updated_at": "2025-08-14T02:46:06.959322Z"
+        "updated_at": "2025-08-14T03:00:31.727846Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27052,7 +27052,7 @@
         "osm_ids": [
           "way/422876709"
         ],
-        "updated_at": "2025-08-14T02:46:06.961801Z"
+        "updated_at": "2025-08-14T03:00:31.728838Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27107,7 +27107,7 @@
         "osm_ids": [
           "way/422876710"
         ],
-        "updated_at": "2025-08-14T02:46:06.962298Z"
+        "updated_at": "2025-08-14T03:00:31.729313Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27162,7 +27162,7 @@
         "osm_ids": [
           "way/422876715"
         ],
-        "updated_at": "2025-08-14T02:46:06.963786Z"
+        "updated_at": "2025-08-14T03:00:31.730327Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27265,7 +27265,7 @@
         "osm_ids": [
           "way/422876720"
         ],
-        "updated_at": "2025-08-14T02:46:06.965274Z"
+        "updated_at": "2025-08-14T03:00:31.731318Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27320,7 +27320,7 @@
         "osm_ids": [
           "way/422876723"
         ],
-        "updated_at": "2025-08-14T02:46:06.965769Z"
+        "updated_at": "2025-08-14T03:00:31.732289Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27383,7 +27383,7 @@
         "osm_ids": [
           "way/422876725"
         ],
-        "updated_at": "2025-08-14T02:46:06.966761Z"
+        "updated_at": "2025-08-14T03:00:31.733280Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27430,7 +27430,7 @@
         "osm_ids": [
           "way/422876726"
         ],
-        "updated_at": "2025-08-14T02:46:06.967258Z"
+        "updated_at": "2025-08-14T03:00:31.733775Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27493,7 +27493,7 @@
         "osm_ids": [
           "way/422876727"
         ],
-        "updated_at": "2025-08-14T02:46:06.968249Z"
+        "updated_at": "2025-08-14T03:00:31.734271Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27556,7 +27556,7 @@
         "osm_ids": [
           "way/422876728"
         ],
-        "updated_at": "2025-08-14T02:46:06.972714Z"
+        "updated_at": "2025-08-14T03:00:31.734794Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27615,7 +27615,7 @@
         "osm_ids": [
           "way/425181695"
         ],
-        "updated_at": "2025-08-14T02:46:06.973706Z"
+        "updated_at": "2025-08-14T03:00:31.735264Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27730,7 +27730,7 @@
         "osm_ids": [
           "way/425181716"
         ],
-        "updated_at": "2025-08-14T02:46:06.974698Z"
+        "updated_at": "2025-08-14T03:00:31.735760Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27785,7 +27785,7 @@
         "osm_ids": [
           "way/425246943"
         ],
-        "updated_at": "2025-08-14T02:46:06.975194Z"
+        "updated_at": "2025-08-14T03:00:31.736255Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27860,7 +27860,7 @@
         "osm_ids": [
           "way/425246945"
         ],
-        "updated_at": "2025-08-14T02:46:06.975690Z"
+        "updated_at": "2025-08-14T03:00:31.736783Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27939,7 +27939,7 @@
         "osm_ids": [
           "way/425246946"
         ],
-        "updated_at": "2025-08-14T02:46:06.976186Z"
+        "updated_at": "2025-08-14T03:00:31.737274Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -28034,7 +28034,7 @@
         "osm_ids": [
           "way/425246947"
         ],
-        "updated_at": "2025-08-14T02:46:06.976681Z"
+        "updated_at": "2025-08-14T03:00:31.737770Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -28121,7 +28121,7 @@
         "osm_ids": [
           "way/425246948"
         ],
-        "updated_at": "2025-08-14T02:46:06.977177Z"
+        "updated_at": "2025-08-14T03:00:31.738266Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -28216,7 +28216,7 @@
         "osm_ids": [
           "way/425246949"
         ],
-        "updated_at": "2025-08-14T02:46:06.978169Z"
+        "updated_at": "2025-08-14T03:00:31.738736Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -28311,7 +28311,7 @@
         "osm_ids": [
           "way/425246956"
         ],
-        "updated_at": "2025-08-14T02:46:06.978665Z"
+        "updated_at": "2025-08-14T03:00:31.739258Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -28358,7 +28358,7 @@
         "osm_ids": [
           "way/425246961"
         ],
-        "updated_at": "2025-08-14T02:46:06.980154Z"
+        "updated_at": "2025-08-14T03:00:31.740250Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -28549,7 +28549,7 @@
         "osm_ids": [
           "way/425246966"
         ],
-        "updated_at": "2025-08-14T02:46:06.980650Z"
+        "updated_at": "2025-08-14T03:00:31.740746Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -28786,8 +28786,8 @@
         "name": "Court of Sciences",
         "aliases": [],
         "zone": "South Campus",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.442231,
@@ -28796,7 +28796,7 @@
         "osm_ids": [
           "way/443668560"
         ],
-        "updated_at": "2025-08-14T02:46:06.981641Z"
+        "updated_at": "2025-08-14T03:00:31.741738Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -28833,8 +28833,8 @@
         "name": "Dickson Court South",
         "aliases": [],
         "zone": "North Campus",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.440207,
@@ -28843,7 +28843,7 @@
         "osm_ids": [
           "way/443668561"
         ],
-        "updated_at": "2025-08-14T02:46:06.982138Z"
+        "updated_at": "2025-08-14T03:00:31.742234Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -28890,7 +28890,7 @@
         "osm_ids": [
           "way/443668571"
         ],
-        "updated_at": "2025-08-14T02:46:06.982634Z"
+        "updated_at": "2025-08-14T03:00:31.742729Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -28951,8 +28951,8 @@
         "name": "Martha's Garden",
         "aliases": [],
         "zone": "The Hill",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.450605,
@@ -28961,7 +28961,7 @@
         "osm_ids": [
           "way/480267381"
         ],
-        "updated_at": "2025-08-14T02:46:06.983130Z"
+        "updated_at": "2025-08-14T03:00:31.743226Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29014,8 +29014,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "The Hill",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.450268,
@@ -29024,7 +29024,7 @@
         "osm_ids": [
           "way/480267382"
         ],
-        "updated_at": "2025-08-14T02:46:06.983626Z"
+        "updated_at": "2025-08-14T03:00:31.743226Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29057,8 +29057,8 @@
         "name": "Dickson Court North",
         "aliases": [],
         "zone": "North Campus",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.440208,
@@ -29067,7 +29067,7 @@
         "osm_ids": [
           "way/521902202"
         ],
-        "updated_at": "2025-08-14T02:46:06.984122Z"
+        "updated_at": "2025-08-14T03:00:31.743722Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29114,7 +29114,7 @@
         "osm_ids": [
           "way/546510989"
         ],
-        "updated_at": "2025-08-14T02:46:06.984618Z"
+        "updated_at": "2025-08-14T03:00:31.744218Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29177,7 +29177,7 @@
         "osm_ids": [
           "way/590011366"
         ],
-        "updated_at": "2025-08-14T02:46:06.985114Z"
+        "updated_at": "2025-08-14T03:00:31.744713Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29280,7 +29280,7 @@
         "osm_ids": [
           "way/590016591"
         ],
-        "updated_at": "2025-08-14T02:46:06.988090Z"
+        "updated_at": "2025-08-14T03:00:31.745680Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29327,7 +29327,7 @@
         "osm_ids": [
           "way/590016847"
         ],
-        "updated_at": "2025-08-14T02:46:06.989082Z"
+        "updated_at": "2025-08-14T03:00:31.745680Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29382,7 +29382,7 @@
         "osm_ids": [
           "way/653518771"
         ],
-        "updated_at": "2025-08-14T02:46:06.989578Z"
+        "updated_at": "2025-08-14T03:00:31.746202Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29445,7 +29445,7 @@
         "osm_ids": [
           "way/665447306"
         ],
-        "updated_at": "2025-08-14T02:46:06.990570Z"
+        "updated_at": "2025-08-14T03:00:31.746701Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29594,8 +29594,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "The Hill",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.445418,
@@ -29604,7 +29604,7 @@
         "osm_ids": [
           "way/733431542"
         ],
-        "updated_at": "2025-08-14T02:46:06.991067Z"
+        "updated_at": "2025-08-14T03:00:31.747194Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29661,8 +29661,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "North Campus",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.442862,
@@ -29671,7 +29671,7 @@
         "osm_ids": [
           "way/733431543"
         ],
-        "updated_at": "2025-08-14T02:46:06.991562Z"
+        "updated_at": "2025-08-14T03:00:31.747690Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29756,8 +29756,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "North Campus",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.442389,
@@ -29766,7 +29766,7 @@
         "osm_ids": [
           "way/733431544"
         ],
-        "updated_at": "2025-08-14T02:46:06.992057Z"
+        "updated_at": "2025-08-14T03:00:31.748159Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29815,8 +29815,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "North Campus",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.442016,
@@ -29825,7 +29825,7 @@
         "osm_ids": [
           "way/733431545"
         ],
-        "updated_at": "2025-08-14T02:46:06.992554Z"
+        "updated_at": "2025-08-14T03:00:31.748656Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29878,8 +29878,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "North Campus",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.442176,
@@ -29888,7 +29888,7 @@
         "osm_ids": [
           "way/733431546"
         ],
-        "updated_at": "2025-08-14T02:46:06.993049Z"
+        "updated_at": "2025-08-14T03:00:31.749647Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29925,8 +29925,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "North Campus",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.443424,
@@ -29935,7 +29935,7 @@
         "osm_ids": [
           "way/733431547"
         ],
-        "updated_at": "2025-08-14T02:46:06.993546Z"
+        "updated_at": "2025-08-14T03:00:31.750143Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29992,8 +29992,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "Westwood",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.439122,
@@ -30002,7 +30002,7 @@
         "osm_ids": [
           "way/733431548"
         ],
-        "updated_at": "2025-08-14T02:46:06.994042Z"
+        "updated_at": "2025-08-14T03:00:31.750639Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30075,8 +30075,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "Westwood",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.438762,
@@ -30085,7 +30085,7 @@
         "osm_ids": [
           "way/733431550"
         ],
-        "updated_at": "2025-08-14T02:46:06.994537Z"
+        "updated_at": "2025-08-14T03:00:31.751135Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30158,8 +30158,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "Westwood",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.438745,
@@ -30168,7 +30168,7 @@
         "osm_ids": [
           "way/733431551"
         ],
-        "updated_at": "2025-08-14T02:46:06.995033Z"
+        "updated_at": "2025-08-14T03:00:31.751631Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30297,8 +30297,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "Westwood",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.439502,
@@ -30307,7 +30307,7 @@
         "osm_ids": [
           "way/733431552"
         ],
-        "updated_at": "2025-08-14T02:46:06.996026Z"
+        "updated_at": "2025-08-14T03:00:31.752154Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30344,8 +30344,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "The Hill",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.447308,
@@ -30354,7 +30354,7 @@
         "osm_ids": [
           "way/733431553"
         ],
-        "updated_at": "2025-08-14T02:46:06.996521Z"
+        "updated_at": "2025-08-14T03:00:31.752650Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30455,8 +30455,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "The Hill",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.447376,
@@ -30465,7 +30465,7 @@
         "osm_ids": [
           "way/733431554"
         ],
-        "updated_at": "2025-08-14T02:46:06.997514Z"
+        "updated_at": "2025-08-14T03:00:31.753146Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30552,7 +30552,7 @@
         "osm_ids": [
           "way/792359253"
         ],
-        "updated_at": "2025-08-14T02:46:06.998009Z"
+        "updated_at": "2025-08-14T03:00:31.753642Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30599,7 +30599,7 @@
         "osm_ids": [
           "way/809915881"
         ],
-        "updated_at": "2025-08-14T02:46:06.998507Z"
+        "updated_at": "2025-08-14T03:00:31.754111Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30662,7 +30662,7 @@
         "osm_ids": [
           "way/810616323"
         ],
-        "updated_at": "2025-08-14T02:46:06.999498Z"
+        "updated_at": "2025-08-14T03:00:31.754633Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30729,7 +30729,7 @@
         "osm_ids": [
           "way/810618012"
         ],
-        "updated_at": "2025-08-14T02:46:07.000490Z"
+        "updated_at": "2025-08-14T03:00:31.755129Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30852,7 +30852,7 @@
         "osm_ids": [
           "way/810654875"
         ],
-        "updated_at": "2025-08-14T02:46:07.000985Z"
+        "updated_at": "2025-08-14T03:00:31.755626Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30899,7 +30899,7 @@
         "osm_ids": [
           "way/810654876"
         ],
-        "updated_at": "2025-08-14T02:46:07.001481Z"
+        "updated_at": "2025-08-14T03:00:31.756122Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30946,7 +30946,7 @@
         "osm_ids": [
           "way/812676697"
         ],
-        "updated_at": "2025-08-14T02:46:07.003962Z"
+        "updated_at": "2025-08-14T03:00:31.756618Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -31037,7 +31037,7 @@
         "osm_ids": [
           "way/854806689"
         ],
-        "updated_at": "2025-08-14T02:46:07.006937Z"
+        "updated_at": "2025-08-14T03:00:31.757610Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -31116,7 +31116,7 @@
         "osm_ids": [
           "way/883408619"
         ],
-        "updated_at": "2025-08-14T02:46:07.007433Z"
+        "updated_at": "2025-08-14T03:00:31.758106Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -31171,7 +31171,7 @@
         "osm_ids": [
           "way/954814722"
         ],
-        "updated_at": "2025-08-14T02:46:07.007930Z"
+        "updated_at": "2025-08-14T03:00:31.758601Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -31218,7 +31218,7 @@
         "osm_ids": [
           "way/958331363"
         ],
-        "updated_at": "2025-08-14T02:46:07.008921Z"
+        "updated_at": "2025-08-14T03:00:31.759098Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -31273,7 +31273,7 @@
         "osm_ids": [
           "way/964477264"
         ],
-        "updated_at": "2025-08-14T02:46:07.009418Z"
+        "updated_at": "2025-08-14T03:00:31.759596Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -31320,7 +31320,7 @@
         "osm_ids": [
           "way/964822668"
         ],
-        "updated_at": "2025-08-14T02:46:07.009914Z"
+        "updated_at": "2025-08-14T03:00:31.760064Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -31391,7 +31391,7 @@
         "osm_ids": [
           "way/964842613"
         ],
-        "updated_at": "2025-08-14T02:46:07.010905Z"
+        "updated_at": "2025-08-14T03:00:31.760560Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -31486,7 +31486,7 @@
         "osm_ids": [
           "way/964842615"
         ],
-        "updated_at": "2025-08-14T02:46:07.011402Z"
+        "updated_at": "2025-08-14T03:00:31.761084Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -31629,7 +31629,7 @@
         "osm_ids": [
           "way/965850072"
         ],
-        "updated_at": "2025-08-14T02:46:07.012394Z"
+        "updated_at": "2025-08-14T03:00:31.761578Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -31856,7 +31856,7 @@
         "osm_ids": [
           "way/965850073"
         ],
-        "updated_at": "2025-08-14T02:46:07.012889Z"
+        "updated_at": "2025-08-14T03:00:31.762074Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -31991,7 +31991,7 @@
         "osm_ids": [
           "way/965850074"
         ],
-        "updated_at": "2025-08-14T02:46:07.013882Z"
+        "updated_at": "2025-08-14T03:00:31.762570Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32230,7 +32230,7 @@
         "osm_ids": [
           "way/986844880"
         ],
-        "updated_at": "2025-08-14T02:46:07.014377Z"
+        "updated_at": "2025-08-14T03:00:31.763066Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32277,7 +32277,7 @@
         "osm_ids": [
           "way/986844881"
         ],
-        "updated_at": "2025-08-14T02:46:07.014873Z"
+        "updated_at": "2025-08-14T03:00:31.763562Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32324,7 +32324,7 @@
         "osm_ids": [
           "way/986844882"
         ],
-        "updated_at": "2025-08-14T02:46:07.015370Z"
+        "updated_at": "2025-08-14T03:00:31.763562Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32371,7 +32371,7 @@
         "osm_ids": [
           "way/986844883"
         ],
-        "updated_at": "2025-08-14T02:46:07.015865Z"
+        "updated_at": "2025-08-14T03:00:31.764058Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32418,7 +32418,7 @@
         "osm_ids": [
           "way/986844885"
         ],
-        "updated_at": "2025-08-14T02:46:07.016361Z"
+        "updated_at": "2025-08-14T03:00:31.764554Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32465,7 +32465,7 @@
         "osm_ids": [
           "way/986844886"
         ],
-        "updated_at": "2025-08-14T02:46:07.016361Z"
+        "updated_at": "2025-08-14T03:00:31.765022Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32512,7 +32512,7 @@
         "osm_ids": [
           "way/1011916773"
         ],
-        "updated_at": "2025-08-14T02:46:07.016858Z"
+        "updated_at": "2025-08-14T03:00:31.766512Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32557,8 +32557,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "South Campus",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.442099,
@@ -32567,7 +32567,7 @@
         "osm_ids": [
           "way/1013203471"
         ],
-        "updated_at": "2025-08-14T02:46:07.017354Z"
+        "updated_at": "2025-08-14T03:00:31.767008Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32604,8 +32604,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "South Campus",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.442365,
@@ -32614,7 +32614,7 @@
         "osm_ids": [
           "way/1013203473"
         ],
-        "updated_at": "2025-08-14T02:46:07.017850Z"
+        "updated_at": "2025-08-14T03:00:31.768026Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32651,8 +32651,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "South Campus",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.44238,
@@ -32661,7 +32661,7 @@
         "osm_ids": [
           "way/1014108589"
         ],
-        "updated_at": "2025-08-14T02:46:07.020826Z"
+        "updated_at": "2025-08-14T03:00:31.768026Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32706,8 +32706,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "South Campus",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.442112,
@@ -32716,7 +32716,7 @@
         "osm_ids": [
           "way/1014108590"
         ],
-        "updated_at": "2025-08-14T02:46:07.021817Z"
+        "updated_at": "2025-08-14T03:00:31.768510Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32753,8 +32753,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "South Campus",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.44311,
@@ -32763,7 +32763,7 @@
         "osm_ids": [
           "way/1025625367"
         ],
-        "updated_at": "2025-08-14T02:46:07.022811Z"
+        "updated_at": "2025-08-14T03:00:31.769514Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32850,7 +32850,7 @@
         "osm_ids": [
           "way/1025625379"
         ],
-        "updated_at": "2025-08-14T02:46:07.023306Z"
+        "updated_at": "2025-08-14T03:00:31.769983Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32945,7 +32945,7 @@
         "osm_ids": [
           "way/1026506158"
         ],
-        "updated_at": "2025-08-14T02:46:07.024298Z"
+        "updated_at": "2025-08-14T03:00:31.770507Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33036,7 +33036,7 @@
         "osm_ids": [
           "way/1026506167"
         ],
-        "updated_at": "2025-08-14T02:46:07.024794Z"
+        "updated_at": "2025-08-14T03:00:31.771002Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33109,8 +33109,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "South Campus",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.442993,
@@ -33119,7 +33119,7 @@
         "osm_ids": [
           "way/1065595811"
         ],
-        "updated_at": "2025-08-14T02:46:07.025289Z"
+        "updated_at": "2025-08-14T03:00:31.771498Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33186,7 +33186,7 @@
         "osm_ids": [
           "way/1081958233"
         ],
-        "updated_at": "2025-08-14T02:46:07.025786Z"
+        "updated_at": "2025-08-14T03:00:31.771968Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33233,7 +33233,7 @@
         "osm_ids": [
           "way/1081958234"
         ],
-        "updated_at": "2025-08-14T02:46:07.026281Z"
+        "updated_at": "2025-08-14T03:00:31.772490Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33280,7 +33280,7 @@
         "osm_ids": [
           "way/1081958241"
         ],
-        "updated_at": "2025-08-14T02:46:07.026778Z"
+        "updated_at": "2025-08-14T03:00:31.772983Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33375,7 +33375,7 @@
         "osm_ids": [
           "way/1083630084"
         ],
-        "updated_at": "2025-08-14T02:46:07.027273Z"
+        "updated_at": "2025-08-14T03:00:31.773455Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33462,7 +33462,7 @@
         "osm_ids": [
           "way/1100753653"
         ],
-        "updated_at": "2025-08-14T02:46:07.027769Z"
+        "updated_at": "2025-08-14T03:00:31.773951Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33549,7 +33549,7 @@
         "osm_ids": [
           "way/1108611647"
         ],
-        "updated_at": "2025-08-14T02:46:07.028265Z"
+        "updated_at": "2025-08-14T03:00:31.774470Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33624,7 +33624,7 @@
         "osm_ids": [
           "way/1108634585"
         ],
-        "updated_at": "2025-08-14T02:46:07.028762Z"
+        "updated_at": "2025-08-14T03:00:31.774943Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33661,8 +33661,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "The Hill",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.453294,
@@ -33671,7 +33671,7 @@
         "osm_ids": [
           "way/1108644461"
         ],
-        "updated_at": "2025-08-14T02:46:07.029257Z"
+        "updated_at": "2025-08-14T03:00:31.775439Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33738,7 +33738,7 @@
         "osm_ids": [
           "way/1137977964"
         ],
-        "updated_at": "2025-08-14T02:46:07.029753Z"
+        "updated_at": "2025-08-14T03:00:31.775935Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33785,7 +33785,7 @@
         "osm_ids": [
           "way/1151636039"
         ],
-        "updated_at": "2025-08-14T02:46:07.030249Z"
+        "updated_at": "2025-08-14T03:00:31.775935Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33822,8 +33822,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "Westwood",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.438879,
@@ -33832,7 +33832,7 @@
         "osm_ids": [
           "way/1152216962"
         ],
-        "updated_at": "2025-08-14T02:46:07.030746Z"
+        "updated_at": "2025-08-14T03:00:31.776455Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33879,7 +33879,7 @@
         "osm_ids": [
           "way/1152812062"
         ],
-        "updated_at": "2025-08-14T02:46:07.031242Z"
+        "updated_at": "2025-08-14T03:00:31.776952Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33934,7 +33934,7 @@
         "osm_ids": [
           "way/1152812076"
         ],
-        "updated_at": "2025-08-14T02:46:07.031737Z"
+        "updated_at": "2025-08-14T03:00:31.777446Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33989,7 +33989,7 @@
         "osm_ids": [
           "way/1153902428"
         ],
-        "updated_at": "2025-08-14T02:46:07.032235Z"
+        "updated_at": "2025-08-14T03:00:31.777446Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34036,7 +34036,7 @@
         "osm_ids": [
           "way/1153902429"
         ],
-        "updated_at": "2025-08-14T02:46:07.032730Z"
+        "updated_at": "2025-08-14T03:00:31.777942Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34069,6 +34069,188 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "unnamed-building-2d9389",
+        "name": "Unnamed Building",
+        "aliases": [],
+        "zone": "The Hill",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
+        "important_off_campus": false,
+        "centroid": [
+          -118.445763,
+          34.064066
+        ],
+        "osm_ids": [
+          "way/1153929824"
+        ],
+        "updated_at": "2025-08-14T03:00:31.778444Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -118.4458472,
+              34.06413659999997
+            ],
+            [
+              -118.445847,
+              34.06399459999997
+            ],
+            [
+              -118.44567970000001,
+              34.06399479999999
+            ],
+            [
+              -118.4456799,
+              34.064136800000014
+            ],
+            [
+              -118.4458472,
+              34.06413659999997
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "unnamed-building-6f758d",
+        "name": "Unnamed Building",
+        "aliases": [],
+        "zone": "The Hill",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
+        "important_off_campus": false,
+        "centroid": [
+          -118.447178,
+          34.073407
+        ],
+        "osm_ids": [
+          "way/1164891261"
+        ],
+        "updated_at": "2025-08-14T03:00:31.778934Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -118.4452022,
+              34.07339960000001
+            ],
+            [
+              -118.44528369999999,
+              34.07355790000001
+            ],
+            [
+              -118.44534010000001,
+              34.07358899999995
+            ],
+            [
+              -118.44562360000002,
+              34.07350600000004
+            ],
+            [
+              -118.4460058,
+              34.07347230000004
+            ],
+            [
+              -118.4473591,
+              34.07347750000001
+            ],
+            [
+              -118.4480389,
+              34.07338409999996
+            ],
+            [
+              -118.4483914,
+              34.07339960000001
+            ],
+            [
+              -118.4488832,
+              34.07353330000001
+            ],
+            [
+              -118.44909649999998,
+              34.07362389999995
+            ],
+            [
+              -118.4491863,
+              34.07358539999998
+            ],
+            [
+              -118.44916990000002,
+              34.07351620000002
+            ],
+            [
+              -118.4489756,
+              34.0733918
+            ],
+            [
+              -118.44881740000001,
+              34.07337500000002
+            ],
+            [
+              -118.44870460000001,
+              34.07337369999995
+            ],
+            [
+              -118.44859810000001,
+              34.07334249999996
+            ],
+            [
+              -118.44845709999998,
+              34.07332699999996
+            ],
+            [
+              -118.4483773,
+              34.07327510000001
+            ],
+            [
+              -118.4481877,
+              34.07323100000005
+            ],
+            [
+              -118.4480327,
+              34.07322320000004
+            ],
+            [
+              -118.447804,
+              34.07324519999997
+            ],
+            [
+              -118.447674,
+              34.07328029999997
+            ],
+            [
+              -118.4472573,
+              34.07337369999995
+            ],
+            [
+              -118.44656810000001,
+              34.073352900000025
+            ],
+            [
+              -118.4459325,
+              34.07334520000001
+            ],
+            [
+              -118.44554209999998,
+              34.073355500000034
+            ],
+            [
+              -118.4452022,
+              34.07339960000001
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": "unnamed-building-2a6c52",
         "name": "Unnamed Building",
         "aliases": [],
@@ -34083,7 +34265,7 @@
         "osm_ids": [
           "way/1171485793"
         ],
-        "updated_at": "2025-08-14T02:46:07.033225Z"
+        "updated_at": "2025-08-14T03:00:31.778934Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34130,7 +34312,7 @@
         "osm_ids": [
           "way/1171485794"
         ],
-        "updated_at": "2025-08-14T02:46:07.033721Z"
+        "updated_at": "2025-08-14T03:00:31.779430Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34177,7 +34359,7 @@
         "osm_ids": [
           "way/1171485795"
         ],
-        "updated_at": "2025-08-14T02:46:07.034218Z"
+        "updated_at": "2025-08-14T03:00:31.779926Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34210,12 +34392,215 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "unnamed-building-df4c76",
+        "name": "Unnamed Building",
+        "aliases": [],
+        "zone": "North Campus",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
+        "important_off_campus": false,
+        "centroid": [
+          -118.442193,
+          34.076502
+        ],
+        "osm_ids": [
+          "way/1171486865"
+        ],
+        "updated_at": "2025-08-14T03:00:31.780422Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -118.44139089999999,
+              34.07638809999999
+            ],
+            [
+              -118.4416349,
+              34.07640909999999
+            ],
+            [
+              -118.44165030000002,
+              34.076548199999976
+            ],
+            [
+              -118.44181329999999,
+              34.07654410000004
+            ],
+            [
+              -118.4418072,
+              34.076163099999945
+            ],
+            [
+              -118.44190729999998,
+              34.07605310000007
+            ],
+            [
+              -118.4419811,
+              34.076051400000004
+            ],
+            [
+              -118.4419847,
+              34.075931399999966
+            ],
+            [
+              -118.4422419,
+              34.075921700000016
+            ],
+            [
+              -118.4422989,
+              34.07595709999997
+            ],
+            [
+              -118.44236110000001,
+              34.076003099999994
+            ],
+            [
+              -118.4424,
+              34.07607809999996
+            ],
+            [
+              -118.4424123,
+              34.076263600000004
+            ],
+            [
+              -118.44250249999999,
+              34.076269499999974
+            ],
+            [
+              -118.442506,
+              34.07662659999998
+            ],
+            [
+              -118.44236290000002,
+              34.07662230000003
+            ],
+            [
+              -118.4423646,
+              34.07671009999999
+            ],
+            [
+              -118.4419829,
+              34.07670860000003
+            ],
+            [
+              -118.4419811,
+              34.076897400000014
+            ],
+            [
+              -118.44191049999999,
+              34.07694280000001
+            ],
+            [
+              -118.4414616,
+              34.076936900000035
+            ],
+            [
+              -118.44125490000002,
+              34.07689300000003
+            ],
+            [
+              -118.4412283,
+              34.07700570000001
+            ],
+            [
+              -118.4414333,
+              34.07709499999999
+            ],
+            [
+              -118.44153580000001,
+              34.0772326
+            ],
+            [
+              -118.4416454,
+              34.07730579999998
+            ],
+            [
+              -118.4417055,
+              34.07733069999998
+            ],
+            [
+              -118.4426014,
+              34.07733069999998
+            ],
+            [
+              -118.4427163,
+              34.077279499999975
+            ],
+            [
+              -118.442893,
+              34.07674810000002
+            ],
+            [
+              -118.44292660000002,
+              34.07661200000004
+            ],
+            [
+              -118.4429248,
+              34.0764803
+            ],
+            [
+              -118.442863,
+              34.07627539999999
+            ],
+            [
+              -118.44279760000002,
+              34.07614649999995
+            ],
+            [
+              -118.4424053,
+              34.07564299999995
+            ],
+            [
+              -118.4423646,
+              34.07557420000002
+            ],
+            [
+              -118.44232399999999,
+              34.0754718
+            ],
+            [
+              -118.4422763,
+              34.07542789999997
+            ],
+            [
+              -118.4422197,
+              34.07542490000001
+            ],
+            [
+              -118.44189460000001,
+              34.07546299999998
+            ],
+            [
+              -118.44179559999999,
+              34.07554349999999
+            ],
+            [
+              -118.44167899999998,
+              34.07566499999998
+            ],
+            [
+              -118.44155350000001,
+              34.07614799999996
+            ],
+            [
+              -118.44139089999999,
+              34.07638809999999
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": "unnamed-building-54181c",
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "The Hill",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.446517,
@@ -34224,7 +34609,7 @@
         "osm_ids": [
           "way/1236432351"
         ],
-        "updated_at": "2025-08-14T02:46:07.035209Z"
+        "updated_at": "2025-08-14T03:00:31.781414Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34269,8 +34654,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "The Hill",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.445542,
@@ -34279,7 +34664,7 @@
         "osm_ids": [
           "way/1236432352"
         ],
-        "updated_at": "2025-08-14T02:46:07.038186Z"
+        "updated_at": "2025-08-14T03:00:31.782385Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34350,7 +34735,7 @@
         "osm_ids": [
           "way/1350369629"
         ],
-        "updated_at": "2025-08-14T02:46:07.038681Z"
+        "updated_at": "2025-08-14T03:00:31.783375Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34397,7 +34782,7 @@
         "osm_ids": [
           "way/1350369630"
         ],
-        "updated_at": "2025-08-14T02:46:07.039177Z"
+        "updated_at": "2025-08-14T03:00:31.783871Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34444,7 +34829,7 @@
         "osm_ids": [
           "way/1350369631"
         ],
-        "updated_at": "2025-08-14T02:46:07.039673Z"
+        "updated_at": "2025-08-14T03:00:31.784367Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34491,7 +34876,7 @@
         "osm_ids": [
           "way/1350369632"
         ],
-        "updated_at": "2025-08-14T02:46:07.040169Z"
+        "updated_at": "2025-08-14T03:00:31.784886Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34538,7 +34923,7 @@
         "osm_ids": [
           "way/1350369633"
         ],
-        "updated_at": "2025-08-14T02:46:07.040666Z"
+        "updated_at": "2025-08-14T03:00:31.784886Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34585,7 +34970,7 @@
         "osm_ids": [
           "way/1350369634"
         ],
-        "updated_at": "2025-08-14T02:46:07.041162Z"
+        "updated_at": "2025-08-14T03:00:31.785382Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34632,7 +35017,7 @@
         "osm_ids": [
           "way/1350369635"
         ],
-        "updated_at": "2025-08-14T02:46:07.041658Z"
+        "updated_at": "2025-08-14T03:00:31.785878Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34679,7 +35064,7 @@
         "osm_ids": [
           "way/1350369636"
         ],
-        "updated_at": "2025-08-14T02:46:07.042153Z"
+        "updated_at": "2025-08-14T03:00:31.786373Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34726,7 +35111,7 @@
         "osm_ids": [
           "way/1350369646"
         ],
-        "updated_at": "2025-08-14T02:46:07.043641Z"
+        "updated_at": "2025-08-14T03:00:31.787862Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34777,7 +35162,7 @@
         "osm_ids": [
           "way/1350369647"
         ],
-        "updated_at": "2025-08-14T02:46:07.044137Z"
+        "updated_at": "2025-08-14T03:00:31.788358Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34824,7 +35209,7 @@
         "osm_ids": [
           "way/1350369648"
         ],
-        "updated_at": "2025-08-14T02:46:07.044634Z"
+        "updated_at": "2025-08-14T03:00:31.788856Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34871,7 +35256,7 @@
         "osm_ids": [
           "way/1350369649"
         ],
-        "updated_at": "2025-08-14T02:46:07.044634Z"
+        "updated_at": "2025-08-14T03:00:31.788856Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34918,7 +35303,7 @@
         "osm_ids": [
           "way/1350369650"
         ],
-        "updated_at": "2025-08-14T02:46:07.045129Z"
+        "updated_at": "2025-08-14T03:00:31.789350Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34965,7 +35350,7 @@
         "osm_ids": [
           "way/1350369651"
         ],
-        "updated_at": "2025-08-14T02:46:07.045625Z"
+        "updated_at": "2025-08-14T03:00:31.789846Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35012,7 +35397,7 @@
         "osm_ids": [
           "way/1350369652"
         ],
-        "updated_at": "2025-08-14T02:46:07.046122Z"
+        "updated_at": "2025-08-14T03:00:31.790342Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35059,7 +35444,7 @@
         "osm_ids": [
           "way/1350369656"
         ],
-        "updated_at": "2025-08-14T02:46:07.046617Z"
+        "updated_at": "2025-08-14T03:00:31.790815Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35106,7 +35491,7 @@
         "osm_ids": [
           "way/1350369657"
         ],
-        "updated_at": "2025-08-14T02:46:07.047113Z"
+        "updated_at": "2025-08-14T03:00:31.791338Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35153,7 +35538,7 @@
         "osm_ids": [
           "way/1350369658"
         ],
-        "updated_at": "2025-08-14T02:46:07.047609Z"
+        "updated_at": "2025-08-14T03:00:31.791834Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35200,7 +35585,7 @@
         "osm_ids": [
           "way/1350369659"
         ],
-        "updated_at": "2025-08-14T02:46:07.048105Z"
+        "updated_at": "2025-08-14T03:00:31.792327Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35247,7 +35632,7 @@
         "osm_ids": [
           "way/1350369660"
         ],
-        "updated_at": "2025-08-14T02:46:07.048601Z"
+        "updated_at": "2025-08-14T03:00:31.792824Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35294,7 +35679,7 @@
         "osm_ids": [
           "way/1350369661"
         ],
-        "updated_at": "2025-08-14T02:46:07.048601Z"
+        "updated_at": "2025-08-14T03:00:31.792824Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35341,7 +35726,7 @@
         "osm_ids": [
           "way/1350369662"
         ],
-        "updated_at": "2025-08-14T02:46:07.049593Z"
+        "updated_at": "2025-08-14T03:00:31.793294Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35478,7 +35863,7 @@
         "osm_ids": [
           "relation/331542"
         ],
-        "updated_at": "2025-08-14T02:46:07.050089Z"
+        "updated_at": "2025-08-14T03:00:31.793818Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35693,7 +36078,7 @@
         "osm_ids": [
           "relation/2389785"
         ],
-        "updated_at": "2025-08-14T02:46:07.050585Z"
+        "updated_at": "2025-08-14T03:00:31.794810Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35780,7 +36165,7 @@
         "osm_ids": [
           "relation/6277700"
         ],
-        "updated_at": "2025-08-14T02:46:07.051081Z"
+        "updated_at": "2025-08-14T03:00:31.795305Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35875,7 +36260,7 @@
         "osm_ids": [
           "relation/6287582"
         ],
-        "updated_at": "2025-08-14T02:46:07.051577Z"
+        "updated_at": "2025-08-14T03:00:31.795802Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35962,7 +36347,7 @@
         "osm_ids": [
           "relation/6287583"
         ],
-        "updated_at": "2025-08-14T02:46:07.054554Z"
+        "updated_at": "2025-08-14T03:00:31.796298Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -36577,7 +36962,7 @@
         "osm_ids": [
           "relation/6287584"
         ],
-        "updated_at": "2025-08-14T02:46:07.056537Z"
+        "updated_at": "2025-08-14T03:00:31.797786Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -37076,7 +37461,7 @@
         "osm_ids": [
           "relation/6287585"
         ],
-        "updated_at": "2025-08-14T02:46:07.057531Z"
+        "updated_at": "2025-08-14T03:00:31.799247Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -37235,7 +37620,7 @@
         "osm_ids": [
           "relation/6287586"
         ],
-        "updated_at": "2025-08-14T02:46:07.058025Z"
+        "updated_at": "2025-08-14T03:00:31.799743Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -37354,7 +37739,7 @@
         "osm_ids": [
           "relation/6287587"
         ],
-        "updated_at": "2025-08-14T02:46:07.058522Z"
+        "updated_at": "2025-08-14T03:00:31.800735Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -37497,7 +37882,7 @@
         "osm_ids": [
           "relation/6287588"
         ],
-        "updated_at": "2025-08-14T02:46:07.059017Z"
+        "updated_at": "2025-08-14T03:00:31.801231Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -37640,7 +38025,7 @@
         "osm_ids": [
           "relation/6287589"
         ],
-        "updated_at": "2025-08-14T02:46:07.060010Z"
+        "updated_at": "2025-08-14T03:00:31.801727Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -37739,7 +38124,7 @@
         "osm_ids": [
           "relation/6287590"
         ],
-        "updated_at": "2025-08-14T02:46:07.060505Z"
+        "updated_at": "2025-08-14T03:00:31.802223Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -37834,7 +38219,7 @@
         "osm_ids": [
           "relation/6287591"
         ],
-        "updated_at": "2025-08-14T02:46:07.061001Z"
+        "updated_at": "2025-08-14T03:00:31.802719Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -37933,7 +38318,7 @@
         "osm_ids": [
           "relation/6287592"
         ],
-        "updated_at": "2025-08-14T02:46:07.061498Z"
+        "updated_at": "2025-08-14T03:00:31.803215Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -38120,7 +38505,7 @@
         "osm_ids": [
           "relation/6287595"
         ],
-        "updated_at": "2025-08-14T02:46:07.061993Z"
+        "updated_at": "2025-08-14T03:00:31.803711Z"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -38361,7 +38746,7 @@
         "osm_ids": [
           "relation/6317798"
         ],
-        "updated_at": "2025-08-14T02:46:07.062985Z"
+        "updated_at": "2025-08-14T03:00:31.804703Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -38428,7 +38813,7 @@
         "osm_ids": [
           "relation/6318832"
         ],
-        "updated_at": "2025-08-14T02:46:07.063979Z"
+        "updated_at": "2025-08-14T03:00:31.805199Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -38795,7 +39180,7 @@
         "osm_ids": [
           "relation/6318834"
         ],
-        "updated_at": "2025-08-14T02:46:07.064970Z"
+        "updated_at": "2025-08-14T03:00:31.806191Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -39142,7 +39527,7 @@
         "osm_ids": [
           "relation/6318836"
         ],
-        "updated_at": "2025-08-14T02:46:07.065961Z"
+        "updated_at": "2025-08-14T03:00:31.806715Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -39461,7 +39846,7 @@
         "osm_ids": [
           "relation/7672317"
         ],
-        "updated_at": "2025-08-14T02:46:07.066457Z"
+        "updated_at": "2025-08-14T03:00:31.807706Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -39616,7 +40001,7 @@
         "osm_ids": [
           "relation/12967372"
         ],
-        "updated_at": "2025-08-14T02:46:07.067449Z"
+        "updated_at": "2025-08-14T03:00:31.808206Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -39841,8 +40226,8 @@
         "name": "Unnamed Building",
         "aliases": [],
         "zone": "North Campus",
-        "category": "Athletic/Recreational",
-        "subtype": "Outdoor",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
         "important_off_campus": false,
         "centroid": [
           -118.440636,
@@ -39851,7 +40236,7 @@
         "osm_ids": [
           "relation/12967373"
         ],
-        "updated_at": "2025-08-14T02:46:07.067945Z"
+        "updated_at": "2025-08-14T03:00:31.808700Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -39898,7 +40283,7 @@
         "osm_ids": [
           "relation/12967374"
         ],
-        "updated_at": "2025-08-14T02:46:07.068441Z"
+        "updated_at": "2025-08-14T03:00:31.809194Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -39989,7 +40374,7 @@
         "osm_ids": [
           "relation/12978307"
         ],
-        "updated_at": "2025-08-14T02:46:07.070426Z"
+        "updated_at": "2025-08-14T03:00:31.809689Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -40182,7 +40567,7 @@
         "osm_ids": [
           "relation/12996854"
         ],
-        "updated_at": "2025-08-14T02:46:07.071418Z"
+        "updated_at": "2025-08-14T03:00:31.810159Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -40333,7 +40718,7 @@
         "osm_ids": [
           "relation/13007994"
         ],
-        "updated_at": "2025-08-14T02:46:07.071914Z"
+        "updated_at": "2025-08-14T03:00:31.810685Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -40468,7 +40853,7 @@
         "osm_ids": [
           "relation/13548011"
         ],
-        "updated_at": "2025-08-14T02:46:07.072409Z"
+        "updated_at": "2025-08-14T03:00:31.811151Z"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -40609,7 +40994,7 @@
         "osm_ids": [
           "way/425246936"
         ],
-        "updated_at": "2025-08-14T02:46:07.073898Z"
+        "updated_at": "2025-08-14T03:00:31.812665Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -40816,7 +41201,7 @@
         "osm_ids": [
           "way/425246937"
         ],
-        "updated_at": "2025-08-14T02:46:07.074395Z"
+        "updated_at": "2025-08-14T03:00:31.813135Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -41023,7 +41408,7 @@
         "osm_ids": [
           "way/425246938"
         ],
-        "updated_at": "2025-08-14T02:46:07.075385Z"
+        "updated_at": "2025-08-14T03:00:31.814127Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -41226,7 +41611,7 @@
         "osm_ids": [
           "way/425181681"
         ],
-        "updated_at": "2025-08-14T02:46:07.075881Z"
+        "updated_at": "2025-08-14T03:00:31.814623Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -41289,7 +41674,7 @@
         "osm_ids": [
           "way/44669503"
         ],
-        "updated_at": "2025-08-14T02:46:07.076377Z"
+        "updated_at": "2025-08-14T03:00:31.814623Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -41360,7 +41745,7 @@
         "osm_ids": [
           "way/422876490"
         ],
-        "updated_at": "2025-08-14T02:46:07.076377Z"
+        "updated_at": "2025-08-14T03:00:31.815617Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -41439,7 +41824,7 @@
         "osm_ids": [
           "way/422876503"
         ],
-        "updated_at": "2025-08-14T02:46:07.076873Z"
+        "updated_at": "2025-08-14T03:00:31.816607Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -41486,7 +41871,7 @@
         "osm_ids": [
           "way/826786355"
         ],
-        "updated_at": "2025-08-14T02:46:07.077370Z"
+        "updated_at": "2025-08-14T03:00:31.817103Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -41545,7 +41930,7 @@
         "osm_ids": [
           "way/51125966"
         ],
-        "updated_at": "2025-08-14T02:46:07.077866Z"
+        "updated_at": "2025-08-14T03:00:31.817622Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -41592,7 +41977,7 @@
         "osm_ids": [
           "way/44669494"
         ],
-        "updated_at": "2025-08-14T02:46:07.078362Z"
+        "updated_at": "2025-08-14T03:00:31.818118Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -41655,7 +42040,7 @@
         "osm_ids": [
           "way/422876502"
         ],
-        "updated_at": "2025-08-14T02:46:07.078858Z"
+        "updated_at": "2025-08-14T03:00:31.818118Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -41702,7 +42087,7 @@
         "osm_ids": [
           "way/422876512"
         ],
-        "updated_at": "2025-08-14T02:46:07.078858Z"
+        "updated_at": "2025-08-14T03:00:31.819114Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -41861,7 +42246,7 @@
         "osm_ids": [
           "way/966530271"
         ],
-        "updated_at": "2025-08-14T02:46:07.079353Z"
+        "updated_at": "2025-08-14T03:00:31.819610Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -41908,7 +42293,7 @@
         "osm_ids": [
           "way/422876485"
         ],
-        "updated_at": "2025-08-14T02:46:07.080346Z"
+        "updated_at": "2025-08-14T03:00:31.820079Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -41991,7 +42376,7 @@
         "osm_ids": [
           "way/422876483"
         ],
-        "updated_at": "2025-08-14T02:46:07.080841Z"
+        "updated_at": "2025-08-14T03:00:31.820604Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -42398,7 +42783,7 @@
         "osm_ids": [
           "way/534392315"
         ],
-        "updated_at": "2025-08-14T02:46:07.081833Z"
+        "updated_at": "2025-08-14T03:00:31.821594Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -42553,7 +42938,7 @@
         "osm_ids": [
           "way/534392316"
         ],
-        "updated_at": "2025-08-14T02:46:07.082329Z"
+        "updated_at": "2025-08-14T03:00:31.822090Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -42744,7 +43129,7 @@
         "osm_ids": [
           "way/243722217"
         ],
-        "updated_at": "2025-08-14T02:46:07.082826Z"
+        "updated_at": "2025-08-14T03:00:31.822585Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -42827,7 +43212,7 @@
         "osm_ids": [
           "way/422876505"
         ],
-        "updated_at": "2025-08-14T02:46:07.083322Z"
+        "updated_at": "2025-08-14T03:00:31.823578Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -42874,7 +43259,7 @@
         "osm_ids": [
           "way/819656027"
         ],
-        "updated_at": "2025-08-14T02:46:07.083818Z"
+        "updated_at": "2025-08-14T03:00:31.824074Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -42953,7 +43338,7 @@
         "osm_ids": [
           "way/422876504"
         ],
-        "updated_at": "2025-08-14T02:46:07.084314Z"
+        "updated_at": "2025-08-14T03:00:31.824074Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -43000,7 +43385,7 @@
         "osm_ids": [
           "way/733431549"
         ],
-        "updated_at": "2025-08-14T02:46:07.085305Z"
+        "updated_at": "2025-08-14T03:00:31.825065Z"
       },
       "geometry": {
         "type": "Polygon",
