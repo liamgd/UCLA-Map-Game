@@ -7,6 +7,7 @@ export default function Sidebar({
   showUnnamed,
   setShowNamed,
   setShowUnnamed,
+  fitCampus,
 }) {
   return (
     <aside
@@ -36,6 +37,14 @@ export default function Sidebar({
           <span style={{ marginLeft: 4 }}>Show unnamed buildings</span>
         </label>
       </div>
+      <button
+        type="button"
+        onClick={() => fitCampus?.()}
+        disabled={!fitCampus}
+        style={{ marginTop: 8 }}
+      >
+        Fit to campus
+      </button>
       <div
         style={{
           marginTop: 8,

@@ -9,6 +9,7 @@ export default function App() {
   const [status, setStatus] = useState("Click the map");
   const [showNamed, setShowNamed] = useState(true);
   const [showUnnamed, setShowUnnamed] = useState(true);
+  const [fitCampus, setFitCampus] = useState(null);
 
   return (
     <div
@@ -25,6 +26,7 @@ export default function App() {
         showUnnamed={showUnnamed}
         setShowNamed={setShowNamed}
         setShowUnnamed={setShowUnnamed}
+        fitCampus={fitCampus}
       />
       <MapView
         showNamed={showNamed}
@@ -33,6 +35,7 @@ export default function App() {
         setSelectedId={setSelectedId}
         setStatus={setStatus}
         setFuse={setFuse}
+        setFitCampus={setFitCampus}
       />
     </div>
   );

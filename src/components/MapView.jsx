@@ -44,6 +44,7 @@ export default function MapView({
   setSelectedId,
   setStatus,
   setFuse,
+  setFitCampus,
 }) {
   const mapRef = useRef(null);
   const dataRef = useRef(null);
@@ -116,6 +117,9 @@ export default function MapView({
       pitchWithRotate: false,
     });
     mapRef.current = map;
+    if (setFitCampus) {
+      setFitCampus(() => () => map.fitBounds(BOUNDS));
+    }
     const hoverPopup = new maplibregl.Popup({
       closeButton: false,
       closeOnClick: false,
@@ -398,8 +402,9 @@ export default function MapView({
     return () => {
       hoverPopup.remove();
       map.remove();
+      setFitCampus?.(null);
     };
-  }, [setFuse, setSelectedId]);
+  }, [setFuse, setSelectedId, setFitCampus]);
 
   useEffect(() => {
     applyBaseFilters();
