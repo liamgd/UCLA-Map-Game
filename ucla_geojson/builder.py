@@ -69,11 +69,8 @@ def assign_parent_child(features):
             _, _, pid, parent_idx = candidates[0]
             child_props = features[i]["properties"]
             child_props["parent_id"] = pid
-            child_props["overlap_role"] = "child"
-            child_props["is_label_primary"] = False
             parent_props = features[parent_idx]["properties"]
             parent_props["overlap_role"] = "parent"
-            parent_props["is_label_primary"] = True
 
 def process_features(osm_data):
     print("Processing features...")
@@ -171,7 +168,7 @@ def process_features(osm_data):
         centroid = [round(c.x, 6), round(c.y, 6)]
 
         zone = determine_zone(centroid)
-        category, important_off = determine_category(tags, name, zone)
+        category = determine_category(tags, name, zone)
 
         fid = f"{slugify(name)}-{hash_centroid(centroid)}"
         props = {
@@ -180,7 +177,6 @@ def process_features(osm_data):
             "aliases": aliases,
             "zone": zone,
             "category": category,
-            "important_off_campus": bool(important_off),
             "centroid": centroid,
             "osm_ids": [osm_id_str],
             "area": round(A, 2),

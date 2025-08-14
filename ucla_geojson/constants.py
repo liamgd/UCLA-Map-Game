@@ -16,15 +16,6 @@ GREEK_NAME_RE = (
     r"lambda|mu|nu|xi|omicron|pi|rho|sigma|tau|upsilon|phi|chi|psi|omega)"
 )
 
-IMPORTANT_OFF_CAMPUS = {
-    # substrings -> category
-    "hammer museum": "Museum",
-    "geffen playhouse": "Playhouse",
-    "ronald reagan ucla medical center": "Hospital",
-    "ucla health westwood": "Clinic/Health",
-    "marina aquatics center": "Boathouse",
-}
-
 BLACKLIST = {
     r"\bAxiom Apartments\b",
     r"\bMurdock Plaza\b",
