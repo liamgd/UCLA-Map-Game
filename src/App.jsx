@@ -75,24 +75,36 @@ export default function App() {
       closeOnClick: false,
     });
 
-    const zoneColor = [
+    const categoryColor = [
       "match",
-      ["get", "zone"],
-      "North Campus",
-      "#6aa9ff",
-      "South Campus",
-      "#ff7f7f",
-      "The Hill",
-      "#7fff7f",
-      "Westwood",
-      "#ffcc66",
+      ["get", "category"],
+      "Academic",
+      "#1f77b4",
+      "Administrative",
+      "#ff7f0e",
+      "Athletic/Recreational",
+      "#2ca02c",
+      "Dining",
+      "#d62728",
+      "Libraries/Museums",
+      "#9467bd",
+      "Medical/Health",
+      "#8c564b",
+      "Other/Unknown",
+      "#e377c2",
+      "Performance/Venues",
+      "#7f7f7f",
+      "Residential",
+      "#bcbd22",
+      "Service/Support",
+      "#17becf",
       "#6aa9ff",
     ];
     const fillColor = [
       "case",
       ["==", ["coalesce", ["get", "name"], ""], ""],
       "#cccccc",
-      zoneColor,
+      categoryColor,
     ];
     const buildingFillPaint = {
       "fill-color": fillColor,
