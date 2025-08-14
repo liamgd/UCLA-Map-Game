@@ -94,6 +94,8 @@ ATHLETIC_HINTS = {
     "athletic",
     "marina aquatic",
     "boathouse",
+    "tennis",
+    "pool",
 }
 
 DINING_HINTS = {
@@ -118,6 +120,8 @@ DINING_HINTS = {
     "café",
     "restaurant",
     "food court",
+    "hilltop shop",
+    "hill top shop",
 }
 
 HOUSING_HINTS = {
@@ -240,24 +244,30 @@ def fetch_osm_data():
 // Get UCLA campus area(s)
 area["amenity"="university"]["name"~"^(University of California, Los Angeles|UCLA)$",i]->.ucla;
 
-// Get only buildings and stadiums inside UCLA campus
+// Get buildings, shops, and recreational areas inside UCLA campus
 (
   way["building"](area.ucla);
   relation["building"](area.ucla);
-  way["leisure"="stadium"](area.ucla);
-  relation["leisure"="stadium"](area.ucla);
+  way["shop"](area.ucla);
+  relation["shop"](area.ucla);
+  way["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court)$"](area.ucla);
+  relation["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court)$"](area.ucla);
 )->.campus;
 
-// Also get *any* building or stadium with name/operator containing UCLA in bbox
+// Also get *any* building, shop, or recreational area with name/operator containing UCLA in bbox
 (
   way["building"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
   way["building"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
   relation["building"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
   relation["building"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  way["leisure"="stadium"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  way["leisure"="stadium"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  relation["leisure"="stadium"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
-  relation["leisure"="stadium"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  way["shop"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  way["shop"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  relation["shop"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  relation["shop"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  way["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court)$"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  way["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court)$"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  relation["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court)$"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  relation["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court)$"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
 )->.ucla_related;
 
 // Combine
@@ -401,13 +411,12 @@ def determine_category(tags: dict, name: str, zone: str):
         return "Residential", "Housing", False
 
     # Dining
-    if amenity in {
-        "restaurant",
-        "fast_food",
-        "cafe",
-        "café",
-        "food_court",
-    } or _hint_in(name_norm, DINING_HINTS):
+    if (
+        amenity
+        in {"restaurant", "fast_food", "cafe", "café", "food_court"}
+        or shop in {"convenience", "supermarket"}
+        or _hint_in(name_norm, DINING_HINTS)
+    ):
         return "Dining", "Food Service", False
 
     # Libraries & Museums
@@ -431,6 +440,8 @@ def determine_category(tags: dict, name: str, zone: str):
         "sports_centre",
         "pitch",
         "swimming_pool",
+        "track",
+        "tennis_court",
     } or _hint_in(name_norm, ATHLETIC_HINTS):
         return "Athletic/Recreational", "Athletics", False
 
