@@ -9,6 +9,7 @@ export default function App() {
   const [status, setStatus] = useState("Click the map");
   const [showNamed, setShowNamed] = useState(true);
   const [showUnnamed, setShowUnnamed] = useState(true);
+  const [colorBy, setColorBy] = useState("category");
 
   return (
     <div
@@ -25,10 +26,13 @@ export default function App() {
         showUnnamed={showUnnamed}
         setShowNamed={setShowNamed}
         setShowUnnamed={setShowUnnamed}
+        colorBy={colorBy}
+        setColorBy={setColorBy}
       />
       <MapView
         showNamed={showNamed}
         showUnnamed={showUnnamed}
+        colorBy={colorBy}
         selectedId={selectedId}
         setSelectedId={setSelectedId}
         setStatus={setStatus}
