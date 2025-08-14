@@ -373,14 +373,26 @@ export default function MapView({
         })
       );
 
-      // click selects feature
+      // choose the smallest-area feature to prefer children over parents
+      const smallestFeature = (features) =>
+        features.reduce(
+          (smallest, f) =>
+            (f.properties.area ?? Infinity) <
+            (smallest.properties.area ?? Infinity)
+              ? f
+              : smallest,
+          features[0]
+        );
+
+      // click selects smallest feature
       map.on("click", "bldg-fill", (e) => {
-        const f = e.features[0];
+        const f = smallestFeature(e.features);
         setSelectedId(f.properties.id);
       });
 
+      // hover highlights smallest feature
       map.on("mousemove", "bldg-fill", (e) => {
-        const f = e.features[0];
+        const f = smallestFeature(e.features);
         hoverRef.current = f.properties.id;
         hoverPopup.setLngLat(e.lngLat).setText(f.properties.name).addTo(map);
         applyHover();
