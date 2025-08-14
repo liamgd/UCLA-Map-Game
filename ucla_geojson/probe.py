@@ -28,12 +28,10 @@ def probe_duplicate_centroids():
 
 def feature_type_tree():
     campus = open_campus()
-    subtypes = set()
+    categories = set()
 
     for feature in campus:
         props = feature["properties"]
-        category = props["category"]
-        subtype = props["subtype"]
-        subtypes.add(f"{category}: {subtype}")
+        categories.add(props["category"])
 
-    print(*sorted(subtypes), sep="\n")
+    print(*sorted(categories), sep="\n")

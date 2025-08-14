@@ -101,7 +101,7 @@ def process_features(osm_data):
         centroid = [round(c.x, 6), round(c.y, 6)]
 
         zone = determine_zone(centroid)
-        category, subtype, important_off = determine_category(tags, name, zone)
+        category, important_off = determine_category(tags, name, zone)
 
         fid = f"{slugify(name)}-{hash_centroid(centroid)}"
         props = {
@@ -110,7 +110,6 @@ def process_features(osm_data):
             "aliases": aliases,
             "zone": zone,
             "category": category,
-            "subtype": subtype,
             "important_off_campus": bool(important_off),
             "centroid": centroid,
             "osm_ids": [osm_id_str],
