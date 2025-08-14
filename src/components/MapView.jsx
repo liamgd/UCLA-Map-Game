@@ -158,18 +158,18 @@ export default function MapView({
     };
 
     const buildingLabelLayout = {
-      "text-field": ["get", "name"],
-      "text-anchor": "center",
+      "text-field": ["get", "name"], // Use the 'name' property of each feature for the label text
+      "text-anchor": "center", // Center the label text relative to the feature
       "text-size": [
-        "interpolate",
-        ["linear"],
-        ["zoom"],
+        "interpolate", // Smoothly change values based on zoom level
+        ["linear"], // Interpolation is linear (no easing curve)
+        ["zoom"], // Base the interpolation on the current map zoom level
+        14,
+        0, // At zoom level 15 → text size is 0 (hidden)
         15,
-        0,
-        16,
-        12,
+        8, // At zoom level 16 → text size is 12px
         19,
-        24,
+        24, // At zoom level 19 → text size is 24px
       ],
     };
 
@@ -384,4 +384,3 @@ export default function MapView({
 
   return <div id="map" style={{ width: "100%", height: "100%" }} />;
 }
-
