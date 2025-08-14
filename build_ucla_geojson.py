@@ -213,6 +213,7 @@ PARKING_HINTS = {
     "p9",
     "p10",
 }
+GREEK_NAME_RE = r"(fraternity|sorority|alpha|beta|gamma|delta|epsilon|zeta|eta|theta|iota|kappa|lambda|mu|nu|xi|omicron|pi|rho|sigma|tau|upsilon|phi|chi|psi|omega)"
 
 IMPORTANT_OFF_CAMPUS = {
     # substrings -> (category, subtype)
@@ -240,7 +241,7 @@ def hash_centroid(centroid):
 
 
 def fetch_osm_data():
-    query = """
+    query = f"""
 [out:json][timeout:90];
 
 // Get UCLA campus area(s)
@@ -272,17 +273,24 @@ area["amenity"="university"]["name"~"^(University of California, Los Angeles|UCL
   relation["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court)$"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
 )->.ucla_related;
 
-// Get fraternities and sororities in the bounding box
+// Get fraternities and sororities in the bounding box (many are just building=yes with Greek names)
 (
   way["amenity"="fraternity"](34.058,-118.456,34.082,-118.433);
   way["amenity"="sorority"](34.058,-118.456,34.082,-118.433);
   way["building"="fraternity"](34.058,-118.456,34.082,-118.433);
   way["building"="sorority"](34.058,-118.456,34.082,-118.433);
+
   relation["amenity"="fraternity"](34.058,-118.456,34.082,-118.433);
   relation["amenity"="sorority"](34.058,-118.456,34.082,-118.433);
   relation["building"="fraternity"](34.058,-118.456,34.082,-118.433);
   relation["building"="sorority"](34.058,-118.456,34.082,-118.433);
+
+  way["building"]["name"~"{GREEK_NAME_RE}",i](34.058,-118.456,34.082,-118.433);
+  way["building"]["operator"~"{GREEK_NAME_RE}",i](34.058,-118.456,34.082,-118.433);
+  relation["building"]["name"~"{GREEK_NAME_RE}",i](34.058,-118.456,34.082,-118.433);
+  relation["building"]["operator"~"{GREEK_NAME_RE}",i](34.058,-118.456,34.082,-118.433);
 )->.greek;
+
 
 // Combine
 (.campus; .ucla_related; .greek;);
@@ -420,22 +428,24 @@ def determine_category(tags: dict, name: str, zone: str):
 
     # Housing
     if (
-        btype in {"residential", "dormitory", "apartments", "fraternity", "sorority"}
+        btype
+        in {"residential", "dormitory", "apartments", "fraternity", "sorority"}
         or amenity in {"fraternity", "sorority"}
+        or re.search(GREEK_NAME_RE, name, re.I)  # <— add this
         or _hint_in(name_norm, HOUSING_HINTS)
     ):
         subtype = (
             "Fraternity/Sorority"
             if amenity in {"fraternity", "sorority"}
             or btype in {"fraternity", "sorority"}
+            or re.search(GREEK_NAME_RE, name, re.I)  # <— and here
             else "Housing"
         )
         return "Residential", subtype, False
 
     # Dining
     if (
-        amenity
-        in {"restaurant", "fast_food", "cafe", "café", "food_court"}
+        amenity in {"restaurant", "fast_food", "cafe", "café", "food_court"}
         or shop in {"convenience", "supermarket"}
         or _hint_in(name_norm, DINING_HINTS)
     ):
