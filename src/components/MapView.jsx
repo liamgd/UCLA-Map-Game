@@ -436,6 +436,9 @@ export default function MapView({
           const f = smallestFeature(features);
           setSelectedId(f.properties.id);
         }
+        if (features.length === 0) {
+          setSelectedId(null);
+        }
       });
 
       // hover quickly then refine to smallest feature after a short delay
