@@ -240,18 +240,24 @@ def fetch_osm_data():
 // Get UCLA campus area(s)
 area["amenity"="university"]["name"~"^(University of California, Los Angeles|UCLA)$",i]->.ucla;
 
-// Get only buildings inside UCLA campus
+// Get only buildings and stadiums inside UCLA campus
 (
   way["building"](area.ucla);
   relation["building"](area.ucla);
+  way["leisure"="stadium"](area.ucla);
+  relation["leisure"="stadium"](area.ucla);
 )->.campus;
 
-// Also get *any* building with name/operator containing UCLA in bbox
+// Also get *any* building or stadium with name/operator containing UCLA in bbox
 (
   way["building"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
   way["building"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
   relation["building"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
   relation["building"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  way["leisure"="stadium"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  way["leisure"="stadium"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  relation["leisure"="stadium"]["name"~"UCLA",i](34.058,-118.456,34.082,-118.433);
+  relation["leisure"="stadium"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
 )->.ucla_related;
 
 // Combine
@@ -291,7 +297,7 @@ def build_geometries(osm_data):
         way_polys[wid] = poly
 
     rel_polys = {}
-    ways_in_building_rels = set()  # <-- NEW
+    ways_in_building_rels = set()  # track ways handled by a parent relation
 
     for rel in rels:
         if "members" not in rel:
@@ -306,9 +312,12 @@ def build_geometries(osm_data):
             role = m.get("role")
             if role == "outer":
                 outers.append(poly)
-                # mark this way as belonging to a building relation
-                if "building" in rel.get("tags", {}):
-                    ways_in_building_rels.add(m.get("ref"))  # <-- NEW
+                # mark this way as belonging to a parent relation so we don't
+                # output it twice. Stadiums often use relations without a
+                # building tag, so explicitly handle those as well.
+                tags = rel.get("tags", {})
+                if "building" in tags or tags.get("leisure") == "stadium":
+                    ways_in_building_rels.add(m.get("ref"))
             elif role == "inner":
                 inners.append(poly)
 
