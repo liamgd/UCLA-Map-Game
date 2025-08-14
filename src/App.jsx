@@ -10,6 +10,8 @@ export default function App() {
   const [showNamed, setShowNamed] = useState(true);
   const [showUnnamed, setShowUnnamed] = useState(true);
   const [colorBy, setColorBy] = useState("category");
+  const [queryMode, setQueryMode] = useState(false);
+  const [queryResults, setQueryResults] = useState([]);
 
   return (
     <div
@@ -28,6 +30,9 @@ export default function App() {
         setShowUnnamed={setShowUnnamed}
         colorBy={colorBy}
         setColorBy={setColorBy}
+        queryMode={queryMode}
+        setQueryMode={setQueryMode}
+        queryResults={queryResults}
       />
       <MapView
         showNamed={showNamed}
@@ -37,6 +42,8 @@ export default function App() {
         setSelectedId={setSelectedId}
         setStatus={setStatus}
         setFuse={setFuse}
+        queryMode={queryMode}
+        setQueryResults={setQueryResults}
       />
     </div>
   );

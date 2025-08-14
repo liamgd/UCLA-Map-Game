@@ -9,6 +9,9 @@ export default function Sidebar({
   setShowUnnamed,
   colorBy,
   setColorBy,
+  queryMode,
+  setQueryMode,
+  queryResults,
 }) {
   return (
     <aside
@@ -71,6 +74,19 @@ export default function Sidebar({
           </label>
         </div>
       </div>
+      <button
+        onClick={() => setQueryMode((m) => !m)}
+        style={{
+          marginTop: 8,
+          padding: "6px 8px",
+          background: queryMode ? "#ddeeff" : "#fff",
+          border: "1px solid #ccd",
+          borderRadius: 4,
+          cursor: "pointer",
+        }}
+      >
+        {queryMode ? "Exit query" : "Query at point"}
+      </button>
       <div
         style={{
           marginTop: 8,
@@ -81,6 +97,36 @@ export default function Sidebar({
       >
         {status}
       </div>
+      {queryResults.length > 0 && (
+        <div
+          style={{
+            marginTop: 8,
+            maxHeight: "30vh",
+            overflowY: "auto",
+            border: "1px solid #e0e0e0",
+            borderRadius: 4,
+            padding: 8,
+            background: "#fff",
+          }}
+        >
+          {queryResults.map((f, idx) => (
+            <div key={idx} style={{ marginBottom: 8 }}>
+              <div style={{ fontWeight: "bold" }}>
+                {f.properties.name || f.properties.id || `Feature ${idx + 1}`}
+              </div>
+              <pre
+                style={{
+                  whiteSpace: "pre-wrap",
+                  wordBreak: "break-word",
+                  fontSize: 12,
+                }}
+              >
+                {JSON.stringify(f.properties, null, 2)}
+              </pre>
+            </div>
+          ))}
+        </div>
+      )}
       <div
         style={{
           position: "absolute",

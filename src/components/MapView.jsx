@@ -102,6 +102,8 @@ export default function MapView({
   setSelectedId,
   setStatus,
   setFuse,
+  queryMode,
+  setQueryResults,
 }) {
   const mapRef = useRef(null);
   const dataRef = useRef(null);
@@ -110,6 +112,14 @@ export default function MapView({
   const hoverRef = useRef("");
   const filterRef = useRef(null);
   const colorByRef = useRef(colorBy);
+  const queryModeRef = useRef(queryMode);
+
+  useEffect(() => {
+    queryModeRef.current = queryMode;
+    if (!queryMode) {
+      setQueryResults([]);
+    }
+  }, [queryMode, setQueryResults]);
 
   const UNNAMED_PREFIX = "Unnamed ";
   const hasName = [
@@ -412,14 +422,25 @@ export default function MapView({
           features[0]
         );
 
-      // click selects smallest feature
-      map.on("click", "bldg-fill", (e) => {
-        const f = smallestFeature(e.features);
-        setSelectedId(f.properties.id);
+      // click selects or queries features
+      map.on("click", (e) => {
+        const features = map.queryRenderedFeatures(e.point, {
+          layers: ["bldg-fill"],
+        });
+        if (queryModeRef.current) {
+          setQueryResults(features);
+          setStatus(
+            `Found ${features.length} feature${features.length !== 1 ? "s" : ""}`
+          );
+        } else if (features.length > 0) {
+          const f = smallestFeature(features);
+          setSelectedId(f.properties.id);
+        }
       });
 
       // hover highlights smallest feature
       map.on("mousemove", "bldg-fill", (e) => {
+        if (queryModeRef.current) return;
         const f = smallestFeature(e.features);
         hoverRef.current = f.properties.id;
         hoverPopup.setLngLat(e.lngLat).setText(f.properties.name).addTo(map);
@@ -427,6 +448,7 @@ export default function MapView({
       });
 
       map.on("mouseleave", "bldg-fill", () => {
+        if (queryModeRef.current) return;
         hoverPopup.remove();
         hoverRef.current = "";
         applyHover();
@@ -439,7 +461,7 @@ export default function MapView({
       hoverPopup.remove();
       map.remove();
     };
-  }, [setFuse, setSelectedId]);
+    }, [setFuse, setSelectedId, setStatus, setQueryResults]);
 
   useEffect(() => {
     applyBaseFilters();
