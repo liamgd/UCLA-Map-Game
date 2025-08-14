@@ -87,6 +87,7 @@ export default function MapView({
     filterRef.current = base;
     setFilterSafe(map, "bldg-fill", base);
     setFilterSafe(map, "bldg-outline", base);
+    setFilterSafe(map, "bldg-label", withBase(base, hasName));
     applyHover();
     applyHighlight(selectedRef.current);
   };
@@ -96,6 +97,7 @@ export default function MapView({
       container: "map",
       style: {
         version: 8,
+        glyphs: "https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf",
         sources: {},
         layers: [
           {
@@ -191,6 +193,16 @@ export default function MapView({
         paint: { "line-color": "#1b6ef3", "line-width": 1 },
       });
       map.addLayer({
+        id: "bldg-label",
+        type: "symbol",
+        source: "campus",
+        filter: hasName,
+        layout: {
+          "text-field": ["get", "name"],
+          "text-anchor": "center",
+        },
+      });
+      map.addLayer({
         id: "bldg-hover",
         type: "line",
         source: "campus",
@@ -238,6 +250,17 @@ export default function MapView({
             paint: { "line-color": "#1b6ef3", "line-width": 1 },
           });
         }
+        if (!map.getLayer("bldg-label")) {
+          map.addLayer({
+            id: "bldg-label",
+            type: "symbol",
+            source: "campus",
+            layout: {
+              "text-field": ["get", "name"],
+              "text-anchor": "center",
+            },
+          });
+        }
         if (!map.getLayer("bldg-hover")) {
           map.addLayer({
             id: "bldg-hover",
@@ -261,6 +284,7 @@ export default function MapView({
         const base = filterRef.current || ["all"];
         map.setFilter("bldg-fill", base);
         map.setFilter("bldg-outline", base);
+        map.setFilter("bldg-label", withBase(base, hasName));
 
         // Keep hover/highlight in sync with the same base
         const withBase = (b, extra) => [
