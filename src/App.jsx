@@ -59,10 +59,7 @@ export default function App() {
     if (!map.getLayer(layerId)) return;
     const base = filterRef.current;
     const idFilter = ["==", ["get", "id"], hoverRef.current];
-    map.setFilter(
-      layerId,
-      base ? ["all", base, idFilter] : idFilter
-    );
+    map.setFilter(layerId, base ? ["all", base, idFilter] : idFilter);
   };
 
   // helper: safely (re)apply highlight filter
@@ -169,6 +166,10 @@ export default function App() {
       // campus data
       const res = await fetch("/campus.geojson");
       const data = await res.json();
+      console.log("campus features", data.features?.length);
+      console.log(data.features[0]);
+      // Expect geometry.coordinates like [[[-118.45,34.07], …]]
+
       dataRef.current = data;
       map.addSource("campus", { type: "geojson", data });
 
