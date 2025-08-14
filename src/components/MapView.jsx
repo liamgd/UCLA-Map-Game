@@ -52,8 +52,17 @@ export default function MapView({
   const hoverRef = useRef("");
   const filterRef = useRef(null);
 
-  const hasName = ["!=", ["get", "name"], "Unnamed Building"];
-  const noName = ["==", ["get", "name"], "Unnamed Building"];
+  const UNNAMED_PREFIX = "Unnamed ";
+  const hasName = [
+    "!=",
+    ["slice", ["get", "name"], 0, UNNAMED_PREFIX.length],
+    UNNAMED_PREFIX,
+  ];
+  const noName = [
+    "==",
+    ["slice", ["get", "name"], 0, UNNAMED_PREFIX.length],
+    UNNAMED_PREFIX,
+  ];
 
   const computeBaseFilter = () => {
     if (showNamed && showUnnamed) return ["all"]; // no-op filter
