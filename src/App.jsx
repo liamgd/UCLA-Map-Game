@@ -34,9 +34,36 @@ export default function App() {
   const dataRef = useRef(null);
   const readyRef = useRef(false); // style + layers ready
   const selectedRef = useRef(""); // latest selected id
+  const hoverRef = useRef("");
+  const filterRef = useRef(null);
   const [status, setStatus] = useState("Click the map");
   const [fuse, setFuse] = useState(null);
+  const [showNamed, setShowNamed] = useState(true);
+  const [showUnnamed, setShowUnnamed] = useState(true);
   const { selectedId, setSelectedId } = useStore();
+
+  const namedFilter = ["!=", ["coalesce", ["get", "name"], ""], ""];
+  const unnamedFilter = ["==", ["coalesce", ["get", "name"], ""], ""];
+
+  const computeBaseFilter = () => {
+    if (showNamed && showUnnamed) return null;
+    if (showNamed) return namedFilter;
+    if (showUnnamed) return unnamedFilter;
+    return ["==", ["get", "id"], ""]; // match nothing
+  };
+
+  const applyHover = () => {
+    const map = mapRef.current;
+    if (!map || !readyRef.current) return;
+    const layerId = "bldg-hover";
+    if (!map.getLayer(layerId)) return;
+    const base = filterRef.current;
+    const idFilter = ["==", ["get", "id"], hoverRef.current];
+    map.setFilter(
+      layerId,
+      base ? ["all", base, idFilter] : idFilter
+    );
+  };
 
   // helper: safely (re)apply highlight filter
   const applyHighlight = (id) => {
@@ -44,7 +71,20 @@ export default function App() {
     if (!map || !readyRef.current) return;
     const layerId = "bldg-hi";
     if (!map.getLayer(layerId)) return;
-    map.setFilter(layerId, ["==", ["get", "id"], id || ""]);
+    const base = filterRef.current;
+    const idFilter = ["==", ["get", "id"], id || ""];
+    map.setFilter(layerId, base ? ["all", base, idFilter] : idFilter);
+  };
+
+  const applyBaseFilters = () => {
+    const map = mapRef.current;
+    if (!map || !readyRef.current) return;
+    const base = computeBaseFilter();
+    filterRef.current = base;
+    map.setFilter("bldg-fill", base);
+    map.setFilter("bldg-outline", base);
+    applyHover();
+    applyHighlight(selectedRef.current);
   };
 
   useEffect(() => {
@@ -161,7 +201,7 @@ export default function App() {
 
       // mark ready and (re)apply any pending highlight
       readyRef.current = true;
-      applyHighlight(selectedRef.current);
+      applyBaseFilters();
 
       // rebuild highlight layer after any style reload (HMR/theme changes)
       map.on("styledata", () => {
@@ -220,9 +260,8 @@ export default function App() {
             filter: ["==", ["get", "id"], selectedRef.current || ""],
             paint: { "line-color": "#ff9f1c", "line-width": 3 },
           });
-        } else {
-          applyHighlight(selectedRef.current);
         }
+        applyBaseFilters();
       });
 
       // Fuse index for search
@@ -243,13 +282,15 @@ export default function App() {
 
       map.on("mousemove", "bldg-fill", (e) => {
         const f = e.features[0];
+        hoverRef.current = f.properties.id;
         hoverPopup.setLngLat(e.lngLat).setText(f.properties.name).addTo(map);
-        map.setFilter("bldg-hover", ["==", ["get", "id"], f.properties.id]);
+        applyHover();
       });
 
       map.on("mouseleave", "bldg-fill", () => {
         hoverPopup.remove();
-        map.setFilter("bldg-hover", ["==", ["get", "id"], ""]);
+        hoverRef.current = "";
+        applyHover();
       });
 
       map.getCanvas().style.cursor = "crosshair";
@@ -260,6 +301,10 @@ export default function App() {
       map.remove();
     };
   }, [setSelectedId]);
+
+  useEffect(() => {
+    applyBaseFilters();
+  }, [showNamed, showUnnamed]);
 
   // react to selection changes safely
   useEffect(() => {
@@ -307,6 +352,24 @@ export default function App() {
       >
         <h3 style={{ margin: "6px 0" }}>UCLA Map Trainer</h3>
         <SearchBox fuse={fuse} />
+        <div style={{ marginTop: 8 }}>
+          <label style={{ display: "block" }}>
+            <input
+              type="checkbox"
+              checked={showNamed}
+              onChange={(e) => setShowNamed(e.target.checked)}
+            />
+            <span style={{ marginLeft: 4 }}>Show named buildings</span>
+          </label>
+          <label style={{ display: "block", marginTop: 4 }}>
+            <input
+              type="checkbox"
+              checked={showUnnamed}
+              onChange={(e) => setShowUnnamed(e.target.checked)}
+            />
+            <span style={{ marginLeft: 4 }}>Show unnamed buildings</span>
+          </label>
+        </div>
         <div
           style={{
             marginTop: 8,
