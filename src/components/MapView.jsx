@@ -93,6 +93,14 @@ export default function MapView({
   };
 
   useEffect(() => {
+    let savedView = null;
+    if (typeof localStorage !== "undefined") {
+      try {
+        savedView = JSON.parse(localStorage.getItem("lastView"));
+      } catch {
+        savedView = null;
+      }
+    }
     const map = new maplibregl.Map({
       container: "map",
       style: {
@@ -107,8 +115,10 @@ export default function MapView({
           },
         ],
       },
-      center: [-118.4452, 34.0689],
-      zoom: 16,
+      center: savedView
+        ? [savedView.lng, savedView.lat]
+        : [-118.4452, 34.0689],
+      zoom: savedView ? savedView.zoom : 16,
       minZoom: 15,
       maxZoom: 19,
       maxBounds: BOUNDS,
@@ -116,6 +126,15 @@ export default function MapView({
       pitchWithRotate: false,
     });
     mapRef.current = map;
+    map.on("moveend", () => {
+      if (typeof localStorage !== "undefined") {
+        const c = map.getCenter();
+        localStorage.setItem(
+          "lastView",
+          JSON.stringify({ lng: c.lng, lat: c.lat, zoom: map.getZoom() })
+        );
+      }
+    });
     const hoverPopup = new maplibregl.Popup({
       closeButton: false,
       closeOnClick: false,
