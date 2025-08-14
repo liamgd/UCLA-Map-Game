@@ -173,6 +173,12 @@ export default function MapView({
       ],
     };
 
+    const buildingLabelPaint = {
+      "text-color": "#000000",
+      "text-halo-color": "#ffffff",
+      "text-halo-width": 1,
+    };
+
     map.on("load", async () => {
       // basemap (raster, no labels)
       map.addSource("basemap", {
@@ -214,6 +220,7 @@ export default function MapView({
         source: "campus",
         filter: hasName,
         layout: buildingLabelLayout,
+        paint: buildingLabelPaint,
       });
       map.addLayer({
         id: "bldg-hover",
@@ -269,6 +276,7 @@ export default function MapView({
             type: "symbol",
             source: "campus",
             layout: buildingLabelLayout,
+            paint: buildingLabelPaint,
           });
         }
         if (!map.getLayer("bldg-hover")) {
