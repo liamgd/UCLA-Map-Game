@@ -3,6 +3,63 @@ import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import Fuse from "fuse.js";
 
+const CATEGORY_COLOR_ENTRIES = [
+  ["Academic", "#1f77b4"],
+  ["Administrative", "#ff7f0e"],
+  ["Athletic/Recreational", "#2ca02c"],
+  ["Pool", "#2ca02c"],
+  ["Stadium", "#ff9896"],
+  ["Sports Court/Pitch", "#c5b0d5"],
+  ["Sports Field", "#98df8a"],
+  ["Dining", "#d62728"],
+  ["Libraries/Museums", "#9467bd"],
+  ["Medical/Health", "#8c564b"],
+  ["Other/Unknown", "#e377c2"],
+  ["Performance/Venues", "#7f7f7f"],
+  ["Residential", "#bcbd22"],
+  ["On-Campus Housing", "#bcbd22"],
+  ["Off-Campus Housing", "#e7ba52"],
+  ["Service/Support", "#17becf"],
+];
+
+const CATEGORY_LEGEND = Array.from(
+  new Map(CATEGORY_COLOR_ENTRIES.map(([k, v]) => [k, v])).entries()
+);
+
+const ZONE_LEGEND = [
+  ["North Campus", "#1f77b4"],
+  ["South Campus", "#2ca02c"],
+  ["The Hill", "#d62728"],
+  ["Westwood", "#ff7f0e"],
+];
+
+const colorExpr = (mode) => {
+  if (mode === "category") {
+    return [
+      "match",
+      ["get", "category"],
+      ...CATEGORY_COLOR_ENTRIES.flat(),
+      "#6aa9ff",
+    ];
+  }
+  if (mode === "zone") {
+    return [
+      "match",
+      ["get", "zone"],
+      ...ZONE_LEGEND.flat(),
+      "#6aa9ff",
+    ];
+  }
+  return "#6aa9ff";
+};
+
+const fillColorFor = (mode) => [
+  "case",
+  ["==", ["coalesce", ["get", "name"], ""], ""],
+  "#cccccc",
+  colorExpr(mode),
+];
+
 const BOUNDS = [
   [-118.46, 34.052],
   [-118.433, 34.082],
@@ -40,6 +97,7 @@ function featureBounds(f) {
 export default function MapView({
   showNamed,
   showUnnamed,
+  colorBy,
   selectedId,
   setSelectedId,
   setStatus,
@@ -51,6 +109,7 @@ export default function MapView({
   const selectedRef = useRef(""); // latest selected id
   const hoverRef = useRef("");
   const filterRef = useRef(null);
+  const colorByRef = useRef(colorBy);
 
   const hasName = ["!=", ["get", "name"], "Unnamed Building"];
   const noName = ["==", ["get", "name"], "Unnamed Building"];
@@ -121,51 +180,8 @@ export default function MapView({
       closeOnClick: false,
     });
 
-    const categoryColor = [
-      "match",
-      ["get", "category"],
-      "Academic",
-      "#1f77b4",
-      "Administrative",
-      "#ff7f0e",
-      "Athletic/Recreational",
-      "#2ca02c",
-      "Pool",
-      "#2ca02c",
-      "Stadium",
-      "#ff9896",
-      "Sports Court/Pitch",
-      "#c5b0d5",
-      "Sports Field",
-      "#98df8a",
-      "Dining",
-      "#d62728",
-      "Libraries/Museums",
-      "#9467bd",
-      "Medical/Health",
-      "#8c564b",
-      "Other/Unknown",
-      "#e377c2",
-      "Performance/Venues",
-      "#7f7f7f",
-      "Residential",
-      "#bcbd22",
-      "On-Campus Housing",
-      "#bcbd22",
-      "Off-Campus Housing",
-      "#e7ba52",
-      "Service/Support",
-      "#17becf",
-      "#6aa9ff",
-    ];
-    const fillColor = [
-      "case",
-      ["==", ["coalesce", ["get", "name"], ""], ""],
-      "#cccccc",
-      categoryColor,
-    ];
     const buildingFillPaint = {
-      "fill-color": fillColor,
+      "fill-color": fillColorFor(colorByRef.current),
       "fill-opacity": 0.25,
     };
 
@@ -296,14 +312,17 @@ export default function MapView({
       map.on("styledata", () => {
         if (!map.getSource("campus")) return;
 
+        const fill = fillColorFor(colorByRef.current);
         // Ensure layers exist (add on TOP by omitting "before")
         if (!map.getLayer("bldg-fill")) {
           map.addLayer({
             id: "bldg-fill",
             type: "fill",
             source: "campus",
-            paint: buildingFillPaint,
+            paint: { "fill-color": fill, "fill-opacity": 0.25 },
           });
+        } else {
+          map.setPaintProperty("bldg-fill", "fill-color", fill);
         }
         if (!map.getLayer("bldg-outline")) {
           map.addLayer({
@@ -406,6 +425,15 @@ export default function MapView({
   }, [showNamed, showUnnamed]);
 
   useEffect(() => {
+    colorByRef.current = colorBy;
+    const map = mapRef.current;
+    if (!map) return;
+    if (map.getLayer("bldg-fill")) {
+      map.setPaintProperty("bldg-fill", "fill-color", fillColorFor(colorBy));
+    }
+  }, [colorBy]);
+
+  useEffect(() => {
     selectedRef.current = selectedId || "";
 
     const map = mapRef.current;
@@ -433,5 +461,44 @@ export default function MapView({
     }
   }, [selectedId, setStatus]);
 
-  return <div id="map" style={{ width: "100%", height: "100%" }} />;
+  return (
+    <div style={{ width: "100%", height: "100%", position: "relative" }}>
+      <div id="map" style={{ width: "100%", height: "100%" }} />
+      {colorBy !== "none" && (
+        <div
+          style={{
+            position: "absolute",
+            bottom: 12,
+            right: 12,
+            background: "rgba(255,255,255,0.9)",
+            padding: 8,
+            borderRadius: 4,
+            fontSize: 12,
+            maxHeight: "50%",
+            overflowY: "auto",
+          }}
+        >
+          {(colorBy === "category" ? CATEGORY_LEGEND : ZONE_LEGEND).map(
+            ([label, color]) => (
+              <div
+                key={label}
+                style={{ display: "flex", alignItems: "center", marginBottom: 2 }}
+              >
+                <span
+                  style={{
+                    width: 12,
+                    height: 12,
+                    background: color,
+                    border: "1px solid #ccc",
+                    marginRight: 4,
+                  }}
+                />
+                {label}
+              </div>
+            )
+          )}
+        </div>
+      )}
+    </div>
+  );
 }

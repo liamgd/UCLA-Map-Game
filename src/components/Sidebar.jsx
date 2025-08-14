@@ -7,6 +7,8 @@ export default function Sidebar({
   showUnnamed,
   setShowNamed,
   setShowUnnamed,
+  colorBy,
+  setColorBy,
 }) {
   return (
     <aside
@@ -35,6 +37,39 @@ export default function Sidebar({
           />
           <span style={{ marginLeft: 4 }}>Show unnamed buildings</span>
         </label>
+        <div style={{ marginTop: 8 }}>
+          <div>Color by:</div>
+          <label style={{ display: "block" }}>
+            <input
+              type="radio"
+              name="colorBy"
+              value="category"
+              checked={colorBy === "category"}
+              onChange={(e) => setColorBy(e.target.value)}
+            />
+            <span style={{ marginLeft: 4 }}>Category</span>
+          </label>
+          <label style={{ display: "block", marginTop: 4 }}>
+            <input
+              type="radio"
+              name="colorBy"
+              value="zone"
+              checked={colorBy === "zone"}
+              onChange={(e) => setColorBy(e.target.value)}
+            />
+            <span style={{ marginLeft: 4 }}>Zone</span>
+          </label>
+          <label style={{ display: "block", marginTop: 4 }}>
+            <input
+              type="radio"
+              name="colorBy"
+              value="none"
+              checked={colorBy === "none"}
+              onChange={(e) => setColorBy(e.target.value)}
+            />
+            <span style={{ marginLeft: 4 }}>None</span>
+          </label>
+        </div>
       </div>
       <div
         style={{
