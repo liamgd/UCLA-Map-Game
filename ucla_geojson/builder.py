@@ -14,13 +14,19 @@ from .constants import (
     MIN_AREA_UNNAMED,
     SINGLE_TOLERANCE_M,
 )
-from .geometry import area_m2, build_geometries, simplify_geom_m
+from .geometry import build_geometries, simplify_geom_m
 from .utils import hash_centroid, slugify
 
 # Minimum child area to consider for subset detection (m²)
 MIN_CHILD_AREA = 20
 SUBSET_BUFFER_M = 0.25
 OVERLAP_THRESHOLD = 0.60
+
+# OSM relation id for UCLA campus boundary
+CAMPUS_RELATION_ID = 7493269
+# Minimum ratio of a feature's area that must overlap the campus boundary to
+# consider it on campus
+ON_CAMPUS_THRESHOLD = 0.5
 
 
 def _outer_shell(geom):
@@ -89,14 +95,18 @@ def assign_parent_child(features):
 
 def process_features(osm_data):
     print("Processing features...")
-    ways, rels, way_polys, rel_polys, ways_in_building_rels = build_geometries(
+    ways, _, way_polys, rel_polys, ways_in_building_rels = build_geometries(
         osm_data
     )
+    campus_geom = rel_polys.get(CAMPUS_RELATION_ID)
+    campus_geom_m = transform(_TO_M, campus_geom) if campus_geom else None
     features = []
 
     elements = osm_data.get("elements", [])
     total = len(elements)
     for idx, el in enumerate(elements, 1):
+        if el["type"] == "relation" and el["id"] == CAMPUS_RELATION_ID:
+            continue
         if el["type"] == "way":
             if el["id"] in ways_in_building_rels:
                 continue
@@ -116,7 +126,8 @@ def process_features(osm_data):
         elif isinstance(geom, MultiPolygon):
             geom = MultiPolygon([orient(p, sign=1.0) for p in geom.geoms])
 
-        A = area_m2(geom)
+        geom_m = transform(_TO_M, geom)
+        A = geom_m.area
         tags = el.get("tags", {})
         building_type = (tags.get("building") or "").lower()
 
@@ -189,6 +200,11 @@ def process_features(osm_data):
         zone = determine_zone(centroid)
         category = determine_category(tags, name, zone)
 
+        on_campus = False
+        if campus_geom_m and A > 0:
+            inter_area = geom_m.intersection(campus_geom_m).area
+            on_campus = inter_area >= ON_CAMPUS_THRESHOLD * A
+
         fid = f"{slugify(name)}-{hash_centroid(centroid)}"
         props = {
             "id": fid,
@@ -199,6 +215,7 @@ def process_features(osm_data):
             "centroid": centroid,
             "osm_ids": [osm_id_str],
             "area": round(A, 2),
+            "on_campus": on_campus,
             "overlap_role": "solo",
             "updated_at": datetime.now(timezone.utc)
             .isoformat()

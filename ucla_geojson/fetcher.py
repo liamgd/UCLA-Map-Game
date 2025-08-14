@@ -74,8 +74,8 @@ area["amenity"="university"]["name"~"^(University of California, Los Angeles|UCL
   relation["building"]["operator"~"{GREEK_NAME_RE}",i]{BBOX_QUERY};
 )->.greek;
 
-// Combine
-(.campus; .ucla_related; .greek;);
+// Combine and include UCLA campus boundary relation for on-campus checks
+(.campus; .ucla_related; .greek; relation(7493269););
 out body; >; out skel qt;
 """
     url = f"{OVERPASS_URL}?{urllib.parse.urlencode({'data': query})}"
