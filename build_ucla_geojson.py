@@ -142,6 +142,8 @@ HOUSING_HINTS = {
     "wyton",
     "gayley court",
     "gayley heights",
+    "fraternity",
+    "sorority",
 }
 
 LIBRARY_MUSEUM_HINTS = {
@@ -260,8 +262,20 @@ area["amenity"="university"]["name"~"^(University of California, Los Angeles|UCL
   relation["leisure"="stadium"]["operator"~"UCLA",i](34.058,-118.456,34.082,-118.433);
 )->.ucla_related;
 
+// Get fraternities and sororities in the bounding box
+(
+  way["amenity"="fraternity"](34.058,-118.456,34.082,-118.433);
+  way["amenity"="sorority"](34.058,-118.456,34.082,-118.433);
+  way["building"="fraternity"](34.058,-118.456,34.082,-118.433);
+  way["building"="sorority"](34.058,-118.456,34.082,-118.433);
+  relation["amenity"="fraternity"](34.058,-118.456,34.082,-118.433);
+  relation["amenity"="sorority"](34.058,-118.456,34.082,-118.433);
+  relation["building"="fraternity"](34.058,-118.456,34.082,-118.433);
+  relation["building"="sorority"](34.058,-118.456,34.082,-118.433);
+)->.greek;
+
 // Combine
-(.campus; .ucla_related;);
+(.campus; .ucla_related; .greek;);
 out body; >; out skel qt;
 """
     r = requests.get(OVERPASS_URL, params={"data": query})
@@ -395,10 +409,18 @@ def determine_category(tags: dict, name: str, zone: str):
         return "Medical/Health", subtype, zone == "Westwood"
 
     # Housing
-    if btype in {"residential", "dormitory", "apartments"} or _hint_in(
-        name_norm, HOUSING_HINTS
+    if (
+        btype in {"residential", "dormitory", "apartments", "fraternity", "sorority"}
+        or amenity in {"fraternity", "sorority"}
+        or _hint_in(name_norm, HOUSING_HINTS)
     ):
-        return "Residential", "Housing", False
+        subtype = (
+            "Fraternity/Sorority"
+            if amenity in {"fraternity", "sorority"}
+            or btype in {"fraternity", "sorority"}
+            else "Housing"
+        )
+        return "Residential", subtype, False
 
     # Dining
     if amenity in {
