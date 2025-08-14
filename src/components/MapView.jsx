@@ -157,6 +157,22 @@ export default function MapView({
       "fill-opacity": 0.25,
     };
 
+    const buildingLabelLayout = {
+      "text-field": ["get", "name"],
+      "text-anchor": "center",
+      "text-size": [
+        "interpolate",
+        ["linear"],
+        ["zoom"],
+        15,
+        0,
+        16,
+        12,
+        19,
+        24,
+      ],
+    };
+
     map.on("load", async () => {
       // basemap (raster, no labels)
       map.addSource("basemap", {
@@ -197,10 +213,7 @@ export default function MapView({
         type: "symbol",
         source: "campus",
         filter: hasName,
-        layout: {
-          "text-field": ["get", "name"],
-          "text-anchor": "center",
-        },
+        layout: buildingLabelLayout,
       });
       map.addLayer({
         id: "bldg-hover",
@@ -255,10 +268,7 @@ export default function MapView({
             id: "bldg-label",
             type: "symbol",
             source: "campus",
-            layout: {
-              "text-field": ["get", "name"],
-              "text-anchor": "center",
-            },
+            layout: buildingLabelLayout,
           });
         }
         if (!map.getLayer("bldg-hover")) {
