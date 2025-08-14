@@ -72,6 +72,16 @@ def assign_parent_child(features):
             parent_props = features[parent_idx]["properties"]
             parent_props["overlap_role"] = "parent"
 
+            # Rename unnamed child features to reference their parent
+            child_name = child_props.get("name", "")
+            if child_name.startswith("Unnamed "):
+                feature_type = child_name[len("Unnamed ") :]
+                parent_name = parent_props.get("name", "")
+                new_name = f"{feature_type} in {parent_name}"
+                child_props["name"] = new_name
+                centroid = tuple(child_props.get("centroid", []))
+                child_props["id"] = f"{slugify(new_name)}-{hash_centroid(centroid)}"
+
 def process_features(osm_data):
     print("Processing features...")
     ways, rels, way_polys, rel_polys, ways_in_building_rels = build_geometries(osm_data)
