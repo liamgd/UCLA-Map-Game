@@ -37,6 +37,21 @@ function featureBounds(f) {
   return b;
 }
 
+function parseHash() {
+  const params = new URLSearchParams(window.location.hash.slice(1));
+  const id = params.get("id") || null;
+  const z = parseFloat(params.get("z"));
+  const c = params
+    .get("c")
+    ?.split(",")
+    .map((n) => parseFloat(n));
+  return {
+    id,
+    zoom: Number.isFinite(z) ? z : null,
+    center: c && c.length === 2 && c.every((n) => !isNaN(n)) ? c : null,
+  };
+}
+
 export default function MapView({
   showNamed,
   showUnnamed,
@@ -51,6 +66,18 @@ export default function MapView({
   const selectedRef = useRef(""); // latest selected id
   const hoverRef = useRef("");
   const filterRef = useRef(null);
+  const hashRef = useRef(parseHash());
+  const fromHashRef = useRef(false);
+
+  const updateHash = () => {
+    const map = mapRef.current;
+    if (!map || !selectedRef.current) return;
+    const center = map.getCenter();
+    const z = map.getZoom();
+    window.location.hash = `?id=${selectedRef.current}&z=${z.toFixed(
+      2
+    )}&c=${center.lng.toFixed(5)},${center.lat.toFixed(5)}`;
+  };
 
   const hasName = ["!=", ["get", "name"], "Unnamed Building"];
   const noName = ["==", ["get", "name"], "Unnamed Building"];
@@ -93,6 +120,7 @@ export default function MapView({
   };
 
   useEffect(() => {
+    const initial = hashRef.current;
     const map = new maplibregl.Map({
       container: "map",
       style: {
@@ -107,8 +135,8 @@ export default function MapView({
           },
         ],
       },
-      center: [-118.4452, 34.0689],
-      zoom: 16,
+      center: initial.center || [-118.4452, 34.0689],
+      zoom: initial.zoom || 16,
       minZoom: 15,
       maxZoom: 19,
       maxBounds: BOUNDS,
@@ -116,9 +144,18 @@ export default function MapView({
       pitchWithRotate: false,
     });
     mapRef.current = map;
+    if (initial.id) {
+      fromHashRef.current = true;
+      selectedRef.current = initial.id;
+      setSelectedId(initial.id);
+    }
     const hoverPopup = new maplibregl.Popup({
       closeButton: false,
       closeOnClick: false,
+    });
+
+    map.on("moveend", () => {
+      if (selectedRef.current) updateHash();
     });
 
     const categoryColor = [
@@ -419,6 +456,7 @@ export default function MapView({
     }
 
     if (!selectedId || !dataRef.current) {
+      if (!selectedId) window.location.hash = "";
       setStatus("Click the map");
       return;
     }
@@ -427,9 +465,16 @@ export default function MapView({
       (x) => x.properties.id === selectedId
     );
     if (f) {
-      const center = featureBounds(f).getCenter();
-      map.easeTo({ center, zoom: 17, duration: 800 });
-      setStatus(`Selected: ${f.properties.name}`);
+      if (fromHashRef.current) {
+        fromHashRef.current = false;
+        setStatus(`Selected: ${f.properties.name}`);
+        updateHash();
+      } else {
+        const center = featureBounds(f).getCenter();
+        map.easeTo({ center, zoom: 17, duration: 800 });
+        map.once("moveend", updateHash);
+        setStatus(`Selected: ${f.properties.name}`);
+      }
     }
   }, [selectedId, setStatus]);
 
