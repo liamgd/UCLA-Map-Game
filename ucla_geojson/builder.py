@@ -69,9 +69,10 @@ def assign_parent_child(features):
             _, _, pid, parent_idx = candidates[0]
             child_props = features[i]["properties"]
             child_props["parent_id"] = pid
-            child_props["is_subset"] = True
+            child_props["overlap_role"] = "child"
             child_props["is_label_primary"] = False
             parent_props = features[parent_idx]["properties"]
+            parent_props["overlap_role"] = "parent"
             parent_props["is_label_primary"] = True
 
 def process_features(osm_data):
@@ -183,6 +184,7 @@ def process_features(osm_data):
             "centroid": centroid,
             "osm_ids": [osm_id_str],
             "area": round(A, 2),
+            "overlap_role": "solo",
             "updated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         }
 
