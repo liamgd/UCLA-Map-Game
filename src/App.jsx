@@ -17,6 +17,16 @@ const LABEL_TILES = [
   "https://d.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png",
 ];
 
+const setFilterSafe = (map, layerId, f) => {
+  map.setFilter(layerId, f ?? ["all"]);
+};
+
+const withBase = (base, extra) => [
+  "all",
+  ...(base ? [base] : []),
+  ...(extra ? [extra] : []),
+];
+
 function featureBounds(f) {
   const b = new maplibregl.LngLatBounds();
   const polys =
@@ -42,13 +52,13 @@ export default function App() {
   const [showUnnamed, setShowUnnamed] = useState(true);
   const { selectedId, setSelectedId } = useStore();
 
-  const namedFilter = ["!=", ["coalesce", ["get", "name"], ""], ""];
-  const unnamedFilter = ["==", ["coalesce", ["get", "name"], ""], ""];
+  const hasName = ["!=", ["get", "name"], "Unnamed Building"];
+  const noName = ["==", ["get", "name"], "Unnamed Building"];
 
   const computeBaseFilter = () => {
-    if (showNamed && showUnnamed) return null;
-    if (showNamed) return namedFilter;
-    if (showUnnamed) return unnamedFilter;
+    if (showNamed && showUnnamed) return ["all"]; // no-op filter
+    if (showNamed) return hasName;
+    if (showUnnamed) return noName;
     return ["==", ["get", "id"], ""]; // match nothing
   };
 
@@ -58,8 +68,8 @@ export default function App() {
     const layerId = "bldg-hover";
     if (!map.getLayer(layerId)) return;
     const base = filterRef.current;
-    const idFilter = ["==", ["get", "id"], hoverRef.current];
-    map.setFilter(layerId, base ? ["all", base, idFilter] : idFilter);
+    const idFilterH = ["==", ["get", "id"], hoverRef.current];
+    map.setFilter("bldg-hover", withBase(filterRef.current, idFilterH));
   };
 
   // helper: safely (re)apply highlight filter
@@ -69,8 +79,8 @@ export default function App() {
     const layerId = "bldg-hi";
     if (!map.getLayer(layerId)) return;
     const base = filterRef.current;
-    const idFilter = ["==", ["get", "id"], id || ""];
-    map.setFilter(layerId, base ? ["all", base, idFilter] : idFilter);
+    const idFilterHi = ["==", ["get", "id"], id || ""];
+    map.setFilter("bldg-hi", withBase(filterRef.current, idFilterHi));
   };
 
   const applyBaseFilters = () => {
@@ -78,8 +88,8 @@ export default function App() {
     if (!map || !readyRef.current) return;
     const base = computeBaseFilter();
     filterRef.current = base;
-    map.setFilter("bldg-fill", base);
-    map.setFilter("bldg-outline", base);
+    setFilterSafe(map, "bldg-fill", base);
+    setFilterSafe(map, "bldg-outline", base);
     applyHover();
     applyHighlight(selectedRef.current);
   };
@@ -166,9 +176,6 @@ export default function App() {
       // campus data
       const res = await fetch("/campus.geojson");
       const data = await res.json();
-      console.log("campus features", data.features?.length);
-      console.log(data.features[0]);
-      // Expect geometry.coordinates like [[[-118.45,34.07], …]]
 
       dataRef.current = data;
       map.addSource("campus", { type: "geojson", data });
@@ -217,8 +224,11 @@ export default function App() {
       applyBaseFilters();
 
       // rebuild highlight layer after any style reload (HMR/theme changes)
+      // Rebuild layers after style reload (HMR/theme changes) without recomputing filters
       map.on("styledata", () => {
         if (!map.getSource("campus")) return;
+
+        // Ensure layers exist (add on TOP by omitting "before")
         if (!map.getLayer("bldg-fill")) {
           map.addLayer({
             id: "bldg-fill",
@@ -236,34 +246,13 @@ export default function App() {
           });
         }
         if (!map.getLayer("bldg-hover")) {
-          const before = map.getLayer("bldg-outline")
-            ? "bldg-outline"
-            : undefined;
-          map.addLayer(
-            {
-              id: "bldg-hover",
-              type: "fill",
-              source: "campus",
-              filter: ["==", ["get", "id"], ""],
-              paint: { "fill-color": "#ffeb3b", "fill-opacity": 0.5 },
-            },
-            before
-          );
-        }
-        if (!map.getSource("labels")) {
-          map.addSource("labels", {
-            type: "raster",
-            tiles: LABEL_TILES,
-            tileSize: 256,
-            attribution: "© OpenStreetMap contributors, © CARTO",
+          map.addLayer({
+            id: "bldg-hover",
+            type: "fill",
+            source: "campus",
+            filter: ["==", ["get", "id"], ""],
+            paint: { "fill-color": "#ffeb3b", "fill-opacity": 0.5 },
           });
-        }
-        if (!map.getLayer("labels")) {
-          const before = map.getLayer("bldg-hi") ? "bldg-hi" : undefined;
-          map.addLayer(
-            { id: "labels", type: "raster", source: "labels" },
-            before
-          );
         }
         if (!map.getLayer("bldg-hi")) {
           map.addLayer({
@@ -274,7 +263,26 @@ export default function App() {
             paint: { "line-color": "#ff9f1c", "line-width": 3 },
           });
         }
-        applyBaseFilters();
+
+        // Reapply the LAST-KNOWN base filter from the ref (no recompute)
+        const base = filterRef.current || ["all"];
+        map.setFilter("bldg-fill", base);
+        map.setFilter("bldg-outline", base);
+
+        // Keep hover/highlight in sync with the same base
+        const withBase = (b, extra) => [
+          "all",
+          ...(b ? [b] : []),
+          ...(extra ? [extra] : []),
+        ];
+        map.setFilter(
+          "bldg-hover",
+          withBase(base, ["==", ["get", "id"], hoverRef.current])
+        );
+        map.setFilter(
+          "bldg-hi",
+          withBase(base, ["==", ["get", "id"], selectedRef.current || ""])
+        );
       });
 
       // Fuse index for search

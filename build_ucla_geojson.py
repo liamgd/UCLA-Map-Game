@@ -2,7 +2,7 @@ import hashlib
 import json
 import os
 import re
-from datetime import datetime
+from datetime import datetime, timezone
 
 import pyproj
 import requests
@@ -472,33 +472,60 @@ def process_features(osm_data):
         A = area_m2(geom)
         tags = el.get("tags", {})
         building_type = (tags.get("building") or "").lower()
+
         name = (
             tags.get("name")
             or tags.get("official_name")
             or tags.get("alt_name")
             or tags.get("loc_name")
-        )
-
-        if not name and A < MIN_AREA_UNNAMED:
-            continue
-        if building_type in EXCLUDE_BUILDINGS and A < MIN_AREA_EXCLUDE:
-            continue
-        if not name and A < MIN_AREA_EXCLUDE:
-            continue
-
-        name = (
-            name
             or tags.get("ref")
             or tags.get("operator")
             or "Unnamed Building"
         )
+
+        # Apply filters
+        if name == "Unnamed Building" and A < MIN_AREA_UNNAMED:
+            continue
+        if building_type in EXCLUDE_BUILDINGS and A < MIN_AREA_EXCLUDE:
+            continue
+        if A < MIN_AREA_EXCLUDE and name == "Unnamed Building":
+            continue
+
+        # If it's a parking structure and still unnamed, synthesize a display name
+        if name == "Unnamed Building":
+            amenity = (tags.get("amenity") or "").lower()
+            parking = (tags.get("parking") or "").lower()
+            bldg = (tags.get("building") or "").lower()
+            if (
+                amenity == "parking"
+                or bldg == "parking"
+                or parking in {"multi-storey", "underground"}
+            ):
+                # Try to turn refs like "P8", "8", "PS-8" into "Parking Structure 8"
+                ref = (tags.get("ref") or "").strip()
+                m = re.search(
+                    r"(?:^|[^0-9])([Pp]?\s*\d{1,2})(?:[^0-9]|$)", ref
+                )
+                if m:
+                    num = re.sub(r"[^\d]", "", m.group(1))
+                    name = f"Parking Structure {num}"
+                else:
+                    name = "Parking Structure"
 
         # aliases
         aliases = []
         for k in ("alt_name", "short_name", "old_name"):
             if tags.get(k):
                 aliases += [a.strip() for a in tags[k].split(";")]
-        aliases = list({a for a in aliases if a and a != name})
+        if tags.get("ref"):
+            aliases.append(tags["ref"])  # keep "P8" etc. searchable
+        aliases = list(
+            {
+                a.strip(): None
+                for a in aliases
+                if a and a.strip().lower() != name.lower()
+            }.keys()
+        )
 
         # centroid
         c = geom.centroid
@@ -522,7 +549,9 @@ def process_features(osm_data):
             "important_off_campus": bool(important_off),
             "centroid": centroid,
             "osm_ids": [osm_id_str],
-            "updated_at": datetime.utcnow().isoformat() + "Z",
+            "updated_at": datetime.now(timezone.utc)
+            .isoformat()
+            .replace("+00:00", "Z"),
         }
 
         # One geometry for both render and hit
