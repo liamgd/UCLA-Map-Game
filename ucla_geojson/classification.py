@@ -52,21 +52,16 @@ ADMIN_HINTS = {
     "career center",
 }
 
-ATHLETIC_HINTS = {
-    "pauley",
-    "pavilion",
-    "stadium",
+POOL_HINTS = {"pool", "aquatic"}
+STADIUM_HINTS = {"stadium", "pavilion"}
+COURT_HINTS = {"court", "tennis"}
+FIELD_HINTS = {
     "track",
+    "field",
     "intramural",
     "im field",
     "drake",
     "spaulding",
-    "gym",
-    "athletic",
-    "marina aquatic",
-    "boathouse",
-    "tennis",
-    "pool",
 }
 
 DINING_HINTS = {
@@ -218,13 +213,7 @@ def determine_category(tags: Dict[str, str], name: str, zone: str) -> Tuple[str,
         or re.search(GREEK_NAME_RE, name, re.I)
         or _hint_in(name_norm, HOUSING_HINTS)
     ):
-        cat = (
-            "Fraternity/Sorority"
-            if amenity in {"fraternity", "sorority"}
-            or btype in {"fraternity", "sorority"}
-            or re.search(GREEK_NAME_RE, name, re.I)
-            else "Housing"
-        )
+        cat = "Off-Campus Housing" if zone == "Westwood" else "On-Campus Housing"
         return cat, False
 
     if (
@@ -245,15 +234,17 @@ def determine_category(tags: Dict[str, str], name: str, zone: str) -> Tuple[str,
     }:
         return "Performing Arts", zone == "Westwood"
 
-    if leisure in {
-        "stadium",
-        "sports_centre",
-        "pitch",
-        "swimming_pool",
-        "track",
-        "tennis_court",
-    } or _hint_in(name_norm, ATHLETIC_HINTS):
-        return "Athletics", False
+    if leisure == "swimming_pool" or _hint_in(name_norm, POOL_HINTS):
+        return "Pool", False
+
+    if leisure == "stadium" or _hint_in(name_norm, STADIUM_HINTS):
+        return "Stadium", False
+
+    if leisure == "tennis_court" or _hint_in(name_norm, COURT_HINTS):
+        return "Sports Court/Pitch", False
+
+    if leisure in {"pitch", "track", "sports_centre"} or _hint_in(name_norm, FIELD_HINTS):
+        return "Sports Field", False
 
     if (
         leisure in {"park", "garden"}
@@ -277,5 +268,5 @@ def determine_category(tags: Dict[str, str], name: str, zone: str) -> Tuple[str,
     if zone in {"North Campus", "South Campus"}:
         return "Academic/Research", False
     if zone == "The Hill":
-        return "Housing", False
+        return "On-Campus Housing", False
     return "Unknown", False
