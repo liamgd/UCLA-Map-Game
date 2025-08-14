@@ -182,8 +182,13 @@ def determine_zone(centroid):
     return "North Campus" if lat >= 34.07 else "South Campus"
 
 
-def determine_category(tags: Dict[str, str], name: str, zone: str) -> Tuple[str, str, bool]:
-    """Returns (category, subtype, is_important_off_campus)"""
+def determine_category(tags: Dict[str, str], name: str, zone: str) -> Tuple[str, bool]:
+    """Returns (category, is_important_off_campus).
+
+    The previous category hierarchy used both categories and subtypes.  This
+    function now collapses the hierarchy by promoting the former subtypes to the
+    category level.
+    """
 
     name_norm = _norm(name)
     btype = _norm(tags.get("building"))
@@ -195,19 +200,17 @@ def determine_category(tags: Dict[str, str], name: str, zone: str) -> Tuple[str,
     landuse = _norm(tags.get("landuse"))
     natural = _norm(tags.get("natural"))
 
-    for key, (cat, sub) in IMPORTANT_OFF_CAMPUS.items():
+    for key, cat in IMPORTANT_OFF_CAMPUS.items():
         if key in name_norm:
-            return cat, sub, True
+            return cat, True
 
     if (
         healthcare
         or amenity in {"clinic", "hospital", "doctors", "dentist"}
         or _hint_in(name_norm, MEDICAL_HINTS)
     ):
-        subtype = (
-            "Hospital" if "hospital" in (amenity + " " + name_norm) else "Clinic/Health"
-        )
-        return "Medical/Health", subtype, zone == "Westwood"
+        cat = "Hospital" if "hospital" in (amenity + " " + name_norm) else "Clinic/Health"
+        return cat, zone == "Westwood"
 
     if (
         btype in {"residential", "dormitory", "apartments", "fraternity", "sorority"}
@@ -215,32 +218,32 @@ def determine_category(tags: Dict[str, str], name: str, zone: str) -> Tuple[str,
         or re.search(GREEK_NAME_RE, name, re.I)
         or _hint_in(name_norm, HOUSING_HINTS)
     ):
-        subtype = (
+        cat = (
             "Fraternity/Sorority"
             if amenity in {"fraternity", "sorority"}
             or btype in {"fraternity", "sorority"}
             or re.search(GREEK_NAME_RE, name, re.I)
             else "Housing"
         )
-        return "Residential", subtype, False
+        return cat, False
 
     if (
         amenity in {"restaurant", "fast_food", "cafe", "café", "food_court"}
         or shop in {"convenience", "supermarket"}
         or _hint_in(name_norm, DINING_HINTS)
     ):
-        return "Dining", "Food Service", False
+        return "Food Service", False
 
     if amenity == "library" or _hint_in(name_norm, LIBRARY_MUSEUM_HINTS):
-        sub = "Library" if "library" in (amenity + " " + name_norm) else "Museum"
-        return "Libraries/Museums", sub, zone == "Westwood"
+        cat = "Library" if "library" in (amenity + " " + name_norm) else "Museum"
+        return cat, zone == "Westwood"
 
     if _hint_in(name_norm, PERFORMANCE_HINTS) or amenity in {
         "theatre",
         "arts_centre",
         "concert_hall",
     }:
-        return "Performance/Venues", "Performing Arts", zone == "Westwood"
+        return "Performing Arts", zone == "Westwood"
 
     if leisure in {
         "stadium",
@@ -250,14 +253,14 @@ def determine_category(tags: Dict[str, str], name: str, zone: str) -> Tuple[str,
         "track",
         "tennis_court",
     } or _hint_in(name_norm, ATHLETIC_HINTS):
-        return "Athletic/Recreational", "Athletics", False
+        return "Athletics", False
 
     if (
         leisure in {"park", "garden"}
         or landuse in {"grass", "recreation_ground", "forest", "meadow", "shrubland"}
         or natural in {"scrub", "shrub", "shrubland", "wood", "grassland"}
     ):
-        return "Parks/Nature", "Green Space", False
+        return "Green Space", False
 
     if (
         amenity == "parking"
@@ -265,14 +268,14 @@ def determine_category(tags: Dict[str, str], name: str, zone: str) -> Tuple[str,
         or "parking" in (btype + " " + operator)
         or "parking" in name_norm
     ):
-        subtype = "Structure" if "structure" in name_norm or btype == "parking" else "Lot"
-        return "Parking", f"Parking {subtype}", False
+        sub = "Structure" if "structure" in name_norm or btype == "parking" else "Lot"
+        return f"Parking {sub}", False
 
     if _hint_in(name_norm, SERVICE_HINTS):
-        return "Service/Support", "Operations", False
+        return "Operations", False
 
     if zone in {"North Campus", "South Campus"}:
-        return "Academic", "Academic/Research", False
+        return "Academic/Research", False
     if zone == "The Hill":
-        return "Residential", "Housing", False
-    return "Other/Unknown", "Unknown", False
+        return "Housing", False
+    return "Unknown", False

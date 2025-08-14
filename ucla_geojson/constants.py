@@ -17,12 +17,12 @@ GREEK_NAME_RE = (
 )
 
 IMPORTANT_OFF_CAMPUS = {
-    # substrings -> (category, subtype)
-    "hammer museum": ("Libraries/Museums", "Museum"),
-    "geffen playhouse": ("Performance/Venues", "Playhouse"),
-    "ronald reagan ucla medical center": ("Medical/Health", "Hospital"),
-    "ucla health westwood": ("Medical/Health", "Clinic/Health"),
-    "marina aquatics center": ("Athletic/Recreational", "Boathouse"),
+    # substrings -> category
+    "hammer museum": "Museum",
+    "geffen playhouse": "Playhouse",
+    "ronald reagan ucla medical center": "Hospital",
+    "ucla health westwood": "Clinic/Health",
+    "marina aquatics center": "Boathouse",
 }
 
 BLACKLIST = {
