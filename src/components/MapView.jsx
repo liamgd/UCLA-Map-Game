@@ -482,9 +482,31 @@ export default function MapView({
     }
   }, [selectedId, setStatus]);
 
+  const fitToCampus = () => {
+    const map = mapRef.current;
+    if (!map) return;
+    map.fitBounds(BOUNDS, { padding: 20, duration: 800 });
+  };
+
   return (
     <div style={{ width: "100%", height: "100%", position: "relative" }}>
       <div id="map" style={{ width: "100%", height: "100%" }} />
+      <button
+        onClick={fitToCampus}
+        style={{
+          position: "absolute",
+          top: 12,
+          right: 12,
+          zIndex: 1,
+          padding: "6px 8px",
+          background: "#fff",
+          border: "1px solid #ccd",
+          borderRadius: 4,
+          cursor: "pointer",
+        }}
+      >
+        Fit to campus
+      </button>
       {colorBy !== "none" && (
         <div
           style={{
