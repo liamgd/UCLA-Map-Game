@@ -1,7 +1,7 @@
 import re
-from typing import Dict, Tuple
+from typing import Dict
 
-from .constants import GREEK_NAME_RE, IMPORTANT_OFF_CAMPUS
+from .constants import GREEK_NAME_RE
 
 
 def _norm(s: str) -> str:
@@ -177,10 +177,10 @@ def determine_zone(centroid):
     return "North Campus" if lat >= 34.07 else "South Campus"
 
 
-def determine_category(tags: Dict[str, str], name: str, zone: str) -> Tuple[str, bool]:
-    """Returns (category, is_important_off_campus).
+def determine_category(tags: Dict[str, str], name: str, zone: str) -> str:
+    """Returns the category for a feature.
 
-    The previous category hierarchy used both categories and subtypes.  This
+    The previous category hierarchy used both categories and subtypes. This
     function now collapses the hierarchy by promoting the former subtypes to the
     category level.
     """
@@ -195,17 +195,13 @@ def determine_category(tags: Dict[str, str], name: str, zone: str) -> Tuple[str,
     landuse = _norm(tags.get("landuse"))
     natural = _norm(tags.get("natural"))
 
-    for key, cat in IMPORTANT_OFF_CAMPUS.items():
-        if key in name_norm:
-            return cat, True
-
     if (
         healthcare
         or amenity in {"clinic", "hospital", "doctors", "dentist"}
         or _hint_in(name_norm, MEDICAL_HINTS)
     ):
         cat = "Hospital" if "hospital" in (amenity + " " + name_norm) else "Clinic/Health"
-        return cat, zone == "Westwood"
+        return cat
 
     if (
         btype in {"residential", "dormitory", "apartments", "fraternity", "sorority"}
@@ -214,44 +210,44 @@ def determine_category(tags: Dict[str, str], name: str, zone: str) -> Tuple[str,
         or _hint_in(name_norm, HOUSING_HINTS)
     ):
         cat = "Off-Campus Housing" if zone == "Westwood" else "On-Campus Housing"
-        return cat, False
+        return cat
 
     if (
         amenity in {"restaurant", "fast_food", "cafe", "café", "food_court"}
         or shop in {"convenience", "supermarket"}
         or _hint_in(name_norm, DINING_HINTS)
     ):
-        return "Food Service", False
+        return "Food Service"
 
     if amenity == "library" or _hint_in(name_norm, LIBRARY_MUSEUM_HINTS):
         cat = "Library" if "library" in (amenity + " " + name_norm) else "Museum"
-        return cat, zone == "Westwood"
+        return cat
 
     if _hint_in(name_norm, PERFORMANCE_HINTS) or amenity in {
         "theatre",
         "arts_centre",
         "concert_hall",
     }:
-        return "Performing Arts", zone == "Westwood"
+        return "Performing Arts"
 
     if leisure == "swimming_pool" or _hint_in(name_norm, POOL_HINTS):
-        return "Pool", False
+        return "Pool"
 
     if leisure == "stadium" or _hint_in(name_norm, STADIUM_HINTS):
-        return "Stadium", False
+        return "Stadium"
 
     if leisure == "tennis_court" or _hint_in(name_norm, COURT_HINTS):
-        return "Sports Court/Pitch", False
+        return "Sports Court/Pitch"
 
     if leisure in {"pitch", "track", "sports_centre"} or _hint_in(name_norm, FIELD_HINTS):
-        return "Sports Field", False
+        return "Sports Field"
 
     if (
         leisure in {"park", "garden"}
         or landuse in {"grass", "recreation_ground", "forest", "meadow", "shrubland"}
         or natural in {"scrub", "shrub", "shrubland", "wood", "grassland"}
     ):
-        return "Green Space", False
+        return "Green Space"
 
     if (
         amenity == "parking"
@@ -260,13 +256,13 @@ def determine_category(tags: Dict[str, str], name: str, zone: str) -> Tuple[str,
         or "parking" in name_norm
     ):
         sub = "Structure" if "structure" in name_norm or btype == "parking" else "Lot"
-        return f"Parking {sub}", False
+        return f"Parking {sub}"
 
     if _hint_in(name_norm, SERVICE_HINTS):
-        return "Operations", False
+        return "Operations"
 
     if zone in {"North Campus", "South Campus"}:
-        return "Academic/Research", False
+        return "Academic/Research"
     if zone == "The Hill":
-        return "On-Campus Housing", False
-    return "Unknown", False
+        return "On-Campus Housing"
+    return "Unknown"
