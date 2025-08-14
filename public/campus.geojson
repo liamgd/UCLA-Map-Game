@@ -18,7 +18,7 @@
         "osm_ids": [
           "way/30724960"
         ],
-        "updated_at": "2025-08-14T05:08:00.450880Z"
+        "updated_at": "2025-08-14T05:53:51.984293Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -105,7 +105,7 @@
         "osm_ids": [
           "way/44631311"
         ],
-        "updated_at": "2025-08-14T05:08:00.451845Z"
+        "updated_at": "2025-08-14T05:53:51.984788Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -172,7 +172,7 @@
         "osm_ids": [
           "way/44631340"
         ],
-        "updated_at": "2025-08-14T05:08:00.452371Z"
+        "updated_at": "2025-08-14T05:53:51.985284Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -267,7 +267,7 @@
         "osm_ids": [
           "way/44631346"
         ],
-        "updated_at": "2025-08-14T05:08:00.452837Z"
+        "updated_at": "2025-08-14T05:53:51.985754Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -410,7 +410,7 @@
         "osm_ids": [
           "way/44631347"
         ],
-        "updated_at": "2025-08-14T05:08:00.453333Z"
+        "updated_at": "2025-08-14T05:53:51.986276Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -537,7 +537,7 @@
         "osm_ids": [
           "way/44631351"
         ],
-        "updated_at": "2025-08-14T05:08:00.454326Z"
+        "updated_at": "2025-08-14T05:53:51.986774Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -652,7 +652,7 @@
         "osm_ids": [
           "way/44631681"
         ],
-        "updated_at": "2025-08-14T05:08:00.454822Z"
+        "updated_at": "2025-08-14T05:53:51.987241Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -1063,7 +1063,7 @@
         "osm_ids": [
           "way/44631685"
         ],
-        "updated_at": "2025-08-14T05:08:00.455814Z"
+        "updated_at": "2025-08-14T05:53:51.988730Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -1578,7 +1578,7 @@
         "osm_ids": [
           "way/44631687"
         ],
-        "updated_at": "2025-08-14T05:08:00.456806Z"
+        "updated_at": "2025-08-14T05:53:51.990218Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -1921,7 +1921,7 @@
         "osm_ids": [
           "way/44631689"
         ],
-        "updated_at": "2025-08-14T05:08:00.457302Z"
+        "updated_at": "2025-08-14T05:53:51.991209Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -2504,7 +2504,7 @@
         "osm_ids": [
           "way/44650306"
         ],
-        "updated_at": "2025-08-14T05:08:00.458294Z"
+        "updated_at": "2025-08-14T05:53:51.992225Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -2551,7 +2551,7 @@
         "osm_ids": [
           "way/44664275"
         ],
-        "updated_at": "2025-08-14T05:08:00.458790Z"
+        "updated_at": "2025-08-14T05:53:51.992724Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -2774,7 +2774,7 @@
         "osm_ids": [
           "way/44664327"
         ],
-        "updated_at": "2025-08-14T05:08:00.459782Z"
+        "updated_at": "2025-08-14T05:53:51.993194Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -2829,7 +2829,7 @@
         "osm_ids": [
           "way/44664328"
         ],
-        "updated_at": "2025-08-14T05:08:00.459782Z"
+        "updated_at": "2025-08-14T05:53:51.993718Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -2884,7 +2884,7 @@
         "osm_ids": [
           "way/44664332"
         ],
-        "updated_at": "2025-08-14T05:08:00.460774Z"
+        "updated_at": "2025-08-14T05:53:51.994212Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -2931,7 +2931,7 @@
         "osm_ids": [
           "way/44664333"
         ],
-        "updated_at": "2025-08-14T05:08:00.460774Z"
+        "updated_at": "2025-08-14T05:53:51.994708Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -2978,7 +2978,7 @@
         "osm_ids": [
           "way/44664334"
         ],
-        "updated_at": "2025-08-14T05:08:00.461270Z"
+        "updated_at": "2025-08-14T05:53:51.994708Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3033,7 +3033,7 @@
         "osm_ids": [
           "way/44664335"
         ],
-        "updated_at": "2025-08-14T05:08:00.461766Z"
+        "updated_at": "2025-08-14T05:53:51.995204Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3080,7 +3080,7 @@
         "osm_ids": [
           "way/44664336"
         ],
-        "updated_at": "2025-08-14T05:08:00.462262Z"
+        "updated_at": "2025-08-14T05:53:51.995700Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3141,7 +3141,7 @@
         "osm_ids": [
           "way/44669492"
         ],
-        "updated_at": "2025-08-14T05:08:00.465237Z"
+        "updated_at": "2025-08-14T05:53:51.996196Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3204,7 +3204,7 @@
         "osm_ids": [
           "way/44669498"
         ],
-        "updated_at": "2025-08-14T05:08:00.466229Z"
+        "updated_at": "2025-08-14T05:53:51.996696Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3401,7 +3401,7 @@
         "osm_ids": [
           "way/44669501"
         ],
-        "updated_at": "2025-08-14T05:08:00.467221Z"
+        "updated_at": "2025-08-14T05:53:51.997188Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3536,7 +3536,7 @@
         "osm_ids": [
           "way/46364638"
         ],
-        "updated_at": "2025-08-14T05:08:00.468213Z"
+        "updated_at": "2025-08-14T05:53:51.997687Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3615,7 +3615,7 @@
         "osm_ids": [
           "way/49832949"
         ],
-        "updated_at": "2025-08-14T05:08:00.468709Z"
+        "updated_at": "2025-08-14T05:53:51.998180Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3706,7 +3706,7 @@
         "osm_ids": [
           "way/53334145"
         ],
-        "updated_at": "2025-08-14T05:08:00.469702Z"
+        "updated_at": "2025-08-14T05:53:51.998677Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3769,7 +3769,7 @@
         "osm_ids": [
           "way/53334151"
         ],
-        "updated_at": "2025-08-14T05:08:00.470197Z"
+        "updated_at": "2025-08-14T05:53:51.999145Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3848,7 +3848,7 @@
         "osm_ids": [
           "way/53334202"
         ],
-        "updated_at": "2025-08-14T05:08:00.470693Z"
+        "updated_at": "2025-08-14T05:53:51.999669Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -3935,7 +3935,7 @@
         "osm_ids": [
           "way/113902574"
         ],
-        "updated_at": "2025-08-14T05:08:00.471685Z"
+        "updated_at": "2025-08-14T05:53:52.000164Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4018,7 +4018,7 @@
         "osm_ids": [
           "way/133289240"
         ],
-        "updated_at": "2025-08-14T05:08:00.472181Z"
+        "updated_at": "2025-08-14T05:53:52.001129Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4125,7 +4125,7 @@
         "osm_ids": [
           "way/179088301"
         ],
-        "updated_at": "2025-08-14T05:08:00.472677Z"
+        "updated_at": "2025-08-14T05:53:52.001653Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4188,7 +4188,7 @@
         "osm_ids": [
           "way/184443579"
         ],
-        "updated_at": "2025-08-14T05:08:00.473669Z"
+        "updated_at": "2025-08-14T05:53:52.002148Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4237,7 +4237,7 @@
         "osm_ids": [
           "way/184444681"
         ],
-        "updated_at": "2025-08-14T05:08:00.474165Z"
+        "updated_at": "2025-08-14T05:53:52.002646Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4420,7 +4420,7 @@
         "osm_ids": [
           "way/184446757"
         ],
-        "updated_at": "2025-08-14T05:08:00.475157Z"
+        "updated_at": "2025-08-14T05:53:52.003141Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4479,7 +4479,7 @@
         "osm_ids": [
           "way/184446759"
         ],
-        "updated_at": "2025-08-14T05:08:00.475653Z"
+        "updated_at": "2025-08-14T05:53:52.003637Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4526,7 +4526,7 @@
         "osm_ids": [
           "way/184446767"
         ],
-        "updated_at": "2025-08-14T05:08:00.476645Z"
+        "updated_at": "2025-08-14T05:53:52.003637Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4575,7 +4575,7 @@
         "osm_ids": [
           "way/184480980"
         ],
-        "updated_at": "2025-08-14T05:08:00.477141Z"
+        "updated_at": "2025-08-14T05:53:52.004129Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4766,7 +4766,7 @@
         "osm_ids": [
           "way/184484863"
         ],
-        "updated_at": "2025-08-14T05:08:00.478133Z"
+        "updated_at": "2025-08-14T05:53:52.005097Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4885,7 +4885,7 @@
         "osm_ids": [
           "way/184488678"
         ],
-        "updated_at": "2025-08-14T05:08:00.478629Z"
+        "updated_at": "2025-08-14T05:53:52.006090Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -4972,7 +4972,7 @@
         "osm_ids": [
           "way/184488681"
         ],
-        "updated_at": "2025-08-14T05:08:00.479125Z"
+        "updated_at": "2025-08-14T05:53:52.007082Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5019,7 +5019,7 @@
         "osm_ids": [
           "way/184623337"
         ],
-        "updated_at": "2025-08-14T05:08:00.481605Z"
+        "updated_at": "2025-08-14T05:53:52.007577Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5066,7 +5066,7 @@
         "osm_ids": [
           "way/184625939"
         ],
-        "updated_at": "2025-08-14T05:08:00.482103Z"
+        "updated_at": "2025-08-14T05:53:52.008074Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5133,7 +5133,7 @@
         "osm_ids": [
           "way/184708011"
         ],
-        "updated_at": "2025-08-14T05:08:00.482596Z"
+        "updated_at": "2025-08-14T05:53:52.008074Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5182,7 +5182,7 @@
         "osm_ids": [
           "way/184717292"
         ],
-        "updated_at": "2025-08-14T05:08:00.483589Z"
+        "updated_at": "2025-08-14T05:53:52.008570Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5265,7 +5265,7 @@
         "osm_ids": [
           "way/184772366"
         ],
-        "updated_at": "2025-08-14T05:08:00.484581Z"
+        "updated_at": "2025-08-14T05:53:52.009591Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5312,7 +5312,7 @@
         "osm_ids": [
           "way/184948411"
         ],
-        "updated_at": "2025-08-14T05:08:00.485077Z"
+        "updated_at": "2025-08-14T05:53:52.010058Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5700,7 +5700,7 @@
         "osm_ids": [
           "way/184954672"
         ],
-        "updated_at": "2025-08-14T05:08:00.486096Z"
+        "updated_at": "2025-08-14T05:53:52.011050Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5779,7 +5779,7 @@
         "osm_ids": [
           "way/185081403"
         ],
-        "updated_at": "2025-08-14T05:08:00.486592Z"
+        "updated_at": "2025-08-14T05:53:52.011050Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5880,7 +5880,7 @@
         "osm_ids": [
           "way/185084330"
         ],
-        "updated_at": "2025-08-14T05:08:00.487088Z"
+        "updated_at": "2025-08-14T05:53:52.011545Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -5943,7 +5943,7 @@
         "osm_ids": [
           "way/185084339"
         ],
-        "updated_at": "2025-08-14T05:08:00.487584Z"
+        "updated_at": "2025-08-14T05:53:52.012042Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -6030,7 +6030,7 @@
         "osm_ids": [
           "way/188532291"
         ],
-        "updated_at": "2025-08-14T05:08:00.488215Z"
+        "updated_at": "2025-08-14T05:53:52.012537Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -6133,7 +6133,7 @@
         "osm_ids": [
           "way/194830393"
         ],
-        "updated_at": "2025-08-14T05:08:00.488576Z"
+        "updated_at": "2025-08-14T05:53:52.013034Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -6184,7 +6184,7 @@
         "osm_ids": [
           "way/199954903"
         ],
-        "updated_at": "2025-08-14T05:08:00.489072Z"
+        "updated_at": "2025-08-14T05:53:52.013529Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -6287,7 +6287,7 @@
         "osm_ids": [
           "way/199954904"
         ],
-        "updated_at": "2025-08-14T05:08:00.489565Z"
+        "updated_at": "2025-08-14T05:53:52.014521Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -6714,7 +6714,7 @@
         "osm_ids": [
           "way/225372406"
         ],
-        "updated_at": "2025-08-14T05:08:00.490560Z"
+        "updated_at": "2025-08-14T05:53:52.015513Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -6777,7 +6777,7 @@
         "osm_ids": [
           "way/225447385"
         ],
-        "updated_at": "2025-08-14T05:08:00.491059Z"
+        "updated_at": "2025-08-14T05:53:52.015513Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -6864,7 +6864,7 @@
         "osm_ids": [
           "way/227712531"
         ],
-        "updated_at": "2025-08-14T05:08:00.491525Z"
+        "updated_at": "2025-08-14T05:53:52.016506Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -6911,7 +6911,7 @@
         "osm_ids": [
           "way/227712539"
         ],
-        "updated_at": "2025-08-14T05:08:00.492048Z"
+        "updated_at": "2025-08-14T05:53:52.016506Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -6990,7 +6990,7 @@
         "osm_ids": [
           "way/229441461"
         ],
-        "updated_at": "2025-08-14T05:08:00.492518Z"
+        "updated_at": "2025-08-14T05:53:52.017001Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -7073,7 +7073,7 @@
         "osm_ids": [
           "way/229816682"
         ],
-        "updated_at": "2025-08-14T05:08:00.493040Z"
+        "updated_at": "2025-08-14T05:53:52.017497Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -7120,7 +7120,7 @@
         "osm_ids": [
           "way/229816684"
         ],
-        "updated_at": "2025-08-14T05:08:00.493508Z"
+        "updated_at": "2025-08-14T05:53:52.017995Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -7407,7 +7407,7 @@
         "osm_ids": [
           "way/229816689"
         ],
-        "updated_at": "2025-08-14T05:08:00.494005Z"
+        "updated_at": "2025-08-14T05:53:52.018490Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -7502,7 +7502,7 @@
         "osm_ids": [
           "way/230058820"
         ],
-        "updated_at": "2025-08-14T05:08:00.494501Z"
+        "updated_at": "2025-08-14T05:53:52.018985Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -7605,7 +7605,7 @@
         "osm_ids": [
           "way/230058821"
         ],
-        "updated_at": "2025-08-14T05:08:00.495022Z"
+        "updated_at": "2025-08-14T05:53:52.019481Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -7712,7 +7712,7 @@
         "osm_ids": [
           "way/230058822"
         ],
-        "updated_at": "2025-08-14T05:08:00.495516Z"
+        "updated_at": "2025-08-14T05:53:52.019977Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -7775,7 +7775,7 @@
         "osm_ids": [
           "way/230058825"
         ],
-        "updated_at": "2025-08-14T05:08:00.497973Z"
+        "updated_at": "2025-08-14T05:53:52.019977Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -7874,7 +7874,7 @@
         "osm_ids": [
           "way/230058826"
         ],
-        "updated_at": "2025-08-14T05:08:00.498966Z"
+        "updated_at": "2025-08-14T05:53:52.020473Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -7961,7 +7961,7 @@
         "osm_ids": [
           "way/230058828"
         ],
-        "updated_at": "2025-08-14T05:08:00.499461Z"
+        "updated_at": "2025-08-14T05:53:52.020969Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8008,7 +8008,7 @@
         "osm_ids": [
           "way/230372381"
         ],
-        "updated_at": "2025-08-14T05:08:00.499956Z"
+        "updated_at": "2025-08-14T05:53:52.021962Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8063,7 +8063,7 @@
         "osm_ids": [
           "way/230372383"
         ],
-        "updated_at": "2025-08-14T05:08:00.500453Z"
+        "updated_at": "2025-08-14T05:53:52.023450Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8166,7 +8166,7 @@
         "osm_ids": [
           "way/230372386"
         ],
-        "updated_at": "2025-08-14T05:08:00.500949Z"
+        "updated_at": "2025-08-14T05:53:52.023946Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8269,7 +8269,7 @@
         "osm_ids": [
           "way/230372387"
         ],
-        "updated_at": "2025-08-14T05:08:00.501445Z"
+        "updated_at": "2025-08-14T05:53:52.024441Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8380,7 +8380,7 @@
         "osm_ids": [
           "way/230372388"
         ],
-        "updated_at": "2025-08-14T05:08:00.501941Z"
+        "updated_at": "2025-08-14T05:53:52.024937Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8485,7 +8485,7 @@
         "osm_ids": [
           "way/230758444"
         ],
-        "updated_at": "2025-08-14T05:08:00.502437Z"
+        "updated_at": "2025-08-14T05:53:52.025433Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8532,7 +8532,7 @@
         "osm_ids": [
           "way/230758446"
         ],
-        "updated_at": "2025-08-14T05:08:00.502933Z"
+        "updated_at": "2025-08-14T05:53:52.025929Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8645,7 +8645,7 @@
         "osm_ids": [
           "way/230758451"
         ],
-        "updated_at": "2025-08-14T05:08:00.503429Z"
+        "updated_at": "2025-08-14T05:53:52.026425Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8736,7 +8736,7 @@
         "osm_ids": [
           "way/230758455"
         ],
-        "updated_at": "2025-08-14T05:08:00.503925Z"
+        "updated_at": "2025-08-14T05:53:52.026921Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8807,7 +8807,7 @@
         "osm_ids": [
           "way/230800856"
         ],
-        "updated_at": "2025-08-14T05:08:00.504421Z"
+        "updated_at": "2025-08-14T05:53:52.027417Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8882,7 +8882,7 @@
         "osm_ids": [
           "way/231035247"
         ],
-        "updated_at": "2025-08-14T05:08:00.504917Z"
+        "updated_at": "2025-08-14T05:53:52.027913Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -8977,7 +8977,7 @@
         "osm_ids": [
           "way/231967244"
         ],
-        "updated_at": "2025-08-14T05:08:00.505413Z"
+        "updated_at": "2025-08-14T05:53:52.028409Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9040,7 +9040,7 @@
         "osm_ids": [
           "way/231967266"
         ],
-        "updated_at": "2025-08-14T05:08:00.505909Z"
+        "updated_at": "2025-08-14T05:53:52.028905Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9143,7 +9143,7 @@
         "osm_ids": [
           "way/231967283"
         ],
-        "updated_at": "2025-08-14T05:08:00.506405Z"
+        "updated_at": "2025-08-14T05:53:52.029401Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9230,7 +9230,7 @@
         "osm_ids": [
           "way/231967287"
         ],
-        "updated_at": "2025-08-14T05:08:00.506901Z"
+        "updated_at": "2025-08-14T05:53:52.029401Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9309,7 +9309,7 @@
         "osm_ids": [
           "way/231967303"
         ],
-        "updated_at": "2025-08-14T05:08:00.507397Z"
+        "updated_at": "2025-08-14T05:53:52.029897Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9428,7 +9428,7 @@
         "osm_ids": [
           "way/232480959"
         ],
-        "updated_at": "2025-08-14T05:08:00.507893Z"
+        "updated_at": "2025-08-14T05:53:52.030393Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9511,7 +9511,7 @@
         "osm_ids": [
           "way/232480963"
         ],
-        "updated_at": "2025-08-14T05:08:00.508389Z"
+        "updated_at": "2025-08-14T05:53:52.030889Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9558,7 +9558,7 @@
         "osm_ids": [
           "way/232683311"
         ],
-        "updated_at": "2025-08-14T05:08:00.508885Z"
+        "updated_at": "2025-08-14T05:53:52.031881Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9653,7 +9653,7 @@
         "osm_ids": [
           "way/232683314"
         ],
-        "updated_at": "2025-08-14T05:08:00.509381Z"
+        "updated_at": "2025-08-14T05:53:52.032378Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9700,7 +9700,7 @@
         "osm_ids": [
           "way/293613409"
         ],
-        "updated_at": "2025-08-14T05:08:00.509877Z"
+        "updated_at": "2025-08-14T05:53:52.032904Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9755,7 +9755,7 @@
         "osm_ids": [
           "way/293613414"
         ],
-        "updated_at": "2025-08-14T05:08:00.510373Z"
+        "updated_at": "2025-08-14T05:53:52.033369Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9910,7 +9910,7 @@
         "osm_ids": [
           "way/293613415"
         ],
-        "updated_at": "2025-08-14T05:08:00.510869Z"
+        "updated_at": "2025-08-14T05:53:52.033865Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -9973,7 +9973,7 @@
         "osm_ids": [
           "way/309135537"
         ],
-        "updated_at": "2025-08-14T05:08:00.511365Z"
+        "updated_at": "2025-08-14T05:53:52.034361Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10024,7 +10024,7 @@
         "osm_ids": [
           "way/391131941"
         ],
-        "updated_at": "2025-08-14T05:08:00.511861Z"
+        "updated_at": "2025-08-14T05:53:52.034856Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10071,7 +10071,7 @@
         "osm_ids": [
           "way/407528998"
         ],
-        "updated_at": "2025-08-14T05:08:00.512357Z"
+        "updated_at": "2025-08-14T05:53:52.035353Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10214,7 +10214,7 @@
         "osm_ids": [
           "way/422242496"
         ],
-        "updated_at": "2025-08-14T05:08:00.514838Z"
+        "updated_at": "2025-08-14T05:53:52.035848Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10309,7 +10309,7 @@
         "osm_ids": [
           "way/422242502"
         ],
-        "updated_at": "2025-08-14T05:08:00.515830Z"
+        "updated_at": "2025-08-14T05:53:52.036345Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10404,7 +10404,7 @@
         "osm_ids": [
           "way/422245342"
         ],
-        "updated_at": "2025-08-14T05:08:00.516327Z"
+        "updated_at": "2025-08-14T05:53:52.036841Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10483,7 +10483,7 @@
         "osm_ids": [
           "way/422245375"
         ],
-        "updated_at": "2025-08-14T05:08:00.516822Z"
+        "updated_at": "2025-08-14T05:53:52.037338Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10554,7 +10554,7 @@
         "osm_ids": [
           "way/422245394"
         ],
-        "updated_at": "2025-08-14T05:08:00.517318Z"
+        "updated_at": "2025-08-14T05:53:52.038331Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10649,7 +10649,7 @@
         "osm_ids": [
           "way/422245481"
         ],
-        "updated_at": "2025-08-14T05:08:00.517814Z"
+        "updated_at": "2025-08-14T05:53:52.038826Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10752,7 +10752,7 @@
         "osm_ids": [
           "way/422245517"
         ],
-        "updated_at": "2025-08-14T05:08:00.518310Z"
+        "updated_at": "2025-08-14T05:53:52.039322Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10871,7 +10871,7 @@
         "osm_ids": [
           "way/422245544"
         ],
-        "updated_at": "2025-08-14T05:08:00.518806Z"
+        "updated_at": "2025-08-14T05:53:52.039818Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -10998,7 +10998,7 @@
         "osm_ids": [
           "way/422245573"
         ],
-        "updated_at": "2025-08-14T05:08:00.519798Z"
+        "updated_at": "2025-08-14T05:53:52.040811Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -11101,7 +11101,7 @@
         "osm_ids": [
           "way/422245580"
         ],
-        "updated_at": "2025-08-14T05:08:00.520294Z"
+        "updated_at": "2025-08-14T05:53:52.041802Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -11230,7 +11230,7 @@
         "osm_ids": [
           "way/422260003"
         ],
-        "updated_at": "2025-08-14T05:08:00.520790Z"
+        "updated_at": "2025-08-14T05:53:52.042298Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -11317,7 +11317,7 @@
         "osm_ids": [
           "way/422876517"
         ],
-        "updated_at": "2025-08-14T05:08:00.521781Z"
+        "updated_at": "2025-08-14T05:53:52.042794Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -11440,7 +11440,7 @@
         "osm_ids": [
           "way/422876518"
         ],
-        "updated_at": "2025-08-14T05:08:00.522277Z"
+        "updated_at": "2025-08-14T05:53:52.043289Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -11619,7 +11619,7 @@
         "osm_ids": [
           "way/422876520"
         ],
-        "updated_at": "2025-08-14T05:08:00.522774Z"
+        "updated_at": "2025-08-14T05:53:52.043785Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -11690,7 +11690,7 @@
         "osm_ids": [
           "way/422876521"
         ],
-        "updated_at": "2025-08-14T05:08:00.523296Z"
+        "updated_at": "2025-08-14T05:53:52.044308Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -11745,7 +11745,7 @@
         "osm_ids": [
           "way/422876522"
         ],
-        "updated_at": "2025-08-14T05:08:00.523765Z"
+        "updated_at": "2025-08-14T05:53:52.044871Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -11882,7 +11882,7 @@
         "osm_ids": [
           "way/422876523"
         ],
-        "updated_at": "2025-08-14T05:08:00.524288Z"
+        "updated_at": "2025-08-14T05:53:52.045302Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -11989,7 +11989,7 @@
         "osm_ids": [
           "way/422876524"
         ],
-        "updated_at": "2025-08-14T05:08:00.525284Z"
+        "updated_at": "2025-08-14T05:53:52.045796Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -12052,7 +12052,7 @@
         "osm_ids": [
           "way/422876525"
         ],
-        "updated_at": "2025-08-14T05:08:00.525776Z"
+        "updated_at": "2025-08-14T05:53:52.046295Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -12507,7 +12507,7 @@
         "osm_ids": [
           "way/422876526"
         ],
-        "updated_at": "2025-08-14T05:08:00.526770Z"
+        "updated_at": "2025-08-14T05:53:52.047257Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -12890,7 +12890,7 @@
         "osm_ids": [
           "way/422876529"
         ],
-        "updated_at": "2025-08-14T05:08:00.527265Z"
+        "updated_at": "2025-08-14T05:53:52.048249Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -13149,7 +13149,7 @@
         "osm_ids": [
           "way/422876531"
         ],
-        "updated_at": "2025-08-14T05:08:00.528256Z"
+        "updated_at": "2025-08-14T05:53:52.048745Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -13244,7 +13244,7 @@
         "osm_ids": [
           "way/422876532"
         ],
-        "updated_at": "2025-08-14T05:08:00.528752Z"
+        "updated_at": "2025-08-14T05:53:52.049241Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -13339,7 +13339,7 @@
         "osm_ids": [
           "way/422876533"
         ],
-        "updated_at": "2025-08-14T05:08:00.529221Z"
+        "updated_at": "2025-08-14T05:53:52.049737Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -13386,7 +13386,7 @@
         "osm_ids": [
           "way/422876534"
         ],
-        "updated_at": "2025-08-14T05:08:00.531701Z"
+        "updated_at": "2025-08-14T05:53:52.050233Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -13543,7 +13543,7 @@
         "osm_ids": [
           "way/422876535"
         ],
-        "updated_at": "2025-08-14T05:08:00.533189Z"
+        "updated_at": "2025-08-14T05:53:52.050233Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -13606,7 +13606,7 @@
         "osm_ids": [
           "way/422876536"
         ],
-        "updated_at": "2025-08-14T05:08:00.533685Z"
+        "updated_at": "2025-08-14T05:53:52.050729Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -13709,7 +13709,7 @@
         "osm_ids": [
           "way/422876537"
         ],
-        "updated_at": "2025-08-14T05:08:00.534181Z"
+        "updated_at": "2025-08-14T05:53:52.051225Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -13886,7 +13886,7 @@
         "osm_ids": [
           "way/422876538"
         ],
-        "updated_at": "2025-08-14T05:08:00.535172Z"
+        "updated_at": "2025-08-14T05:53:52.051721Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -13981,7 +13981,7 @@
         "osm_ids": [
           "way/422876539"
         ],
-        "updated_at": "2025-08-14T05:08:00.535669Z"
+        "updated_at": "2025-08-14T05:53:52.052217Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -14092,7 +14092,7 @@
         "osm_ids": [
           "way/422876540"
         ],
-        "updated_at": "2025-08-14T05:08:00.536164Z"
+        "updated_at": "2025-08-14T05:53:52.052713Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -14311,7 +14311,7 @@
         "osm_ids": [
           "way/422876541"
         ],
-        "updated_at": "2025-08-14T05:08:00.536660Z"
+        "updated_at": "2025-08-14T05:53:52.053209Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -14418,7 +14418,7 @@
         "osm_ids": [
           "way/422876542"
         ],
-        "updated_at": "2025-08-14T05:08:00.537156Z"
+        "updated_at": "2025-08-14T05:53:52.053705Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -14571,7 +14571,7 @@
         "osm_ids": [
           "way/422876543"
         ],
-        "updated_at": "2025-08-14T05:08:00.537652Z"
+        "updated_at": "2025-08-14T05:53:52.054201Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -14618,7 +14618,7 @@
         "osm_ids": [
           "way/422876544"
         ],
-        "updated_at": "2025-08-14T05:08:00.538148Z"
+        "updated_at": "2025-08-14T05:53:52.055691Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -14721,7 +14721,7 @@
         "osm_ids": [
           "way/422876545"
         ],
-        "updated_at": "2025-08-14T05:08:00.538645Z"
+        "updated_at": "2025-08-14T05:53:52.056683Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -14916,7 +14916,7 @@
         "osm_ids": [
           "way/422876549"
         ],
-        "updated_at": "2025-08-14T05:08:00.539140Z"
+        "updated_at": "2025-08-14T05:53:52.057674Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -14975,7 +14975,7 @@
         "osm_ids": [
           "way/422876552"
         ],
-        "updated_at": "2025-08-14T05:08:00.539636Z"
+        "updated_at": "2025-08-14T05:53:52.058170Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15122,7 +15122,7 @@
         "osm_ids": [
           "way/422876557"
         ],
-        "updated_at": "2025-08-14T05:08:00.540628Z"
+        "updated_at": "2025-08-14T05:53:52.058666Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15317,7 +15317,7 @@
         "osm_ids": [
           "way/422876563"
         ],
-        "updated_at": "2025-08-14T05:08:00.541124Z"
+        "updated_at": "2025-08-14T05:53:52.059161Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15452,7 +15452,7 @@
         "osm_ids": [
           "way/422876565"
         ],
-        "updated_at": "2025-08-14T05:08:00.541621Z"
+        "updated_at": "2025-08-14T05:53:52.059658Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15499,7 +15499,7 @@
         "osm_ids": [
           "way/422876566"
         ],
-        "updated_at": "2025-08-14T05:08:00.542116Z"
+        "updated_at": "2025-08-14T05:53:52.060180Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15602,7 +15602,7 @@
         "osm_ids": [
           "way/422876567"
         ],
-        "updated_at": "2025-08-14T05:08:00.542612Z"
+        "updated_at": "2025-08-14T05:53:52.060677Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15665,7 +15665,7 @@
         "osm_ids": [
           "way/422876568"
         ],
-        "updated_at": "2025-08-14T05:08:00.543108Z"
+        "updated_at": "2025-08-14T05:53:52.061173Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15770,7 +15770,7 @@
         "osm_ids": [
           "way/422876569"
         ],
-        "updated_at": "2025-08-14T05:08:00.543604Z"
+        "updated_at": "2025-08-14T05:53:52.061669Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15841,7 +15841,7 @@
         "osm_ids": [
           "way/422876570"
         ],
-        "updated_at": "2025-08-14T05:08:00.544100Z"
+        "updated_at": "2025-08-14T05:53:52.062634Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -15984,7 +15984,7 @@
         "osm_ids": [
           "way/422876571"
         ],
-        "updated_at": "2025-08-14T05:08:00.544596Z"
+        "updated_at": "2025-08-14T05:53:52.063156Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -16155,7 +16155,7 @@
         "osm_ids": [
           "way/422876572"
         ],
-        "updated_at": "2025-08-14T05:08:00.545092Z"
+        "updated_at": "2025-08-14T05:53:52.063653Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -16354,7 +16354,7 @@
         "osm_ids": [
           "way/422876573"
         ],
-        "updated_at": "2025-08-14T05:08:00.546084Z"
+        "updated_at": "2025-08-14T05:53:52.064149Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -16401,7 +16401,7 @@
         "osm_ids": [
           "way/422876574"
         ],
-        "updated_at": "2025-08-14T05:08:00.547078Z"
+        "updated_at": "2025-08-14T05:53:52.064149Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -16506,7 +16506,7 @@
         "osm_ids": [
           "way/422876575"
         ],
-        "updated_at": "2025-08-14T05:08:00.547574Z"
+        "updated_at": "2025-08-14T05:53:52.064644Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -16660,7 +16660,7 @@
         "osm_ids": [
           "way/422876576"
         ],
-        "updated_at": "2025-08-14T05:08:00.548566Z"
+        "updated_at": "2025-08-14T05:53:52.065140Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -16731,7 +16731,7 @@
         "osm_ids": [
           "way/422876577"
         ],
-        "updated_at": "2025-08-14T05:08:00.549061Z"
+        "updated_at": "2025-08-14T05:53:52.065636Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -16854,7 +16854,7 @@
         "osm_ids": [
           "way/422876578"
         ],
-        "updated_at": "2025-08-14T05:08:00.549584Z"
+        "updated_at": "2025-08-14T05:53:52.066134Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -16995,7 +16995,7 @@
         "osm_ids": [
           "way/422876579"
         ],
-        "updated_at": "2025-08-14T05:08:00.550054Z"
+        "updated_at": "2025-08-14T05:53:52.066628Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -17086,7 +17086,7 @@
         "osm_ids": [
           "way/422876580"
         ],
-        "updated_at": "2025-08-14T05:08:00.550550Z"
+        "updated_at": "2025-08-14T05:53:52.067124Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -17205,7 +17205,7 @@
         "osm_ids": [
           "way/422876581"
         ],
-        "updated_at": "2025-08-14T05:08:00.551541Z"
+        "updated_at": "2025-08-14T05:53:52.067617Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -17520,7 +17520,7 @@
         "osm_ids": [
           "way/422876582"
         ],
-        "updated_at": "2025-08-14T05:08:00.552037Z"
+        "updated_at": "2025-08-14T05:53:52.068116Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -17575,7 +17575,7 @@
         "osm_ids": [
           "way/422876583"
         ],
-        "updated_at": "2025-08-14T05:08:00.552560Z"
+        "updated_at": "2025-08-14T05:53:52.068612Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -17646,7 +17646,7 @@
         "osm_ids": [
           "way/422876584"
         ],
-        "updated_at": "2025-08-14T05:08:00.553057Z"
+        "updated_at": "2025-08-14T05:53:52.069109Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -17709,7 +17709,7 @@
         "osm_ids": [
           "way/422876586"
         ],
-        "updated_at": "2025-08-14T05:08:00.553552Z"
+        "updated_at": "2025-08-14T05:53:52.069604Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -17772,7 +17772,7 @@
         "osm_ids": [
           "way/422876587"
         ],
-        "updated_at": "2025-08-14T05:08:00.554048Z"
+        "updated_at": "2025-08-14T05:53:52.070100Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -17859,7 +17859,7 @@
         "osm_ids": [
           "way/422876588"
         ],
-        "updated_at": "2025-08-14T05:08:00.554546Z"
+        "updated_at": "2025-08-14T05:53:52.070100Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -17958,7 +17958,7 @@
         "osm_ids": [
           "way/422876589"
         ],
-        "updated_at": "2025-08-14T05:08:00.555042Z"
+        "updated_at": "2025-08-14T05:53:52.070596Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18021,7 +18021,7 @@
         "osm_ids": [
           "way/422876590"
         ],
-        "updated_at": "2025-08-14T05:08:00.555536Z"
+        "updated_at": "2025-08-14T05:53:52.071561Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18184,7 +18184,7 @@
         "osm_ids": [
           "way/422876593"
         ],
-        "updated_at": "2025-08-14T05:08:00.556031Z"
+        "updated_at": "2025-08-14T05:53:52.072555Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18231,7 +18231,7 @@
         "osm_ids": [
           "way/422876594"
         ],
-        "updated_at": "2025-08-14T05:08:00.556528Z"
+        "updated_at": "2025-08-14T05:53:52.073050Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18406,7 +18406,7 @@
         "osm_ids": [
           "way/422876595"
         ],
-        "updated_at": "2025-08-14T05:08:00.557024Z"
+        "updated_at": "2025-08-14T05:53:52.073545Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18497,7 +18497,7 @@
         "osm_ids": [
           "way/422876596"
         ],
-        "updated_at": "2025-08-14T05:08:00.557520Z"
+        "updated_at": "2025-08-14T05:53:52.074042Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18600,7 +18600,7 @@
         "osm_ids": [
           "way/422876597"
         ],
-        "updated_at": "2025-08-14T05:08:00.558015Z"
+        "updated_at": "2025-08-14T05:53:52.074537Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18647,7 +18647,7 @@
         "osm_ids": [
           "way/422876598"
         ],
-        "updated_at": "2025-08-14T05:08:00.558514Z"
+        "updated_at": "2025-08-14T05:53:52.075060Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18758,7 +18758,7 @@
         "osm_ids": [
           "way/422876599"
         ],
-        "updated_at": "2025-08-14T05:08:00.559008Z"
+        "updated_at": "2025-08-14T05:53:52.075556Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -18889,7 +18889,7 @@
         "osm_ids": [
           "way/422876600"
         ],
-        "updated_at": "2025-08-14T05:08:00.560000Z"
+        "updated_at": "2025-08-14T05:53:52.076052Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -19064,7 +19064,7 @@
         "osm_ids": [
           "way/422876601"
         ],
-        "updated_at": "2025-08-14T05:08:00.560496Z"
+        "updated_at": "2025-08-14T05:53:52.077024Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -19195,7 +19195,7 @@
         "osm_ids": [
           "way/422876602"
         ],
-        "updated_at": "2025-08-14T05:08:00.560991Z"
+        "updated_at": "2025-08-14T05:53:52.077540Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -19430,7 +19430,7 @@
         "osm_ids": [
           "way/422876603"
         ],
-        "updated_at": "2025-08-14T05:08:00.561984Z"
+        "updated_at": "2025-08-14T05:53:52.078506Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -19523,7 +19523,7 @@
         "osm_ids": [
           "way/422876610"
         ],
-        "updated_at": "2025-08-14T05:08:00.562481Z"
+        "updated_at": "2025-08-14T05:53:52.079002Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -19718,7 +19718,7 @@
         "osm_ids": [
           "way/422876611"
         ],
-        "updated_at": "2025-08-14T05:08:00.563446Z"
+        "updated_at": "2025-08-14T05:53:52.079498Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -19901,7 +19901,7 @@
         "osm_ids": [
           "way/422876613"
         ],
-        "updated_at": "2025-08-14T05:08:00.564437Z"
+        "updated_at": "2025-08-14T05:53:52.079993Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -19980,7 +19980,7 @@
         "osm_ids": [
           "way/422876614"
         ],
-        "updated_at": "2025-08-14T05:08:00.565429Z"
+        "updated_at": "2025-08-14T05:53:52.080516Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -20139,7 +20139,7 @@
         "osm_ids": [
           "way/422876615"
         ],
-        "updated_at": "2025-08-14T05:08:00.565925Z"
+        "updated_at": "2025-08-14T05:53:52.081012Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -20234,7 +20234,7 @@
         "osm_ids": [
           "way/422876616"
         ],
-        "updated_at": "2025-08-14T05:08:00.566422Z"
+        "updated_at": "2025-08-14T05:53:52.081508Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -20333,7 +20333,7 @@
         "osm_ids": [
           "way/422876617"
         ],
-        "updated_at": "2025-08-14T05:08:00.567439Z"
+        "updated_at": "2025-08-14T05:53:52.082005Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -20484,7 +20484,7 @@
         "osm_ids": [
           "way/422876618"
         ],
-        "updated_at": "2025-08-14T05:08:00.567935Z"
+        "updated_at": "2025-08-14T05:53:52.082501Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -20595,7 +20595,7 @@
         "osm_ids": [
           "way/422876619"
         ],
-        "updated_at": "2025-08-14T05:08:00.568405Z"
+        "updated_at": "2025-08-14T05:53:52.082996Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -20682,7 +20682,7 @@
         "osm_ids": [
           "way/422876620"
         ],
-        "updated_at": "2025-08-14T05:08:00.568929Z"
+        "updated_at": "2025-08-14T05:53:52.082996Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -20737,7 +20737,7 @@
         "osm_ids": [
           "way/422876621"
         ],
-        "updated_at": "2025-08-14T05:08:00.569423Z"
+        "updated_at": "2025-08-14T05:53:52.083489Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -20808,7 +20808,7 @@
         "osm_ids": [
           "way/422876622"
         ],
-        "updated_at": "2025-08-14T05:08:00.569920Z"
+        "updated_at": "2025-08-14T05:53:52.083991Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21013,7 +21013,7 @@
         "osm_ids": [
           "way/422876623"
         ],
-        "updated_at": "2025-08-14T05:08:00.570418Z"
+        "updated_at": "2025-08-14T05:53:52.084488Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21211,7 +21211,7 @@
         "osm_ids": [
           "way/422876624"
         ],
-        "updated_at": "2025-08-14T05:08:00.571408Z"
+        "updated_at": "2025-08-14T05:53:52.084980Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21274,7 +21274,7 @@
         "osm_ids": [
           "way/422876625"
         ],
-        "updated_at": "2025-08-14T05:08:00.571903Z"
+        "updated_at": "2025-08-14T05:53:52.085476Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21377,7 +21377,7 @@
         "osm_ids": [
           "way/422876626"
         ],
-        "updated_at": "2025-08-14T05:08:00.572399Z"
+        "updated_at": "2025-08-14T05:53:52.085972Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21492,7 +21492,7 @@
         "osm_ids": [
           "way/422876627"
         ],
-        "updated_at": "2025-08-14T05:08:00.572896Z"
+        "updated_at": "2025-08-14T05:53:52.086468Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21647,7 +21647,7 @@
         "osm_ids": [
           "way/422876628"
         ],
-        "updated_at": "2025-08-14T05:08:00.573395Z"
+        "updated_at": "2025-08-14T05:53:52.086964Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21774,7 +21774,7 @@
         "osm_ids": [
           "way/422876629"
         ],
-        "updated_at": "2025-08-14T05:08:00.573899Z"
+        "updated_at": "2025-08-14T05:53:52.087462Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -21981,7 +21981,7 @@
         "osm_ids": [
           "way/422876630"
         ],
-        "updated_at": "2025-08-14T05:08:00.574386Z"
+        "updated_at": "2025-08-14T05:53:52.088426Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -22200,7 +22200,7 @@
         "osm_ids": [
           "way/422876631"
         ],
-        "updated_at": "2025-08-14T05:08:00.575387Z"
+        "updated_at": "2025-08-14T05:53:52.089418Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -22335,7 +22335,7 @@
         "osm_ids": [
           "way/422876632"
         ],
-        "updated_at": "2025-08-14T05:08:00.575872Z"
+        "updated_at": "2025-08-14T05:53:52.089913Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -22606,7 +22606,7 @@
         "osm_ids": [
           "way/422876633"
         ],
-        "updated_at": "2025-08-14T05:08:00.576863Z"
+        "updated_at": "2025-08-14T05:53:52.090932Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -22709,7 +22709,7 @@
         "osm_ids": [
           "way/422876634"
         ],
-        "updated_at": "2025-08-14T05:08:00.577334Z"
+        "updated_at": "2025-08-14T05:53:52.090932Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -22820,7 +22820,7 @@
         "osm_ids": [
           "way/422876635"
         ],
-        "updated_at": "2025-08-14T05:08:00.577830Z"
+        "updated_at": "2025-08-14T05:53:52.091431Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -23011,7 +23011,7 @@
         "osm_ids": [
           "way/422876636"
         ],
-        "updated_at": "2025-08-14T05:08:00.578821Z"
+        "updated_at": "2025-08-14T05:53:52.092393Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -23274,7 +23274,7 @@
         "osm_ids": [
           "way/422876637"
         ],
-        "updated_at": "2025-08-14T05:08:00.579345Z"
+        "updated_at": "2025-08-14T05:53:52.092918Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -23585,7 +23585,7 @@
         "osm_ids": [
           "way/422876638"
         ],
-        "updated_at": "2025-08-14T05:08:00.580805Z"
+        "updated_at": "2025-08-14T05:53:52.093881Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -23936,7 +23936,7 @@
         "osm_ids": [
           "way/422876640"
         ],
-        "updated_at": "2025-08-14T05:08:00.581798Z"
+        "updated_at": "2025-08-14T05:53:52.094400Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24153,7 +24153,7 @@
         "osm_ids": [
           "way/422876641"
         ],
-        "updated_at": "2025-08-14T05:08:00.582816Z"
+        "updated_at": "2025-08-14T05:53:52.094899Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24240,7 +24240,7 @@
         "osm_ids": [
           "way/422876642"
         ],
-        "updated_at": "2025-08-14T05:08:00.583312Z"
+        "updated_at": "2025-08-14T05:53:52.095393Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24351,7 +24351,7 @@
         "osm_ids": [
           "way/422876643"
         ],
-        "updated_at": "2025-08-14T05:08:00.583781Z"
+        "updated_at": "2025-08-14T05:53:52.095867Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24458,7 +24458,7 @@
         "osm_ids": [
           "way/422876644"
         ],
-        "updated_at": "2025-08-14T05:08:00.584303Z"
+        "updated_at": "2025-08-14T05:53:52.096384Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24521,7 +24521,7 @@
         "osm_ids": [
           "way/422876645"
         ],
-        "updated_at": "2025-08-14T05:08:00.584796Z"
+        "updated_at": "2025-08-14T05:53:52.096384Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24616,7 +24616,7 @@
         "osm_ids": [
           "way/422876647"
         ],
-        "updated_at": "2025-08-14T05:08:00.585296Z"
+        "updated_at": "2025-08-14T05:53:52.097353Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -24895,7 +24895,7 @@
         "osm_ids": [
           "way/422876648"
         ],
-        "updated_at": "2025-08-14T05:08:00.586290Z"
+        "updated_at": "2025-08-14T05:53:52.097849Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -25286,7 +25286,7 @@
         "osm_ids": [
           "way/422876649"
         ],
-        "updated_at": "2025-08-14T05:08:00.586783Z"
+        "updated_at": "2025-08-14T05:53:52.098346Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -25365,7 +25365,7 @@
         "osm_ids": [
           "way/422876650"
         ],
-        "updated_at": "2025-08-14T05:08:00.587279Z"
+        "updated_at": "2025-08-14T05:53:52.098864Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -25446,7 +25446,7 @@
         "osm_ids": [
           "way/422876651"
         ],
-        "updated_at": "2025-08-14T05:08:00.587776Z"
+        "updated_at": "2025-08-14T05:53:52.099362Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -25551,7 +25551,7 @@
         "osm_ids": [
           "way/422876652"
         ],
-        "updated_at": "2025-08-14T05:08:00.588271Z"
+        "updated_at": "2025-08-14T05:53:52.099856Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -25638,7 +25638,7 @@
         "osm_ids": [
           "way/422876653"
         ],
-        "updated_at": "2025-08-14T05:08:00.588767Z"
+        "updated_at": "2025-08-14T05:53:52.100331Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -25741,7 +25741,7 @@
         "osm_ids": [
           "way/422876654"
         ],
-        "updated_at": "2025-08-14T05:08:00.589263Z"
+        "updated_at": "2025-08-14T05:53:52.100331Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -25788,7 +25788,7 @@
         "osm_ids": [
           "way/422876655"
         ],
-        "updated_at": "2025-08-14T05:08:00.589733Z"
+        "updated_at": "2025-08-14T05:53:52.100849Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -25951,7 +25951,7 @@
         "osm_ids": [
           "way/422876656"
         ],
-        "updated_at": "2025-08-14T05:08:00.590258Z"
+        "updated_at": "2025-08-14T05:53:52.101321Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26052,7 +26052,7 @@
         "osm_ids": [
           "way/422876660"
         ],
-        "updated_at": "2025-08-14T05:08:00.591249Z"
+        "updated_at": "2025-08-14T05:53:52.101817Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26151,7 +26151,7 @@
         "osm_ids": [
           "way/422876661"
         ],
-        "updated_at": "2025-08-14T05:08:00.591744Z"
+        "updated_at": "2025-08-14T05:53:52.102313Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26246,7 +26246,7 @@
         "osm_ids": [
           "way/422876662"
         ],
-        "updated_at": "2025-08-14T05:08:00.592240Z"
+        "updated_at": "2025-08-14T05:53:52.102809Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26369,7 +26369,7 @@
         "osm_ids": [
           "way/422876664"
         ],
-        "updated_at": "2025-08-14T05:08:00.593206Z"
+        "updated_at": "2025-08-14T05:53:52.103305Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26544,7 +26544,7 @@
         "osm_ids": [
           "way/422876680"
         ],
-        "updated_at": "2025-08-14T05:08:00.595685Z"
+        "updated_at": "2025-08-14T05:53:52.106281Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26591,7 +26591,7 @@
         "osm_ids": [
           "way/422876683"
         ],
-        "updated_at": "2025-08-14T05:08:00.598166Z"
+        "updated_at": "2025-08-14T05:53:52.107274Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26638,7 +26638,7 @@
         "osm_ids": [
           "way/422876694"
         ],
-        "updated_at": "2025-08-14T05:08:00.599653Z"
+        "updated_at": "2025-08-14T05:53:52.109285Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26685,7 +26685,7 @@
         "osm_ids": [
           "way/422876709"
         ],
-        "updated_at": "2025-08-14T05:08:00.601167Z"
+        "updated_at": "2025-08-14T05:53:52.110769Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26740,7 +26740,7 @@
         "osm_ids": [
           "way/422876710"
         ],
-        "updated_at": "2025-08-14T05:08:00.601637Z"
+        "updated_at": "2025-08-14T05:53:52.110769Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26795,7 +26795,7 @@
         "osm_ids": [
           "way/422876715"
         ],
-        "updated_at": "2025-08-14T05:08:00.602162Z"
+        "updated_at": "2025-08-14T05:53:52.111737Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26898,7 +26898,7 @@
         "osm_ids": [
           "way/422876720"
         ],
-        "updated_at": "2025-08-14T05:08:00.603151Z"
+        "updated_at": "2025-08-14T05:53:52.112729Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -26953,7 +26953,7 @@
         "osm_ids": [
           "way/422876723"
         ],
-        "updated_at": "2025-08-14T05:08:00.603647Z"
+        "updated_at": "2025-08-14T05:53:52.113225Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27016,7 +27016,7 @@
         "osm_ids": [
           "way/422876725"
         ],
-        "updated_at": "2025-08-14T05:08:00.604143Z"
+        "updated_at": "2025-08-14T05:53:52.113745Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27063,7 +27063,7 @@
         "osm_ids": [
           "way/422876726"
         ],
-        "updated_at": "2025-08-14T05:08:00.604640Z"
+        "updated_at": "2025-08-14T05:53:52.114240Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27126,7 +27126,7 @@
         "osm_ids": [
           "way/422876727"
         ],
-        "updated_at": "2025-08-14T05:08:00.605136Z"
+        "updated_at": "2025-08-14T05:53:52.114714Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27189,7 +27189,7 @@
         "osm_ids": [
           "way/422876728"
         ],
-        "updated_at": "2025-08-14T05:08:00.605632Z"
+        "updated_at": "2025-08-14T05:53:52.114714Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27248,7 +27248,7 @@
         "osm_ids": [
           "way/425181695"
         ],
-        "updated_at": "2025-08-14T05:08:00.606130Z"
+        "updated_at": "2025-08-14T05:53:52.115234Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27363,7 +27363,7 @@
         "osm_ids": [
           "way/425181716"
         ],
-        "updated_at": "2025-08-14T05:08:00.606623Z"
+        "updated_at": "2025-08-14T05:53:52.115728Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27418,7 +27418,7 @@
         "osm_ids": [
           "way/425246943"
         ],
-        "updated_at": "2025-08-14T05:08:00.607121Z"
+        "updated_at": "2025-08-14T05:53:52.116224Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27493,7 +27493,7 @@
         "osm_ids": [
           "way/425246945"
         ],
-        "updated_at": "2025-08-14T05:08:00.607615Z"
+        "updated_at": "2025-08-14T05:53:52.117216Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27572,7 +27572,7 @@
         "osm_ids": [
           "way/425246946"
         ],
-        "updated_at": "2025-08-14T05:08:00.608086Z"
+        "updated_at": "2025-08-14T05:53:52.117719Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27667,7 +27667,7 @@
         "osm_ids": [
           "way/425246947"
         ],
-        "updated_at": "2025-08-14T05:08:00.608612Z"
+        "updated_at": "2025-08-14T05:53:52.118185Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27754,7 +27754,7 @@
         "osm_ids": [
           "way/425246948"
         ],
-        "updated_at": "2025-08-14T05:08:00.609103Z"
+        "updated_at": "2025-08-14T05:53:52.118681Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27849,7 +27849,7 @@
         "osm_ids": [
           "way/425246949"
         ],
-        "updated_at": "2025-08-14T05:08:00.609103Z"
+        "updated_at": "2025-08-14T05:53:52.119178Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27944,7 +27944,7 @@
         "osm_ids": [
           "way/425246956"
         ],
-        "updated_at": "2025-08-14T05:08:00.610096Z"
+        "updated_at": "2025-08-14T05:53:52.119673Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -27991,7 +27991,7 @@
         "osm_ids": [
           "way/425246961"
         ],
-        "updated_at": "2025-08-14T05:08:00.610592Z"
+        "updated_at": "2025-08-14T05:53:52.120170Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -28182,7 +28182,7 @@
         "osm_ids": [
           "way/425246966"
         ],
-        "updated_at": "2025-08-14T05:08:00.611089Z"
+        "updated_at": "2025-08-14T05:53:52.120665Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -28429,7 +28429,7 @@
         "osm_ids": [
           "way/443668560"
         ],
-        "updated_at": "2025-08-14T05:08:00.612080Z"
+        "updated_at": "2025-08-14T05:53:52.123642Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -28476,7 +28476,7 @@
         "osm_ids": [
           "way/443668561"
         ],
-        "updated_at": "2025-08-14T05:08:00.612578Z"
+        "updated_at": "2025-08-14T05:53:52.124137Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -28523,7 +28523,7 @@
         "osm_ids": [
           "way/443668571"
         ],
-        "updated_at": "2025-08-14T05:08:00.613045Z"
+        "updated_at": "2025-08-14T05:53:52.124634Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -28594,7 +28594,7 @@
         "osm_ids": [
           "way/480267381"
         ],
-        "updated_at": "2025-08-14T05:08:00.615526Z"
+        "updated_at": "2025-08-14T05:53:52.125129Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -28657,7 +28657,7 @@
         "osm_ids": [
           "way/480267382"
         ],
-        "updated_at": "2025-08-14T05:08:00.616021Z"
+        "updated_at": "2025-08-14T05:53:52.125625Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -28700,7 +28700,7 @@
         "osm_ids": [
           "way/521902202"
         ],
-        "updated_at": "2025-08-14T05:08:00.616518Z"
+        "updated_at": "2025-08-14T05:53:52.126148Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -28747,7 +28747,7 @@
         "osm_ids": [
           "way/546510989"
         ],
-        "updated_at": "2025-08-14T05:08:00.617039Z"
+        "updated_at": "2025-08-14T05:53:52.126644Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -28810,7 +28810,7 @@
         "osm_ids": [
           "way/590011366"
         ],
-        "updated_at": "2025-08-14T05:08:00.618034Z"
+        "updated_at": "2025-08-14T05:53:52.127113Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -28913,7 +28913,7 @@
         "osm_ids": [
           "way/590016591"
         ],
-        "updated_at": "2025-08-14T05:08:00.618528Z"
+        "updated_at": "2025-08-14T05:53:52.127636Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -28960,7 +28960,7 @@
         "osm_ids": [
           "way/590016847"
         ],
-        "updated_at": "2025-08-14T05:08:00.618998Z"
+        "updated_at": "2025-08-14T05:53:52.128106Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29015,7 +29015,7 @@
         "osm_ids": [
           "way/653518771"
         ],
-        "updated_at": "2025-08-14T05:08:00.619493Z"
+        "updated_at": "2025-08-14T05:53:52.128602Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29078,7 +29078,7 @@
         "osm_ids": [
           "way/665447306"
         ],
-        "updated_at": "2025-08-14T05:08:00.619989Z"
+        "updated_at": "2025-08-14T05:53:52.129098Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29237,7 +29237,7 @@
         "osm_ids": [
           "way/733431542"
         ],
-        "updated_at": "2025-08-14T05:08:00.620486Z"
+        "updated_at": "2025-08-14T05:53:52.129594Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29304,7 +29304,7 @@
         "osm_ids": [
           "way/733431543"
         ],
-        "updated_at": "2025-08-14T05:08:00.620982Z"
+        "updated_at": "2025-08-14T05:53:52.130090Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29399,7 +29399,7 @@
         "osm_ids": [
           "way/733431544"
         ],
-        "updated_at": "2025-08-14T05:08:00.621478Z"
+        "updated_at": "2025-08-14T05:53:52.130586Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29458,7 +29458,7 @@
         "osm_ids": [
           "way/733431545"
         ],
-        "updated_at": "2025-08-14T05:08:00.621974Z"
+        "updated_at": "2025-08-14T05:53:52.131082Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29521,7 +29521,7 @@
         "osm_ids": [
           "way/733431546"
         ],
-        "updated_at": "2025-08-14T05:08:00.622470Z"
+        "updated_at": "2025-08-14T05:53:52.131578Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29568,7 +29568,7 @@
         "osm_ids": [
           "way/733431547"
         ],
-        "updated_at": "2025-08-14T05:08:00.622966Z"
+        "updated_at": "2025-08-14T05:53:52.132074Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29635,7 +29635,7 @@
         "osm_ids": [
           "way/733431548"
         ],
-        "updated_at": "2025-08-14T05:08:00.623461Z"
+        "updated_at": "2025-08-14T05:53:52.132570Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29718,7 +29718,7 @@
         "osm_ids": [
           "way/733431550"
         ],
-        "updated_at": "2025-08-14T05:08:00.623956Z"
+        "updated_at": "2025-08-14T05:53:52.133066Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29801,7 +29801,7 @@
         "osm_ids": [
           "way/733431551"
         ],
-        "updated_at": "2025-08-14T05:08:00.624452Z"
+        "updated_at": "2025-08-14T05:53:52.133562Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29940,7 +29940,7 @@
         "osm_ids": [
           "way/733431552"
         ],
-        "updated_at": "2025-08-14T05:08:00.624948Z"
+        "updated_at": "2025-08-14T05:53:52.134059Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -29987,7 +29987,7 @@
         "osm_ids": [
           "way/733431553"
         ],
-        "updated_at": "2025-08-14T05:08:00.625444Z"
+        "updated_at": "2025-08-14T05:53:52.134555Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30098,7 +30098,7 @@
         "osm_ids": [
           "way/733431554"
         ],
-        "updated_at": "2025-08-14T05:08:00.625444Z"
+        "updated_at": "2025-08-14T05:53:52.135050Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30185,7 +30185,7 @@
         "osm_ids": [
           "way/792359253"
         ],
-        "updated_at": "2025-08-14T05:08:00.625940Z"
+        "updated_at": "2025-08-14T05:53:52.136042Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30232,7 +30232,7 @@
         "osm_ids": [
           "way/809915881"
         ],
-        "updated_at": "2025-08-14T05:08:00.626436Z"
+        "updated_at": "2025-08-14T05:53:52.136538Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30295,7 +30295,7 @@
         "osm_ids": [
           "way/810616323"
         ],
-        "updated_at": "2025-08-14T05:08:00.626932Z"
+        "updated_at": "2025-08-14T05:53:52.137529Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30362,7 +30362,7 @@
         "osm_ids": [
           "way/810618012"
         ],
-        "updated_at": "2025-08-14T05:08:00.627428Z"
+        "updated_at": "2025-08-14T05:53:52.141497Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30485,7 +30485,7 @@
         "osm_ids": [
           "way/810654875"
         ],
-        "updated_at": "2025-08-14T05:08:00.627924Z"
+        "updated_at": "2025-08-14T05:53:52.143977Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30532,7 +30532,7 @@
         "osm_ids": [
           "way/810654876"
         ],
-        "updated_at": "2025-08-14T05:08:00.628420Z"
+        "updated_at": "2025-08-14T05:53:52.145962Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30579,7 +30579,7 @@
         "osm_ids": [
           "way/812676697"
         ],
-        "updated_at": "2025-08-14T05:08:00.628420Z"
+        "updated_at": "2025-08-14T05:53:52.147449Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30670,7 +30670,7 @@
         "osm_ids": [
           "way/854806689"
         ],
-        "updated_at": "2025-08-14T05:08:00.629909Z"
+        "updated_at": "2025-08-14T05:53:52.149433Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30749,7 +30749,7 @@
         "osm_ids": [
           "way/883408619"
         ],
-        "updated_at": "2025-08-14T05:08:00.630406Z"
+        "updated_at": "2025-08-14T05:53:52.150426Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30804,7 +30804,7 @@
         "osm_ids": [
           "way/954814722"
         ],
-        "updated_at": "2025-08-14T05:08:00.631396Z"
+        "updated_at": "2025-08-14T05:53:52.151417Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30851,7 +30851,7 @@
         "osm_ids": [
           "way/958331363"
         ],
-        "updated_at": "2025-08-14T05:08:00.631900Z"
+        "updated_at": "2025-08-14T05:53:52.152410Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30906,7 +30906,7 @@
         "osm_ids": [
           "way/964477264"
         ],
-        "updated_at": "2025-08-14T05:08:00.632389Z"
+        "updated_at": "2025-08-14T05:53:52.152905Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -30953,7 +30953,7 @@
         "osm_ids": [
           "way/964822668"
         ],
-        "updated_at": "2025-08-14T05:08:00.632911Z"
+        "updated_at": "2025-08-14T05:53:52.153401Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -31024,7 +31024,7 @@
         "osm_ids": [
           "way/964842613"
         ],
-        "updated_at": "2025-08-14T05:08:00.633407Z"
+        "updated_at": "2025-08-14T05:53:52.154889Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -31119,7 +31119,7 @@
         "osm_ids": [
           "way/964842615"
         ],
-        "updated_at": "2025-08-14T05:08:00.633907Z"
+        "updated_at": "2025-08-14T05:53:52.157867Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -31262,7 +31262,7 @@
         "osm_ids": [
           "way/965850072"
         ],
-        "updated_at": "2025-08-14T05:08:00.634399Z"
+        "updated_at": "2025-08-14T05:53:52.158857Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -31489,7 +31489,7 @@
         "osm_ids": [
           "way/965850073"
         ],
-        "updated_at": "2025-08-14T05:08:00.634897Z"
+        "updated_at": "2025-08-14T05:53:52.159849Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -31624,7 +31624,7 @@
         "osm_ids": [
           "way/965850074"
         ],
-        "updated_at": "2025-08-14T05:08:00.635391Z"
+        "updated_at": "2025-08-14T05:53:52.160841Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -31863,7 +31863,7 @@
         "osm_ids": [
           "way/986844880"
         ],
-        "updated_at": "2025-08-14T05:08:00.635887Z"
+        "updated_at": "2025-08-14T05:53:52.162329Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -31910,7 +31910,7 @@
         "osm_ids": [
           "way/986844881"
         ],
-        "updated_at": "2025-08-14T05:08:00.636383Z"
+        "updated_at": "2025-08-14T05:53:52.162826Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -31957,7 +31957,7 @@
         "osm_ids": [
           "way/986844882"
         ],
-        "updated_at": "2025-08-14T05:08:00.636879Z"
+        "updated_at": "2025-08-14T05:53:52.163818Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32004,7 +32004,7 @@
         "osm_ids": [
           "way/986844883"
         ],
-        "updated_at": "2025-08-14T05:08:00.637375Z"
+        "updated_at": "2025-08-14T05:53:52.164314Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32051,7 +32051,7 @@
         "osm_ids": [
           "way/986844885"
         ],
-        "updated_at": "2025-08-14T05:08:00.637874Z"
+        "updated_at": "2025-08-14T05:53:52.165802Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32098,7 +32098,7 @@
         "osm_ids": [
           "way/986844886"
         ],
-        "updated_at": "2025-08-14T05:08:00.638367Z"
+        "updated_at": "2025-08-14T05:53:52.166794Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32145,7 +32145,7 @@
         "osm_ids": [
           "way/1011916773"
         ],
-        "updated_at": "2025-08-14T05:08:00.638837Z"
+        "updated_at": "2025-08-14T05:53:52.167786Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32200,7 +32200,7 @@
         "osm_ids": [
           "way/1013203471"
         ],
-        "updated_at": "2025-08-14T05:08:00.639333Z"
+        "updated_at": "2025-08-14T05:53:52.168282Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32247,7 +32247,7 @@
         "osm_ids": [
           "way/1013203473"
         ],
-        "updated_at": "2025-08-14T05:08:00.639829Z"
+        "updated_at": "2025-08-14T05:53:52.169273Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32294,7 +32294,7 @@
         "osm_ids": [
           "way/1014108589"
         ],
-        "updated_at": "2025-08-14T05:08:00.640325Z"
+        "updated_at": "2025-08-14T05:53:52.170266Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32349,7 +32349,7 @@
         "osm_ids": [
           "way/1014108590"
         ],
-        "updated_at": "2025-08-14T05:08:00.640325Z"
+        "updated_at": "2025-08-14T05:53:52.171754Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32396,7 +32396,7 @@
         "osm_ids": [
           "way/1025625367"
         ],
-        "updated_at": "2025-08-14T05:08:00.641316Z"
+        "updated_at": "2025-08-14T05:53:52.174730Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32483,7 +32483,7 @@
         "osm_ids": [
           "way/1025625379"
         ],
-        "updated_at": "2025-08-14T05:08:00.641316Z"
+        "updated_at": "2025-08-14T05:53:52.176714Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32578,7 +32578,7 @@
         "osm_ids": [
           "way/1026506158"
         ],
-        "updated_at": "2025-08-14T05:08:00.641812Z"
+        "updated_at": "2025-08-14T05:53:52.177705Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32669,7 +32669,7 @@
         "osm_ids": [
           "way/1026506167"
         ],
-        "updated_at": "2025-08-14T05:08:00.642308Z"
+        "updated_at": "2025-08-14T05:53:52.178698Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32752,7 +32752,7 @@
         "osm_ids": [
           "way/1065595811"
         ],
-        "updated_at": "2025-08-14T05:08:00.642804Z"
+        "updated_at": "2025-08-14T05:53:52.179690Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32819,7 +32819,7 @@
         "osm_ids": [
           "way/1081958233"
         ],
-        "updated_at": "2025-08-14T05:08:00.643300Z"
+        "updated_at": "2025-08-14T05:53:52.180681Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32866,7 +32866,7 @@
         "osm_ids": [
           "way/1081958234"
         ],
-        "updated_at": "2025-08-14T05:08:00.643796Z"
+        "updated_at": "2025-08-14T05:53:52.181673Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32913,7 +32913,7 @@
         "osm_ids": [
           "way/1081958241"
         ],
-        "updated_at": "2025-08-14T05:08:00.643796Z"
+        "updated_at": "2025-08-14T05:53:52.183163Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -32994,6 +32994,105 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "unnamed-building-fdb033",
+        "name": "Unnamed Building",
+        "aliases": [],
+        "zone": "The Hill",
+        "category": "Parks/Nature",
+        "subtype": "Green Space",
+        "important_off_campus": false,
+        "centroid": [
+          -118.454673,
+          34.074162
+        ],
+        "osm_ids": [
+          "way/1083630075"
+        ],
+        "updated_at": "2025-08-14T05:53:52.183657Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -118.4551178,
+              34.073168299999985
+            ],
+            [
+              -118.4547445,
+              34.07321629999999
+            ],
+            [
+              -118.45447520000002,
+              34.07332120000003
+            ],
+            [
+              -118.4542477,
+              34.073527300000045
+            ],
+            [
+              -118.4541018,
+              34.07376020000003
+            ],
+            [
+              -118.4541598,
+              34.074061400000005
+            ],
+            [
+              -118.4545374,
+              34.075003400000014
+            ],
+            [
+              -118.45441400000001,
+              34.075210500000026
+            ],
+            [
+              -118.4543722,
+              34.075442399999936
+            ],
+            [
+              -118.4542027,
+              34.07564860000004
+            ],
+            [
+              -118.45430030000001,
+              34.075746400000014
+            ],
+            [
+              -118.4545063,
+              34.07559350000001
+            ],
+            [
+              -118.4546479,
+              34.07529489999999
+            ],
+            [
+              -118.45496550000001,
+              34.07468439999998
+            ],
+            [
+              -118.4550245,
+              34.07453600000002
+            ],
+            [
+              -118.4550625,
+              34.07423830000002
+            ],
+            [
+              -118.4552312,
+              34.074218399999964
+            ],
+            [
+              -118.4551178,
+              34.073168299999985
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": "sproul-hall-2a933b",
         "name": "Sproul Hall",
         "aliases": [],
@@ -33008,7 +33107,7 @@
         "osm_ids": [
           "way/1083630084"
         ],
-        "updated_at": "2025-08-14T05:08:00.644292Z"
+        "updated_at": "2025-08-14T05:53:52.184649Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33095,7 +33194,7 @@
         "osm_ids": [
           "way/1100753653"
         ],
-        "updated_at": "2025-08-14T05:08:00.644788Z"
+        "updated_at": "2025-08-14T05:53:52.185642Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33182,7 +33281,7 @@
         "osm_ids": [
           "way/1108611647"
         ],
-        "updated_at": "2025-08-14T05:08:00.645285Z"
+        "updated_at": "2025-08-14T05:53:52.186635Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33257,7 +33356,7 @@
         "osm_ids": [
           "way/1108634585"
         ],
-        "updated_at": "2025-08-14T05:08:00.645780Z"
+        "updated_at": "2025-08-14T05:53:52.187625Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33304,7 +33403,7 @@
         "osm_ids": [
           "way/1108644461"
         ],
-        "updated_at": "2025-08-14T05:08:00.646773Z"
+        "updated_at": "2025-08-14T05:53:52.190106Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33371,7 +33470,7 @@
         "osm_ids": [
           "way/1137977964"
         ],
-        "updated_at": "2025-08-14T05:08:00.647765Z"
+        "updated_at": "2025-08-14T05:53:52.191098Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33418,7 +33517,7 @@
         "osm_ids": [
           "way/1151636039"
         ],
-        "updated_at": "2025-08-14T05:08:00.648757Z"
+        "updated_at": "2025-08-14T05:53:52.192090Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33465,7 +33564,7 @@
         "osm_ids": [
           "way/1152216962"
         ],
-        "updated_at": "2025-08-14T05:08:00.649253Z"
+        "updated_at": "2025-08-14T05:53:52.193578Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33512,7 +33611,7 @@
         "osm_ids": [
           "way/1152812062"
         ],
-        "updated_at": "2025-08-14T05:08:00.649749Z"
+        "updated_at": "2025-08-14T05:53:52.194073Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33567,7 +33666,7 @@
         "osm_ids": [
           "way/1152812076"
         ],
-        "updated_at": "2025-08-14T05:08:00.650245Z"
+        "updated_at": "2025-08-14T05:53:52.195066Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33622,7 +33721,7 @@
         "osm_ids": [
           "way/1153902428"
         ],
-        "updated_at": "2025-08-14T05:08:00.651237Z"
+        "updated_at": "2025-08-14T05:53:52.196057Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33669,7 +33768,7 @@
         "osm_ids": [
           "way/1153902429"
         ],
-        "updated_at": "2025-08-14T05:08:00.651733Z"
+        "updated_at": "2025-08-14T05:53:52.197050Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33716,7 +33815,7 @@
         "osm_ids": [
           "way/1153929824"
         ],
-        "updated_at": "2025-08-14T05:08:00.652228Z"
+        "updated_at": "2025-08-14T05:53:52.198537Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33763,7 +33862,7 @@
         "osm_ids": [
           "way/1164891261"
         ],
-        "updated_at": "2025-08-14T05:08:00.652725Z"
+        "updated_at": "2025-08-14T05:53:52.199033Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33898,7 +33997,7 @@
         "osm_ids": [
           "way/1171485793"
         ],
-        "updated_at": "2025-08-14T05:08:00.653220Z"
+        "updated_at": "2025-08-14T05:53:52.200025Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33945,7 +34044,7 @@
         "osm_ids": [
           "way/1171485794"
         ],
-        "updated_at": "2025-08-14T05:08:00.654212Z"
+        "updated_at": "2025-08-14T05:53:52.203002Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -33992,7 +34091,7 @@
         "osm_ids": [
           "way/1171485795"
         ],
-        "updated_at": "2025-08-14T05:08:00.654710Z"
+        "updated_at": "2025-08-14T05:53:52.203994Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34039,7 +34138,7 @@
         "osm_ids": [
           "way/1171486865"
         ],
-        "updated_at": "2025-08-14T05:08:00.655205Z"
+        "updated_at": "2025-08-14T05:53:52.205978Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34242,7 +34341,7 @@
         "osm_ids": [
           "way/1236432351"
         ],
-        "updated_at": "2025-08-14T05:08:00.656693Z"
+        "updated_at": "2025-08-14T05:53:52.208458Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34297,7 +34396,7 @@
         "osm_ids": [
           "way/1236432352"
         ],
-        "updated_at": "2025-08-14T05:08:00.657189Z"
+        "updated_at": "2025-08-14T05:53:52.209451Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34368,7 +34467,7 @@
         "osm_ids": [
           "way/1350369629"
         ],
-        "updated_at": "2025-08-14T05:08:00.657189Z"
+        "updated_at": "2025-08-14T05:53:52.210442Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34415,7 +34514,7 @@
         "osm_ids": [
           "way/1350369630"
         ],
-        "updated_at": "2025-08-14T05:08:00.657685Z"
+        "updated_at": "2025-08-14T05:53:52.210939Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34462,7 +34561,7 @@
         "osm_ids": [
           "way/1350369631"
         ],
-        "updated_at": "2025-08-14T05:08:00.658181Z"
+        "updated_at": "2025-08-14T05:53:52.211434Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34509,7 +34608,7 @@
         "osm_ids": [
           "way/1350369632"
         ],
-        "updated_at": "2025-08-14T05:08:00.658677Z"
+        "updated_at": "2025-08-14T05:53:52.212426Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34556,7 +34655,7 @@
         "osm_ids": [
           "way/1350369633"
         ],
-        "updated_at": "2025-08-14T05:08:00.659173Z"
+        "updated_at": "2025-08-14T05:53:52.213914Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34603,7 +34702,7 @@
         "osm_ids": [
           "way/1350369634"
         ],
-        "updated_at": "2025-08-14T05:08:00.659669Z"
+        "updated_at": "2025-08-14T05:53:52.215402Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34650,7 +34749,7 @@
         "osm_ids": [
           "way/1350369635"
         ],
-        "updated_at": "2025-08-14T05:08:00.660166Z"
+        "updated_at": "2025-08-14T05:53:52.216394Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34697,7 +34796,7 @@
         "osm_ids": [
           "way/1350369636"
         ],
-        "updated_at": "2025-08-14T05:08:00.660661Z"
+        "updated_at": "2025-08-14T05:53:52.217386Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34744,7 +34843,7 @@
         "osm_ids": [
           "way/1350369646"
         ],
-        "updated_at": "2025-08-14T05:08:00.661653Z"
+        "updated_at": "2025-08-14T05:53:52.220362Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34795,7 +34894,7 @@
         "osm_ids": [
           "way/1350369647"
         ],
-        "updated_at": "2025-08-14T05:08:00.662149Z"
+        "updated_at": "2025-08-14T05:53:52.222346Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34842,7 +34941,7 @@
         "osm_ids": [
           "way/1350369648"
         ],
-        "updated_at": "2025-08-14T05:08:00.662645Z"
+        "updated_at": "2025-08-14T05:53:52.224330Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34889,7 +34988,7 @@
         "osm_ids": [
           "way/1350369649"
         ],
-        "updated_at": "2025-08-14T05:08:00.665125Z"
+        "updated_at": "2025-08-14T05:53:52.225322Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34936,7 +35035,7 @@
         "osm_ids": [
           "way/1350369650"
         ],
-        "updated_at": "2025-08-14T05:08:00.665622Z"
+        "updated_at": "2025-08-14T05:53:52.225818Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -34983,7 +35082,7 @@
         "osm_ids": [
           "way/1350369651"
         ],
-        "updated_at": "2025-08-14T05:08:00.666117Z"
+        "updated_at": "2025-08-14T05:53:52.226810Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35030,7 +35129,7 @@
         "osm_ids": [
           "way/1350369652"
         ],
-        "updated_at": "2025-08-14T05:08:00.666613Z"
+        "updated_at": "2025-08-14T05:53:52.227306Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35077,7 +35176,7 @@
         "osm_ids": [
           "way/1350369656"
         ],
-        "updated_at": "2025-08-14T05:08:00.667109Z"
+        "updated_at": "2025-08-14T05:53:52.227801Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35124,7 +35223,7 @@
         "osm_ids": [
           "way/1350369657"
         ],
-        "updated_at": "2025-08-14T05:08:00.667605Z"
+        "updated_at": "2025-08-14T05:53:52.228793Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35171,7 +35270,7 @@
         "osm_ids": [
           "way/1350369658"
         ],
-        "updated_at": "2025-08-14T05:08:00.668101Z"
+        "updated_at": "2025-08-14T05:53:52.229289Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35218,7 +35317,7 @@
         "osm_ids": [
           "way/1350369659"
         ],
-        "updated_at": "2025-08-14T05:08:00.668101Z"
+        "updated_at": "2025-08-14T05:53:52.230281Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35265,7 +35364,7 @@
         "osm_ids": [
           "way/1350369660"
         ],
-        "updated_at": "2025-08-14T05:08:00.668597Z"
+        "updated_at": "2025-08-14T05:53:52.231273Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35312,7 +35411,7 @@
         "osm_ids": [
           "way/1350369661"
         ],
-        "updated_at": "2025-08-14T05:08:00.669094Z"
+        "updated_at": "2025-08-14T05:53:52.232265Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35359,7 +35458,7 @@
         "osm_ids": [
           "way/1350369662"
         ],
-        "updated_at": "2025-08-14T05:08:00.669590Z"
+        "updated_at": "2025-08-14T05:53:52.232761Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35496,7 +35595,7 @@
         "osm_ids": [
           "relation/331542"
         ],
-        "updated_at": "2025-08-14T05:08:00.670581Z"
+        "updated_at": "2025-08-14T05:53:52.233754Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35711,7 +35810,7 @@
         "osm_ids": [
           "relation/2389785"
         ],
-        "updated_at": "2025-08-14T05:08:00.671077Z"
+        "updated_at": "2025-08-14T05:53:52.234746Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35798,7 +35897,7 @@
         "osm_ids": [
           "relation/6277700"
         ],
-        "updated_at": "2025-08-14T05:08:00.671573Z"
+        "updated_at": "2025-08-14T05:53:52.235242Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35893,7 +35992,7 @@
         "osm_ids": [
           "relation/6287582"
         ],
-        "updated_at": "2025-08-14T05:08:00.672070Z"
+        "updated_at": "2025-08-14T05:53:52.236233Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -35980,7 +36079,7 @@
         "osm_ids": [
           "relation/6287583"
         ],
-        "updated_at": "2025-08-14T05:08:00.672565Z"
+        "updated_at": "2025-08-14T05:53:52.237721Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -36595,7 +36694,7 @@
         "osm_ids": [
           "relation/6287584"
         ],
-        "updated_at": "2025-08-14T05:08:00.674053Z"
+        "updated_at": "2025-08-14T05:53:52.241193Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -37094,7 +37193,7 @@
         "osm_ids": [
           "relation/6287585"
         ],
-        "updated_at": "2025-08-14T05:08:00.675046Z"
+        "updated_at": "2025-08-14T05:53:52.242681Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -37253,7 +37352,7 @@
         "osm_ids": [
           "relation/6287586"
         ],
-        "updated_at": "2025-08-14T05:08:00.675542Z"
+        "updated_at": "2025-08-14T05:53:52.243673Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -37372,7 +37471,7 @@
         "osm_ids": [
           "relation/6287587"
         ],
-        "updated_at": "2025-08-14T05:08:00.676038Z"
+        "updated_at": "2025-08-14T05:53:52.244665Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -37515,7 +37614,7 @@
         "osm_ids": [
           "relation/6287588"
         ],
-        "updated_at": "2025-08-14T05:08:00.676533Z"
+        "updated_at": "2025-08-14T05:53:52.245161Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -37658,7 +37757,7 @@
         "osm_ids": [
           "relation/6287589"
         ],
-        "updated_at": "2025-08-14T05:08:00.677029Z"
+        "updated_at": "2025-08-14T05:53:52.245657Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -37757,7 +37856,7 @@
         "osm_ids": [
           "relation/6287590"
         ],
-        "updated_at": "2025-08-14T05:08:00.677526Z"
+        "updated_at": "2025-08-14T05:53:52.246153Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -37852,7 +37951,7 @@
         "osm_ids": [
           "relation/6287591"
         ],
-        "updated_at": "2025-08-14T05:08:00.678022Z"
+        "updated_at": "2025-08-14T05:53:52.247146Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -37951,7 +38050,7 @@
         "osm_ids": [
           "relation/6287592"
         ],
-        "updated_at": "2025-08-14T05:08:00.679014Z"
+        "updated_at": "2025-08-14T05:53:52.247641Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -38138,7 +38237,7 @@
         "osm_ids": [
           "relation/6287595"
         ],
-        "updated_at": "2025-08-14T05:08:00.680005Z"
+        "updated_at": "2025-08-14T05:53:52.248634Z"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -38379,7 +38478,7 @@
         "osm_ids": [
           "relation/6317798"
         ],
-        "updated_at": "2025-08-14T05:08:00.681493Z"
+        "updated_at": "2025-08-14T05:53:52.250617Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -38446,7 +38545,7 @@
         "osm_ids": [
           "relation/6318832"
         ],
-        "updated_at": "2025-08-14T05:08:00.681990Z"
+        "updated_at": "2025-08-14T05:53:52.251609Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -38813,7 +38912,7 @@
         "osm_ids": [
           "relation/6318834"
         ],
-        "updated_at": "2025-08-14T05:08:00.682981Z"
+        "updated_at": "2025-08-14T05:53:52.252601Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -39160,7 +39259,7 @@
         "osm_ids": [
           "relation/6318836"
         ],
-        "updated_at": "2025-08-14T05:08:00.684000Z"
+        "updated_at": "2025-08-14T05:53:52.253594Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -39479,7 +39578,7 @@
         "osm_ids": [
           "relation/7672317"
         ],
-        "updated_at": "2025-08-14T05:08:00.684965Z"
+        "updated_at": "2025-08-14T05:53:52.254585Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -39634,7 +39733,7 @@
         "osm_ids": [
           "relation/12967372"
         ],
-        "updated_at": "2025-08-14T05:08:00.685460Z"
+        "updated_at": "2025-08-14T05:53:52.256569Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -39869,7 +39968,7 @@
         "osm_ids": [
           "relation/12967373"
         ],
-        "updated_at": "2025-08-14T05:08:00.685956Z"
+        "updated_at": "2025-08-14T05:53:52.257561Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -39916,7 +40015,7 @@
         "osm_ids": [
           "relation/12967374"
         ],
-        "updated_at": "2025-08-14T05:08:00.686452Z"
+        "updated_at": "2025-08-14T05:53:52.258058Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -40007,7 +40106,7 @@
         "osm_ids": [
           "relation/12978307"
         ],
-        "updated_at": "2025-08-14T05:08:00.686948Z"
+        "updated_at": "2025-08-14T05:53:52.259050Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -40200,7 +40299,7 @@
         "osm_ids": [
           "relation/12996854"
         ],
-        "updated_at": "2025-08-14T05:08:00.687444Z"
+        "updated_at": "2025-08-14T05:53:52.260041Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -40351,7 +40450,7 @@
         "osm_ids": [
           "relation/13007994"
         ],
-        "updated_at": "2025-08-14T05:08:00.687940Z"
+        "updated_at": "2025-08-14T05:53:52.261033Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -40486,7 +40585,7 @@
         "osm_ids": [
           "relation/13548011"
         ],
-        "updated_at": "2025-08-14T05:08:00.688436Z"
+        "updated_at": "2025-08-14T05:53:52.262026Z"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -40627,7 +40726,7 @@
         "osm_ids": [
           "way/425246936"
         ],
-        "updated_at": "2025-08-14T05:08:00.689924Z"
+        "updated_at": "2025-08-14T05:53:52.265992Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -40834,7 +40933,7 @@
         "osm_ids": [
           "way/425246937"
         ],
-        "updated_at": "2025-08-14T05:08:00.690916Z"
+        "updated_at": "2025-08-14T05:53:52.266985Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -41041,7 +41140,7 @@
         "osm_ids": [
           "way/425246938"
         ],
-        "updated_at": "2025-08-14T05:08:00.691412Z"
+        "updated_at": "2025-08-14T05:53:52.268473Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -41244,7 +41343,7 @@
         "osm_ids": [
           "way/425181681"
         ],
-        "updated_at": "2025-08-14T05:08:00.691908Z"
+        "updated_at": "2025-08-14T05:53:52.269465Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -41307,7 +41406,7 @@
         "osm_ids": [
           "way/44669503"
         ],
-        "updated_at": "2025-08-14T05:08:00.692404Z"
+        "updated_at": "2025-08-14T05:53:52.270457Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -41378,7 +41477,7 @@
         "osm_ids": [
           "way/422876490"
         ],
-        "updated_at": "2025-08-14T05:08:00.692404Z"
+        "updated_at": "2025-08-14T05:53:52.270953Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -41457,7 +41556,7 @@
         "osm_ids": [
           "way/422876503"
         ],
-        "updated_at": "2025-08-14T05:08:00.692900Z"
+        "updated_at": "2025-08-14T05:53:52.272937Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -41504,7 +41603,7 @@
         "osm_ids": [
           "way/826786355"
         ],
-        "updated_at": "2025-08-14T05:08:00.693396Z"
+        "updated_at": "2025-08-14T05:53:52.273930Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -41563,7 +41662,7 @@
         "osm_ids": [
           "way/51125966"
         ],
-        "updated_at": "2025-08-14T05:08:00.693892Z"
+        "updated_at": "2025-08-14T05:53:52.274921Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -41610,7 +41709,7 @@
         "osm_ids": [
           "way/44669494"
         ],
-        "updated_at": "2025-08-14T05:08:00.694388Z"
+        "updated_at": "2025-08-14T05:53:52.275417Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -41673,7 +41772,7 @@
         "osm_ids": [
           "way/422876502"
         ],
-        "updated_at": "2025-08-14T05:08:00.694884Z"
+        "updated_at": "2025-08-14T05:53:52.276409Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -41720,7 +41819,7 @@
         "osm_ids": [
           "way/422876512"
         ],
-        "updated_at": "2025-08-14T05:08:00.695380Z"
+        "updated_at": "2025-08-14T05:53:52.277401Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -41879,7 +41978,7 @@
         "osm_ids": [
           "way/966530271"
         ],
-        "updated_at": "2025-08-14T05:08:00.695876Z"
+        "updated_at": "2025-08-14T05:53:52.277897Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -41926,7 +42025,7 @@
         "osm_ids": [
           "way/422876485"
         ],
-        "updated_at": "2025-08-14T05:08:00.697861Z"
+        "updated_at": "2025-08-14T05:53:52.279385Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -42009,7 +42108,7 @@
         "osm_ids": [
           "way/422876483"
         ],
-        "updated_at": "2025-08-14T05:08:00.698357Z"
+        "updated_at": "2025-08-14T05:53:52.280377Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -42416,7 +42515,7 @@
         "osm_ids": [
           "way/534392315"
         ],
-        "updated_at": "2025-08-14T05:08:00.699376Z"
+        "updated_at": "2025-08-14T05:53:52.281369Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -42571,7 +42670,7 @@
         "osm_ids": [
           "way/534392316"
         ],
-        "updated_at": "2025-08-14T05:08:00.700341Z"
+        "updated_at": "2025-08-14T05:53:52.281865Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -42762,7 +42861,7 @@
         "osm_ids": [
           "way/243722217"
         ],
-        "updated_at": "2025-08-14T05:08:00.700863Z"
+        "updated_at": "2025-08-14T05:53:52.282857Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -42845,7 +42944,7 @@
         "osm_ids": [
           "way/422876505"
         ],
-        "updated_at": "2025-08-14T05:08:00.701362Z"
+        "updated_at": "2025-08-14T05:53:52.283353Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -42892,7 +42991,7 @@
         "osm_ids": [
           "way/819656027"
         ],
-        "updated_at": "2025-08-14T05:08:00.702353Z"
+        "updated_at": "2025-08-14T05:53:52.284345Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -42971,7 +43070,7 @@
         "osm_ids": [
           "way/422876504"
         ],
-        "updated_at": "2025-08-14T05:08:00.702848Z"
+        "updated_at": "2025-08-14T05:53:52.284841Z"
       },
       "geometry": {
         "type": "Polygon",
@@ -43018,7 +43117,7 @@
         "osm_ids": [
           "way/733431549"
         ],
-        "updated_at": "2025-08-14T05:08:00.703343Z"
+        "updated_at": "2025-08-14T05:53:52.285336Z"
       },
       "geometry": {
         "type": "Polygon",
