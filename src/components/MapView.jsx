@@ -444,7 +444,11 @@ export default function MapView({
       // hover highlights smallest feature
       map.on("mousemove", "bldg-fill", (e) => {
         if (queryModeRef.current) return;
-        const f = smallestFeature(e.features);
+        const features = map.queryRenderedFeatures(e.point, {
+          layers: ["bldg-fill"],
+        });
+        if (!features.length) return;
+        const f = smallestFeature(features);
         hoverRef.current = f.properties.id;
         hoverPopup.setLngLat(e.lngLat).setText(f.properties.name).addTo(map);
         applyHover();
