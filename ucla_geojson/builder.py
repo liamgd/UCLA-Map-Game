@@ -28,9 +28,6 @@ CAMPUS_RELATION_ID = 7493269
 # consider it on campus
 ON_CAMPUS_THRESHOLD = 0.5
 
-# Maximum distance to rename unnamed features by proximity (meters)
-NEARBY_RENAME_DISTANCE_M = 50
-
 
 def _outer_shell(geom):
     if isinstance(geom, Polygon):
@@ -51,6 +48,7 @@ def assign_parent_child(features):
         range(len(features)), key=lambda i: areas[i], reverse=True
     )
 
+    renamed = 0
     for i in indices:
         geom_a = geoms_m[i]
         area_a = areas[i]
@@ -289,7 +287,9 @@ def process_features(osm_data):
 
     print(f"Removed {removed_dupes} duplicate feature(s) by centroid")
     features = list(deduped.values())
-    assign_parent_child(features)
-    rename_by_proximity(features)
+    renamed = assign_parent_child(features)
+    print(
+        f"Renamed {renamed} unnamed feature(s) contained within a named feature"
+    )
     print(f"Generated {len(features)} features")
     return features
