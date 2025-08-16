@@ -1,6 +1,6 @@
 import pyproj
 
-BBOX = (34.058, -118.456, 34.082, -118.433)  # (south, west, north, east)
+BBOX = (34.058, -118.465, 34.082, -118.433)  # (south, west, north, east)
 BBOX_QUERY = f"({BBOX[0]},{BBOX[1]},{BBOX[2]},{BBOX[3]})"
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 SINGLE_TOLERANCE_M = 0.4  # meters detail for BOTH draw and hit
