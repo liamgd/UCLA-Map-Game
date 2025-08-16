@@ -9,7 +9,7 @@ def main():
     print("Starting build_ucla_geojson...")
     start_time = perf_counter()
 
-    data = timed("fetch_osm_data", fetch_osm_data)
+    data = timed("fetch_osm_data", fetch_osm_data, split=True)
     features = timed("process_features", process_features, data)
     timed("write_single", write_single, features)
 
