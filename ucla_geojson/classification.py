@@ -43,6 +43,32 @@ ACADEMIC_HINTS = {
     "psychology",
 }
 
+# Additional indicators that a building or amenity is used for academic or research
+# purposes.  These sets are consulted directly when determining if a feature
+# should be classified as "Academic/Research".
+ACADEMIC_BUILDINGS = {
+    "university",
+    "college",
+    "education",
+    "educational",
+    "laboratory",
+    "lab",
+    "research",
+    "research_institute",
+    "faculty",
+    "classroom",
+    "lecture_hall",
+    "training",
+}
+
+ACADEMIC_AMENITIES = {
+    "university",
+    "college",
+    "research",
+    "research_institute",
+    "educational_institution",
+}
+
 ADMIN_HINTS = {
     "murphy",
     "registrar",
@@ -57,7 +83,17 @@ ADMIN_HINTS = {
 
 POOL_HINTS = {"pool", "aquatic"}
 STADIUM_HINTS = {"stadium", "pavilion"}
-COURT_HINTS = {"court", "tennis"}
+COURT_HINTS = {
+    "court",
+    "tennis",
+    # Additional sports courts
+    "basketball",
+    "volleyball",
+    "pickleball",
+    "badminton",
+    "arena",
+    "gym",
+}
 FIELD_HINTS = {
     "track",
     "field",
@@ -65,6 +101,14 @@ FIELD_HINTS = {
     "im field",
     "drake",
     "spaulding",
+    # Additional field sports and athletics
+    "baseball",
+    "softball",
+    "soccer",
+    "football",
+    "lacrosse",
+    "athletics",
+    "athletic",
 }
 
 DINING_HINTS = {
@@ -92,13 +136,18 @@ DINING_HINTS = {
     "hill top shop",
 }
 
+# Terms that strongly indicate residential or student housing facilities.  These
+# hints are used to classify housing-related features.  Note that generic
+# building descriptors like "hall" or "plaza" are intentionally excluded
+# here.  Many academic buildings on campus are named "Hall" or include
+# "Plaza" in their names (e.g. Boelter Hall, Dickson Plaza), and treating
+# those terms as housing would misclassify academic spaces as residences.
 HOUSING_HINTS = {
     "residence",
     "res hall",
-    "hall",
     "apartments",
     "apartment",
-    "plaza",
+    # Dorm names on The Hill
     "rieber",
     "hedrick",
     "sproul",
@@ -114,6 +163,7 @@ HOUSING_HINTS = {
     "wyton",
     "gayley court",
     "gayley heights",
+    # Greek housing
     "fraternity",
     "sorority",
 }
@@ -164,6 +214,20 @@ SERVICE_HINTS = {
     "warehouse",
     "service",
     "maintenance",
+}
+
+# Names that indicate open or landscaped spaces rather than buildings.  These
+# help classify plazas, quads, and lawns as green space.
+GREEN_NAME_HINTS = {
+    "plaza",
+    "quad",
+    "lawn",
+    "garden",
+    "park",
+    "square",
+    "grove",
+    "courtyard",
+    "green",
 }
 
 
@@ -274,6 +338,19 @@ def determine_category(tags: Dict[str, str], name: str, zone: str) -> str:
             lambda: amenity in {"school", "kindergarten"}
             or btype in {"school", "kindergarten"},
         ),
+        # Academic and research facilities: look for building or amenity types
+        # that denote higher education or research, or names containing common
+        # academic keywords.  Placing this before the housing rule prevents
+        # halls such as Boelter Hall or Knudsen Hall from being misclassified
+        # as housing.
+        (
+            "Academic/Research",
+            lambda: (
+                btype in ACADEMIC_BUILDINGS
+                or amenity in ACADEMIC_AMENITIES
+                or _hint_in(name_norm, ACADEMIC_HINTS)
+            ),
+        ),
         (
             "Housing",
             lambda: btype
@@ -315,10 +392,13 @@ def determine_category(tags: Dict[str, str], name: str, zone: str) -> str:
         ),
         (
             "Green Space",
-            lambda: leisure in {"park", "garden"}
-            or landuse
-            in {"grass", "recreation_ground", "forest", "meadow", "shrubland"}
-            or natural in {"scrub", "shrub", "shrubland", "wood", "grassland"},
+            lambda: (
+                leisure in {"park", "garden"}
+                or landuse
+                in {"grass", "recreation_ground", "forest", "meadow", "shrubland"}
+                or natural in {"scrub", "shrub", "shrubland", "wood", "grassland"}
+                or _hint_in(name_norm, GREEN_NAME_HINTS)
+            ),
         ),
         (
             "Parking",
@@ -348,8 +428,14 @@ def determine_category(tags: Dict[str, str], name: str, zone: str) -> str:
                 return f"Parking {sub}"
             return cat
 
+    # Default fallback based on the campus zone.  Features in the academic core
+    # (North Campus or South Campus) that didn't match any specific rule are
+    # treated as academic/research facilities.  Features on the Hill are
+    # considered on-campus housing, and those in Westwood are considered
+    # off-campus housing.  This eliminates the "Unknown" category entirely.
     if zone in {"North Campus", "South Campus"}:
         return "Academic/Research"
     if zone == "The Hill":
         return "On-Campus Housing"
-    return "Unknown"
+    # Default for Westwood or any other zones
+    return "Off-Campus Housing"
