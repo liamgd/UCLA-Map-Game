@@ -18,6 +18,8 @@ area["amenity"="university"]["name"~"^(University of California, Los Angeles|UCL
   relation["building"](area.ucla);
   way["shop"](area.ucla);
   relation["shop"](area.ucla);
+  way["amenity"~"^(school|kindergarten)$"](area.ucla);
+  relation["amenity"~"^(school|kindergarten)$"](area.ucla);
   way["amenity"="parking"][!building](area.ucla);
   relation["amenity"="parking"][!building](area.ucla);
   way["leisure"~"^(stadium|sports_centre|pitch|swimming_pool|track|tennis_court|park|garden)$"](area.ucla);
@@ -38,6 +40,10 @@ area["amenity"="university"]["name"~"^(University of California, Los Angeles|UCL
   way["shop"]["operator"~"UCLA",i]{BBOX_QUERY};
   relation["shop"]["name"~"UCLA",i]{BBOX_QUERY};
   relation["shop"]["operator"~"UCLA",i]{BBOX_QUERY};
+  way["amenity"~"^(school|kindergarten)$"]["name"~"UCLA",i]{BBOX_QUERY};
+  way["amenity"~"^(school|kindergarten)$"]["operator"~"UCLA",i]{BBOX_QUERY};
+  relation["amenity"~"^(school|kindergarten)$"]["name"~"UCLA",i]{BBOX_QUERY};
+  relation["amenity"~"^(school|kindergarten)$"]["operator"~"UCLA",i]{BBOX_QUERY};
   way["amenity"="parking"][!building]["name"~"UCLA",i]{BBOX_QUERY};
   way["amenity"="parking"][!building]["operator"~"UCLA",i]{BBOX_QUERY};
   relation["amenity"="parking"][!building]["name"~"UCLA",i]{BBOX_QUERY};

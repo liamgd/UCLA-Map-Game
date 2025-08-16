@@ -203,6 +203,9 @@ def determine_category(tags: Dict[str, str], name: str, zone: str) -> str:
         cat = "Hospital" if "hospital" in (amenity + " " + name_norm) else "Clinic/Health"
         return cat
 
+    if amenity in {"school", "kindergarten"} or btype in {"school", "kindergarten"}:
+        return "Lower Education"
+
     if (
         btype in {"residential", "dormitory", "apartments", "fraternity", "sorority"}
         or amenity in {"fraternity", "sorority"}
