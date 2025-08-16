@@ -1,7 +1,7 @@
 import re
 from datetime import datetime, timezone
 
-from shapely.geometry import MultiPolygon, Point, Polygon, mapping, shape
+from shapely.geometry import MultiPolygon, Polygon, mapping, shape
 from shapely.geometry.polygon import orient
 from shapely.ops import transform, unary_union
 
@@ -92,41 +92,6 @@ def assign_parent_child(features):
                 child_props["id"] = (
                     f"{slugify(new_name)}-{hash_centroid(centroid)}"
                 )
-
-
-def rename_by_proximity(features, threshold_m=NEARBY_RENAME_DISTANCE_M):
-    points_m = [
-        transform(_TO_M, Point(f["properties"]["centroid"])) for f in features
-    ]
-    names = [f["properties"].get("name", "") for f in features]
-
-    for i, feat in enumerate(features):
-        props = feat["properties"]
-        name = props.get("name", "")
-        if (
-            not name.startswith("Unnamed ")
-            or props.get("overlap_role") != "solo"
-        ):
-            continue
-
-        pt = points_m[i]
-        best_idx = None
-        best_dist = None
-        for j, other_name in enumerate(names):
-            if i == j or other_name.startswith("Unnamed "):
-                continue
-            dist = pt.distance(points_m[j])
-            if best_dist is None or dist < best_dist:
-                best_dist = dist
-                best_idx = j
-        if best_idx is not None and best_dist <= threshold_m:
-            feature_type = name[len("Unnamed ") :]
-            near_name = names[best_idx]
-            new_name = f"{feature_type} near {near_name}"
-            props["name"] = new_name
-            centroid = tuple(props.get("centroid", []))
-            props["id"] = f"{slugify(new_name)}-{hash_centroid(centroid)}"
-            names[i] = new_name
 
 
 def process_features(osm_data):
