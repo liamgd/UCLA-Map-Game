@@ -92,6 +92,9 @@ def assign_parent_child(features):
                 child_props["id"] = (
                     f"{slugify(new_name)}-{hash_centroid(centroid)}"
                 )
+                renamed += 1
+
+    return renamed
 
 
 def process_features(osm_data):
