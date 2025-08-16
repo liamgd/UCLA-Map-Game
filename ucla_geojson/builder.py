@@ -48,6 +48,7 @@ def assign_parent_child(features):
         range(len(features)), key=lambda i: areas[i], reverse=True
     )
 
+    renamed = 0
     for i in indices:
         geom_a = geoms_m[i]
         area_a = areas[i]
@@ -91,6 +92,9 @@ def assign_parent_child(features):
                 child_props["id"] = (
                     f"{slugify(new_name)}-{hash_centroid(centroid)}"
                 )
+                renamed += 1
+
+    return renamed
 
 
 def process_features(osm_data):
@@ -255,6 +259,9 @@ def process_features(osm_data):
 
     print(f"Removed {removed_dupes} duplicate feature(s) by centroid")
     features = list(deduped.values())
-    assign_parent_child(features)
+    renamed = assign_parent_child(features)
+    print(
+        f"Renamed {renamed} unnamed feature(s) contained within a named feature"
+    )
     print(f"Generated {len(features)} features")
     return features
