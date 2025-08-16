@@ -107,6 +107,7 @@ export default function MapView({
   setFuse,
   queryMode,
   setQueryResults,
+  trainingMode,
 }) {
   const mapRef = useRef(null);
   const dataRef = useRef(null);
@@ -117,6 +118,19 @@ export default function MapView({
   const filterRef = useRef(null);
   const colorByRef = useRef(colorBy);
   const queryModeRef = useRef(queryMode);
+  const trainingModeRef = useRef(trainingMode);
+  const targetRef = useRef(null);
+
+  const startTrainingRound = () => {
+    if (!dataRef.current) return;
+    const candidates = dataRef.current.features.filter(
+      (f) => f.properties.name
+    );
+    if (!candidates.length) return;
+    const next = candidates[Math.floor(Math.random() * candidates.length)];
+    targetRef.current = next;
+    setStatus(`Find: ${next.properties.name}`);
+  };
 
   useEffect(() => {
     queryModeRef.current = queryMode;
@@ -124,6 +138,16 @@ export default function MapView({
       setQueryResults([]);
     }
   }, [queryMode, setQueryResults]);
+
+  useEffect(() => {
+    trainingModeRef.current = trainingMode;
+    if (trainingMode) {
+      startTrainingRound();
+    } else {
+      targetRef.current = null;
+      setStatus("Click the map");
+    }
+  }, [trainingMode, setStatus]);
 
   const UNNAMED_PREFIX = "Unnamed ";
   const hasName = [
@@ -281,6 +305,7 @@ export default function MapView({
       });
 
       dataRef.current = data;
+      if (trainingModeRef.current) startTrainingRound();
       map.addSource("campus", { type: "geojson", data });
 
       // building layers
@@ -427,6 +452,22 @@ export default function MapView({
         const features = map.queryRenderedFeatures(e.point, {
           layers: ["bldg-fill"],
         });
+        if (trainingModeRef.current) {
+          if (features.length > 0) {
+            const f = smallestFeature(features);
+            setSelectedId(f.properties.id);
+            if (
+              targetRef.current &&
+              f.properties.id === targetRef.current.properties.id
+            ) {
+              setStatus("Correct!");
+              startTrainingRound();
+            } else if (targetRef.current) {
+              setStatus(`Try again: ${targetRef.current.properties.name}`);
+            }
+          }
+          return;
+        }
         if (queryModeRef.current) {
           setQueryResults(features);
           setStatus(
@@ -443,7 +484,7 @@ export default function MapView({
 
       // hover quickly then refine to smallest feature after a short delay
       map.on("mousemove", "bldg-fill", (e) => {
-        if (queryModeRef.current) return;
+        if (queryModeRef.current || trainingModeRef.current) return;
         if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
         const features = map.queryRenderedFeatures(e.point, {
           layers: ["bldg-fill"],
@@ -470,7 +511,7 @@ export default function MapView({
       });
 
       map.on("mouseleave", "bldg-fill", () => {
-        if (queryModeRef.current) return;
+        if (queryModeRef.current || trainingModeRef.current) return;
         if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
         hoverPopup.remove();
         hoverRef.current = "";
