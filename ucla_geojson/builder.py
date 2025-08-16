@@ -1,7 +1,7 @@
 import re
 from datetime import datetime, timezone
 
-from shapely.geometry import MultiPolygon, Polygon, Point, mapping, shape
+from shapely.geometry import MultiPolygon, Point, Polygon, mapping, shape
 from shapely.geometry.polygon import orient
 from shapely.ops import transform, unary_union
 
@@ -97,13 +97,18 @@ def assign_parent_child(features):
 
 
 def rename_by_proximity(features, threshold_m=NEARBY_RENAME_DISTANCE_M):
-    points_m = [transform(_TO_M, Point(f["properties"]["centroid"])) for f in features]
+    points_m = [
+        transform(_TO_M, Point(f["properties"]["centroid"])) for f in features
+    ]
     names = [f["properties"].get("name", "") for f in features]
 
     for i, feat in enumerate(features):
         props = feat["properties"]
         name = props.get("name", "")
-        if not name.startswith("Unnamed ") or props.get("overlap_role") != "solo":
+        if (
+            not name.startswith("Unnamed ")
+            or props.get("overlap_role") != "solo"
+        ):
             continue
 
         pt = points_m[i]
@@ -125,6 +130,7 @@ def rename_by_proximity(features, threshold_m=NEARBY_RENAME_DISTANCE_M):
             props["id"] = f"{slugify(new_name)}-{hash_centroid(centroid)}"
             names[i] = new_name
 
+
 def process_features(osm_data):
     print("Processing features...")
     ways, _, way_polys, rel_polys, ways_in_building_rels = build_geometries(
@@ -135,8 +141,7 @@ def process_features(osm_data):
     features = []
 
     elements = osm_data.get("elements", [])
-    total = len(elements)
-    for idx, el in enumerate(elements, 1):
+    for el in elements:
         if el["type"] == "relation" and el["id"] == CAMPUS_RELATION_ID:
             continue
         if el["type"] == "way":
@@ -265,9 +270,6 @@ def process_features(osm_data):
                 "geometry": mapping(g_view),
             }
         )
-
-        if idx % 100 == 0 or idx == total:
-            print(f"  processed {idx}/{total} elements")
 
     deduped = {}
     removed_dupes = 0
