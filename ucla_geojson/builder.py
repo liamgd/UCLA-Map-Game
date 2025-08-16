@@ -254,7 +254,13 @@ def process_features(osm_data):
             removed_dupes += 1
 
     print(f"Removed {removed_dupes} duplicate feature(s) by centroid")
-    features = list(deduped.values())
+    features = list(
+        sorted(
+            deduped.values(),
+            key=lambda feat: feat["properties"]["area"],
+            reverse=True,
+        )
+    )
     renamed = assign_parent_child(features)
     print(
         f"Renamed {renamed} unnamed feature(s) contained within a named feature"
