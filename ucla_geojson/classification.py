@@ -1,56 +1,14 @@
 import re
-from typing import Dict
+from dataclasses import dataclass
+from typing import Callable, Dict
 
-from .constants import GREEK_NAME_RE
+from shapely.geometry import Point, Polygon
+
+from .constants import GREEK_NAME_RE, ZONE_COORDS
 
 
 def _norm(s: str) -> str:
     return s.lower() if s else ""
-
-
-ACADEMIC_HINTS = {
-    "hall",
-    "laboratory",
-    "lab",
-    "center",
-    "centre",
-    "institute",
-    "school",
-    "department",
-    "engineering",
-    "math",
-    "physics",
-    "chemistry",
-    "biology",
-    "geology",
-    "history",
-    "philosophy",
-    "linguistics",
-    "music",
-    "theater",
-    "theatre",
-    "film",
-    "statistics",
-    "computer",
-    "informatics",
-    "nanoscience",
-    "biomedical",
-    "sciences",
-    "anthropology",
-    "psychology",
-}
-
-ADMIN_HINTS = {
-    "murphy",
-    "registrar",
-    "admissions",
-    "financial aid",
-    "administration",
-    "ucla police",
-    "ucpd",
-    "student affairs",
-    "career center",
-}
 
 POOL_HINTS = {"pool", "aquatic"}
 STADIUM_HINTS = {"stadium", "pavilion"}
@@ -168,8 +126,24 @@ def _hint_in(name_norm: str, hints: set) -> bool:
     return any(h in name_norm for h in hints)
 
 
+ZONE_POLYGONS = {name: Polygon(coords) for name, coords in ZONE_COORDS.items()}
+
+
+@dataclass
+class CategoryRule:
+    """Rule used to map a feature to a high level category."""
+
+    name: str
+    predicate: Callable[[Dict[str, str], str, str], bool]
+
+
 def determine_zone(centroid):
-    lat, lon = centroid[1], centroid[0]
+    """Determine the major campus zone for a feature."""
+    lon, lat = centroid[0], centroid[1]
+    point = Point(lon, lat)
+    for zone, poly in ZONE_POLYGONS.items():
+        if poly.contains(point):
+            return zone
     if lon <= -118.445:
         return "The Hill"
     if lon >= -118.44:
@@ -178,91 +152,128 @@ def determine_zone(centroid):
 
 
 def determine_category(tags: Dict[str, str], name: str, zone: str) -> str:
-    """Returns the category for a feature.
-
-    The previous category hierarchy used both categories and subtypes. This
-    function now collapses the hierarchy by promoting the former subtypes to the
-    category level.
-    """
+    """Return the high-level category for a feature."""
 
     name_norm = _norm(name)
-    btype = _norm(tags.get("building"))
-    amenity = _norm(tags.get("amenity"))
-    leisure = _norm(tags.get("leisure"))
-    shop = _norm(tags.get("shop"))
-    healthcare = _norm(tags.get("healthcare"))
-    operator = _norm(tags.get("operator") or "")
-    landuse = _norm(tags.get("landuse"))
-    natural = _norm(tags.get("natural"))
+    ctx = {
+        "btype": _norm(tags.get("building")),
+        "amenity": _norm(tags.get("amenity")),
+        "leisure": _norm(tags.get("leisure")),
+        "shop": _norm(tags.get("shop")),
+        "healthcare": _norm(tags.get("healthcare")),
+        "operator": _norm(tags.get("operator") or ""),
+        "landuse": _norm(tags.get("landuse")),
+        "natural": _norm(tags.get("natural")),
+        "parking": _norm(tags.get("parking")),
+        "tourism": _norm(tags.get("tourism")),
+    }
 
-    if (
-        healthcare
-        or amenity in {"clinic", "hospital", "doctors", "dentist"}
-        or _hint_in(name_norm, MEDICAL_HINTS)
-    ):
-        cat = "Hospital" if "hospital" in (amenity + " " + name_norm) else "Clinic/Health"
-        return cat
+    def is_hospital(c):
+        return "hospital" in (c["amenity"] + " " + name_norm)
 
-    if amenity in {"school", "kindergarten"} or btype in {"school", "kindergarten"}:
-        return "Lower Education"
+    def is_medical(c):
+        return (
+            c["healthcare"]
+            or c["amenity"] in {"clinic", "doctors", "dentist", "hospital"}
+            or _hint_in(name_norm, MEDICAL_HINTS)
+        )
 
-    if (
-        btype in {"residential", "dormitory", "apartments", "fraternity", "sorority"}
-        or amenity in {"fraternity", "sorority"}
-        or re.search(GREEK_NAME_RE, name, re.I)
-        or _hint_in(name_norm, HOUSING_HINTS)
-    ):
-        cat = "Off-Campus Housing" if zone == "Westwood" else "On-Campus Housing"
-        return cat
+    def is_lower_ed(c):
+        return c["amenity"] in {"school", "kindergarten"} or c["btype"] in {
+            "school",
+            "kindergarten",
+        }
 
-    if (
-        amenity in {"restaurant", "fast_food", "cafe", "café", "food_court"}
-        or shop in {"convenience", "supermarket"}
-        or _hint_in(name_norm, DINING_HINTS)
-    ):
-        return "Food Service"
+    def is_housing(c):
+        return (
+            c["btype"]
+            in {"residential", "dormitory", "apartments", "fraternity", "sorority"}
+            or c["amenity"] in {"fraternity", "sorority"}
+            or re.search(GREEK_NAME_RE, name, re.I)
+            or _hint_in(name_norm, HOUSING_HINTS)
+        )
 
-    if amenity == "library" or _hint_in(name_norm, LIBRARY_MUSEUM_HINTS):
-        cat = "Library" if "library" in (amenity + " " + name_norm) else "Museum"
-        return cat
+    def is_food(c):
+        return (
+            c["amenity"]
+            in {"restaurant", "fast_food", "cafe", "café", "food_court"}
+            or c["shop"] in {"convenience", "supermarket"}
+            or _hint_in(name_norm, DINING_HINTS)
+        )
 
-    if _hint_in(name_norm, PERFORMANCE_HINTS) or amenity in {
-        "theatre",
-        "arts_centre",
-        "concert_hall",
-    }:
-        return "Performing Arts"
+    def is_library(c):
+        return c["amenity"] == "library" or "library" in name_norm
 
-    if leisure == "swimming_pool" or _hint_in(name_norm, POOL_HINTS):
-        return "Pool"
+    def is_museum(c):
+        return c["tourism"] in {"museum", "gallery"} or (
+            _hint_in(name_norm, LIBRARY_MUSEUM_HINTS) and not is_library(c)
+        )
 
-    if leisure == "stadium" or _hint_in(name_norm, STADIUM_HINTS):
-        return "Stadium"
+    def is_performance(c):
+        return _hint_in(name_norm, PERFORMANCE_HINTS) or c["amenity"] in {
+            "theatre",
+            "arts_centre",
+            "concert_hall",
+        }
 
-    if leisure == "tennis_court" or _hint_in(name_norm, COURT_HINTS):
-        return "Sports Court/Pitch"
+    def is_pool(c):
+        return c["leisure"] == "swimming_pool" or _hint_in(name_norm, POOL_HINTS)
 
-    if leisure in {"pitch", "track", "sports_centre"} or _hint_in(name_norm, FIELD_HINTS):
-        return "Sports Field"
+    def is_stadium(c):
+        return c["leisure"] == "stadium" or _hint_in(name_norm, STADIUM_HINTS)
 
-    if (
-        leisure in {"park", "garden"}
-        or landuse in {"grass", "recreation_ground", "forest", "meadow", "shrubland"}
-        or natural in {"scrub", "shrub", "shrubland", "wood", "grassland"}
-    ):
-        return "Green Space"
+    def is_court(c):
+        return c["leisure"] == "tennis_court" or _hint_in(name_norm, COURT_HINTS)
 
-    if (
-        amenity == "parking"
-        or tags.get("parking") in {"multi-storey", "underground"}
-        or "parking" in (btype + " " + operator)
-        or "parking" in name_norm
-    ):
-        sub = "Structure" if "structure" in name_norm or btype == "parking" else "Lot"
-        return f"Parking {sub}"
+    def is_field(c):
+        return c["leisure"] in {"pitch", "track", "sports_centre"} or _hint_in(
+            name_norm, FIELD_HINTS
+        )
 
-    if _hint_in(name_norm, SERVICE_HINTS):
-        return "Operations"
+    def is_green(c):
+        return (
+            c["leisure"] in {"park", "garden"}
+            or c["landuse"] in {"grass", "recreation_ground", "forest", "meadow", "shrubland"}
+            or c["natural"] in {"scrub", "shrub", "shrubland", "wood", "grassland"}
+        )
+
+    def is_parking(c):
+        return (
+            c["amenity"] == "parking"
+            or c["parking"] in {"multi-storey", "underground"}
+            or "parking" in (c["btype"] + " " + c["operator"])
+            or "parking" in name_norm
+        )
+
+    def is_parking_structure(c):
+        return is_parking(c) and ("structure" in name_norm or c["btype"] == "parking")
+
+    def is_operations(c):
+        return _hint_in(name_norm, SERVICE_HINTS)
+
+    rules = [
+        CategoryRule("Hospital", lambda c, n, z: is_hospital(c)),
+        CategoryRule("Clinic/Health", lambda c, n, z: is_medical(c)),
+        CategoryRule("Lower Education", lambda c, n, z: is_lower_ed(c)),
+        CategoryRule("Off-Campus Housing", lambda c, n, z: z == "Westwood" and is_housing(c)),
+        CategoryRule("On-Campus Housing", lambda c, n, z: is_housing(c)),
+        CategoryRule("Food Service", lambda c, n, z: is_food(c)),
+        CategoryRule("Library", lambda c, n, z: is_library(c)),
+        CategoryRule("Museum", lambda c, n, z: is_museum(c)),
+        CategoryRule("Performing Arts", lambda c, n, z: is_performance(c)),
+        CategoryRule("Pool", lambda c, n, z: is_pool(c)),
+        CategoryRule("Stadium", lambda c, n, z: is_stadium(c)),
+        CategoryRule("Sports Court/Pitch", lambda c, n, z: is_court(c)),
+        CategoryRule("Sports Field", lambda c, n, z: is_field(c)),
+        CategoryRule("Green Space", lambda c, n, z: is_green(c)),
+        CategoryRule("Parking Structure", lambda c, n, z: is_parking_structure(c)),
+        CategoryRule("Parking Lot", lambda c, n, z: is_parking(c)),
+        CategoryRule("Operations", lambda c, n, z: is_operations(c)),
+    ]
+
+    for rule in rules:
+        if rule.predicate(ctx, name_norm, zone):
+            return rule.name
 
     if zone in {"North Campus", "South Campus"}:
         return "Academic/Research"
