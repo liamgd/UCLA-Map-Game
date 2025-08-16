@@ -5,6 +5,7 @@ import Fuse from "fuse.js";
 
 const CATEGORY_COLOR_ENTRIES = [
   ["Academic/Research", "#1f77b4"],
+  ["Lower Education", "#aec7e8"],
   ["Clinic/Health", "#8c564b"],
   ["Food Service", "#d62728"],
   ["Hospital", "#c49c94"],
