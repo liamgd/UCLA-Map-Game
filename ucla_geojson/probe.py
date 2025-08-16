@@ -35,3 +35,19 @@ def feature_type_tree():
         categories.add(props["category"])
 
     print(*sorted(categories), sep="\n")
+
+
+def probe_names_categories():
+    campus = open_campus()
+    names_categories = {
+        feature["properties"]["name"]: feature["properties"]["category"]
+        for feature in campus
+    }
+    categories_dups = list(names_categories.values())
+    categories = iter(set(names_categories.values()))
+    category_counts = {
+        category: categories_dups.count(category) for category in categories
+    }
+    print(category_counts)
+    with open("probe/names_categories.json", "w", encoding="utf-8") as f:
+        json.dump(names_categories, f, ensure_ascii=False, indent=2)

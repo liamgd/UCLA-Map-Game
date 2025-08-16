@@ -1,7 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/node,python,react
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,python,react
 
-public/campus.geojson
+public/*.geojson
+probe/
+probe/*
 
 ### Node ###
 # Logs
