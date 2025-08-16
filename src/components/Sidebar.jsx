@@ -12,6 +12,8 @@ export default function Sidebar({
   queryMode,
   setQueryMode,
   queryResults,
+  trainingMode,
+  setTrainingMode,
 }) {
   return (
     <aside
@@ -86,6 +88,20 @@ export default function Sidebar({
         }}
       >
         {queryMode ? "Exit query" : "Query at point"}
+      </button>
+      <button
+        onClick={() => setTrainingMode((m) => !m)}
+        style={{
+          marginTop: 8,
+          padding: "6px 8px",
+          background: trainingMode ? "#ddeeff" : "#fff",
+          border: "1px solid #ccd",
+          borderRadius: 4,
+          cursor: "pointer",
+          display: "block",
+        }}
+      >
+        {trainingMode ? "Exit training" : "Start training"}
       </button>
       <div
         style={{

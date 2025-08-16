@@ -12,6 +12,7 @@ export default function App() {
   const [colorBy, setColorBy] = useState("category");
   const [queryMode, setQueryMode] = useState(false);
   const [queryResults, setQueryResults] = useState([]);
+  const [trainingMode, setTrainingMode] = useState(false);
 
   return (
     <div
@@ -33,6 +34,8 @@ export default function App() {
         queryMode={queryMode}
         setQueryMode={setQueryMode}
         queryResults={queryResults}
+        trainingMode={trainingMode}
+        setTrainingMode={setTrainingMode}
       />
       <MapView
         showNamed={showNamed}
@@ -44,6 +47,7 @@ export default function App() {
         setFuse={setFuse}
         queryMode={queryMode}
         setQueryResults={setQueryResults}
+        trainingMode={trainingMode}
       />
     </div>
   );
