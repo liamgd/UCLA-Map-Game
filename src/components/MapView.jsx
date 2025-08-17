@@ -274,6 +274,8 @@ export default function MapView({
       const res = await fetch("/campus.geojson");
       const data = await res.json();
 
+      data.features = data.features.filter((f) => f.properties.render === true);
+
       data.features.forEach((f) => {
         const p = f.properties;
         const name = p.name?.toLowerCase() || "";
