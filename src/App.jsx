@@ -11,7 +11,11 @@ export default function App() {
   const [showUnnamed, setShowUnnamed] = useState(true);
   const [colorBy, setColorBy] = useState("category");
   const [queryMode, setQueryMode] = useState(false);
-  const [queryResults, setQueryResults] = useState([]);
+  const [queryResults, setQueryResults] = useState({
+    lngLat: null,
+    point: null,
+    features: [],
+  });
   const [trainingMode, setTrainingMode] = useState(false);
 
   return (

@@ -136,7 +136,7 @@ export default function MapView({
   useEffect(() => {
     queryModeRef.current = queryMode;
     if (!queryMode) {
-      setQueryResults([]);
+      setQueryResults({ lngLat: null, point: null, features: [] });
     }
   }, [queryMode, setQueryResults]);
 
@@ -472,7 +472,11 @@ export default function MapView({
           return;
         }
         if (queryModeRef.current) {
-          setQueryResults(features);
+          setQueryResults({
+            lngLat: { lng: e.lngLat.lng, lat: e.lngLat.lat },
+            point: { x: e.point.x, y: e.point.y },
+            features,
+          });
           setStatus(
             `Found ${features.length} feature${features.length !== 1 ? "s" : ""}`
           );
