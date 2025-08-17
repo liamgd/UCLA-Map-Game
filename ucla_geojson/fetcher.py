@@ -1,5 +1,5 @@
-import asyncio
 import json
+import multiprocessing
 import urllib.parse
 import urllib.request
 from typing import Dict, Iterable, List, Tuple
@@ -103,25 +103,21 @@ def _build_url(query: str) -> str:
     return f"{OVERPASS_URL}?{urllib.parse.urlencode({'data': query})}"
 
 
-async def _fetch(query: str) -> Dict[str, object]:
+def _fetch(query: str) -> Dict[str, object]:
     url = _build_url(query)
-
-    def _read() -> Dict[str, object]:
-        with urllib.request.urlopen(url) as resp:
-            return json.load(resp)
-
-    data = await asyncio.to_thread(_read)
+    with urllib.request.urlopen(url) as resp:
+        data = json.load(resp)
     print(f"Fetched {len(data.get('elements', []))} elements")
     return data
 
 
-async def fetch_osm_data_async(split: bool = True) -> Dict[str, object]:
+def fetch_osm_data(split: bool = True) -> Dict[str, object]:
     single_query, split_queries = _build_query()
     if not split:
-        return await _fetch(single_query)
+        return _fetch(single_query)
 
-    tasks = [_fetch(q) for q in split_queries.values()]
-    results = await asyncio.gather(*tasks)
+    with multiprocessing.Pool() as pool:
+        results = pool.map(_fetch, split_queries.values())
     combined: Dict[str, object] = {"elements": []}
     seen = set()
     for data in results:
@@ -132,10 +128,6 @@ async def fetch_osm_data_async(split: bool = True) -> Dict[str, object]:
                 seen.add(key)
     print(f"Fetched {len(combined['elements'])} combined elements")
     return combined
-
-
-def fetch_osm_data(split: bool = True) -> Dict[str, object]:
-    return asyncio.run(fetch_osm_data_async(split=split))
 
 
 __all__ = ["fetch_osm_data"]
