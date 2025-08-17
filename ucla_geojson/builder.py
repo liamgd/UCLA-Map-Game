@@ -24,9 +24,6 @@ OVERLAP_THRESHOLD = 0.60
 
 # OSM relation id for UCLA campus boundary
 CAMPUS_RELATION_ID = 7493269
-# Minimum ratio of a feature's area that must overlap the campus boundary to
-# consider it on campus
-ON_CAMPUS_THRESHOLD = 0.5
 
 
 def _outer_shell(geom):
@@ -200,13 +197,12 @@ def process_features(osm_data):
         c = geom.centroid
         centroid = [round(c.x, 6), round(c.y, 6)]
 
-        zone = determine_zone(centroid)
-        category = determine_category(tags, name, zone)
-
         on_campus = False
-        if campus_geom_m and A > 0:
-            inter_area = geom_m.intersection(campus_geom_m).area
-            on_campus = inter_area >= ON_CAMPUS_THRESHOLD * A
+        if campus_geom_m:
+            on_campus = geom_m.intersects(campus_geom_m)
+
+        zone = determine_zone(centroid) if on_campus else "Westwood"
+        category = determine_category(tags, name, zone)
 
         fid = f"{slugify(name)}-{hash_centroid(centroid)}"
         props = {
@@ -224,6 +220,16 @@ def process_features(osm_data):
             .isoformat()
             .replace("+00:00", "Z"),
         }
+
+        name_norm = name.strip().lower()
+        if (
+            name_norm in {"ucla", "university of california, los angeles"}
+            and (tags.get("amenity") == "university" or tags.get("landuse") == "university")
+        ):
+            props["render"] = False
+
+        if props.get("render") is not False:
+            props["render"] = True
 
         g_view = simplify_geom_m(geom, SINGLE_TOLERANCE_M)
         if not g_view:
