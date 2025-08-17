@@ -113,7 +113,7 @@ export default function Sidebar({
       >
         {status}
       </div>
-      {queryResults.length > 0 && (
+      {queryResults.lngLat && (
         <div
           style={{
             marginTop: 8,
@@ -125,7 +125,23 @@ export default function Sidebar({
             background: "#fff",
           }}
         >
-          {queryResults.map((f, idx) => (
+          <div style={{ marginBottom: 8 }}>
+            <div style={{ fontWeight: "bold" }}>Clicked point</div>
+            <pre
+              style={{
+                whiteSpace: "pre-wrap",
+                wordBreak: "break-word",
+                fontSize: 12,
+              }}
+            >
+              {JSON.stringify(
+                { lngLat: queryResults.lngLat, point: queryResults.point },
+                null,
+                2
+              )}
+            </pre>
+          </div>
+          {queryResults.features.map((f, idx) => (
             <div key={idx} style={{ marginBottom: 8 }}>
               <div style={{ fontWeight: "bold" }}>
                 {f.properties.name || f.properties.id || `Feature ${idx + 1}`}
