@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import Fuse from "fuse.js";
@@ -121,6 +121,7 @@ export default function MapView({
   const queryModeRef = useRef(queryMode);
   const trainingModeRef = useRef(trainingMode);
   const targetRef = useRef(null);
+  const [mapError, setMapError] = useState(null);
 
   const startTrainingRound = () => {
     if (!dataRef.current) return;
@@ -200,33 +201,50 @@ export default function MapView({
   };
 
   useEffect(() => {
-    const map = new maplibregl.Map({
-      container: "map",
-      style: {
-        version: 8,
-        glyphs: "https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf",
-        sources: {},
-        layers: [
-          {
-            id: "bg",
-            type: "background",
-            paint: { "background-color": "#f0f2f5" },
-          },
-        ],
-      },
-      center: [-118.4452, 34.0689],
-      zoom: 16,
-      minZoom: 15,
-      maxZoom: 19,
-      maxBounds: BOUNDS,
-      dragRotate: false,
-      pitchWithRotate: false,
-    });
-    mapRef.current = map;
-    const hoverPopup = new maplibregl.Popup({
-      closeButton: false,
-      closeOnClick: false,
-    });
+    if (!maplibregl.supported()) {
+      const msg = "WebGL is not supported in this browser";
+      setStatus(msg);
+      setMapError(msg);
+      return;
+    }
+
+    let map;
+    let hoverPopup;
+    try {
+      map = new maplibregl.Map({
+        container: "map",
+        style: {
+          version: 8,
+          glyphs: "https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf",
+          sources: {},
+          layers: [
+            {
+              id: "bg",
+              type: "background",
+              paint: { "background-color": "#f0f2f5" },
+            },
+          ],
+        },
+        center: [-118.4452, 34.0689],
+        zoom: 16,
+        minZoom: 15,
+        maxZoom: 19,
+        maxBounds: BOUNDS,
+        dragRotate: false,
+        pitchWithRotate: false,
+      });
+      mapRef.current = map;
+      hoverPopup = new maplibregl.Popup({
+        closeButton: false,
+        closeOnClick: false,
+      });
+    } catch (err) {
+      console.error("Failed to initialize map", err);
+      const msg = "Failed to initialize map";
+      setStatus(msg);
+      setMapError(msg);
+      return;
+    }
 
     const buildingFillPaint = {
       "fill-color": fillColorFor(colorByRef.current),
@@ -581,6 +599,23 @@ export default function MapView({
   return (
     <div style={{ width: "100%", height: "100%", position: "relative" }}>
       <div id="map" style={{ width: "100%", height: "100%" }} />
+      {mapError && (
+        <div
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            background: "rgba(255,255,255,0.9)",
+            padding: 12,
+            border: "1px solid #ccd",
+            borderRadius: 4,
+            zIndex: 2,
+          }}
+        >
+          {mapError}
+        </div>
+      )}
       <button
         onClick={fitToCampus}
         style={{
