@@ -8,8 +8,7 @@ from typing import Dict, Iterable, List, Tuple
 
 from .constants import BBOX_QUERY, GREEK_NAME_RE, OVERPASS_URL
 
-
-CACHE_DIR = Path(__file__).resolve().parent / "cache"
+CACHE_DIR = Path(__file__).resolve().parent.parent / "cache"
 CACHE_DIR.mkdir(exist_ok=True)
 
 
@@ -92,14 +91,23 @@ def _build_query() -> Tuple[str, Dict[str, str]]:
     final_lines = (
         BASE_LINES
         + body
-        + ["(.campus; .ucla_related; .greek; relation(7493269););", "out body; >; out skel qt;"]
+        + [
+            "(.campus; .ucla_related; .greek; relation(7493269););",
+            "out body; >; out skel qt;",
+        ]
     )
     single = "\n".join(final_lines)
 
     split_queries: Dict[str, str] = {}
     for name, lines in sections.items():
-        tail = f"(.{name}; {'relation(7493269);' if name == 'campus' else ''});"
-        q_lines = BASE_LINES + _wrap(lines, name) + [tail, "out body; >; out skel qt;"]
+        tail = (
+            f"(.{name}; {'relation(7493269);' if name == 'campus' else ''});"
+        )
+        q_lines = (
+            BASE_LINES
+            + _wrap(lines, name)
+            + [tail, "out body; >; out skel qt;"]
+        )
         split_queries[name] = "\n".join(q_lines)
 
     return single, split_queries
@@ -150,4 +158,3 @@ def fetch_osm_data(split: bool = True) -> Dict[str, object]:
 
 
 __all__ = ["fetch_osm_data"]
-

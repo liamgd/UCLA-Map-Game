@@ -231,47 +231,6 @@ GREEN_NAME_HINTS = {
 }
 
 
-# --- Zone definitions -----------------------------------------------------
-
-# Simple polygonal boundaries used for zoning.  These were manually derived
-# to provide a more accurate split of the campus than the previous set of
-# latitude/longitude thresholds.  The coordinates are ordered as (lon, lat).
-ZONE_POLYGONS = {
-    "The Hill": Polygon(
-        [
-            (-118.456, 34.069),
-            (-118.456, 34.076),
-            (-118.447, 34.076),
-            (-118.447, 34.069),
-        ]
-    ),
-    "Westwood": Polygon(
-        [
-            (-118.447, 34.058),
-            (-118.447, 34.075),
-            (-118.433, 34.075),
-            (-118.433, 34.058),
-        ]
-    ),
-    "North Campus": Polygon(
-        [
-            (-118.447, 34.0705),
-            (-118.447, 34.075),
-            (-118.44, 34.075),
-            (-118.44, 34.0705),
-        ]
-    ),
-    "South Campus": Polygon(
-        [
-            (-118.447, 34.058),
-            (-118.447, 34.0705),
-            (-118.44, 34.0705),
-            (-118.44, 34.058),
-        ]
-    ),
-}
-
-
 def _hint_in(name_norm: str, hints: set) -> bool:
     return any(h in name_norm for h in hints)
 
@@ -286,17 +245,12 @@ def determine_zone(centroid):
     """
 
     point = Point(centroid)
-    for zone, poly in ZONE_POLYGONS.items():
-        if poly.contains(point):
-            return zone
 
     # Fallback to the old heuristic in case a point falls outside all
     # predefined polygons (e.g. newly added data slightly outside bounds).
     lon, lat = point.x, point.y
     if lon <= -118.445:
         return "The Hill"
-    if lon >= -118.44:
-        return "Westwood"
     return "North Campus" if lat >= 34.0705 else "South Campus"
 
 
@@ -354,7 +308,13 @@ def determine_category(tags: Dict[str, str], name: str, zone: str) -> str:
         (
             "Housing",
             lambda: btype
-            in {"residential", "dormitory", "apartments", "fraternity", "sorority"}
+            in {
+                "residential",
+                "dormitory",
+                "apartments",
+                "fraternity",
+                "sorority",
+            }
             or amenity in {"fraternity", "sorority"}
             or re.search(GREEK_NAME_RE, name, re.I)
             or _hint_in(name_norm, HOUSING_HINTS),
@@ -379,11 +339,19 @@ def determine_category(tags: Dict[str, str], name: str, zone: str) -> str:
             lambda: _hint_in(name_norm, PERFORMANCE_HINTS)
             or amenity in {"theatre", "arts_centre", "concert_hall"},
         ),
-        ("Pool", lambda: leisure == "swimming_pool" or _hint_in(name_norm, POOL_HINTS)),
-        ("Stadium", lambda: leisure == "stadium" or _hint_in(name_norm, STADIUM_HINTS)),
+        (
+            "Pool",
+            lambda: leisure == "swimming_pool"
+            or _hint_in(name_norm, POOL_HINTS),
+        ),
+        (
+            "Stadium",
+            lambda: leisure == "stadium" or _hint_in(name_norm, STADIUM_HINTS),
+        ),
         (
             "Sports Court/Pitch",
-            lambda: leisure == "tennis_court" or _hint_in(name_norm, COURT_HINTS),
+            lambda: leisure == "tennis_court"
+            or _hint_in(name_norm, COURT_HINTS),
         ),
         (
             "Sports Field",
@@ -395,8 +363,15 @@ def determine_category(tags: Dict[str, str], name: str, zone: str) -> str:
             lambda: (
                 leisure in {"park", "garden"}
                 or landuse
-                in {"grass", "recreation_ground", "forest", "meadow", "shrubland"}
-                or natural in {"scrub", "shrub", "shrubland", "wood", "grassland"}
+                in {
+                    "grass",
+                    "recreation_ground",
+                    "forest",
+                    "meadow",
+                    "shrubland",
+                }
+                or natural
+                in {"scrub", "shrub", "shrubland", "wood", "grassland"}
                 or _hint_in(name_norm, GREEN_NAME_HINTS)
             ),
         ),
@@ -412,8 +387,16 @@ def determine_category(tags: Dict[str, str], name: str, zone: str) -> str:
     for cat, check in rules:
         if check():
             if cat == "Housing":
-                return "Off-Campus Housing" if zone == "Westwood" else "On-Campus Housing"
-            if cat == "Library" and "library" not in name_norm and amenity != "library":
+                return (
+                    "Off-Campus Housing"
+                    if zone == "Westwood"
+                    else "On-Campus Housing"
+                )
+            if (
+                cat == "Library"
+                and "library" not in name_norm
+                and amenity != "library"
+            ):
                 # If the library rule matched due to hints but the name does not
                 # explicitly mention a library, treat it as a museum instead.
                 return "Museum"
