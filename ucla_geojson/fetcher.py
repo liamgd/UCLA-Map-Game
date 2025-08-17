@@ -1,10 +1,16 @@
+import hashlib
 import json
 import multiprocessing
 import urllib.parse
 import urllib.request
+from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
 
 from .constants import BBOX_QUERY, GREEK_NAME_RE, OVERPASS_URL
+
+
+CACHE_DIR = Path(__file__).resolve().parent / "cache"
+CACHE_DIR.mkdir(exist_ok=True)
 
 
 BASE_LINES = [
@@ -105,8 +111,21 @@ def _build_url(query: str) -> str:
 
 def _fetch(query: str) -> Dict[str, object]:
     url = _build_url(query)
-    with urllib.request.urlopen(url) as resp:
-        data = json.load(resp)
+    url_hash = hashlib.sha256(url.encode()).hexdigest()[:16]
+    cache_file = CACHE_DIR / f"{url_hash}.json"
+
+    if cache_file.exists():
+        print(f"Using cache for {url_hash} at {cache_file}")
+        with cache_file.open() as resp:
+            data = json.load(resp)
+    else:
+        print(f"Fetching {url} -> {url_hash}")
+        with urllib.request.urlopen(url) as resp:
+            data = json.load(resp)
+        with cache_file.open("w") as f:
+            json.dump(data, f)
+        print(f"Saved cache to {cache_file}")
+
     print(f"Fetched {len(data.get('elements', []))} elements")
     return data
 
