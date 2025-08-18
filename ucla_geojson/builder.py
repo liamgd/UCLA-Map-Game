@@ -22,8 +22,8 @@ MIN_CHILD_AREA = 20
 SUBSET_BUFFER_M = 0.25
 OVERLAP_THRESHOLD = 0.60
 
-# OSM relation id for UCLA campus boundary
-CAMPUS_RELATION_ID = 7493269
+# OSM way id for UCLA campus boundary
+CAMPUS_WAY_ID = 807458549
 
 
 def _outer_shell(geom):
@@ -99,13 +99,13 @@ def process_features(osm_data):
     ways, _, way_polys, rel_polys, ways_in_building_rels = build_geometries(
         osm_data
     )
-    campus_geom = rel_polys.get(CAMPUS_RELATION_ID)
+    campus_geom = way_polys.get(CAMPUS_WAY_ID)
     campus_geom_m = transform(_TO_M, campus_geom) if campus_geom else None
     features = []
 
     elements = osm_data.get("elements", [])
     for el in elements:
-        if el["type"] == "relation" and el["id"] == CAMPUS_RELATION_ID:
+        if el["type"] == "way" and el["id"] == CAMPUS_WAY_ID:
             continue
         if el["type"] == "way":
             if el["id"] in ways_in_building_rels:
@@ -197,11 +197,11 @@ def process_features(osm_data):
         c = geom.centroid
         centroid = [round(c.x, 6), round(c.y, 6)]
 
-        on_campus = False
+        main_campus = False
         if campus_geom_m:
-            on_campus = geom_m.intersects(campus_geom_m)
+            main_campus = geom_m.intersects(campus_geom_m)
 
-        zone = determine_zone(centroid) if on_campus else "Westwood"
+        zone = determine_zone(centroid) if main_campus else "Westwood"
         category = determine_category(tags, name, zone)
 
         fid = f"{slugify(name)}-{hash_centroid(centroid)}"
@@ -214,7 +214,7 @@ def process_features(osm_data):
             "centroid": centroid,
             "osm_ids": [osm_id_str],
             "area": round(A, 2),
-            "on_campus": on_campus,
+            "main_campus": main_campus,
             "overlap_role": "solo",
             "updated_at": datetime.now(timezone.utc)
             .isoformat()

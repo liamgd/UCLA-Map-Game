@@ -92,7 +92,7 @@ def _build_query() -> Tuple[str, Dict[str, str]]:
         BASE_LINES
         + body
         + [
-            "(.campus; .ucla_related; .greek; relation(7493269););",
+            "(.campus; .ucla_related; .greek; way(807458549););",
             "out body; >; out skel qt;",
         ]
     )
@@ -100,9 +100,7 @@ def _build_query() -> Tuple[str, Dict[str, str]]:
 
     split_queries: Dict[str, str] = {}
     for name, lines in sections.items():
-        tail = (
-            f"(.{name}; {'relation(7493269);' if name == 'campus' else ''});"
-        )
+        tail = f"(.{name}; {'way(807458549);' if name == 'campus' else ''});"
         q_lines = (
             BASE_LINES
             + _wrap(lines, name)
