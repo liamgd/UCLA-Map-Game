@@ -236,6 +236,13 @@ export default function MapView({
   };
 
   useEffect(() => {
+    let persistedView = null;
+    try {
+      persistedView = JSON.parse(window.localStorage.getItem("mapView"));
+    } catch {
+      // ignore
+    }
+
     const map = new maplibregl.Map({
       container: "map",
       style: {
@@ -250,8 +257,8 @@ export default function MapView({
           },
         ],
       },
-      center: [-118.4452, 34.0689],
-      zoom: 16,
+      center: persistedView?.center ?? [-118.4452, 34.0689],
+      zoom: persistedView?.zoom ?? 16,
       minZoom: 15,
       maxZoom: 19,
       maxBounds: BOUNDS,
@@ -607,6 +614,19 @@ export default function MapView({
       });
 
       map.getCanvas().style.cursor = "crosshair";
+    });
+
+    map.on("moveend", () => {
+      const c = map.getCenter();
+      const z = map.getZoom();
+      try {
+        window.localStorage.setItem(
+          "mapView",
+          JSON.stringify({ center: [c.lng, c.lat], zoom: z })
+        );
+      } catch {
+        // ignore
+      }
     });
 
     return () => {
