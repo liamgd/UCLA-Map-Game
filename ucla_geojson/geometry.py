@@ -35,6 +35,7 @@ def build_geometries(osm_data):
     rel_polys = {}
     ways_in_building_rels = set()
     ways_in_multipolygon_holes = set()
+    inner_count = 0
 
     for rel in rels:
         if "members" not in rel:
@@ -55,6 +56,7 @@ def build_geometries(osm_data):
             elif role == "inner":
                 inners.append(poly)
                 ways_in_multipolygon_holes.add(m.get("ref"))
+                inner_count += 1
 
         if outers:
             merged = unary_union(outers)
@@ -62,9 +64,13 @@ def build_geometries(osm_data):
                 inner_union = unary_union(inners)
                 if not inner_union.is_empty:
                     merged = merged.difference(inner_union)
-            if isinstance(merged, (Polygon, MultiPolygon)) and not merged.is_empty:
+            if (
+                isinstance(merged, (Polygon, MultiPolygon))
+                and not merged.is_empty
+            ):
                 rel_polys[rel["id"]] = merged
 
+    print(f"  Removed {inner_count} multipolygon holes")
     print(
         f"Built {len(way_polys)} way polygons and {len(rel_polys)} relation polygons"
     )

@@ -1,7 +1,7 @@
 import re
 from typing import Dict
 
-from shapely.geometry import Point, Polygon
+from shapely.geometry import Point
 
 from .constants import GREEK_NAME_RE
 
@@ -235,7 +235,7 @@ def _hint_in(name_norm: str, hints: set) -> bool:
     return any(h in name_norm for h in hints)
 
 
-def determine_zone(centroid):
+def determine_zone(centroid, main_campus):
     """Return the campus zone for a given centroid.
 
     The previous implementation used a pair of longitude/latitude thresholds
@@ -246,11 +246,11 @@ def determine_zone(centroid):
 
     point = Point(centroid)
 
-    # Fallback to the old heuristic in case a point falls outside all
-    # predefined polygons (e.g. newly added data slightly outside bounds).
     lat, lon = point.x, point.y
-    if lon <= 34.0637 or (lon <= 34.0644 and lat <= -118.4482036664417):
-        return "Southwest Campus"
+    if not main_campus:
+        if lon <= 34.0630 or (lon <= 34.0644 and lat <= -118.4482036664417):
+            return "Southwest Campus"
+        return "Westwood"
     if lat <= -0.1135 * lon - 114.5823:
         return "The Hill"
     if lon >= 34.0732:
@@ -395,7 +395,7 @@ def determine_category(tags: Dict[str, str], name: str, zone: str) -> str:
             if cat == "Housing":
                 return (
                     "Off-Campus Housing"
-                    if zone == "Westwood"
+                    if zone in ("Westwood", "Southwest Campus")
                     else "On-Campus Housing"
                 )
             if (
@@ -417,16 +417,17 @@ def determine_category(tags: Dict[str, str], name: str, zone: str) -> str:
                 return f"Parking {sub}"
             return cat
 
-    # Default fallback based on the campus zone.  Features in the academic core
-    # (North, Center, or South Campus) that didn't match any specific rule are
-    # treated as academic/research facilities.  Features on the Hill are
-    # considered on-campus housing, and those in Westwood are considered
-    # off-campus housing.  This eliminates the "Unknown" category entirely.
-    if zone in {"North Campus", "Center Campus", "South Campus"}:
-        return "Academic/Research"
-    if zone == "The Hill":
-        return "On-Campus Housing"
-    if zone == "Southwest Campus":
-        return "On-Campus Housing"
-    # Default for Westwood or any other zones
-    return "Off-Campus Housing"
+    # # Default fallback based on the campus zone.  Features in the academic core
+    # # (North, Center, or South Campus) that didn't match any specific rule are
+    # # treated as academic/research facilities.  Features on the Hill are
+    # # considered on-campus housing, and those in Westwood are considered
+    # # off-campus housing.  This eliminates the "Unknown" category entirely.
+    # if zone in {"North Campus", "Center Campus", "South Campus"}:
+    #     return "Academic/Research"
+    # if zone == "The Hill":
+    #     return "On-Campus Housing"
+    # if zone == "Southwest Campus":
+    #     return "On-Campus Housing"
+    # # Default for Westwood or any other zones
+    # return "Off-Campus Housing"
+    return "Unknown"

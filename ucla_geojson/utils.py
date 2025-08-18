@@ -12,3 +12,7 @@ def slugify(text: str) -> str:
 def hash_centroid(centroid):
     s = f"{centroid[0]:.5f},{centroid[1]:.5f}"
     return hashlib.md5(s.encode()).hexdigest()[:6]
+
+
+def shorten(text, tail=10):
+    return f"{text[:tail]}...{text[:-tail]}"

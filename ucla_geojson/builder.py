@@ -207,7 +207,7 @@ def process_features(osm_data):
         if campus_geom_m:
             main_campus = geom_m.intersects(campus_geom_m)
 
-        zone = determine_zone(centroid) if main_campus else "Westwood"
+        zone = determine_zone(centroid, main_campus)
         category = determine_category(tags, name, zone)
 
         fid = f"{slugify(name)}-{hash_centroid(centroid)}"
@@ -265,7 +265,7 @@ def process_features(osm_data):
                 deduped[centroid] = feat
             removed_dupes += 1
 
-    print(f"Removed {removed_dupes} duplicate feature(s) by centroid")
+    print(f"  Removed {removed_dupes} duplicate feature(s) by centroid")
     features = list(
         sorted(
             deduped.values(),
@@ -275,7 +275,7 @@ def process_features(osm_data):
     )
     renamed = assign_parent_child(features)
     print(
-        f"Renamed {renamed} unnamed feature(s) contained within a named feature"
+        f"  Renamed {renamed} unnamed feature(s) contained within a named feature"
     )
     print(f"Generated {len(features)} features")
     return features

@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
 
 from .constants import BBOX_QUERY, GREEK_NAME_RE, OVERPASS_URL
+from .utils import shorten
 
 CACHE_DIR = Path(__file__).resolve().parent.parent / "cache"
 CACHE_DIR.mkdir(exist_ok=True)
@@ -119,20 +120,21 @@ def _fetch(query: str) -> Dict[str, object]:
     url = _build_url(query)
     url_hash = hashlib.sha256(url.encode()).hexdigest()[:16]
     cache_file = CACHE_DIR / f"{url_hash}.json"
+    cache_file_relative = cache_file.relative_to(CACHE_DIR.parent)
 
     if cache_file.exists():
-        print(f"Using cache for {url_hash} at {cache_file}")
+        print(f"  Using cache at {cache_file_relative}")
         with cache_file.open() as resp:
             data = json.load(resp)
     else:
-        print(f"Fetching {url} -> {url_hash}")
+        print(f"  Fetching {shorten(url)} -> {url_hash} hash")
         with urllib.request.urlopen(url) as resp:
             data = json.load(resp)
         with cache_file.open("w") as f:
             json.dump(data, f)
-        print(f"Saved cache to {cache_file}")
+        print(f"  Saved cache to {cache_file}")
 
-    print(f"Fetched {len(data.get('elements', []))} elements")
+    print(f"  Fetched {len(data.get('elements', []))} elements")
     return data
 
 

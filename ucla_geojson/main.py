@@ -1,7 +1,7 @@
 from time import perf_counter
 
-from .fetcher import fetch_osm_data
 from .builder import process_features
+from .fetcher import fetch_osm_data
 from .writer import write_single
 
 
@@ -15,7 +15,7 @@ def main():
 
     total_time = perf_counter() - start_time
     print(
-        f"Done. Wrote {len(features)} features to public/campus.geojson in {total_time:.2f} seconds"
+        f"Done. Wrote {len(features)} features to public/campus.geojson in {total_time:.2f} total seconds"
     )
 
 
@@ -23,5 +23,5 @@ def timed(label, func, *args, **kwargs):
     start = perf_counter()
     result = func(*args, **kwargs)
     duration = perf_counter() - start
-    print(f"{label} took {duration:.2f} seconds")
+    print(f"({label} took {duration:.2f} seconds)")
     return result
