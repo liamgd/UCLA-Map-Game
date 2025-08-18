@@ -222,9 +222,9 @@ def process_features(osm_data):
         }
 
         name_norm = name.strip().lower()
-        if (
-            name_norm in {"ucla", "university of california, los angeles"}
-            and (tags.get("amenity") == "university" or tags.get("landuse") == "university")
+        if name_norm in {"ucla", "university of california, los angeles"} and (
+            tags.get("amenity") == "university"
+            or tags.get("landuse") == "university"
         ):
             props["render"] = False
 

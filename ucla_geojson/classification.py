@@ -248,10 +248,16 @@ def determine_zone(centroid):
 
     # Fallback to the old heuristic in case a point falls outside all
     # predefined polygons (e.g. newly added data slightly outside bounds).
-    lon, lat = point.x, point.y
-    if lon <= -118.445:
+    lat, lon = point.x, point.y
+    if lon <= 34.0637 or (lon <= 34.0644 and lat <= -118.4482036664417):
+        return "Southwest Campus"
+    if lat <= -0.1135 * lon - 114.5823:
         return "The Hill"
-    return "North Campus" if lat >= 34.0705 else "South Campus"
+    if lon >= 34.0732:
+        return "North Campus"
+    if lon <= 34.0698:
+        return "South Campus"
+    return "Center Campus"
 
 
 def determine_category(tags: Dict[str, str], name: str, zone: str) -> str:
@@ -412,13 +418,15 @@ def determine_category(tags: Dict[str, str], name: str, zone: str) -> str:
             return cat
 
     # Default fallback based on the campus zone.  Features in the academic core
-    # (North Campus or South Campus) that didn't match any specific rule are
+    # (North, Center, or South Campus) that didn't match any specific rule are
     # treated as academic/research facilities.  Features on the Hill are
     # considered on-campus housing, and those in Westwood are considered
     # off-campus housing.  This eliminates the "Unknown" category entirely.
-    if zone in {"North Campus", "South Campus"}:
+    if zone in {"North Campus", "Center Campus", "South Campus"}:
         return "Academic/Research"
     if zone == "The Hill":
+        return "On-Campus Housing"
+    if zone == "Southwest Campus":
         return "On-Campus Housing"
     # Default for Westwood or any other zones
     return "Off-Campus Housing"

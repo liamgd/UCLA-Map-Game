@@ -31,10 +31,12 @@ const CATEGORY_LEGEND = Array.from(
 );
 
 const ZONE_LEGEND = [
-  ["North Campus", "#1f77b4"],
-  ["South Campus", "#2ca02c"],
-  ["The Hill", "#d62728"],
-  ["Westwood", "#ff7f0e"],
+  ["North Campus", "#df4a4aff"],
+  ["Center Campus", "#c49821ff"],
+  ["South Campus", "#e3df0cff"],
+  ["The Hill", "#36d627ff"],
+  ["Southwest Campus", "#27d3d6ff"],
+  ["Westwood", "#d06aefff"],
 ];
 
 const colorExpr = (mode) => {
@@ -47,12 +49,7 @@ const colorExpr = (mode) => {
     ];
   }
   if (mode === "zone") {
-    return [
-      "match",
-      ["get", "zone"],
-      ...ZONE_LEGEND.flat(),
-      "#6aa9ff",
-    ];
+    return ["match", ["get", "zone"], ...ZONE_LEGEND.flat(), "#6aa9ff"];
   }
   return "#6aa9ff";
 };
@@ -280,7 +277,8 @@ export default function MapView({
         const p = f.properties;
         const name = p.name?.toLowerCase() || "";
         if (p.category === "Residential") {
-          p.category = p.zone === "Westwood" ? "Off-Campus Housing" : "On-Campus Housing";
+          p.category =
+            p.zone === "Westwood" ? "Off-Campus Housing" : "On-Campus Housing";
         } else if (p.category === "Athletic/Recreational") {
           if (name.includes("pool")) {
             p.category = "Pool";
@@ -478,7 +476,9 @@ export default function MapView({
             features,
           });
           setStatus(
-            `Found ${features.length} feature${features.length !== 1 ? "s" : ""}`
+            `Found ${features.length} feature${
+              features.length !== 1 ? "s" : ""
+            }`
           );
         } else if (features.length > 0) {
           const f = smallestFeature(features);
@@ -499,7 +499,10 @@ export default function MapView({
         if (!features.length) return;
         const first = features[0];
         hoverRef.current = first.properties.id;
-        hoverPopup.setLngLat(e.lngLat).setText(first.properties.name).addTo(map);
+        hoverPopup
+          .setLngLat(e.lngLat)
+          .setText(first.properties.name)
+          .addTo(map);
         applyHover();
         const point = e.point;
         const lngLat = e.lngLat;
@@ -533,7 +536,7 @@ export default function MapView({
       hoverPopup.remove();
       map.remove();
     };
-    }, [setFuse, setSelectedId, setStatus, setQueryResults]);
+  }, [setFuse, setSelectedId, setStatus, setQueryResults]);
 
   useEffect(() => {
     applyBaseFilters();
@@ -619,7 +622,11 @@ export default function MapView({
             ([label, color]) => (
               <div
                 key={label}
-                style={{ display: "flex", alignItems: "center", marginBottom: 2 }}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginBottom: 2,
+                }}
               >
                 <span
                   style={{
