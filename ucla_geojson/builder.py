@@ -96,9 +96,15 @@ def assign_parent_child(features):
 
 def process_features(osm_data):
     print("Processing features...")
-    ways, _, way_polys, rel_polys, ways_in_building_rels = build_geometries(
-        osm_data
-    )
+    (
+        ways,
+        _,
+        way_polys,
+        rel_polys,
+        ways_in_building_rels,
+        ways_in_multipolygon_holes,
+    ) = build_geometries(osm_data)
+    ways_to_skip = ways_in_building_rels | ways_in_multipolygon_holes
     campus_geom = way_polys.get(CAMPUS_WAY_ID)
     campus_geom_m = transform(_TO_M, campus_geom) if campus_geom else None
     features = []
@@ -108,7 +114,7 @@ def process_features(osm_data):
         if el["type"] == "way" and el["id"] == CAMPUS_WAY_ID:
             continue
         if el["type"] == "way":
-            if el["id"] in ways_in_building_rels:
+            if el["id"] in ways_to_skip:
                 continue
             geom = way_polys.get(el["id"])
             osm_id_str = f"way/{el['id']}"
