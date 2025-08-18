@@ -17,6 +17,7 @@ export default function App() {
     features: [],
   });
   const [trainingMode, setTrainingMode] = useState(false);
+  const [showPoints, setShowPoints] = useState(false);
 
   return (
     <div
@@ -40,6 +41,8 @@ export default function App() {
         queryResults={queryResults}
         trainingMode={trainingMode}
         setTrainingMode={setTrainingMode}
+        showPoints={showPoints}
+        setShowPoints={setShowPoints}
       />
       <MapView
         showNamed={showNamed}
@@ -52,6 +55,7 @@ export default function App() {
         queryMode={queryMode}
         setQueryResults={setQueryResults}
         trainingMode={trainingMode}
+        showPoints={showPoints}
       />
     </div>
   );

@@ -14,6 +14,8 @@ export default function Sidebar({
   queryResults,
   trainingMode,
   setTrainingMode,
+  showPoints,
+  setShowPoints,
 }) {
   return (
     <aside
@@ -41,6 +43,14 @@ export default function Sidebar({
             onChange={(e) => setShowUnnamed(e.target.checked)}
           />
           <span style={{ marginLeft: 4 }}>Show unnamed buildings</span>
+        </label>
+        <label style={{ display: "block", marginTop: 4 }}>
+          <input
+            type="checkbox"
+            checked={showPoints}
+            onChange={(e) => setShowPoints(e.target.checked)}
+          />
+          <span style={{ marginLeft: 4 }}>Show polygon points</span>
         </label>
         <div style={{ marginTop: 8 }}>
           <div>Color by:</div>

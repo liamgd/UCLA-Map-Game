@@ -73,6 +73,8 @@ const LABEL_TILES = [
   "https://d.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png",
 ];
 
+const EMPTY_FC = { type: "FeatureCollection", features: [] };
+
 const setFilterSafe = (map, layerId, f) => {
   map.setFilter(layerId, f ?? ["all"]);
 };
@@ -106,6 +108,7 @@ export default function MapView({
   queryMode,
   setQueryResults,
   trainingMode,
+  showPoints,
 }) {
   const mapRef = useRef(null);
   const dataRef = useRef(null);
@@ -118,6 +121,41 @@ export default function MapView({
   const queryModeRef = useRef(queryMode);
   const trainingModeRef = useRef(trainingMode);
   const targetRef = useRef(null);
+
+  const updatePoints = () => {
+    const map = mapRef.current;
+    if (!map) return;
+    const src = map.getSource("highlight-points");
+    if (!src) return;
+    if (!showPoints || !selectedRef.current || !dataRef.current) {
+      src.setData(EMPTY_FC);
+      return;
+    }
+    const f = dataRef.current.features.find(
+      (x) => x.properties.id === selectedRef.current
+    );
+    if (!f) {
+      src.setData(EMPTY_FC);
+      return;
+    }
+    const polygons =
+      f.geometry.type === "Polygon"
+        ? [f.geometry.coordinates]
+        : f.geometry.coordinates;
+    const features = [];
+    polygons.forEach((poly) =>
+      poly.forEach((ring) =>
+        ring.slice(0, -1).forEach(([lng, lat]) =>
+          features.push({
+            type: "Feature",
+            geometry: { type: "Point", coordinates: [lng, lat] },
+            properties: {},
+          })
+        )
+      )
+    );
+    src.setData({ type: "FeatureCollection", features });
+  };
 
   const startTrainingRound = () => {
     if (!dataRef.current) return;
@@ -353,6 +391,24 @@ export default function MapView({
         paint: { "line-color": "#ff9f1c", "line-width": 3 },
       });
 
+      map.addSource("highlight-points", {
+        type: "geojson",
+        data: EMPTY_FC,
+      });
+      map.addLayer({
+        id: "highlight-points",
+        type: "circle",
+        source: "highlight-points",
+        layout: { visibility: showPoints ? "visible" : "none" },
+        paint: {
+          "circle-radius": 4,
+          "circle-color": "#ff0000",
+          "circle-stroke-width": 1,
+          "circle-stroke-color": "#ffffff",
+        },
+      });
+      updatePoints();
+
       // mark ready and (re)apply any pending highlight
       readyRef.current = true;
       applyBaseFilters();
@@ -408,6 +464,27 @@ export default function MapView({
             paint: { "line-color": "#ff9f1c", "line-width": 3 },
           });
         }
+        if (!map.getSource("highlight-points")) {
+          map.addSource("highlight-points", {
+            type: "geojson",
+            data: EMPTY_FC,
+          });
+        }
+        if (!map.getLayer("highlight-points")) {
+          map.addLayer({
+            id: "highlight-points",
+            type: "circle",
+            source: "highlight-points",
+            layout: { visibility: showPoints ? "visible" : "none" },
+            paint: {
+              "circle-radius": 4,
+              "circle-color": "#ff0000",
+              "circle-stroke-width": 1,
+              "circle-stroke-color": "#ffffff",
+            },
+          });
+        }
+        updatePoints();
 
         // Reapply the LAST-KNOWN base filter from the ref (no recompute)
         const base = filterRef.current || ["all"];
@@ -578,6 +655,19 @@ export default function MapView({
       setStatus(`Selected: ${f.properties.name}`);
     }
   }, [selectedId, setStatus]);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map) return;
+    if (map.getLayer("highlight-points")) {
+      map.setLayoutProperty(
+        "highlight-points",
+        "visibility",
+        showPoints ? "visible" : "none"
+      );
+    }
+    updatePoints();
+  }, [showPoints, selectedId]);
 
   const fitToCampus = () => {
     const map = mapRef.current;
