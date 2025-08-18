@@ -56,6 +56,10 @@ def build_geometries(osm_data):
 
         if outers:
             merged = unary_union(outers)
+            if inners:
+                inner_union = unary_union(inners)
+                if not inner_union.is_empty:
+                    merged = merged.difference(inner_union)
             if isinstance(merged, (Polygon, MultiPolygon)) and not merged.is_empty:
                 rel_polys[rel["id"]] = merged
 
