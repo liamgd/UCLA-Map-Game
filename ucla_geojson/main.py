@@ -1,11 +1,15 @@
 from time import perf_counter
+from typing import Any, Callable, TypeVar
 
 from .builder import process_features
 from .fetcher import fetch_osm_data
 from .writer import write_single
 
 
-def main():
+T = TypeVar("T")
+
+
+def main() -> None:
     print("Starting build_ucla_geojson...")
     start_time = perf_counter()
 
@@ -19,7 +23,7 @@ def main():
     )
 
 
-def timed(label, func, *args, **kwargs):
+def timed(label: str, func: Callable[..., T], *args: Any, **kwargs: Any) -> T:
     start = perf_counter()
     result = func(*args, **kwargs)
     duration = perf_counter() - start

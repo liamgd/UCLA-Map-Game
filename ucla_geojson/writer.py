@@ -1,8 +1,9 @@
 import json
 import os
+from typing import Any, Dict, List
 
 
-def write_single(features):
+def write_single(features: List[Dict[str, Any]]) -> None:
     print("Writing output files...")
     os.makedirs("public", exist_ok=True)
     fc = {"type": "FeatureCollection", "features": features}

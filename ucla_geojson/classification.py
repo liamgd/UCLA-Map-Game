@@ -1,5 +1,5 @@
 import re
-from typing import Dict
+from typing import Callable, Dict, Iterable, List, Sequence, Set, Tuple
 
 from shapely.geometry import Point
 
@@ -11,7 +11,7 @@ def _norm(s: str) -> str:
     return s.lower() if s else ""
 
 
-ACADEMIC_HINTS = {
+ACADEMIC_HINTS: Set[str] = {
     "hall",
     "laboratory",
     "lab",
@@ -46,7 +46,7 @@ ACADEMIC_HINTS = {
 # Additional indicators that a building or amenity is used for academic or research
 # purposes.  These sets are consulted directly when determining if a feature
 # should be classified as "Academic/Research".
-ACADEMIC_BUILDINGS = {
+ACADEMIC_BUILDINGS: Set[str] = {
     "university",
     "college",
     "education",
@@ -61,7 +61,7 @@ ACADEMIC_BUILDINGS = {
     "training",
 }
 
-ACADEMIC_AMENITIES = {
+ACADEMIC_AMENITIES: Set[str] = {
     "university",
     "college",
     "research",
@@ -69,7 +69,7 @@ ACADEMIC_AMENITIES = {
     "educational_institution",
 }
 
-ADMIN_HINTS = {
+ADMIN_HINTS: Set[str] = {
     "murphy",
     "registrar",
     "admissions",
@@ -81,9 +81,9 @@ ADMIN_HINTS = {
     "career center",
 }
 
-POOL_HINTS = {"pool", "aquatic"}
-STADIUM_HINTS = {"stadium", "pavilion"}
-COURT_HINTS = {
+POOL_HINTS: Set[str] = {"pool", "aquatic"}
+STADIUM_HINTS: Set[str] = {"stadium", "pavilion"}
+COURT_HINTS: Set[str] = {
     "court",
     "tennis",
     # Additional sports courts
@@ -94,7 +94,7 @@ COURT_HINTS = {
     "arena",
     "gym",
 }
-FIELD_HINTS = {
+FIELD_HINTS: Set[str] = {
     "track",
     "field",
     "intramural",
@@ -111,7 +111,7 @@ FIELD_HINTS = {
     "athletic",
 }
 
-DINING_HINTS = {
+DINING_HINTS: Set[str] = {
     "rendezvous",
     "feast",
     "covel",
@@ -142,7 +142,7 @@ DINING_HINTS = {
 # here.  Many academic buildings on campus are named "Hall" or include
 # "Plaza" in their names (e.g. Boelter Hall, Dickson Plaza), and treating
 # those terms as housing would misclassify academic spaces as residences.
-HOUSING_HINTS = {
+HOUSING_HINTS: Set[str] = {
     "residence",
     "res hall",
     "apartments",
@@ -168,7 +168,7 @@ HOUSING_HINTS = {
     "sorority",
 }
 
-LIBRARY_MUSEUM_HINTS = {
+LIBRARY_MUSEUM_HINTS: Set[str] = {
     "library",
     "powell",
     "yrl",
@@ -179,7 +179,7 @@ LIBRARY_MUSEUM_HINTS = {
     "hammer",
 }
 
-PERFORMANCE_HINTS = {
+PERFORMANCE_HINTS: Set[str] = {
     "royce hall",
     "geffen playhouse",
     "schoenberg",
@@ -191,7 +191,7 @@ PERFORMANCE_HINTS = {
     "konkoff",
 }
 
-MEDICAL_HINTS = {
+MEDICAL_HINTS: Set[str] = {
     "medical",
     "health",
     "hospital",
@@ -204,7 +204,7 @@ MEDICAL_HINTS = {
     "neuroscience",
 }
 
-SERVICE_HINTS = {
+SERVICE_HINTS: Set[str] = {
     "utility",
     "plant",
     "power",
@@ -218,7 +218,7 @@ SERVICE_HINTS = {
 
 # Names that indicate open or landscaped spaces rather than buildings.  These
 # help classify plazas, quads, and lawns as green space.
-GREEN_NAME_HINTS = {
+GREEN_NAME_HINTS: Set[str] = {
     "plaza",
     "quad",
     "lawn",
@@ -231,11 +231,11 @@ GREEN_NAME_HINTS = {
 }
 
 
-def _hint_in(name_norm: str, hints: set) -> bool:
+def _hint_in(name_norm: str, hints: Set[str]) -> bool:
     return any(h in name_norm for h in hints)
 
 
-def determine_zone(centroid, main_campus):
+def determine_zone(centroid: Sequence[float], main_campus: bool) -> str:
     """Return the campus zone for a given centroid.
 
     The previous implementation used a pair of longitude/latitude thresholds
@@ -279,14 +279,14 @@ def determine_category(tags: Dict[str, str], name: str, zone: str) -> str:
     natural = _norm(tags.get("natural"))
     parking = _norm(tags.get("parking"))
 
-    def is_medical():
+    def is_medical() -> bool:
         return (
             healthcare
             or amenity in {"clinic", "hospital", "doctors", "dentist"}
             or _hint_in(name_norm, MEDICAL_HINTS)
         )
 
-    rules = [
+    rules: List[Tuple[str, Callable[[], bool]]] = [
         (
             "Hospital",
             lambda: is_medical()
