@@ -1,5 +1,5 @@
-from shapely.geometry import LinearRing, MultiPolygon, Polygon
-from shapely.ops import transform, unary_union
+from shapely.geometry import LinearRing, LineString, MultiPolygon, Polygon
+from shapely.ops import polygonize, transform, unary_union
 
 from .constants import _TO_DEG, _TO_M
 
@@ -12,6 +12,7 @@ def build_geometries(osm_data):
     rels = [el for el in elements if el["type"] == "relation"]
 
     way_polys = {}
+    way_lines = {}
     invalid_ways = {}
     for wid, way in ways.items():
         coords, missing = [], False
@@ -21,9 +22,15 @@ def build_geometries(osm_data):
                 missing = True
                 break
             coords.append((n["lon"], n["lat"]))
-        if missing or len(coords) < 3:
+        if missing or len(coords) < 2:
             invalid_ways[wid] = "missing nodes"
             continue
+
+        way_lines[wid] = LineString(coords)
+
+        if len(coords) < 3:
+            continue
+
         if coords[0] != coords[-1]:
             coords.append(coords[0])
         ring = LinearRing(coords)
@@ -46,7 +53,7 @@ def build_geometries(osm_data):
     for rel in rels:
         if "members" not in rel:
             continue
-        outers, inners = [], []
+        outer_polys, outer_lines, inners = [], [], []
         missing_outers = []
         for m in rel["members"]:
             if m.get("type") != "way":
@@ -54,17 +61,21 @@ def build_geometries(osm_data):
             wid = m.get("ref")
             role = m.get("role")
             poly = way_polys.get(wid)
-            if role == "outer" and not poly:
-                missing_outers.append((wid, invalid_ways.get(wid, "missing way")))
-                continue
-            if not poly:
-                continue
+            line = way_lines.get(wid)
             if role == "outer":
-                outers.append(poly)
-                tags = rel.get("tags", {})
-                if "building" in tags or tags.get("leisure") == "stadium":
-                    ways_in_building_rels.add(wid)
-            elif role == "inner":
+                if poly:
+                    outer_polys.append(poly)
+                    tags = rel.get("tags", {})
+                    if "building" in tags or tags.get("leisure") == "stadium":
+                        ways_in_building_rels.add(wid)
+                elif line:
+                    outer_lines.append(line)
+                    tags = rel.get("tags", {})
+                    if "building" in tags or tags.get("leisure") == "stadium":
+                        ways_in_building_rels.add(wid)
+                else:
+                    missing_outers.append((wid, invalid_ways.get(wid, "missing way")))
+            elif role == "inner" and poly:
                 inners.append(poly)
                 ways_in_multipolygon_holes.add(wid)
                 inner_count += 1
@@ -76,17 +87,27 @@ def build_geometries(osm_data):
             )
             continue
 
-        if outers:
-            merged = unary_union(outers)
-            if inners:
-                inner_union = unary_union(inners)
-                if not inner_union.is_empty:
-                    merged = merged.difference(inner_union)
-            if (
-                isinstance(merged, (Polygon, MultiPolygon))
-                and not merged.is_empty
-            ):
-                rel_polys[rel["id"]] = merged
+        merged = None
+        if outer_polys:
+            merged = unary_union(outer_polys)
+        if outer_lines:
+            line_union = unary_union(outer_lines)
+            line_polys = list(polygonize(line_union))
+            if line_polys:
+                poly_union = unary_union(line_polys)
+                merged = poly_union if merged is None else unary_union([merged, poly_union])
+
+        if merged and inners:
+            inner_union = unary_union(inners)
+            if not inner_union.is_empty:
+                merged = merged.difference(inner_union)
+
+        if (
+            merged
+            and isinstance(merged, (Polygon, MultiPolygon))
+            and not merged.is_empty
+        ):
+            rel_polys[rel["id"]] = merged
 
     if skipped_relations:
         print(
