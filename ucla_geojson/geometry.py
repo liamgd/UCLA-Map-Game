@@ -42,11 +42,9 @@ def build_geometries(osm_data: Dict[str, Any]) -> Tuple[
 
         way_lines[wid] = LineString(coords)
 
-        if len(coords) < 3:
+        if len(coords) < 3 or coords[0] != coords[-1]:
             continue
 
-        if coords[0] != coords[-1]:
-            coords.append(coords[0])
         ring = LinearRing(coords)
         if not ring.is_valid:
             invalid_ways[wid] = "invalid ring"
