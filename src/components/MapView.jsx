@@ -121,13 +121,14 @@ export default function MapView({
   const queryModeRef = useRef(queryMode);
   const trainingModeRef = useRef(trainingMode);
   const targetRef = useRef(null);
+  const showPointsRef = useRef(showPoints);
 
   const updatePoints = () => {
     const map = mapRef.current;
     if (!map) return;
     const src = map.getSource("highlight-points");
     if (!src) return;
-    if (!showPoints || !selectedRef.current || !dataRef.current) {
+    if (!showPointsRef.current || !selectedRef.current || !dataRef.current) {
       src.setData(EMPTY_FC);
       return;
     }
@@ -399,7 +400,7 @@ export default function MapView({
         id: "highlight-points",
         type: "circle",
         source: "highlight-points",
-        layout: { visibility: showPoints ? "visible" : "none" },
+        layout: { visibility: showPointsRef.current ? "visible" : "none" },
         paint: {
           "circle-radius": 4,
           "circle-color": "#ff0000",
@@ -475,7 +476,7 @@ export default function MapView({
             id: "highlight-points",
             type: "circle",
             source: "highlight-points",
-            layout: { visibility: showPoints ? "visible" : "none" },
+            layout: { visibility: showPointsRef.current ? "visible" : "none" },
             paint: {
               "circle-radius": 4,
               "circle-color": "#ff0000",
@@ -657,6 +658,7 @@ export default function MapView({
   }, [selectedId, setStatus]);
 
   useEffect(() => {
+    showPointsRef.current = showPoints;
     const map = mapRef.current;
     if (!map) return;
     if (map.getLayer("highlight-points")) {
