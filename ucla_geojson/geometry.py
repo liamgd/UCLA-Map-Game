@@ -34,6 +34,7 @@ def build_geometries(osm_data):
 
     rel_polys = {}
     ways_in_building_rels = set()
+    ways_in_multipolygon_holes = set()
 
     for rel in rels:
         if "members" not in rel:
@@ -53,6 +54,7 @@ def build_geometries(osm_data):
                     ways_in_building_rels.add(m.get("ref"))
             elif role == "inner":
                 inners.append(poly)
+                ways_in_multipolygon_holes.add(m.get("ref"))
 
         if outers:
             merged = unary_union(outers)
@@ -67,7 +69,14 @@ def build_geometries(osm_data):
         f"Built {len(way_polys)} way polygons and {len(rel_polys)} relation polygons"
     )
 
-    return ways, rels, way_polys, rel_polys, ways_in_building_rels
+    return (
+        ways,
+        rels,
+        way_polys,
+        rel_polys,
+        ways_in_building_rels,
+        ways_in_multipolygon_holes,
+    )
 
 
 def area_m2(geom):
