@@ -67,7 +67,7 @@ def build_geometries(osm_data: Dict[str, Any]) -> Tuple[
     for rel in rels:
         if "members" not in rel:
             continue
-        outer_polys, outer_lines, inners = [], [], []
+        outer_polys, outer_lines, inner_polys, inner_lines = [], [], [], []
         missing_outers = []
         for m in rel["members"]:
             if m.get("type") != "way":
@@ -89,8 +89,13 @@ def build_geometries(osm_data: Dict[str, Any]) -> Tuple[
                         ways_in_building_rels.add(wid)
                 else:
                     missing_outers.append((wid, invalid_ways.get(wid, "missing way")))
-            elif role == "inner" and poly:
-                inners.append(poly)
+            elif role == "inner":
+                if poly:
+                    inner_polys.append(poly)
+                elif line:
+                    inner_lines.append(line)
+                else:
+                    continue
                 ways_in_multipolygon_holes.add(wid)
                 inner_count += 1
 
@@ -111,10 +116,19 @@ def build_geometries(osm_data: Dict[str, Any]) -> Tuple[
                 poly_union = unary_union(line_polys)
                 merged = poly_union if merged is None else unary_union([merged, poly_union])
 
-        if merged and inners:
-            inner_union = unary_union(inners)
-            if not inner_union.is_empty:
-                merged = merged.difference(inner_union)
+        if merged and (inner_polys or inner_lines):
+            inner_geoms: List[Polygon] = []
+            if inner_polys:
+                inner_geoms.extend(inner_polys)
+            if inner_lines:
+                inner_line_union = unary_union(inner_lines)
+                inner_line_polys = list(polygonize(inner_line_union))
+                if inner_line_polys:
+                    inner_geoms.extend(inner_line_polys)
+            if inner_geoms:
+                inner_union = unary_union(inner_geoms)
+                if not inner_union.is_empty:
+                    merged = merged.difference(inner_union)
 
         if (
             merged
