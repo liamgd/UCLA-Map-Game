@@ -2,7 +2,7 @@ from typing import Any, Dict, Iterable, List, Optional, Set, Tuple, Union
 
 from shapely.geometry import LinearRing, LineString, MultiPolygon, Polygon
 from shapely.geometry.base import BaseGeometry
-from shapely.ops import polygonize, transform, unary_union
+from shapely.ops import linemerge, polygonize, transform, unary_union
 
 from .constants import _TO_DEG, _TO_M
 
@@ -42,11 +42,9 @@ def build_geometries(osm_data: Dict[str, Any]) -> Tuple[
 
         way_lines[wid] = LineString(coords)
 
-        if len(coords) < 3:
+        if len(coords) < 3 or coords[0] != coords[-1]:
             continue
 
-        if coords[0] != coords[-1]:
-            coords.append(coords[0])
         ring = LinearRing(coords)
         if not ring.is_valid:
             invalid_ways[wid] = "invalid ring"
@@ -111,10 +109,13 @@ def build_geometries(osm_data: Dict[str, Any]) -> Tuple[
             merged = unary_union(outer_polys)
         if outer_lines:
             line_union = unary_union(outer_lines)
-            line_polys = list(polygonize(line_union))
+            merged_lines = linemerge(line_union)
+            line_polys = list(polygonize(merged_lines))
             if line_polys:
                 poly_union = unary_union(line_polys)
                 merged = poly_union if merged is None else unary_union([merged, poly_union])
+        if merged:
+            merged = merged.buffer(0)
 
         if merged and (inner_polys or inner_lines):
             inner_geoms: List[Polygon] = []
@@ -122,13 +123,14 @@ def build_geometries(osm_data: Dict[str, Any]) -> Tuple[
                 inner_geoms.extend(inner_polys)
             if inner_lines:
                 inner_line_union = unary_union(inner_lines)
-                inner_line_polys = list(polygonize(inner_line_union))
+                merged_inner_lines = linemerge(inner_line_union)
+                inner_line_polys = list(polygonize(merged_inner_lines))
                 if inner_line_polys:
                     inner_geoms.extend(inner_line_polys)
             if inner_geoms:
                 inner_union = unary_union(inner_geoms)
                 if not inner_union.is_empty:
-                    merged = merged.difference(inner_union)
+                    merged = merged.difference(inner_union).buffer(0)
 
         if (
             merged
