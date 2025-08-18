@@ -4,16 +4,16 @@ import multiprocessing
 import urllib.parse
 import urllib.request
 from pathlib import Path
-from typing import Dict, Iterable, List, Tuple
+from typing import Any, Dict, Iterable, List, Tuple
 
 from .constants import BBOX_QUERY, GREEK_NAME_RE, OVERPASS_URL
 from .utils import shorten
 
-CACHE_DIR = Path(__file__).resolve().parent.parent / "cache"
+CACHE_DIR: Path = Path(__file__).resolve().parent.parent / "cache"
 CACHE_DIR.mkdir(exist_ok=True)
 
 
-BASE_LINES = [
+BASE_LINES: List[str] = [
     "[out:json][timeout:90];",
     "",
     'area["amenity"="university"]["name"~"^(University of California, Los Angeles|UCLA)$",i]->.ucla;',
@@ -116,7 +116,7 @@ def _build_url(query: str) -> str:
     return f"{OVERPASS_URL}?{urllib.parse.urlencode({'data': query})}"
 
 
-def _fetch(query: str) -> Dict[str, object]:
+def _fetch(query: str) -> Dict[str, Any]:
     url = _build_url(query)
     url_hash = hashlib.sha256(url.encode()).hexdigest()[:16]
     cache_file = CACHE_DIR / f"{url_hash}.json"
@@ -138,7 +138,7 @@ def _fetch(query: str) -> Dict[str, object]:
     return data
 
 
-def fetch_osm_data(split: bool = True) -> Dict[str, object]:
+def fetch_osm_data(split: bool = True) -> Dict[str, Any]:
     single_query, split_queries = _build_query()
     if not split:
         return _fetch(single_query)

@@ -1,7 +1,10 @@
 import re
 from datetime import datetime, timezone
 
+from typing import Any, Dict, List
+
 from shapely.geometry import MultiPolygon, Polygon, mapping, shape
+from shapely.geometry.base import BaseGeometry
 from shapely.geometry.polygon import orient
 from shapely.ops import transform, unary_union
 
@@ -18,15 +21,15 @@ from .geometry import build_geometries, simplify_geom_m
 from .utils import hash_centroid, slugify
 
 # Minimum child area to consider for subset detection (m²)
-MIN_CHILD_AREA = 20
-SUBSET_BUFFER_M = 0.25
-OVERLAP_THRESHOLD = 0.60
+MIN_CHILD_AREA: float = 20
+SUBSET_BUFFER_M: float = 0.25
+OVERLAP_THRESHOLD: float = 0.60
 
 # OSM way id for UCLA campus boundary
-CAMPUS_WAY_ID = 807458549
+CAMPUS_WAY_ID: int = 807458549
 
 
-def _outer_shell(geom):
+def _outer_shell(geom: BaseGeometry) -> BaseGeometry:
     if isinstance(geom, Polygon):
         return Polygon(geom.exterior)
     if isinstance(geom, MultiPolygon):
@@ -34,7 +37,7 @@ def _outer_shell(geom):
     return geom
 
 
-def assign_parent_child(features):
+def assign_parent_child(features: List[Dict[str, Any]]) -> int:
     geoms_m = [transform(_TO_M, shape(f["geometry"])) for f in features]
     areas = [g.area for g in geoms_m]
     centroids = [g.centroid for g in geoms_m]
@@ -94,7 +97,7 @@ def assign_parent_child(features):
     return renamed
 
 
-def process_features(osm_data):
+def process_features(osm_data: Dict[str, Any]) -> List[Dict[str, Any]]:
     print("Processing features...")
     (
         ways,

@@ -1,19 +1,33 @@
+from typing import Any, Dict, Iterable, List, Optional, Set, Tuple, Union
+
 from shapely.geometry import LinearRing, LineString, MultiPolygon, Polygon
+from shapely.geometry.base import BaseGeometry
 from shapely.ops import polygonize, transform, unary_union
 
 from .constants import _TO_DEG, _TO_M
 
 
-def build_geometries(osm_data):
+def build_geometries(osm_data: Dict[str, Any]) -> Tuple[
+    Dict[int, Dict[str, Any]],
+    List[Dict[str, Any]],
+    Dict[int, Polygon],
+    Dict[int, Union[Polygon, MultiPolygon]],
+    Set[int],
+    Set[int],
+]:
     print("Building geometries...")
     elements = osm_data.get("elements", [])
-    nodes = {el["id"]: el for el in elements if el["type"] == "node"}
-    ways = {el["id"]: el for el in elements if el["type"] == "way"}
-    rels = [el for el in elements if el["type"] == "relation"]
+    nodes: Dict[int, Dict[str, Any]] = {
+        el["id"]: el for el in elements if el["type"] == "node"
+    }
+    ways: Dict[int, Dict[str, Any]] = {
+        el["id"]: el for el in elements if el["type"] == "way"
+    }
+    rels: List[Dict[str, Any]] = [el for el in elements if el["type"] == "relation"]
 
-    way_polys = {}
-    way_lines = {}
-    invalid_ways = {}
+    way_polys: Dict[int, Polygon] = {}
+    way_lines: Dict[int, LineString] = {}
+    invalid_ways: Dict[int, str] = {}
     for wid, way in ways.items():
         coords, missing = [], False
         for nid in way.get("nodes", []):
@@ -43,9 +57,9 @@ def build_geometries(osm_data):
             continue
         way_polys[wid] = poly
 
-    rel_polys = {}
-    ways_in_building_rels = set()
-    ways_in_multipolygon_holes = set()
+    rel_polys: Dict[int, Union[Polygon, MultiPolygon]] = {}
+    ways_in_building_rels: Set[int] = set()
+    ways_in_multipolygon_holes: Set[int] = set()
     inner_count = 0
 
     skipped_relations = {}
@@ -129,11 +143,11 @@ def build_geometries(osm_data):
     )
 
 
-def area_m2(geom):
+def area_m2(geom: BaseGeometry) -> float:
     return transform(_TO_M, geom).area
 
 
-def simplify_geom_m(geom, tol_m):
+def simplify_geom_m(geom: BaseGeometry, tol_m: float) -> Optional[BaseGeometry]:
     g_m = transform(_TO_M, geom)
     g_s = g_m.simplify(tol_m, preserve_topology=True)
     if g_s.is_empty:
