@@ -12,6 +12,7 @@ def build_geometries(osm_data):
     rels = [el for el in elements if el["type"] == "relation"]
 
     way_polys = {}
+    invalid_ways = {}
     for wid, way in ways.items():
         coords, missing = [], False
         for nid in way.get("nodes", []):
@@ -21,14 +22,17 @@ def build_geometries(osm_data):
                 break
             coords.append((n["lon"], n["lat"]))
         if missing or len(coords) < 3:
+            invalid_ways[wid] = "missing nodes"
             continue
         if coords[0] != coords[-1]:
             coords.append(coords[0])
         ring = LinearRing(coords)
         if not ring.is_valid:
+            invalid_ways[wid] = "invalid ring"
             continue
         poly = Polygon(ring)
         if not poly.is_valid or poly.is_empty:
+            invalid_ways[wid] = "invalid polygon"
             continue
         way_polys[wid] = poly
 
@@ -37,26 +41,40 @@ def build_geometries(osm_data):
     ways_in_multipolygon_holes = set()
     inner_count = 0
 
+    skipped_relations = {}
+
     for rel in rels:
         if "members" not in rel:
             continue
         outers, inners = [], []
+        missing_outers = []
         for m in rel["members"]:
             if m.get("type") != "way":
                 continue
-            poly = way_polys.get(m.get("ref"))
+            wid = m.get("ref")
+            role = m.get("role")
+            poly = way_polys.get(wid)
+            if role == "outer" and not poly:
+                missing_outers.append((wid, invalid_ways.get(wid, "missing way")))
+                continue
             if not poly:
                 continue
-            role = m.get("role")
             if role == "outer":
                 outers.append(poly)
                 tags = rel.get("tags", {})
                 if "building" in tags or tags.get("leisure") == "stadium":
-                    ways_in_building_rels.add(m.get("ref"))
+                    ways_in_building_rels.add(wid)
             elif role == "inner":
                 inners.append(poly)
-                ways_in_multipolygon_holes.add(m.get("ref"))
+                ways_in_multipolygon_holes.add(wid)
                 inner_count += 1
+
+        if missing_outers:
+            skipped_relations[rel["id"]] = missing_outers
+            print(
+                f"  Skipping relation {rel['id']} due to missing outer ways: {missing_outers}"
+            )
+            continue
 
         if outers:
             merged = unary_union(outers)
@@ -69,6 +87,11 @@ def build_geometries(osm_data):
                 and not merged.is_empty
             ):
                 rel_polys[rel["id"]] = merged
+
+    if skipped_relations:
+        print(
+            f"  Omitted {len(skipped_relations)} relations with missing outer members"
+        )
 
     print(f"  Removed {inner_count} multipolygon holes")
     print(
