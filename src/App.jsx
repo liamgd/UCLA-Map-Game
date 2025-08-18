@@ -2,14 +2,15 @@ import { useState } from "react";
 import { useStore } from "./store";
 import MapView from "./components/MapView";
 import Sidebar from "./components/Sidebar";
+import usePersistentState from "./usePersistentState";
 
 export default function App() {
   const { selectedId, setSelectedId } = useStore();
   const [fuse, setFuse] = useState(null);
   const [status, setStatus] = useState("Click the map");
-  const [showNamed, setShowNamed] = useState(true);
-  const [showUnnamed, setShowUnnamed] = useState(true);
-  const [colorBy, setColorBy] = useState("category");
+  const [showNamed, setShowNamed] = usePersistentState("showNamed", true);
+  const [showUnnamed, setShowUnnamed] = usePersistentState("showUnnamed", true);
+  const [colorBy, setColorBy] = usePersistentState("colorBy", "category");
   const [queryMode, setQueryMode] = useState(false);
   const [queryResults, setQueryResults] = useState({
     lngLat: null,
@@ -17,7 +18,7 @@ export default function App() {
     features: [],
   });
   const [trainingMode, setTrainingMode] = useState(false);
-  const [showPoints, setShowPoints] = useState(false);
+  const [showPoints, setShowPoints] = usePersistentState("showPoints", false);
 
   return (
     <div
