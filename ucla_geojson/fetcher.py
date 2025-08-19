@@ -131,7 +131,7 @@ def _fetch(query: str) -> Dict[str, Any]:
         with urllib.request.urlopen(url) as resp:
             data = json.load(resp)
         with cache_file.open("w") as f:
-            json.dump(data, f)
+            json.dump(data, f, ensure_ascii=False, indent=2)
         print(f"  Saved cache to {cache_file}")
 
     print(f"  Fetched {len(data.get('elements', []))} elements")
