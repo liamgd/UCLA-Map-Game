@@ -6,233 +6,176 @@ from shapely.geometry import Point
 from .constants import GREEK_NAME_RE
 
 
-def _norm(s: str) -> str:
-    """Normalize a string for fuzzy comparisons."""
-    return s.lower() if s else ""
-
-
-ACADEMIC_HINTS: Set[str] = {
-    "hall",
-    "laboratory",
-    "lab",
-    "center",
-    "centre",
-    "institute",
-    "school",
-    "department",
-    "engineering",
-    "math",
-    "physics",
-    "chemistry",
-    "biology",
-    "geology",
-    "history",
-    "philosophy",
-    "linguistics",
-    "music",
-    "theater",
-    "theatre",
-    "film",
-    "statistics",
-    "computer",
-    "informatics",
-    "nanoscience",
-    "biomedical",
-    "sciences",
-    "anthropology",
-    "psychology",
-}
-
-# Additional indicators that a building or amenity is used for academic or research
-# purposes.  These sets are consulted directly when determining if a feature
-# should be classified as "Academic/Research".
-ACADEMIC_BUILDINGS: Set[str] = {
-    "university",
-    "college",
-    "education",
-    "educational",
-    "laboratory",
-    "lab",
-    "research",
-    "research_institute",
-    "faculty",
-    "classroom",
-    "lecture_hall",
-    "training",
-}
-
-ACADEMIC_AMENITIES: Set[str] = {
-    "university",
-    "college",
-    "research",
-    "research_institute",
-    "educational_institution",
-}
-
-ADMIN_HINTS: Set[str] = {
-    "murphy",
-    "registrar",
-    "admissions",
-    "financial aid",
-    "administration",
-    "ucla police",
-    "ucpd",
-    "student affairs",
-    "career center",
-}
-
-POOL_HINTS: Set[str] = {"pool", "aquatic"}
-STADIUM_HINTS: Set[str] = {"stadium", "pavilion"}
-COURT_HINTS: Set[str] = {
-    "court",
-    "tennis",
-    # Additional sports courts
-    "basketball",
-    "volleyball",
-    "pickleball",
-    "badminton",
-    "arena",
-    "gym",
-}
-FIELD_HINTS: Set[str] = {
-    "track",
-    "field",
-    "intramural",
-    "im field",
-    "drake",
-    "spaulding",
-    # Additional field sports and athletics
-    "baseball",
-    "softball",
-    "soccer",
-    "football",
-    "lacrosse",
-    "athletics",
-    "athletic",
-}
-
-DINING_HINTS: Set[str] = {
-    "rendezvous",
-    "feast",
-    "covel",
-    "de neve",
-    "epicuria",
-    "bruins",
-    "b-plate",
-    "bruincafe",
-    "bruin plate",
-    "bruincafé",
-    "hederick",
-    "sproul commons",
-    "deneve",
-    "ckc",
-    "the study",
-    "the den",
-    "cafe",
-    "café",
-    "restaurant",
-    "food court",
-    "hilltop shop",
-    "hill top shop",
-}
-
-# Terms that strongly indicate residential or student housing facilities.  These
-# hints are used to classify housing-related features.  Note that generic
-# building descriptors like "hall" or "plaza" are intentionally excluded
-# here.  Many academic buildings on campus are named "Hall" or include
-# "Plaza" in their names (e.g. Boelter Hall, Dickson Plaza), and treating
-# those terms as housing would misclassify academic spaces as residences.
-HOUSING_HINTS: Set[str] = {
-    "residence",
-    "res hall",
-    "apartments",
-    "apartment",
-    # Dorm names on The Hill
-    "rieber",
-    "hedrick",
-    "sproul",
-    "de neve",
-    "sunset village",
-    "acacia",
-    "gardenia",
-    "holly",
-    "dykstra",
-    "delta terrace",
-    "dogwood",
-    "saxon",
-    "wyton",
-    "gayley court",
-    "gayley heights",
-    # Greek housing
-    "fraternity",
-    "sorority",
-}
-
-LIBRARY_MUSEUM_HINTS: Set[str] = {
-    "library",
-    "powell",
-    "yrl",
-    "young research library",
-    "biomedical library",
-    "fowler museum",
-    "hammer museum",
-    "hammer",
-}
-
-PERFORMANCE_HINTS: Set[str] = {
-    "royce hall",
-    "geffen playhouse",
-    "schoenberg",
-    "capitol steps",
-    "freud",
-    "gindi",
-    "theatre",
-    "theater",
-    "konkoff",
-}
-
-MEDICAL_HINTS: Set[str] = {
-    "medical",
-    "health",
-    "hospital",
-    "clinic",
-    "chs",
-    "ronald reagan ucla",
-    "ucla health",
-    "dental",
-    "rehabilitation",
-    "neuroscience",
-}
-
-SERVICE_HINTS: Set[str] = {
-    "utility",
-    "plant",
-    "power",
-    "central plant",
-    "mail",
-    "loading",
-    "warehouse",
-    "service",
-    "maintenance",
-}
-
-# Names that indicate open or landscaped spaces rather than buildings.  These
-# help classify plazas, quads, and lawns as green space.
-GREEN_NAME_HINTS: Set[str] = {
-    "plaza",
-    "quad",
-    "lawn",
-    "garden",
-    "park",
-    "square",
-    "grove",
-    "courtyard",
-    "green",
-}
-
-
 def _hint_in(name_norm: str, hints: Set[str]) -> bool:
     return any(h in name_norm for h in hints)
+
+
+def _includes(*args):
+    return lambda x: any(arg in x for arg in args)
+
+
+def _or(*args):
+    return lambda x: x in args
+
+
+CLASSIFICATION = [
+    ("UCLA Extension", {"name": _includes("UCLA Extension")}),
+    ("UCLA Extension", {"id": 184772366}),
+    ("Mistake (Delete)", {"building": "college"}),
+    ("Student Services / Auditorium", {"building": "auditorium"}),
+    (
+        "Campus Services",
+        {
+            "name": _includes(
+                "Programs",
+                "Management Commons",
+                "Entrepreneurs",
+                "Maintenance",
+                "Campus Services",
+                "Conference",
+                "Health & Safety",
+                "JD Morgan",
+                "North Campus Student Center",
+                "Strathmore",
+                "Police",
+                "Alumni",
+                "Steam Plant",
+                "Information",
+                "Pavillion",
+                "Faculty Center",
+                "Design & Construction",
+            )
+        },
+    ),
+    ("Campus Services / Warehouse", {"building": "warehouse"}),
+    (
+        "Student Services / Childcare",
+        {"name": _includes("Krieger", "Fernald")},
+    ),
+    ("Unknown / Roof", {"building": "roof"}),
+    ("Green Space / Forest", {"natural": _or("shrubland", "wood")}),
+    ("Student Services / Makerspace", {"leisure": "hackerspace"}),
+    ("Athletics / Kickball Court", {"sport": "kickball"}),
+    ("Student Services / Museum", {"tourism": "museum"}),
+    ("Student Services / Dining", {"amenity": "food_court"}),
+    ("Athletics / Sports Area", {"id": _or(422876728, 422876720)}),
+    ("Athletics / Archery Field", {"sport": "archery"}),
+    ("Athletics / Grandstand", {"building": "grandstand"}),
+    ("Athletics / Basketball Court", {"sport": "basketball"}),
+    ("Athletics / Football Field", {"sport": "american_football"}),
+    ("Athletics / Tennis Court", {"leisure": "pitch", "sport": "tennis"}),
+    (
+        "Athletics / Soccer Field",
+        {"leisure": "pitch", "sport": _includes("soccer")},
+    ),
+    ("Athletics / Softball Field", {"leisure": "pitch", "sport": "softball"}),
+    ("Athletics / Unknown Pitch", {"leisure": "pitch"}),
+    ("Athletics / Track", {"leisure": "track"}),
+    ("Athletics / Swimming Pool", {"leisure": "swimming_pool"}),
+    ("Athletics / Sports Area", {"leisure": "sports_centre"}),
+    ("Athletics / Sports Area", {"amenity": "community_centre"}),
+    ("Athletics / Sports Area", {"landuse": "recreation_ground"}),
+    ("Green Space / Garden", {"building": "greenhouse"}),
+    ("Green Space / Garden", {"leisure": "garden"}),
+    ("Green Space / Grass", {"id": 293613409}),  # Wilson Plaza
+    ("Green Space / Grass", {"landuse": "grass"}),
+    ("Green Space / Park", {"leisure": "park"}),
+    (
+        "Parking / Structure",
+        {"amenity": "parking", "name": _includes("Structure")},
+    ),
+    ("Parking / Lot", {"amenity": "parking", "parking": "surface"}),
+    ("Parking / Structure", {"amenity": "parking"}),
+    ("Athletics / Stadium", {"leisure": "stadium"}),
+    ("Student Services / Library", {"amenity": "library"}),
+    (
+        "Healthcare",
+        {"healthcare": _or("clinic", "hospital", "blood_donation")},
+    ),
+    (
+        "Healthcare",
+        {"id": _or(46364638, 49832949, 422876610, 422876569)},
+    ),  # Gonda + clinics
+    ("Research Institute", {"amenity": "research_institute"}),
+    (
+        "Research Institute",
+        {"id": _or(13007994, 53334145, 422876595)},
+    ),  # CNSI + STRB
+    (
+        "Pre-University Education",
+        {"name": _includes("UCLA Lab School", "Academy")},
+    ),
+    ("Student Services / Retail", {"building": "retail"}),
+    (
+        "Student Services / Retail",
+        {"name": _includes("Union")},
+    ),
+    (
+        "Athletics / Sports Area",
+        {"id": _or(590016847, 422876683, 422876709, 422876613)},
+    ),  # Wasserman, LATC bldg, Wallis bldg, Park Pool Locker Rooms
+    ("Athletics / Sports Area", {"name": _includes("Sunset Canyon")}),
+    ("Athletics / Sports Area", {"name": _includes("Pool")}),
+    ("Housing / Sorority", {"building:use": "sorority"}),
+    ("Unknown / Building", {"id": 422298411}),
+    ("Housing / Fraternity", {"building:use": "fraternity"}),
+    (
+        "Housing / Fraternity",
+        {"name": _includes("Fraternity", "Alpha Tau Omega")},
+    ),
+    (
+        "Athletics / Gym Center",
+        {"leisure": "fitness_centre"},
+    ),
+    (
+        "Athletics / Gym Center",
+        {"id": _or(422876520, 422876656)},
+    ),  # Acosta, Wooden
+    (
+        "Housing / Off-Campus",
+        {
+            "zone": "Southwest Campus",
+            "building": _or("yes", "residential", "dormitory"),
+        },
+    ),
+    (
+        "Housing / Special",
+        {"building": "house"},
+    ),
+    (
+        "Housing / Special",
+        {"name": _includes("House")},
+    ),
+    (
+        "Unknown / Feature",
+        {"id": 422876654},
+    ),  # Upper Picnic Area Modular Units
+    ("Unknown / Building", {"name": _includes("Building in ")}),
+    ("Academic", {"name": _includes("Bradley")}),
+    ("Housing / On-Campus", {"zone": "The Hill"}),
+    ("Academic", {"building": _or("university", "school", "college")}),
+    ("Campus Services / Power Plant", {"power": "plant"}),
+    ("Campus Services", {"building": "office"}),
+    (
+        "Unknown / Feature",
+        {"id": _or(534392315, 243722217, 819656027, 733431549)},
+    ),
+    ("Unknown", {"name": _includes("Tent")}),
+    (
+        "Academic",
+        {
+            "id": _or(
+                422876526, 422876627, 422876727, 331542, 422876593, 422876589
+            )
+        },
+    ),  # Bradley, Public Affairs, Macgowan East, CHS, MacDonald MRL, Rosenfeld
+    (
+        "Unknown / Building",
+        {"building": "yes", "zone": _includes("North", "Center", "South")},
+    ),
+    ("Housing / Off-Campus", {"building": "apartments"}),
+    ("Unassigned", {}),
+]
 
 
 def determine_zone(centroid: Sequence[float], main_campus: bool) -> str:
@@ -260,174 +203,24 @@ def determine_zone(centroid: Sequence[float], main_campus: bool) -> str:
     return "Center Campus"
 
 
-def determine_category(tags: Dict[str, str], name: str, zone: str) -> str:
+def determine_category(tags: Dict[str, str]) -> str:
     """Return the category for a feature.
 
     This version organises the category logic into a sequence of rules rather
     than a long chain of conditionals.  Each rule encapsulates the criteria for
     identifying a category, making it easier to maintain and extend.
     """
-
-    name_norm = _norm(name)
-    btype = _norm(tags.get("building"))
-    amenity = _norm(tags.get("amenity"))
-    leisure = _norm(tags.get("leisure"))
-    shop = _norm(tags.get("shop"))
-    healthcare = _norm(tags.get("healthcare"))
-    operator = _norm(tags.get("operator") or "")
-    landuse = _norm(tags.get("landuse"))
-    natural = _norm(tags.get("natural"))
-    parking = _norm(tags.get("parking"))
-
-    def is_medical() -> bool:
-        return (
-            healthcare
-            or amenity in {"clinic", "hospital", "doctors", "dentist"}
-            or _hint_in(name_norm, MEDICAL_HINTS)
-        )
-
-    rules: List[Tuple[str, Callable[[], bool]]] = [
-        (
-            "Hospital",
-            lambda: is_medical()
-            and ("hospital" in amenity or "hospital" in name_norm),
-        ),
-        ("Clinic/Health", is_medical),
-        (
-            "Lower Education",
-            lambda: amenity in {"school", "kindergarten"}
-            or btype in {"school", "kindergarten"},
-        ),
-        # Academic and research facilities: look for building or amenity types
-        # that denote higher education or research, or names containing common
-        # academic keywords.  Placing this before the housing rule prevents
-        # halls such as Boelter Hall or Knudsen Hall from being misclassified
-        # as housing.
-        (
-            "Academic/Research",
-            lambda: (
-                btype in ACADEMIC_BUILDINGS
-                or amenity in ACADEMIC_AMENITIES
-                or _hint_in(name_norm, ACADEMIC_HINTS)
-            ),
-        ),
-        (
-            "Housing",
-            lambda: btype
-            in {
-                "residential",
-                "dormitory",
-                "apartments",
-                "fraternity",
-                "sorority",
-            }
-            or amenity in {"fraternity", "sorority"}
-            or re.search(GREEK_NAME_RE, name, re.I)
-            or _hint_in(name_norm, HOUSING_HINTS),
-        ),
-        (
-            "Food Service",
-            lambda: amenity
-            in {"restaurant", "fast_food", "cafe", "café", "food_court"}
-            or shop in {"convenience", "supermarket"}
-            or _hint_in(name_norm, DINING_HINTS),
-        ),
-        (
-            "Library",
-            lambda: amenity == "library" or "library" in name_norm,
-        ),
-        (
-            "Museum",
-            lambda: _hint_in(name_norm, LIBRARY_MUSEUM_HINTS),
-        ),
-        (
-            "Performing Arts",
-            lambda: _hint_in(name_norm, PERFORMANCE_HINTS)
-            or amenity in {"theatre", "arts_centre", "concert_hall"},
-        ),
-        (
-            "Pool",
-            lambda: leisure == "swimming_pool"
-            or _hint_in(name_norm, POOL_HINTS),
-        ),
-        (
-            "Stadium",
-            lambda: leisure == "stadium" or _hint_in(name_norm, STADIUM_HINTS),
-        ),
-        (
-            "Sports Court/Pitch",
-            lambda: leisure == "tennis_court"
-            or _hint_in(name_norm, COURT_HINTS),
-        ),
-        (
-            "Sports Field",
-            lambda: leisure in {"pitch", "track", "sports_centre"}
-            or _hint_in(name_norm, FIELD_HINTS),
-        ),
-        (
-            "Green Space",
-            lambda: (
-                leisure in {"park", "garden"}
-                or landuse
-                in {
-                    "grass",
-                    "recreation_ground",
-                    "forest",
-                    "meadow",
-                    "shrubland",
-                }
-                or natural
-                in {"scrub", "shrub", "shrubland", "wood", "grassland"}
-                or _hint_in(name_norm, GREEN_NAME_HINTS)
-            ),
-        ),
-        (
-            "Parking",
-            lambda: amenity == "parking"
-            or parking in {"multi-storey", "underground"}
-            or "parking" in (btype + " " + operator + " " + name_norm),
-        ),
-        ("Operations", lambda: _hint_in(name_norm, SERVICE_HINTS)),
-    ]
-
-    for cat, check in rules:
-        if check():
-            if cat == "Housing":
-                return (
-                    "Off-Campus Housing"
-                    if zone in ("Westwood", "Southwest Campus")
-                    else "On-Campus Housing"
-                )
-            if (
-                cat == "Library"
-                and "library" not in name_norm
-                and amenity != "library"
-            ):
-                # If the library rule matched due to hints but the name does not
-                # explicitly mention a library, treat it as a museum instead.
-                return "Museum"
-            if cat == "Parking":
-                sub = (
-                    "Structure"
-                    if "structure" in name_norm
-                    or btype == "parking"
-                    or parking in {"multi-storey", "underground"}
-                    else "Lot"
-                )
-                return f"Parking {sub}"
+    for cat, rule in CLASSIFICATION:
+        for rule_tag, rule_target in rule.items():
+            if rule_tag not in tags:
+                break
+            if callable(rule_target):
+                if not rule_target(tags[rule_tag]):
+                    break
+            elif tags[rule_tag] != rule_target:
+                break
+        else:
+            if cat == "Unassigned":
+                # raise RuntimeError(f"{name} is unassigned")
+                print(f"Warning: {tags["id"]} is unassigned")
             return cat
-
-    # # Default fallback based on the campus zone.  Features in the academic core
-    # # (North, Center, or South Campus) that didn't match any specific rule are
-    # # treated as academic/research facilities.  Features on the Hill are
-    # # considered on-campus housing, and those in Westwood are considered
-    # # off-campus housing.  This eliminates the "Unknown" category entirely.
-    # if zone in {"North Campus", "Center Campus", "South Campus"}:
-    #     return "Academic/Research"
-    # if zone == "The Hill":
-    #     return "On-Campus Housing"
-    # if zone == "Southwest Campus":
-    #     return "On-Campus Housing"
-    # # Default for Westwood or any other zones
-    # return "Off-Campus Housing"
-    return "Unknown"

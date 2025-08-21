@@ -1,6 +1,5 @@
 import re
 from datetime import datetime, timezone
-
 from typing import Any, Dict, List
 
 from shapely.geometry import MultiPolygon, Polygon, mapping, shape
@@ -120,10 +119,10 @@ def process_features(osm_data: Dict[str, Any]) -> List[Dict[str, Any]]:
             if el["id"] in ways_to_skip:
                 continue
             geom = way_polys.get(el["id"])
-            osm_id_str = f"way/{el['id']}"
+            osm_id = el['id']
         elif el["type"] == "relation":
             geom = rel_polys.get(el["id"])
-            osm_id_str = f"relation/{el['id']}"
+            osm_id = el['id']
         else:
             continue
 
@@ -211,7 +210,9 @@ def process_features(osm_data: Dict[str, Any]) -> List[Dict[str, Any]]:
             main_campus = geom_m.intersects(campus_geom_m)
 
         zone = determine_zone(centroid, main_campus)
-        category = determine_category(tags, name, zone)
+        category = determine_category(
+            {**tags, "name": name, "zone": zone, "id": osm_id}
+        )
 
         fid = f"{slugify(name)}-{hash_centroid(centroid)}"
         props = {
@@ -221,7 +222,7 @@ def process_features(osm_data: Dict[str, Any]) -> List[Dict[str, Any]]:
             "zone": zone,
             "category": category,
             "centroid": centroid,
-            "osm_ids": [osm_id_str],
+            "osm_id": osm_id,
             "area": round(A, 2),
             "main_campus": main_campus,
             "overlap_role": "solo",
