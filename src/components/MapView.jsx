@@ -4,26 +4,52 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import Fuse from "fuse.js";
 
 const CATEGORY_COLOR_ENTRIES = [
-  ["Academic/Research", "#1f77b4"],
-  ["Lower Education", "#aec7e8"],
-  ["Clinic/Health", "#8c564b"],
-  ["Food Service", "#d62728"],
-  ["Hospital", "#c49c94"],
-  ["Library", "#9467bd"],
-  ["Museum", "#c5b0d5"],
-  ["Performing Arts", "#ff7f0e"],
-  ["Playhouse", "#ffbb78"],
-  ["Pool", "#17becf"],
-  ["Stadium", "#ff9896"],
-  ["Sports Court/Pitch", "#98df8a"],
-  ["Sports Field", "#2ca02c"],
-  ["Green Space", "#9edae5"],
-  ["Parking Structure", "#7f7f7f"],
-  ["Parking Lot", "#c7c7c7"],
-  ["Operations", "#e377c2"],
-  ["On-Campus Housing", "#bcbd22"],
-  ["Off-Campus Housing", "#dbdb8d"],
-  ["Unknown", "#f7b6d2"],
+  ["Academic", "#1f77b4"],
+  ["Athletics / Archery Field", "#d62728"],
+  ["Athletics / Basketball Court", "#d62728"],
+  ["Athletics / Football Field", "#d62728"],
+  ["Athletics / Grandstand", "#d62728"],
+  ["Athletics / Gym Center", "#d62728"],
+  ["Athletics / Kickball Court", "#d62728"],
+  ["Athletics / Soccer Field", "#d62728"],
+  ["Athletics / Softball Field", "#d62728"],
+  ["Athletics / Sports Area", "#d62728"],
+  ["Athletics / Stadium", "#d62728"],
+  ["Athletics / Swimming Pool", "#d62728"],
+  ["Athletics / Tennis Court", "#d62728"],
+  ["Athletics / Track", "#d62728"],
+  ["Athletics / Unknown Pitch", "#d62728"],
+  ["Campus Services", "#8c564b"],
+  ["Campus Services / Power Plant", "#8c564b"],
+  ["Campus Services / Warehouse", "#8c564b"],
+  ["Green Space / Forest", "#2ca02c"],
+  ["Green Space / Garden", "#2ca02c"],
+  ["Green Space / Grass", "#2ca02c"],
+  ["Green Space / Park", "#2ca02c"],
+  ["Healthcare", "#e377c2"],
+  ["Housing / Fraternity", "#ff7f0e"],
+  ["Housing / Off-Campus", "#ff7f0e"],
+  ["Housing / On-Campus", "#ff7f0e"],
+  ["Housing / Sorority", "#ff7f0e"],
+  ["Housing / Special", "#ff7f0e"],
+  ["Mistake (Delete)", "#000000"],
+  ["Parking / Lot", "#bcbd22"],
+  ["Parking / Structure", "#bcbd22"],
+  ["Pre-University Education", "#1f77b4"],
+  ["Research Institute", "#9467bd"],
+  ["Student Services / Auditorium", "#17becf"],
+  ["Student Services / Childcare", "#17becf"],
+  ["Student Services / Dining", "#17becf"],
+  ["Student Services / Library", "#17becf"],
+  ["Student Services / Makerspace", "#17becf"],
+  ["Student Services / Museum", "#17becf"],
+  ["Student Services / Retail", "#17becf"],
+  ["UCLA Extension", "#1f77b4"],
+  ["Unassigned", "#7f7f7f"],
+  ["Unknown", "#7f7f7f"],
+  ["Unknown / Building", "#7f7f7f"],
+  ["Unknown / Feature", "#7f7f7f"],
+  ["Unknown / Roof", "#7f7f7f"],
 ];
 
 const CATEGORY_LEGEND = Array.from(
@@ -45,19 +71,19 @@ const colorExpr = (mode) => {
       "match",
       ["get", "category"],
       ...CATEGORY_COLOR_ENTRIES.flat(),
-      "#6aa9ff",
+      "#000000",
     ];
   }
   if (mode === "zone") {
-    return ["match", ["get", "zone"], ...ZONE_LEGEND.flat(), "#6aa9ff"];
+    return ["match", ["get", "zone"], ...ZONE_LEGEND.flat(), "#000000"];
   }
-  return "#6aa9ff";
+  return "#000000";
 };
 
 const fillColorFor = (mode) => [
   "case",
   ["==", ["coalesce", ["get", "name"], ""], ""],
-  "#cccccc",
+  "#000000",
   colorExpr(mode),
 ];
 
